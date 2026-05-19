@@ -1,5 +1,9 @@
 # Shortcuts
 
+Japanese reference translation:
+
+- `../translations_ja/shortcuts_jp.md`
+
 This preview keeps the original `mpv_r` style controls.
 
 | Key | Action |
@@ -19,4 +23,3 @@ This preview keeps the original `mpv_r` style controls.
 | `Command + W` / `Control + W` | Quit |
 
 Screenshots are saved to the Desktop.
-

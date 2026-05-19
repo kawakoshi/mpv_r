@@ -6,6 +6,16 @@ It is a renewed distribution of the author's old `mpv_r` setup for frame-by-fram
 
 This v0.1.0 release is a Mac Preview. A Windows Preview is planned for v0.1.1.
 
+## Japanese Reference Translation
+
+Japanese reference translations are available in `translations_ja/`.
+
+- `translations_ja/README_jp.md`
+- `translations_ja/NOTICE_jp.md`
+- `translations_ja/RELEASE_NOTES_v0.1.0_jp.md`
+
+The English files are the authoritative versions. The Japanese files are reference translations prepared to help review and understanding.
+
 ## Download
 
 Download the app zip from GitHub Releases:
@@ -72,4 +82,3 @@ The bundled configuration is kept in:
 - v0.2: packaged docs, license bundle, icon, release flow cleanup
 - v0.3: self-build investigation for mpv
 - v1.0: first Stable/LTS release
-

@@ -1,5 +1,9 @@
 # Install on macOS
 
+Japanese reference translation:
+
+- `../translations_ja/install-mac_jp.md`
+
 1. Download `mpv_r-mac-v0.1.0.zip` from GitHub Releases.
 2. Unzip the archive.
 3. Move `mpv_r.app` to `/Applications`.
@@ -16,4 +20,3 @@ After the first launch, you can usually open the app normally.
 ## If macOS Blocks the App
 
 This preview is not notarized. If macOS blocks the app, use right-click -> `Open`.
-

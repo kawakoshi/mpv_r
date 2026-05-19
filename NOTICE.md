@@ -2,6 +2,10 @@
 
 `mpv_r` is a video review player distribution based on mpv.
 
+Japanese reference translation:
+
+- `translations_ja/NOTICE_jp.md`
+
 ## mpv
 
 This release bundles mpv `0.39.0`.
@@ -54,4 +58,3 @@ These files provide the review-oriented playback behavior, keyboard controls, pa
 ## Future Direction
 
 The v0.1.x releases prioritize a working user experience. A later release will investigate self-building mpv so that the full build process can be documented and reproduced directly by this project.
-

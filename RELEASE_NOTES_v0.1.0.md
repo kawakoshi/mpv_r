@@ -4,6 +4,10 @@ This is the first public Mac Preview of `mpv_r`.
 
 It packages the author's original `mpv_r` review setup as a downloadable macOS app bundle.
 
+Japanese reference translation:
+
+- `translations_ja/RELEASE_NOTES_v0.1.0_jp.md`
+
 ## Download
 
 Download:
@@ -30,4 +34,3 @@ Use the attached app zip under Release assets. Do not download GitHub's automati
 ## Next
 
 v0.1.1 is planned as a Windows Preview.
-

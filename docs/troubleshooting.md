@@ -1,5 +1,9 @@
 # Troubleshooting
 
+Japanese reference translation:
+
+- `../translations_ja/troubleshooting_jp.md`
+
 ## macOS says the app cannot be opened
 
 This v0.1.0 preview is not notarized.
@@ -19,4 +23,3 @@ Screenshots are saved to the Desktop.
 ## A video does not play
 
 Please include the file format, macOS version, and what happened when reporting the issue.
-
