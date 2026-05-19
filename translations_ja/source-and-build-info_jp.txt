@@ -6,7 +6,10 @@
 
 特にライセンスやビルド情報に関係する文書については、この日本語訳ではなく、同梱された英語原文を必ず参照してください。
 
-mpv_r v0.1.0 ソースおよびビルド情報
+mpv_r ソースおよびビルド情報
+
+v0.1.0 Mac Preview
+==================
 
 同梱アプリケーション:
 
@@ -51,3 +54,41 @@ macOS版mpvビルドの出所:
 - 本プロジェクトはmpv-playerおよびstolendataとは無関係です。
 - 将来のリリースでは、mpvの自前ビルドとビルド手順の文書化を検討します。
 
+v0.1.1 Windows Preview
+======================
+
+同梱アプリケーション:
+
+- mpv_r.exe
+- mpv/mpv.exe
+
+同梱mpvビルド:
+
+- mpv-x86_64-20260519-git-8fc1a10.7z
+
+Windows版mpvビルドの出所:
+
+- https://github.com/shinchiro/mpv-winbuild-cmake
+
+SHA256:
+
+- 0841310cd18d70ae1c334a16fe1db976d4d38313a18fe5a5d30460ef338c0f0f
+
+ダウンロード確認日:
+
+- 2026-05-20
+
+上流mpvプロジェクト:
+
+- https://mpv.io/
+- https://github.com/mpv-player/mpv
+
+このプロジェクトが追加した設定:
+
+- config/windows/mpv.conf
+- config/windows/input.conf
+
+注意:
+
+- 同梱しているWindows版mpvビルドは、mpvインストールページからリンクされている非公式third-party buildです。
+- 本プロジェクトはmpv-playerおよびshinchiroとは無関係です。

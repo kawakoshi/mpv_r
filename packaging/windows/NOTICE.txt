@@ -1,0 +1,26 @@
+mpv_r Windows Preview Notice
+============================
+
+mpv_r is a video review player distribution based on mpv.
+
+This Windows Preview bundles an unofficial third-party Windows build by
+shinchiro, as linked from the mpv installation page.
+
+Build source page:
+
+https://github.com/shinchiro/mpv-winbuild-cmake
+
+Downloaded archive:
+
+mpv-x86_64-20260519-git-8fc1a10.7z
+
+SHA256:
+
+0841310cd18d70ae1c334a16fe1db976d4d38313a18fe5a5d30460ef338c0f0f
+
+The shinchiro build is not an official mpv-player build. This project is not
+affiliated with mpv-player or shinchiro, and this distribution is not endorsed
+by either project.
+
+mpv license information is included in LICENSES.
+
