@@ -26,3 +26,31 @@ GOCACHE="$PWD/build/go-cache" GOOS=windows GOARCH=amd64 go build -ldflags "-H wi
 ```
 
 `-H windowsgui`は、Explorerからランチャーを起動したときにコンソールウィンドウを出さないための指定です。
+
+## 想定パッケージ構成
+
+```text
+mpv_r-windows-v0.1.1/
+  mpv_r.exe
+  mpv/
+    mpv.exe
+    mpv.com
+    d3dcompiler_43.dll
+    mpv/
+      fonts.conf
+    doc/
+      manual.pdf
+      mpbindings.png
+  portable_config/
+    mpv.conf
+    input.conf
+  README.txt
+  NOTICE.txt
+  LICENSE.txt
+  LICENSES/
+  translations_ja/
+    README_jp.txt
+    NOTICE_jp.txt
+    LICENSE_jp.txt
+    source-and-build-info_jp.txt
+```

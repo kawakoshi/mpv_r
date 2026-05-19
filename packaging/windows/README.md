@@ -39,10 +39,12 @@ mpv_r-windows-v0.1.1/
     mpv.conf
     input.conf
   README.txt
-  README_jp.txt
   NOTICE.txt
-  NOTICE_jp.txt
   LICENSE.txt
-  LICENSE_jp.txt
   LICENSES/
+  translations_ja/
+    README_jp.txt
+    NOTICE_jp.txt
+    LICENSE_jp.txt
+    source-and-build-info_jp.txt
 ```

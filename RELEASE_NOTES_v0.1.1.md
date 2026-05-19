@@ -22,6 +22,7 @@ Use the attached app zip under Release assets. Do not download GitHub's automati
 - bundled `mpv/mpv.exe`
 - `portable_config` with renewed `mpv_r` configuration files
 - README and install notes
+- Japanese reference translations under `translations_ja`
 - mpv license texts and source/build links
 
 ## Notes
@@ -47,5 +48,5 @@ The v0.1.1 package was manually smoke-tested on Windows:
 SHA256:
 
 ```text
-88c63cbe1c84c14940a4c8e31f53a6c4647e3252cc8962add4fe84b83f16551e  mpv_r-windows-v0.1.1.zip
+541ec13940ea2abdd4f42d3e81709d3ed29fe42b74499a9f2bf067d3c2dc35a1  mpv_r-windows-v0.1.1.zip
 ```

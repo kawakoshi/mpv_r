@@ -24,6 +24,7 @@
 - 同梱された`mpv/mpv.exe`
 - 更新した`mpv_r`設定ファイルを含む`portable_config`
 - READMEとインストールメモ
+- `translations_ja`内の日本語参考訳
 - mpvのライセンス文書、ソース/ビルド情報リンク
 
 ## 注意
@@ -49,5 +50,5 @@ v0.1.1パッケージはWindowsで手動の簡易テストを行いました。
 SHA256:
 
 ```text
-88c63cbe1c84c14940a4c8e31f53a6c4647e3252cc8962add4fe84b83f16551e  mpv_r-windows-v0.1.1.zip
+541ec13940ea2abdd4f42d3e81709d3ed29fe42b74499a9f2bf067d3c2dc35a1  mpv_r-windows-v0.1.1.zip
 ```
