@@ -1,0 +1,45 @@
+mpv_r v0.1.0 source and build information
+
+Bundled application:
+
+- mpv_r.app
+
+Bundled mpv version:
+
+- 0.39.0
+
+macOS mpv build source:
+
+- https://laboratory.stolendata.net/~djinn/mpv_osx/
+
+Downloaded archive used for the local prototype:
+
+- https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-latest.tar.gz
+
+Download check performed:
+
+- 2026-05-19
+
+Archive metadata observed locally:
+
+- file: mpv-latest.tar.gz
+- content length observed by HTTP header: 23791174 bytes
+- last-modified observed by HTTP header: Sat, 28 Sep 2024 20:28:45 GMT
+- archive original name: mpv-0.39.0.tar
+
+Upstream mpv project:
+
+- https://mpv.io/
+- https://github.com/mpv-player/mpv
+
+Configuration added by this project:
+
+- config/mac/mpv.conf
+- config/mac/input.conf
+
+Notes:
+
+- The bundled macOS mpv build is an unofficial third-party build linked from the mpv installation page.
+- This project is not affiliated with mpv-player or stolendata.
+- A future release will investigate self-building mpv and documenting the build process.
+

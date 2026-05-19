@@ -1,0 +1,5 @@
+The original `mpv_r` configuration and documentation in this repository are copyright the project author, all rights reserved unless otherwise noted.
+
+The bundled mpv player and libraries are distributed under their respective upstream licenses. See `NOTICE.md` and `LICENSES/`.
+
+Before v0.2, choose an explicit open source license for the project-owned files if this repository will accept outside contributions.

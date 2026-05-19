@@ -1,0 +1,53 @@
+注意:
+この文書は、公開前の確認を助けるために機械翻訳をもとに作成した日本語参考訳です。
+翻訳の正確性、完全性、法的解釈について、本プロジェクトは一切の責任を負いません。
+正式な内容は英語原文を優先してください。
+また、世界中の翻訳者の知識、労力、文化をつなぐ仕事に深い敬意を表します。
+
+特にライセンスやビルド情報に関係する文書については、この日本語訳ではなく、同梱された英語原文を必ず参照してください。
+
+mpv_r v0.1.0 ソースおよびビルド情報
+
+同梱アプリケーション:
+
+- mpv_r.app
+
+同梱mpvバージョン:
+
+- 0.39.0
+
+macOS版mpvビルドの出所:
+
+- https://laboratory.stolendata.net/~djinn/mpv_osx/
+
+ローカルプロトタイプで使用したダウンロード済みアーカイブ:
+
+- https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-latest.tar.gz
+
+ダウンロード確認日:
+
+- 2026-05-19
+
+ローカルで確認したアーカイブ情報:
+
+- file: mpv-latest.tar.gz
+- HTTPヘッダーで確認したcontent length: 23791174 bytes
+- HTTPヘッダーで確認したlast-modified: Sat, 28 Sep 2024 20:28:45 GMT
+- アーカイブの元の名前: mpv-0.39.0.tar
+
+上流mpvプロジェクト:
+
+- https://mpv.io/
+- https://github.com/mpv-player/mpv
+
+このプロジェクトが追加した設定:
+
+- config/mac/mpv.conf
+- config/mac/input.conf
+
+注意:
+
+- 同梱しているmacOS版mpvビルドは、mpvインストールページからリンクされている非公式third-party buildです。
+- 本プロジェクトはmpv-playerおよびstolendataとは無関係です。
+- 将来のリリースでは、mpvの自前ビルドとビルド手順の文書化を検討します。
+
