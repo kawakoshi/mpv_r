@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4380 1320" role="img" aria-labelledby="title desc">
+  <title>mpv_r icon tone tests</title>
+  <desc>Current icon and three solid violet tone tests.</desc>
+  <rect width="4380" height="1320" fill="#f2f4f7"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="54" font-weight="700" fill="#202631">
+    <image href="mpv_r-icon-concept-a6-play-mini-wave.svg" x="120" y="120" width="940" height="940"/>
+    <text x="590" y="1168" text-anchor="middle">A6 current</text>
+    <image href="mpv_r-icon-concept-a6-tone-deep.svg" x="1180" y="120" width="940" height="940"/>
+    <text x="1650" y="1168" text-anchor="middle">Deep violet</text>
+    <image href="mpv_r-icon-concept-a6-tone-strong.svg" x="2240" y="120" width="940" height="940"/>
+    <text x="2710" y="1168" text-anchor="middle">Strong violet</text>
+    <image href="mpv_r-icon-concept-a6-tone-bright.svg" x="3300" y="120" width="940" height="940"/>
+    <text x="3770" y="1168" text-anchor="middle">Bright violet</text>
+  </g>
+</svg>

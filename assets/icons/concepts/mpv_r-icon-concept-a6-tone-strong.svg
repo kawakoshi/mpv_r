@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title>mpv_r icon concept A6 tone test: strong violet</title>
+  <desc>Solid strong violet base, dark gradient play shape, and yellow-to-orange mini waveform.</desc>
+  <defs>
+    <linearGradient id="play" x1="320" y1="254" x2="760" y2="496" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07070c"/>
+      <stop offset="0.52" stop-color="#151126"/>
+      <stop offset="1" stop-color="#31205f"/>
+    </linearGradient>
+    <linearGradient id="mini" x1="250" y1="760" x2="744" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff04d"/>
+      <stop offset="0.48" stop-color="#ffbd32"/>
+      <stop offset="1" stop-color="#ff7637"/>
+    </linearGradient>
+  </defs>
+  <rect x="76" y="76" width="872" height="872" rx="230" fill="#7437b5"/>
+  <rect x="116" y="116" width="792" height="792" rx="196" fill="none" stroke="#ffffff" stroke-opacity=".17" stroke-width="18"/>
+  <path d="M320 254c0-62 67-101 121-70l298 172c54 31 54 109 0 140L441 668c-54 31-121-8-121-70V254z" fill="url(#play)" opacity=".96"/>
+  <g fill="url(#mini)" opacity=".98">
+    <rect x="250" y="758" width="30" height="48" rx="15"/>
+    <rect x="308" y="728" width="30" height="108" rx="15"/>
+    <rect x="366" y="752" width="30" height="62" rx="15"/>
+    <rect x="424" y="720" width="30" height="126" rx="15"/>
+    <rect x="482" y="762" width="30" height="42" rx="15"/>
+    <rect x="540" y="734" width="30" height="98" rx="15"/>
+    <rect x="598" y="750" width="30" height="66" rx="15"/>
+    <rect x="656" y="766" width="30" height="34" rx="15"/>
+    <rect x="714" y="756" width="30" height="54" rx="15"/>
+  </g>
+</svg>
