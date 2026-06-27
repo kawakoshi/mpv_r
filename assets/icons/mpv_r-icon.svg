@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title>mpv_r application icon</title>
+  <desc>Rounded app icon with a translucent play shape and a small waveform below.</desc>
+  <defs>
+    <linearGradient id="bg" x1="170" y1="90" x2="850" y2="940" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#263243"/>
+      <stop offset="0.58" stop-color="#171d29"/>
+      <stop offset="1" stop-color="#0e121b"/>
+    </linearGradient>
+    <linearGradient id="overlay" x1="322" y1="246" x2="704" y2="534" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a239ff"/>
+      <stop offset="0.58" stop-color="#8e40ff"/>
+      <stop offset="1" stop-color="#39ffe0"/>
+    </linearGradient>
+    <linearGradient id="mini" x1="250" y1="760" x2="774" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6e88"/>
+      <stop offset="0.48" stop-color="#ffb46a"/>
+      <stop offset="1" stop-color="#78f0d5"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="76" y="76" width="872" height="872" rx="230" fill="url(#bg)"/>
+  <rect x="116" y="116" width="792" height="792" rx="196" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="18"/>
+
+  <path d="M320 254c0-62 67-101 121-70l298 172c54 31 54 109 0 140L441 668c-54 31-121-8-121-70V254z" fill="url(#overlay)" opacity=".82"/>
+
+  <g fill="url(#mini)" opacity=".9">
+    <rect x="250" y="758" width="30" height="48" rx="15"/>
+    <rect x="308" y="728" width="30" height="108" rx="15"/>
+    <rect x="366" y="752" width="30" height="62" rx="15"/>
+    <rect x="424" y="720" width="30" height="126" rx="15"/>
+    <rect x="482" y="762" width="30" height="42" rx="15"/>
+    <rect x="540" y="734" width="30" height="98" rx="15"/>
+    <rect x="598" y="750" width="30" height="66" rx="15"/>
+    <rect x="656" y="766" width="30" height="34" rx="15"/>
+    <rect x="714" y="756" width="30" height="54" rx="15"/>
+  </g>
+</svg>

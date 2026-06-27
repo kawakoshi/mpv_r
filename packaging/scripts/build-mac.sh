@@ -34,6 +34,9 @@ fi
 
 cp -R "$app_path" "$package_dir/mpv_r.app"
 plutil -replace LSApplicationCategoryType -string "public.app-category.video" "$package_dir/mpv_r.app/Contents/Info.plist"
+if [ -f "$root/assets/icons/mpv_r-icon.icns" ]; then
+  cp "$root/assets/icons/mpv_r-icon.icns" "$package_dir/mpv_r.app/Contents/Resources/icon.icns"
+fi
 cp "$root/config/mac/mpv.conf" "$package_dir/resources/config/mpv.conf"
 cp "$root/config/mac/input.conf" "$package_dir/resources/config/input.conf"
 copy_common_documents "$root" "$package_dir"
