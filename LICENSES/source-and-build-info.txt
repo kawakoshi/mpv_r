@@ -1,5 +1,26 @@
 mpv_r source and build information
 
+v0.2.0 Package Generation
+=========================
+
+Package generation scripts:
+
+- packaging/scripts/build-mac.sh
+- packaging/scripts/build-windows.sh
+- packaging/scripts/build-all.sh
+
+v0.2.0 package layout:
+
+- mpv_r.app or mpv_r.exe at the package root
+- resources/
+- documents/
+
+The scripts assemble existing mpv builds, mpv_r configuration files, and project
+documents into release zip files. They do not build mpv from source.
+
+Windows v0.2.0 packages do not bundle mpv's upstream doc/manual.pdf or
+doc/mpbindings.png. mpv documentation is linked from NOTICE instead.
+
 v0.1.0 Mac Preview
 ==================
 

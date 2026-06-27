@@ -14,8 +14,8 @@ func main() {
 	}
 
 	root := filepath.Dir(exePath)
-	mpvPath := filepath.Join(root, "mpv", "mpv.exe")
-	configDir := filepath.Join(root, "portable_config")
+	mpvPath := filepath.Join(root, "resources", "mpv", "mpv.exe")
+	configDir := filepath.Join(root, "resources", "config")
 
 	if _, err := os.Stat(mpvPath); err != nil {
 		fail(fmt.Sprintf("mpv executable not found: %s", mpvPath), err)

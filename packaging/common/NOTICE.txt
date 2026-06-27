@@ -1,0 +1,44 @@
+mpv_r Notice
+============
+
+mpv_r is a video review player distribution based on mpv.
+
+mpv official site:
+
+https://mpv.io/
+
+mpv source code:
+
+https://github.com/mpv-player/mpv
+
+mpv manual:
+
+https://mpv.io/manual/
+
+Bundled mpv Builds
+------------------
+
+Mac packages bundle the unofficial third-party macOS mpv build by stolendata,
+as linked from the mpv installation page.
+
+Windows packages bundle the unofficial third-party Windows mpv build by
+shinchiro.
+
+These bundled mpv builds are not official mpv-player builds. This project is
+not affiliated with mpv-player, stolendata, or shinchiro, and this distribution
+is not endorsed by those projects.
+
+License Information
+-------------------
+
+mpv license texts and source/build information are included under:
+
+- `documents/LICENSES/`
+- `documents/LICENSES/source-and-build-info.txt`
+
+Japanese reference translations are included under:
+
+- `documents/translations_ja/`
+
+The English license, notice, and source/build information files are the
+authoritative texts.

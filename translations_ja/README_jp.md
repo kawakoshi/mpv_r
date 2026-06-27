@@ -1,4 +1,4 @@
-# mpv_r
+# mpv_r 日本語参考訳
 
 注意:
 この文書は、公開前の確認を助けるために機械翻訳をもとに作成した日本語参考訳です。
@@ -6,65 +6,71 @@
 正式な内容は英語原文を優先してください。
 また、世界中の翻訳者の知識、労力、文化をつなぐ仕事に深い敬意を表します。
 
-`mpv_r`は、mpvをベースにしたmacOS向けの映像チェック用プレイヤーです。
+`mpv_r`は、MacとWindows向けの動画レビュー用プレイヤーです。
 
-このv0.1.0は、作者が以前公開した`mpv_r`設定を、フレーム単位の確認、簡易再生チェック、複数ファイル確認、スクリーンショット保存に使いやすい形で再配布するMac Previewです。
+mpvに作者のレビュー向け設定を組み合わせ、動画をフレーム単位で確認したり、
+前後のファイルを見比べたり、スクリーンショットを残したりできるようにした
+配布版です。
 
-Windows Previewはv0.1.1で予定しています。
+日本語参考訳は`translations_ja/`にあります。
+
+英語ファイルが正式な内容です。日本語ファイルは確認と理解を助けるための参考訳です。
 
 ## ダウンロード
 
 GitHub Releasesからアプリ配布zipをダウンロードしてください。
 
-- `mpv_r-mac-v0.1.0.zip`
+- `mpv_r-mac-v0.2.0.zip`
+- `mpv_r-windows-v0.2.0.zip`
 
-アプリを使いたい場合は、GitHubが自動生成する`Source code (zip)`ではなく、Release assetsに添付されているzipを選んでください。
+アプリを使いたい場合は、GitHubが自動生成する`Source code (zip)`ではなく、
+Release assetsに添付されているzipを選んでください。
 
-## macOSへのインストール
+## パッケージ構成
 
-1. `mpv_r-mac-v0.1.0.zip`をダウンロードします。
-2. zipを展開します。
-3. `mpv_r.app`を`/Applications`へ移動します。
-4. 初回起動時は、`mpv_r.app`を右クリックして`開く`を選びます。
-5. macOSの警告が出た場合は、もう一度`開く`を選びます。
+v0.2パッケージは、Mac版とWindows版で同じ第一階層の形にします。
 
-このPreviewはnotarizationを行っていないため、初回起動時に右クリックから開く必要がある場合があります。
+```text
+mpv_r/
+  mpv_r.app または mpv_r.exe
+  resources/
+  documents/
+```
+
+`resources`には、同梱ランタイムファイルとmpv_r設定が含まれます。
+
+`documents`には、README、NOTICE、ライセンス文書、ソース/ビルド情報、
+キーボードショートカット、日本語参考訳が含まれます。
 
 ## 動画を開く
 
-- 1つまたは複数の動画ファイルを`mpv_r.app`へドラッグ&ドロップします。
-- または、動画ファイルを右クリックし、`このアプリケーションで開く`から`mpv_r`を選びます。
+- 1つまたは複数の動画ファイルを`mpv_r.app`または`mpv_r.exe`へドラッグ&ドロップします。
+- またはmpv_rから動画ファイルを開きます。
 
 複数ファイルはプレイリストとして読み込まれます。
 
-## 基本操作
+## ショートカット
 
-このPreviewでは、旧`mpv_r`の操作感を維持しています。
+キーボードショートカットは以下に記載しています。
 
-- `Space` / テンキー`0`: 再生 / 一時停止
-- `Left` / `Right`: 1フレーム戻る / 進む
-- `Up` / `Down`: 前のファイル / 次のファイル
-- `Shift + Left` / `Shift + Right`: 1秒戻る / 進む
-- `Shift + Up` / `Shift + Down`: 30秒戻る / 進む
-- `/`: スクリーンショット
-- `f` / `*`: フルスクリーン
-- `Esc`: フルスクリーン解除
-- `Command + W` / `Control + W`: 終了
+- `docs/shortcuts.md`
+- `translations_ja/shortcuts_jp.md`
 
-スクリーンショットはデスクトップに保存されます。
+元の操作記事はこちらです。
 
-## 同梱しているmpvビルド
+- https://note.com/kawakoshi_shi/n/n8a5734586eda
 
-このリリースは、mpv `0.39.0`を同梱しています。
+## 同梱mpvビルド
 
-macOS版mpvは、mpv公式インストールページで案内されているstolendataによる非公式third-party buildを使用しています。
+Macパッケージには、stolendataによる非公式の第三者macOS版mpvビルドを同梱します。
 
-- https://mpv.io/installation/
-- https://laboratory.stolendata.net/~djinn/mpv_osx/
+Windowsパッケージには、shinchiroによる非公式の第三者Windows版mpvビルドを
+同梱します。
 
-本プロジェクトはmpv-playerおよびstolendataとは無関係です。
+このプロジェクトはmpv-player、stolendata、shinchiroとは関係ありません。
 
-ライセンスとクレジットの詳細は、`NOTICE.md`と`LICENSES/`を参照してください。
+ライセンス、クレジット、ソース/ビルド情報の詳細は`NOTICE.md`と`LICENSES/`を
+参照してください。
 
 ## 設定ファイル
 
@@ -72,12 +78,24 @@ macOS版mpvは、mpv公式インストールページで案内されているsto
 
 - `config/mac/mpv.conf`
 - `config/mac/input.conf`
+- `config/windows/mpv.conf`
+- `config/windows/input.conf`
+
+## パッケージング
+
+v0.2パッケージは以下で生成します。
+
+- `packaging/scripts/build-mac.sh`
+- `packaging/scripts/build-windows.sh`
+- `packaging/scripts/build-all.sh`
+
+これらのスクリプトは、既存のmpvビルド、mpv_r設定ファイル、プロジェクト文書を
+集めてリリースzipを作成します。mpv本体をソースからビルドするものではありません。
 
 ## ロードマップ
 
 - v0.1.0: Mac Preview
 - v0.1.1: Windows Preview
-- v0.2: ドキュメント、ライセンス同梱、アイコン、リリース手順の整理
+- v0.2.0: Mac/Windowsパッケージ構成の整理
 - v0.3: mpv自前ビルドの検証
 - v1.0: 最初のStable/LTSリリース
-

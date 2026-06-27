@@ -8,6 +8,27 @@
 
 mpv_r ソースおよびビルド情報
 
+v0.2.0 パッケージ生成
+=====================
+
+パッケージ生成スクリプト:
+
+- packaging/scripts/build-mac.sh
+- packaging/scripts/build-windows.sh
+- packaging/scripts/build-all.sh
+
+v0.2.0パッケージ構成:
+
+- パッケージ直下のmpv_r.appまたはmpv_r.exe
+- resources/
+- documents/
+
+これらのスクリプトは、既存のmpvビルド、mpv_r設定ファイル、プロジェクト文書を
+集めてリリースzipを作成します。mpv本体をソースからビルドするものではありません。
+
+Windows v0.2.0パッケージには、上流mpvのdoc/manual.pdfまたはdoc/mpbindings.pngは
+同梱しません。mpvのドキュメントはNOTICEからリンクします。
+
 v0.1.0 Mac Preview
 ==================
 

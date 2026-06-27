@@ -1,0 +1,49 @@
+mpv_r Notice 日本語参考訳
+=======================
+
+注意:
+この文書は、公開前の確認を助けるために機械翻訳をもとに作成した日本語参考訳です。
+翻訳の正確性、完全性、法的解釈について、本プロジェクトは一切の責任を負いません。
+正式な内容は英語原文を優先してください。
+また、世界中の翻訳者の知識、労力、文化をつなぐ仕事に深い敬意を表します。
+
+mpv_rは、mpvをベースにした動画レビュー用プレイヤー配布版です。
+
+mpv公式サイト:
+
+https://mpv.io/
+
+mpvソースコード:
+
+https://github.com/mpv-player/mpv
+
+mpvマニュアル:
+
+https://mpv.io/manual/
+
+同梱mpvビルド
+--------------
+
+Macパッケージには、mpvインストールページからリンクされている、
+stolendataによる非公式の第三者macOS版mpvビルドを同梱します。
+
+Windowsパッケージには、shinchiroによる非公式の第三者Windows版mpvビルドを
+同梱します。
+
+これらの同梱mpvビルドはmpv-player公式ビルドではありません。このプロジェクトは
+mpv-player、stolendata、shinchiroとは関係なく、この配布はそれらのプロジェクト
+から承認されたものではありません。
+
+ライセンス情報
+----------------
+
+mpvのライセンス文書とソース/ビルド情報は以下に含まれます。
+
+- `documents/LICENSES/`
+- `documents/LICENSES/source-and-build-info.txt`
+
+日本語参考訳は以下に含まれます。
+
+- `documents/translations_ja/`
+
+英語のライセンス、NOTICE、ソース/ビルド情報が正式な内容です。
