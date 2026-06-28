@@ -1,0 +1,6 @@
+************************************* Invoked: Sun Jun 28 22:17:53 2026
+[0] Arguments: C:\Users\localadmin\Downloads\msys2-x86_64-20260611.exe
+[7] Operations sanity check succeeded.
+[8] Warning: Cannot create lock file "C:\Users\localadmin\AppData\Local\Temp\msys2-x86_64-202606111234865.lock": プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+ (0x00000020)
+[31] UnableToStart : Unable to start installer : Another msys2-x86_64-20260611 instance is already running. Wait until it finishes, close it, or restart your system.

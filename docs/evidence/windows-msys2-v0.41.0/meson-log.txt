@@ -1,0 +1,3611 @@
+Build started at 2026-06-28T22:59:39.651910
+Main binary: C:/msys64/mingw64/bin/python.exe
+Build Options: -Dlibmpv=true -Dprefix=C:/msys64/mingw64
+Python system: Windows
+The Meson build system
+Version: 1.11.1
+Source dir: C:/Users/localadmin/Documents/mpv
+Build dir: C:/Users/localadmin/Documents/mpv/build
+Build type: native build
+Project name: mpv
+Project version: 0.41.0
+-----------
+Detecting compiler via: `icl ""` -> [WinError 2] 指定されたファイルが見つかりません。
+-----------
+Detecting compiler via: `cl /?` -> [WinError 2] 指定されたファイルが見つかりません。
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (Rev5, Built by MSYS2 project) 16.1.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld (GNU Binutils) 2.46.1
+Copyright (C) 2026 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 16.1.0
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\msys64\tmp\ccomjYrX.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. --version -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+-----------
+Sanity check compiler command line: cc -D_FILE_OFFSET_BITS=64 -o sanity_check_for_c.exe sanity_check_for_c.c -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Sanity check built target output for host machine c compiler
+ -- Running test binary command:  C:/Users/localadmin/Documents/mpv/build/meson-private/sanity_check_for_c.exe
+-----------
+Sanity check: `C:/Users/localadmin/Documents/mpv/build/meson-private/sanity_check_for_c.exe` -> 0
+ -- stdout:
+ 
+ -- stderr:
+ 
+ -- returncode: 0
+C compiler for the host machine: cc (gcc 16.1.0 "cc (Rev5, Built by MSYS2 project) 16.1.0")
+C linker for the host machine: cc ld.bfd 2.46.1
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils) 2.46.1
+Copyright (C) 2026 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `icl ""` -> [WinError 2] 指定されたファイルが見つかりません。
+-----------
+Detecting compiler via: `cl /?` -> [WinError 2] 指定されたファイルが見つかりません。
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (Rev5, Built by MSYS2 project) 16.1.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld (GNU Binutils) 2.46.1
+Copyright (C) 2026 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 16.1.0
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\msys64\tmp\cc4Ydjfo.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. --version -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+-----------
+Sanity check compiler command line: cc -D_FILE_OFFSET_BITS=64 -o sanity_check_for_c.exe sanity_check_for_c.c -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Sanity check built target output for build machine c compiler
+ -- Running test binary command:  C:/Users/localadmin/Documents/mpv/build/meson-private/sanity_check_for_c.exe
+-----------
+Sanity check: `C:/Users/localadmin/Documents/mpv/build/meson-private/sanity_check_for_c.exe` -> 0
+ -- stdout:
+ 
+ -- stderr:
+ 
+ -- returncode: 0
+C compiler for the build machine: cc (gcc 16.1.0 "cc (Rev5, Built by MSYS2 project) 16.1.0")
+C linker for the build machine: cc ld.bfd 2.46.1
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Program python3 found: YES (C:\msys64\mingw64\bin/python3.EXE)
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (C:\msys64\mingw64\bin/pkg-config.EXE) 2.5.1
+Determining dependency 'libavcodec' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libavcodec` -> 0
+stdout:
+62.28.102
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libavcodec` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavcodec` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lavcodec
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavcodec` -> 0
+stdout:
+-lavcodec
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp26bzn31g
+Code:
+
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp26bzn31g/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp26bzn31g/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpc1v7od2u
+Code:
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpc1v7od2u/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpc1v7od2u/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE --print-search-dirs` -> 0
+stdout:
+install: C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/
+programs: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
+libraries: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;D:/M/msys64/mingw64/lib/x86_64-w64-mingw32/16.1.0/;D:/M/msys64/mingw64/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../;D:/M/msys64/mingw64/lib/
+-----------
+Run-time dependency libavcodec found: YES 62.28.102
+Determining dependency 'libavfilter' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libavfilter` -> 0
+stdout:
+11.14.102
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libavfilter` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavfilter` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lavfilter
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavfilter` -> 0
+stdout:
+-lavfilter
+-----------
+Run-time dependency libavfilter found: YES 11.14.102
+Determining dependency 'libavformat' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libavformat` -> 0
+stdout:
+62.12.102
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libavformat` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavformat` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lavformat
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavformat` -> 0
+stdout:
+-lavformat
+-----------
+Run-time dependency libavformat found: YES 62.12.102
+Determining dependency 'libavutil' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libavutil` -> 0
+stdout:
+60.26.102
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libavutil` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavutil` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lavutil
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavutil` -> 0
+stdout:
+-lavutil
+-----------
+Run-time dependency libavutil found: YES 60.26.102
+Determining dependency 'libswresample' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libswresample` -> 0
+stdout:
+6.3.102
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libswresample` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libswresample` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lswresample
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libswresample` -> 0
+stdout:
+-lswresample
+-----------
+Run-time dependency libswresample found: YES 6.3.102
+Determining dependency 'libswscale' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libswscale` -> 0
+stdout:
+9.5.102
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libswscale` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libswscale` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lswscale
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libswscale` -> 0
+stdout:
+-lswscale
+-----------
+Run-time dependency libswscale found: YES 9.5.102
+Determining dependency 'libplacebo' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libplacebo` -> 0
+stdout:
+7.360.1
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libplacebo` -> 0
+stdout:
+-IC:/msys64/mingw64/include/spirv_cross
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libplacebo` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lplacebo
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libplacebo` -> 0
+stdout:
+-lplacebo
+-----------
+Run-time dependency libplacebo found: YES 7.360.1
+Determining dependency 'libass' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libass` -> 0
+stdout:
+0.17.5
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libass` -> 0
+stdout:
+-IC:/msys64/mingw64/include/fribidi -IC:/msys64/mingw64/include/freetype2 -IC:/msys64/mingw64/include/libpng16 -IC:/msys64/mingw64/include/harfbuzz -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libass` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lass
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libass` -> 0
+stdout:
+-lass
+-----------
+Run-time dependency libass found: YES 0.17.5
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt_oh8usa
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt_oh8usa/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt_oh8usa/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wdisabled-optimization` -> 0
+Compiler for C supports arguments -Wdisabled-optimization: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7r7ixxwa
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7r7ixxwa/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7r7ixxwa/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wempty-body` -> 0
+Compiler for C supports arguments -Wempty-body: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpbzln7zov
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpbzln7zov/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpbzln7zov/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wformat` -> 0
+Compiler for C supports arguments -Wformat: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_s364iff
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_s364iff/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_s364iff/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wimplicit-fallthrough` -> 0
+Compiler for C supports arguments -Wimplicit-fallthrough: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpbsouxf9d
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpbsouxf9d/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpbsouxf9d/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Woverflow` -> 0
+Compiler for C supports arguments -Woverflow: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpebyaivoz
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpebyaivoz/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpebyaivoz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wparentheses` -> 0
+Compiler for C supports arguments -Wparentheses: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpibhxcd4o
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpibhxcd4o/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpibhxcd4o/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wpointer-arith` -> 0
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpqszgrt4w
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpqszgrt4w/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpqszgrt4w/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wshadow` -> 0
+Compiler for C supports arguments -Wshadow: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp6fetyjnn
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp6fetyjnn/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp6fetyjnn/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wundef` -> 0
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpe_e4rhrs
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpe_e4rhrs/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpe_e4rhrs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wvla` -> 0
+Compiler for C supports arguments -Wvla: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpy052adqr
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpy052adqr/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpy052adqr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wcast-function-type -Wno-cast-function-type` -> 0
+Compiler for C supports arguments -Wno-cast-function-type: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpduxedz8c
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpduxedz8c/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpduxedz8c/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wformat-zero-length -Wno-format-zero-length` -> 0
+Compiler for C supports arguments -Wno-format-zero-length: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpskywenww
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpskywenww/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpskywenww/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wmissing-field-initializers -Wno-missing-field-initializers` -> 0
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpn9nmawgw
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpn9nmawgw/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpn9nmawgw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wsign-compare -Wno-sign-compare` -> 0
+Compiler for C supports arguments -Wno-sign-compare: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsvibajlr
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsvibajlr/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsvibajlr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wswitch -Wno-switch` -> 0
+Compiler for C supports arguments -Wno-switch: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpv4b3fm8z
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpv4b3fm8z/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpv4b3fm8z/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wunused-parameter -Wno-unused-parameter` -> 0
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmivgggpz
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmivgggpz/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmivgggpz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fno-math-errno` -> 0
+Compiler for C supports arguments -fno-math-errno: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt3u8b8l6
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt3u8b8l6/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt3u8b8l6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fno-signed-zeros` -> 0
+Compiler for C supports arguments -fno-signed-zeros: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpaw108a7f
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpaw108a7f/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpaw108a7f/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fno-trapping-math` -> 0
+Compiler for C supports arguments -fno-trapping-math: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpwt8z9jcb
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpwt8z9jcb/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpwt8z9jcb/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wmissing-prototypes` -> 0
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpoco2f58w
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpoco2f58w/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpoco2f58w/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wstrict-prototypes` -> 0
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5r4wer39
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5r4wer39/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5r4wer39/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Werror=implicit-function-declaration` -> 0
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp8_6wkx0g
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp8_6wkx0g/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp8_6wkx0g/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wpointer-sign -Wno-pointer-sign` -> 0
+Compiler for C supports arguments -Wno-pointer-sign: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp133jhv5s
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp133jhv5s/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp133jhv5s/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wformat -Werror=format-security` -> 0
+Compiler for C supports arguments -Wformat -Werror=format-security: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmplu_6jcr7
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmplu_6jcr7/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmplu_6jcr7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wl,--fatal-warnings -Wl,--nxcompat,--no-seh,--dynamicbase` -> 0
+Compiler for C supports link arguments -Wl,--nxcompat,--no-seh,--dynamicbase: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp53fzmhru
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp53fzmhru/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp53fzmhru/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wl,--fatal-warnings -Wl,-z,noexecstack` -> 1
+stderr:
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: unrecognized option '-z'
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+-----------
+Compiler for C supports link arguments -Wl,-z,noexecstack: NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsrbjhxt5
+Code:
+#include <dlfcn.h>
+#include <limits.h>
+
+        #if defined __stub_dlopen || defined __stub___dlopen
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &dlopen;
+            long long b = (long long) a;
+            return (int) b;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsrbjhxt5/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsrbjhxt5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsrbjhxt5/testfile.c:1:10: fatal error: dlfcn.h: No such file or directory
+    1 | #include <dlfcn.h>
+      |          ^~~~~~~~~
+compilation terminated.
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpoj9uhi1m
+Code:
+#include <dlfcn.h>
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !0 && !defined(dlopen) && !0
+            #error "No definition for __builtin_dlopen found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_dlopen)
+                #error "__builtin_dlopen not found"
+            #endif
+        #elif ! defined(dlopen)
+            __builtin_dlopen;
+        #endif
+        return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpoj9uhi1m/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpoj9uhi1m/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpoj9uhi1m/testfile.c:1:10: fatal error: dlfcn.h: No such file or directory
+    1 | #include <dlfcn.h>
+      |          ^~~~~~~~~
+compilation terminated.
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmplhwvxn3n
+Code:
+
+        #ifdef __has_include
+         #if !__has_include("dlfcn.h")
+          #error "Header 'dlfcn.h' could not be found"
+         #endif
+        #else
+         #include <dlfcn.h>
+        #endif
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmplhwvxn3n/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -U_FORTIFY_SOURCE` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmplhwvxn3n/testfile.c:4:12: error: #error "Header 'dlfcn.h' could not be found"
+    4 |           #error "Header 'dlfcn.h' could not be found"
+      |            ^~~~~
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpamz9ph2z
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpamz9ph2z/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpamz9ph2z/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -ldl -Wl,--allow-shlib-undefined` -> 1
+stderr:
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -ldl: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+-----------
+Run-time dependency dl found: NO  (tried builtin and system)
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmppt3iy66_
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmppt3iy66_/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmppt3iy66_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -latomic -Wl,--allow-shlib-undefined` -> 0
+Library atomic found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmjiw9whc
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmjiw9whc/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmjiw9whc/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -framework Cocoa` -> 1
+stderr:
+cc: error: unrecognized command-line option '-framework'
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkehgxcus
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkehgxcus/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkehgxcus/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -framework IOKit` -> 1
+stderr:
+cc: error: unrecognized command-line option '-framework'
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpnjwqdfbr
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpnjwqdfbr/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpnjwqdfbr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -framework QuartzCore` -> 1
+stderr:
+cc: error: unrecognized command-line option '-framework'
+-----------
+Run-time dependency appleframeworks found: NO  (tried framework)
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg14ytbu0
+Code:
+#include <poll.h>
+#include <limits.h>
+
+        #if defined __stub_ppoll || defined __stub___ppoll
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &ppoll;
+            long long b = (long long) a;
+            return (int) b;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg14ytbu0/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg14ytbu0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -D_GNU_SOURCE` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg14ytbu0/testfile.c:1:10: fatal error: poll.h: No such file or directory
+    1 | #include <poll.h>
+      |          ^~~~~~~~
+compilation terminated.
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_x2ef2so
+Code:
+#include <poll.h>
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !0 && !defined(ppoll) && !0
+            #error "No definition for __builtin_ppoll found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_ppoll)
+                #error "__builtin_ppoll not found"
+            #endif
+        #elif ! defined(ppoll)
+            __builtin_ppoll;
+        #endif
+        return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_x2ef2so/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_x2ef2so/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -D_GNU_SOURCE` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_x2ef2so/testfile.c:1:10: fatal error: poll.h: No such file or directory
+    1 | #include <poll.h>
+      |          ^~~~~~~~
+compilation terminated.
+-----------
+Checking for function "ppoll" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpplutov4k
+Code:
+#include <string.h>
+#include <limits.h>
+
+        #if defined __stub_memrchr || defined __stub___memrchr
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &memrchr;
+            long long b = (long long) a;
+            return (int) b;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpplutov4k/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpplutov4k/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -D_GNU_SOURCE` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpplutov4k/testfile.c: In function 'main':
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpplutov4k/testfile.c:9:32: error: 'memrchr' undeclared (first use in this function); did you mean 'memchr'?
+    9 |             void *a = (void*) &memrchr;
+      |                                ^~~~~~~
+      |                                memchr
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpplutov4k/testfile.c:9:32: note: each undeclared identifier is reported only once for each function it appears in
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg2wymuaa
+Code:
+#include <string.h>
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !0 && !defined(memrchr) && !0
+            #error "No definition for __builtin_memrchr found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_memrchr)
+                #error "__builtin_memrchr not found"
+            #endif
+        #elif ! defined(memrchr)
+            __builtin_memrchr;
+        #endif
+        return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg2wymuaa/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg2wymuaa/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group -D_GNU_SOURCE` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg2wymuaa/testfile.c: In function 'main':
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg2wymuaa/testfile.c:12:14: error: #error "No definition for __builtin_memrchr found in the prefix"
+   12 |             #error "No definition for __builtin_memrchr found in the prefix"
+      |              ^~~~~
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpg2wymuaa/testfile.c:17:18: error: #error "__builtin_memrchr not found"
+   17 |                 #error "__builtin_memrchr not found"
+      |                  ^~~~~
+-----------
+Checking for function "memrchr" : NO 
+Library windowsapp skipped: feature uwp disabled
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpfqexp01k
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpfqexp01k/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpfqexp01k/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lavrt -Wl,--allow-shlib-undefined` -> 0
+Library avrt found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp2mdx0is7
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp2mdx0is7/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp2mdx0is7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -ldwmapi -Wl,--allow-shlib-undefined` -> 0
+Library dwmapi found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpau1hrydf
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpau1hrydf/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpau1hrydf/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lgdi32 -Wl,--allow-shlib-undefined` -> 0
+Library gdi32 found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5azwtzr0
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5azwtzr0/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5azwtzr0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -limm32 -Wl,--allow-shlib-undefined` -> 0
+Library imm32 found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpf7aai_pr
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpf7aai_pr/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpf7aai_pr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lntdll -Wl,--allow-shlib-undefined` -> 0
+Library ntdll found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9qj2gii2
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9qj2gii2/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9qj2gii2/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lole32 -Wl,--allow-shlib-undefined` -> 0
+Library ole32 found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpru9bzxq8
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpru9bzxq8/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpru9bzxq8/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lpathcch -Wl,--allow-shlib-undefined` -> 0
+Library pathcch found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeajfn7sd
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeajfn7sd/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeajfn7sd/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lshcore -Wl,--allow-shlib-undefined` -> 0
+Library shcore found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9z3tgz9a
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9z3tgz9a/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9z3tgz9a/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -luser32 -Wl,--allow-shlib-undefined` -> 0
+Library user32 found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpa_p5zllm
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpa_p5zllm/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpa_p5zllm/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -luuid -Wl,--allow-shlib-undefined` -> 0
+Library uuid found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsbgtaos7
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsbgtaos7/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsbgtaos7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -luxtheme -Wl,--allow-shlib-undefined` -> 0
+Library uxtheme found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpth666d4v
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpth666d4v/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpth666d4v/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lversion -Wl,--allow-shlib-undefined` -> 0
+Library version found: YES
+-----------
+Detecting compiler via: `icl ""` -> [WinError 2] 指定されたファイルが見つかりません。
+-----------
+Detecting compiler via: `cl /?` -> [WinError 2] 指定されたファイルが見つかりません。
+-----------
+Detecting compiler via: `c++ --version` -> 0
+stdout:
+c++ (Rev5, Built by MSYS2 project) 16.1.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c++ -E -dM -
+-----
+-----------
+Detecting linker via: `c++ -Wl,--version` -> 0
+stdout:
+GNU ld (GNU Binutils) 2.46.1
+Copyright (C) 2026 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 16.1.0
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\msys64\tmp\ccuczmOf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. --version -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+-----------
+Sanity check compiler command line: c++ -D_FILE_OFFSET_BITS=64 -o sanity_check_for_cpp.exe sanity_check_for_cpp.cpp -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Sanity check built target output for host machine cpp compiler
+ -- Running test binary command:  C:/Users/localadmin/Documents/mpv/build/meson-private/sanity_check_for_cpp.exe
+-----------
+Sanity check: `C:/Users/localadmin/Documents/mpv/build/meson-private/sanity_check_for_cpp.exe` -> 0
+ -- stdout:
+ 
+ -- stderr:
+ 
+ -- returncode: 0
+C++ compiler for the host machine: c++ (gcc 16.1.0 "c++ (Rev5, Built by MSYS2 project) 16.1.0")
+C++ linker for the host machine: c++ ld.bfd 2.46.1
+Running compile:
+Working directory:  C:/msys64/tmp/tmpjrd0xmuo
+Code:
+int i = static_cast<int>(0);
+-----------
+Command line: `c++ C:/msys64/tmp/tmpjrd0xmuo/testfile.cpp -o C:/msys64/tmp/tmpjrd0xmuo/output.obj -D_FILE_OFFSET_BITS=64 -c -std=c++20` -> 0
+Compiler accepts -std=c++20: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmph3nbql7z
+Code:
+
+        #ifdef __has_include
+         #if !__has_include("winrt/base.h")
+          #error "Header 'winrt/base.h' could not be found"
+         #endif
+        #else
+         #include <winrt/base.h>
+        #endif
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmph3nbql7z/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -U_FORTIFY_SOURCE -fpermissive -std=c++20` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmph3nbql7z/testfile.cpp:4:12: error: #error "Header 'winrt/base.h' could not be found"
+    4 |           #error "Header 'winrt/base.h' could not be found"
+      |            ^~~~~
+-----------
+Has header "winrt/base.h" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9r962zw3
+Code:
+#include <glob.h>
+#include <limits.h>
+
+        #if defined __stub_glob || defined __stub___glob
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &glob;
+            long long b = (long long) a;
+            return (int) b;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9r962zw3/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9r962zw3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp9r962zw3/testfile.c:1:10: fatal error: glob.h: No such file or directory
+    1 | #include <glob.h>
+      |          ^~~~~~~~
+compilation terminated.
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp3a7lb8cp
+Code:
+#include <glob.h>
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !0 && !defined(glob) && !0
+            #error "No definition for __builtin_glob found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_glob)
+                #error "__builtin_glob not found"
+            #endif
+        #elif ! defined(glob)
+            __builtin_glob;
+        #endif
+        return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp3a7lb8cp/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp3a7lb8cp/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp3a7lb8cp/testfile.c:1:10: fatal error: glob.h: No such file or directory
+    1 | #include <glob.h>
+      |          ^~~~~~~~
+compilation terminated.
+-----------
+Checking for function "glob" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmptajnm205
+Code:
+
+        #include <sys/vt.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef VT_GETMODE
+                VT_GETMODE;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmptajnm205/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmptajnm205/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmptajnm205/testfile.c:2:18: fatal error: sys/vt.h: No such file or directory
+    2 |         #include <sys/vt.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+-----------
+Header "sys/vt.h" has symbol "VT_GETMODE" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeq_qdbzl
+Code:
+
+        #include <sys/consio.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef VT_GETMODE
+                VT_GETMODE;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeq_qdbzl/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeq_qdbzl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeq_qdbzl/testfile.c:2:18: fatal error: sys/consio.h: No such file or directory
+    2 |         #include <sys/consio.h>
+      |                  ^~~~~~~~~~~~~~
+compilation terminated.
+-----------
+Header "sys/consio.h" has symbol "VT_GETMODE" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpxvshd79_
+Code:
+#include <sys/types.h>
+        #include <dev/wscons/wsdisplay_usl_io.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef VT_GETMODE
+                VT_GETMODE;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpxvshd79_/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpxvshd79_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpxvshd79_/testfile.c:2:18: fatal error: dev/wscons/wsdisplay_usl_io.h: No such file or directory
+    2 |         #include <dev/wscons/wsdisplay_usl_io.h>
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+-----------
+Header "dev/wscons/wsdisplay_usl_io.h" has symbol "VT_GETMODE" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7274dmlq
+Code:
+#include <sys/mount.h>
+#include <sys/param.h>
+#include <limits.h>
+
+        #if defined __stub_fstatfs || defined __stub___fstatfs
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &fstatfs;
+            long long b = (long long) a;
+            return (int) b;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7274dmlq/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7274dmlq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7274dmlq/testfile.c:1:10: fatal error: sys/mount.h: No such file or directory
+    1 | #include <sys/mount.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsfcp1amc
+Code:
+#include <sys/mount.h>
+#include <sys/param.h>
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !0 && !defined(fstatfs) && !0
+            #error "No definition for __builtin_fstatfs found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_fstatfs)
+                #error "__builtin_fstatfs not found"
+            #endif
+        #elif ! defined(fstatfs)
+            __builtin_fstatfs;
+        #endif
+        return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsfcp1amc/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsfcp1amc/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpsfcp1amc/testfile.c:1:10: fatal error: sys/mount.h: No such file or directory
+    1 | #include <sys/mount.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+-----------
+Checking for function "fstatfs" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp23wwj5es
+Code:
+#include <sys/vfs.h>
+#include <limits.h>
+
+        #if defined __stub_fstatfs || defined __stub___fstatfs
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &fstatfs;
+            long long b = (long long) a;
+            return (int) b;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp23wwj5es/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp23wwj5es/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp23wwj5es/testfile.c:1:10: fatal error: sys/vfs.h: No such file or directory
+    1 | #include <sys/vfs.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmplpofkykr
+Code:
+#include <sys/vfs.h>
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !0 && !defined(fstatfs) && !0
+            #error "No definition for __builtin_fstatfs found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_fstatfs)
+                #error "__builtin_fstatfs not found"
+            #endif
+        #elif ! defined(fstatfs)
+            __builtin_fstatfs;
+        #endif
+        return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmplpofkykr/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmplpofkykr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -Wl,--end-group` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmplpofkykr/testfile.c:1:10: fatal error: sys/vfs.h: No such file or directory
+    1 | #include <sys/vfs.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+-----------
+Checking for function "fstatfs" : NO 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5cy81rcm
+Code:
+__attribute__((vector_size(32))); int foo(void) { return 0; }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5cy81rcm/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5cy81rcm/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Werror=attributes` -> 0
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp5cy81rcm/testfile.c:1:1: warning: empty declaration
+    1 | __attribute__((vector_size(32))); int foo(void) { return 0; }
+      | ^~~~~~~~~~~~~
+-----------
+Compiler for C supports function attribute vector_size: YES 
+Program C:/Users/localadmin/Documents/mpv/TOOLS/docutils-wrapper.py found: YES (C:/msys64/mingw64/bin/python.exe C:/Users/localadmin/Documents/mpv/TOOLS/docutils-wrapper.py)
+Program C:/Users/localadmin/Documents/mpv/TOOLS/file2string.py found: YES (C:/msys64/mingw64/bin/python.exe C:/Users/localadmin/Documents/mpv/TOOLS/file2string.py)
+Program C:/Users/localadmin/Documents/mpv/TOOLS/matroska.py found: YES (C:/msys64/mingw64/bin/python.exe C:/Users/localadmin/Documents/mpv/TOOLS/matroska.py)
+Program C:/Users/localadmin/Documents/mpv/TOOLS/gen-mpv-desktop.py found: YES (C:/msys64/mingw64/bin/python.exe C:/Users/localadmin/Documents/mpv/TOOLS/gen-mpv-desktop.py)
+Program git found: YES (C:\msys64\usr\bin/git.EXE)
+Determining dependency 'libcdio' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libcdio` -> 1
+stderr:
+Package libcdio was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcdio.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcdio' not found
+-----------
+CMake binary for host machine is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Did not find CMake 'cmake'
+Found CMake: NO
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libcdio found: NO  (tried pkg-config and cmake)
+Determining dependency 'libcdio_paranoia' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libcdio_paranoia` -> 1
+stderr:
+Package libcdio_paranoia was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcdio_paranoia.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcdio_paranoia' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libcdio_paranoia found: NO  (tried pkg-config and cmake)
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmphovjs71w
+Code:
+
+        #ifdef __has_include
+         #if !__has_include("linux/dvb/frontend.h")
+          #error "Header 'linux/dvb/frontend.h' could not be found"
+         #endif
+        #else
+         #include <linux/dvb/frontend.h>
+        #endif
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmphovjs71w/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -U_FORTIFY_SOURCE -std=c11` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmphovjs71w/testfile.c:4:12: error: #error "Header 'linux/dvb/frontend.h' could not be found"
+    4 |           #error "Header 'linux/dvb/frontend.h' could not be found"
+      |            ^~~~~
+-----------
+Has header "linux/dvb/frontend.h" : NO 
+Determining dependency 'dvdnav' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion dvdnav` -> 1
+stderr:
+Package dvdnav was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dvdnav.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'dvdnav' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency dvdnav found: NO  (tried pkg-config and cmake)
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7j8r1hab
+Code:
+#include <iconv.h>
+
+int main() {
+    iconv_open("","");
+}
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7j8r1hab/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7j8r1hab/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive` -> 1
+stderr:
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\msys64\tmp\ccOPTQiD.o:testfile.cpp:(.text+0x1f): undefined reference to `libiconv_open'
+collect2.exe: error: ld returned 1 exit status
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpc1hv8wc3
+Code:
+
+        #ifdef __has_include
+         #if !__has_include("iconv.h")
+          #error "Header 'iconv.h' could not be found"
+         #endif
+        #else
+         #include <iconv.h>
+        #endif
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpc1hv8wc3/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -U_FORTIFY_SOURCE -fpermissive` -> 0
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpe6jl0ipy
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpe6jl0ipy/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpe6jl0ipy/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive -liconv -Wl,--allow-shlib-undefined` -> 0
+Run-time dependency iconv found: YES
+Determining dependency 'mujs' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion mujs` -> 1
+stderr:
+Package mujs was not found in the pkg-config search path.
+Perhaps you should add the directory containing `mujs.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'mujs' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency mujs found: NO  (tried pkg-config and cmake)
+Determining dependency 'lcms2' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion lcms2` -> 0
+stdout:
+2.19
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags lcms2` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs lcms2` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -llcms2 -llcms2_fast_float
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs lcms2` -> 0
+stdout:
+-llcms2 -llcms2_fast_float
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpa_xoes9u
+Code:
+
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpa_xoes9u/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpa_xoes9u/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpol1ng22e
+Code:
+
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpol1ng22e/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpol1ng22e/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive --print-search-dirs` -> 0
+stdout:
+install: C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/
+programs: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
+libraries: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../x86_64-w64-mingw32/16.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;D:/M/msys64/mingw64/lib/x86_64-w64-mingw32/16.1.0/;D:/M/msys64/mingw64/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../;D:/M/msys64/mingw64/lib/
+-----------
+Run-time dependency lcms2 found: YES 2.19
+Determining dependency 'libarchive' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libarchive` -> 1
+stderr:
+Package libarchive was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libarchive.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libarchive' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libarchive found: NO  (tried pkg-config and cmake)
+Determining dependency 'libavdevice' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libavdevice` -> 0
+stdout:
+62.3.102
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libavdevice` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavdevice` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lavdevice
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libavdevice` -> 0
+stdout:
+-lavdevice
+-----------
+Run-time dependency libavdevice found: YES 62.3.102
+Determining dependency 'libbluray' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libbluray` -> 0
+stdout:
+1.4.1
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libbluray` -> 0
+stdout:
+-IC:/msys64/mingw64/include/freetype2 -IC:/msys64/mingw64/include/libpng16 -IC:/msys64/mingw64/include/harfbuzz -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -IC:/msys64/mingw64/include/libxml2
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libbluray` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lbluray
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libbluray` -> 0
+stdout:
+-lbluray
+-----------
+Run-time dependency libbluray found: YES 1.4.1
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7zu0ydic
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7zu0ydic/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7zu0ydic/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lm -Wl,--allow-shlib-undefined` -> 0
+Library m found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7u5elu_x
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7u5elu_x/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp7u5elu_x/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lrt -Wl,--allow-shlib-undefined` -> 1
+stderr:
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lrt: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+-----------
+Library rt found: NO
+Determining dependency 'lua' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion lua` -> 1
+stderr:
+Package lua was not found in the pkg-config search path.
+Perhaps you should add the directory containing `lua.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'lua' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency lua found: NO  (tried pkg-config and cmake)
+Determining dependency 'lua52' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion lua52` -> 1
+stderr:
+Package lua52 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `lua52.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'lua52' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency lua52 found: NO  (tried pkg-config and cmake)
+Determining dependency 'lua5.2' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion lua5.2` -> 1
+stderr:
+Package lua5.2 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `lua5.2.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'lua5.2' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency lua5.2 found: NO  (tried pkg-config and cmake)
+Determining dependency 'lua-5.2' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion lua-5.2` -> 1
+stderr:
+Package lua-5.2 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `lua-5.2.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'lua-5.2' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency lua-5.2 found: NO  (tried pkg-config and cmake)
+Determining dependency 'luajit' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion luajit` -> 0
+stdout:
+2.1.1779665312
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags luajit` -> 0
+stdout:
+-IC:/msys64/mingw64/include/luajit-2.1
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs luajit` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lluajit-5.1
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs luajit` -> 0
+stdout:
+-lluajit-5.1
+-----------
+Run-time dependency luajit found: YES 2.1.1779665312
+Determining dependency 'rubberband' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion rubberband` -> 1
+stderr:
+Package rubberband was not found in the pkg-config search path.
+Perhaps you should add the directory containing `rubberband.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'rubberband' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency rubberband found: NO  (tried pkg-config and cmake)
+Determining dependency 'sdl2' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion sdl2` -> 0
+stdout:
+2.32.10
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags sdl2` -> 0
+stdout:
+-IC:/msys64/mingw64/include/SDL2 -Dmain=SDL_main
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs sdl2` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lmingw32 -mwindows -lSDL2main -lSDL2
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs sdl2` -> 0
+stdout:
+-lmingw32 -mwindows -lSDL2main -lSDL2
+-----------
+Run-time dependency sdl2 found: YES 2.32.10
+Determining dependency 'uchardet' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion uchardet` -> 1
+stderr:
+Package uchardet was not found in the pkg-config search path.
+Perhaps you should add the directory containing `uchardet.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'uchardet' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency uchardet found: NO  (tried pkg-config and cmake)
+Determining dependency 'vapoursynth' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion vapoursynth` -> 1
+stderr:
+Package vapoursynth was not found in the pkg-config search path.
+Perhaps you should add the directory containing `vapoursynth.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'vapoursynth' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency vapoursynth found: NO  (tried pkg-config and cmake)
+Determining dependency 'vapoursynth-script' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion vapoursynth-script` -> 1
+stderr:
+Package vapoursynth-script was not found in the pkg-config search path.
+Perhaps you should add the directory containing `vapoursynth-script.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'vapoursynth-script' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency vapoursynth-script found: NO  (tried pkg-config and cmake)
+Determining dependency 'xfixes' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion xfixes` -> 1
+stderr:
+Package xfixes was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xfixes.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xfixes' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency xfixes found: NO  (tried pkg-config and cmake)
+Determining dependency 'x11' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion x11` -> 1
+stderr:
+Package x11 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `x11.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'x11' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency x11 found: NO  (tried pkg-config and cmake)
+Determining dependency 'zimg' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion zimg` -> 0
+stdout:
+3.0.6
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags zimg` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs zimg` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lzimg
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs zimg` -> 0
+stdout:
+-lzimg
+-----------
+Run-time dependency zimg found: YES 3.0.6
+Determining dependency 'zlib' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion zlib` -> 0
+stdout:
+1.3.2
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags zlib` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs zlib` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lz
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs zlib` -> 0
+stdout:
+-lz
+-----------
+Run-time dependency zlib found: YES 1.3.2
+Determining dependency 'alsa' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion alsa` -> 1
+stderr:
+Package alsa was not found in the pkg-config search path.
+Perhaps you should add the directory containing `alsa.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'alsa' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency alsa found: NO  (tried pkg-config and cmake)
+Dependency appleframeworks(modules: Foundation, AudioToolbox) for host machine skipped: feature audiounit disabled
+Header "AudioToolbox/AudioToolbox.h" has symbol "kAudioUnitSubType_RemoteIO" skipped: feature audiounit disabled
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp759s4h2e
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmp759s4h2e/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp759s4h2e/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive -framework CoreMedia` -> 1
+stderr:
+c++: error: unrecognized command-line option '-framework'
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp0jhseh35
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmp0jhseh35/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp0jhseh35/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive -framework AVFoundation` -> 1
+stderr:
+c++: error: unrecognized command-line option '-framework'
+-----------
+Run-time dependency appleframeworks found: NO  (tried framework)
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmlt1n6h5
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmlt1n6h5/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmlt1n6h5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive -framework CoreFoundation` -> 1
+stderr:
+c++: error: unrecognized command-line option '-framework'
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeqdznbrg
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeqdznbrg/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpeqdznbrg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive -framework CoreAudio` -> 1
+stderr:
+c++: error: unrecognized command-line option '-framework'
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpacroj0rv
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpacroj0rv/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpacroj0rv/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive -framework AudioUnit` -> 1
+stderr:
+c++: error: unrecognized command-line option '-framework'
+-----------
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkf6ttpqd
+Code:
+int main(void) { return 0; }
+-----------
+Command line: `c++ C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkf6ttpqd/testfile.cpp -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkf6ttpqd/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -fpermissive -framework AudioToolbox` -> 1
+stderr:
+c++: error: unrecognized command-line option '-framework'
+-----------
+Run-time dependency appleframeworks found: NO  (tried framework)
+Determining dependency 'jack' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion jack` -> 1
+stderr:
+Package jack was not found in the pkg-config search path.
+Perhaps you should add the directory containing `jack.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'jack' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency jack found: NO  (tried pkg-config and cmake)
+Dependency openal for host machine skipped: feature openal disabled
+Header "aaudio/AAudio.h" has symbol "AAudioStream" skipped: feature aaudio disabled
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu8j7_glj
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu8j7_glj/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu8j7_glj/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -lOpenSLES -Wl,--allow-shlib-undefined` -> 1
+stderr:
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lOpenSLES: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+-----------
+Library OpenSLES found: NO
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_z29tdio
+Code:
+
+        #include <sys/soundcard.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SNDCTL_DSP_HALT
+                SNDCTL_DSP_HALT;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_z29tdio/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_z29tdio/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp_z29tdio/testfile.c:2:18: fatal error: sys/soundcard.h: No such file or directory
+    2 |         #include <sys/soundcard.h>
+      |                  ^~~~~~~~~~~~~~~~~
+compilation terminated.
+-----------
+Header "sys/soundcard.h" has symbol "SNDCTL_DSP_HALT" : NO 
+Determining dependency 'libpipewire-0.3' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libpipewire-0.3` -> 1
+stderr:
+Package libpipewire-0.3 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libpipewire-0.3.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libpipewire-0.3' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libpipewire-0.3 found: NO  (tried pkg-config and cmake)
+Determining dependency 'libpulse' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libpulse` -> 1
+stderr:
+Package libpulse was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libpulse.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libpulse' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libpulse found: NO  (tried pkg-config and cmake)
+Determining dependency 'sndio' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion sndio` -> 1
+stderr:
+Package sndio was not found in the pkg-config search path.
+Perhaps you should add the directory containing `sndio.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'sndio' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency sndio found: NO  (tried pkg-config and cmake)
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu9df8zbs
+Code:
+
+        #include <audioclient.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IAudioClient
+                IAudioClient;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu9df8zbs/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu9df8zbs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 0
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu9df8zbs/testfile.c: In function 'main':
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu9df8zbs/testfile.c:6:17: warning: useless type name in empty declaration
+    6 |                 IAudioClient;
+      |                 ^~~~~~~~~~~~
+-----------
+Header "audioclient.h" has symbol "IAudioClient" : YES 
+Determining dependency 'caca' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion caca` -> 0
+stdout:
+0.99.beta20
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags caca` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs caca` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lcaca
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs caca` -> 0
+stdout:
+-lcaca
+-----------
+Run-time dependency caca found: YES 0.99.beta20
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkw3ey2p6
+Code:
+
+        #ifdef __has_include
+         #if !__has_include("d3d9.h")
+          #error "Header 'd3d9.h' could not be found"
+         #endif
+        #else
+         #include <d3d9.h>
+        #endif
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkw3ey2p6/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -U_FORTIFY_SOURCE -std=c11` -> 0
+Has header "d3d9.h" : YES 
+Determining dependency 'libdrm' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libdrm` -> 1
+stderr:
+Package libdrm was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libdrm.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libdrm' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libdrm found: NO  (tried pkg-config and cmake)
+Determining dependency 'libdisplay-info' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libdisplay-info` -> 1
+stderr:
+Package libdisplay-info was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libdisplay-info.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libdisplay-info' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libdisplay-info found: NO  (tried pkg-config and cmake)
+Dependency gbm for host machine skipped: feature gbm disabled
+Determining dependency 'libjpeg' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libjpeg` -> 0
+stdout:
+3.1.4.1
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libjpeg` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libjpeg` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -ljpeg
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libjpeg` -> 0
+stdout:
+-ljpeg
+-----------
+Run-time dependency libjpeg found: YES 3.1.4.1
+Determining dependency 'shaderc' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion shaderc` -> 0
+stdout:
+2026.2.1
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags shaderc` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs shaderc` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lshaderc_shared
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs shaderc` -> 0
+stdout:
+-lshaderc_shared
+-----------
+Run-time dependency shaderc found: YES 2026.2.1
+Determining dependency 'libsixel' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libsixel` -> 1
+stderr:
+Package libsixel was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libsixel.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libsixel' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency libsixel found: NO  (tried pkg-config and cmake)
+Determining dependency 'spirv-cross-c-shared' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion spirv-cross-c-shared` -> 0
+stdout:
+0.68.0
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags spirv-cross-c-shared` -> 0
+stdout:
+-IC:/msys64/mingw64/include/spirv_cross
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs spirv-cross-c-shared` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lspirv-cross-c-shared
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs spirv-cross-c-shared` -> 0
+stdout:
+-lspirv-cross-c-shared
+-----------
+Run-time dependency spirv-cross-c-shared found: YES 0.68.0
+Determining dependency 'wayland-client' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion wayland-client` -> 1
+stderr:
+Package wayland-client was not found in the pkg-config search path.
+Perhaps you should add the directory containing `wayland-client.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'wayland-client' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency wayland-client found: NO  (tried pkg-config and cmake)
+Determining dependency 'wayland-cursor' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion wayland-cursor` -> 1
+stderr:
+Package wayland-cursor was not found in the pkg-config search path.
+Perhaps you should add the directory containing `wayland-cursor.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'wayland-cursor' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency wayland-cursor found: NO  (tried pkg-config and cmake)
+Determining dependency 'wayland-protocols' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion wayland-protocols` -> 1
+stderr:
+Package wayland-protocols was not found in the pkg-config search path.
+Perhaps you should add the directory containing `wayland-protocols.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'wayland-protocols' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency wayland-protocols found: NO  (tried pkg-config and cmake)
+Determining dependency 'xkbcommon' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion xkbcommon` -> 1
+stderr:
+Package xkbcommon was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xkbcommon.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xkbcommon' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency xkbcommon found: NO  (tried pkg-config and cmake)
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency wayland-client found: NO  (tried pkg-config and cmake)
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmp33fop50d
+Code:
+
+        #ifdef __has_include
+         #if !__has_include("linux/input-event-codes.h")
+          #error "Header 'linux/input-event-codes.h' could not be found"
+         #endif
+        #else
+         #include <linux/input-event-codes.h>
+        #endif
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmp33fop50d/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -U_FORTIFY_SOURCE -std=c11` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmp33fop50d/testfile.c:4:12: error: #error "Header 'linux/input-event-codes.h' could not be found"
+    4 |           #error "Header 'linux/input-event-codes.h' could not be found"
+      |            ^~~~~
+-----------
+Has header "linux/input-event-codes.h" with dependency wayland-client: NO 
+Program wayland-scanner found: NO
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency x11 found: NO  (tried pkg-config and cmake)
+Determining dependency 'xscrnsaver' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion xscrnsaver` -> 1
+stderr:
+Package xscrnsaver was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xscrnsaver.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xscrnsaver' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency xscrnsaver found: NO  (tried pkg-config and cmake)
+Determining dependency 'xext' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion xext` -> 1
+stderr:
+Package xext was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xext.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xext' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency xext found: NO  (tried pkg-config and cmake)
+Determining dependency 'xpresent' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion xpresent` -> 1
+stderr:
+Package xpresent was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xpresent.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xpresent' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency xpresent found: NO  (tried pkg-config and cmake)
+Determining dependency 'xrandr' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion xrandr` -> 1
+stderr:
+Package xrandr was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xrandr.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xrandr' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency xrandr found: NO  (tried pkg-config and cmake)
+Dependency xv for host machine skipped: feature xv disabled
+Determining dependency 'gl' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion gl` -> 1
+stderr:
+Package gl was not found in the pkg-config search path.
+Perhaps you should add the directory containing `gl.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'gl' not found
+-----------
+Run-time dependency gl found: YES
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkc_qcibe
+Code:
+#include <GL/gl.h>
+        #include <GL/wglext.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef WGL_ACCESS_READ_ONLY_NV
+                WGL_ACCESS_READ_ONLY_NV;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkc_qcibe/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpkc_qcibe/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 0
+Header "GL/wglext.h" has symbol "WGL_ACCESS_READ_ONLY_NV" : YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt8vpzp38
+Code:
+
+        #include <d3d9.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IDirect3D9Ex
+                IDirect3D9Ex;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt8vpzp38/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt8vpzp38/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 0
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt8vpzp38/testfile.c: In function 'main':
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpt8vpzp38/testfile.c:6:17: warning: useless type name in empty declaration
+    6 |                 IDirect3D9Ex;
+      |                 ^~~~~~~~~~~~
+-----------
+Header "d3d9.h" has symbol "IDirect3D9Ex" : YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpru0ndv0n
+Code:
+#include <EGL/egl.h>
+        #include <EGL/eglext.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef EGL_D3D_TEXTURE_2D_SHARE_HANDLE_ANGLE
+                EGL_D3D_TEXTURE_2D_SHARE_HANDLE_ANGLE;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpru0ndv0n/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpru0ndv0n/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 1
+stderr:
+C:/Users/localadmin/Documents/mpv/build/meson-private/tmpru0ndv0n/testfile.c:1:10: fatal error: EGL/egl.h: No such file or directory
+    1 | #include <EGL/egl.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+-----------
+Header "EGL/eglext.h" has symbol "EGL_D3D_TEXTURE_2D_SHARE_HANDLE_ANGLE" : NO 
+Library EGL skipped: feature egl-angle-lib disabled
+Determining dependency 'egl' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion egl` -> 1
+stderr:
+Package egl was not found in the pkg-config search path.
+Perhaps you should add the directory containing `egl.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'egl' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency egl found: NO  (tried pkg-config and cmake)
+Library EGL skipped: feature egl-android disabled
+Dependency wayland-egl for host machine skipped: feature egl-wayland disabled
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=pl_has_vulkan libplacebo` -> 0
+stdout:
+1
+-----------
+Got pkg-config variable pl_has_vulkan : 1
+Determining dependency 'vulkan' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion vulkan` -> 0
+stdout:
+1.4.350
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags vulkan` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs vulkan` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lvulkan-1
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs vulkan` -> 0
+stdout:
+-lvulkan-1
+-----------
+Run-time dependency vulkan found: YES 1.4.350
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpi7vogryz
+Code:
+
+        #include <vulkan/vulkan_core.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef VK_VERSION_1_3
+                VK_VERSION_1_3;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpi7vogryz/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpi7vogryz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 0
+Header "vulkan/vulkan_core.h" has symbol "VK_VERSION_1_3" with dependency vulkan: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu_a31j9i
+Code:
+#include <vulkan/vulkan_core.h>
+#include <limits.h>
+
+        #if defined __stub_vkCreateDisplayPlaneSurfaceKHR || defined __stub___vkCreateDisplayPlaneSurfaceKHR
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &vkCreateDisplayPlaneSurfaceKHR;
+            long long b = (long long) a;
+            return (int) b;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu_a31j9i/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpu_a31j9i/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11 -Wl,--start-group -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 C:/msys64/mingw64/lib/libvulkan-1.dll.a -Wl,--end-group` -> 0
+Checking for function "vkCreateDisplayPlaneSurfaceKHR" with dependency vulkan: YES 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmvkqe1l2
+Code:
+
+        #include <d3d11sdklayers.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef DXGI_DEBUG_D3D11
+                DXGI_DEBUG_D3D11;
+            #endif
+            return 0;
+        }
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmvkqe1l2/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpmvkqe1l2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -std=c11` -> 0
+Header "d3d11sdklayers.h" has symbol "DXGI_DEBUG_D3D11" : YES 
+Determining dependency 'ffnvcodec' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion ffnvcodec` -> 1
+stderr:
+Package ffnvcodec was not found in the pkg-config search path.
+Perhaps you should add the directory containing `ffnvcodec.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'ffnvcodec' not found
+-----------
+CMake binary for host machine is cached as not found
+CMake binary for machine host machine not found. Giving up.
+Run-time dependency ffnvcodec found: NO  (tried pkg-config and cmake)
+Header "OpenGLES/ES3/glext.h" has symbol "GL_RGB32F" skipped: feature ios-gl disabled
+Determining dependency 'libva' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libva` -> 0
+stdout:
+1.23.0
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libva` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libva` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lva
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libva` -> 0
+stdout:
+-lva
+-----------
+Run-time dependency libva found: YES 1.23.0
+Dependency libva-drm for host machine skipped: feature vaapi-drm disabled
+Dependency libva-wayland for host machine skipped: feature vaapi-wayland disabled
+Dependency libva-x11 for host machine skipped: feature vaapi-x11 disabled
+Determining dependency 'libva-win32' with pkg-config executable 'C:\\msys64\\mingw64\\bin/pkg-config.EXE'
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --modversion libva-win32` -> 0
+stdout:
+1.23.0
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --cflags libva-win32` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libva-win32` -> 0
+stdout:
+-LC:/msys64/mingw64/lib -lva_win32 -lva
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --libs libva-win32` -> 0
+stdout:
+-lva_win32 -lva
+-----------
+Run-time dependency libva-win32 found: YES 1.23.0
+Dependency vdpau for host machine skipped: feature vdpau disabled
+Dependency appleframeworks(modules: CoreVideo) for host machine skipped: feature videotoolbox-pl disabled
+Program xcrun skipped: feature swift-build disabled
+Program rst2man rst2man.py found: NO
+Program rst2html rst2html.py skipped: feature html-build disabled
+Program rst2pdf skipped: feature pdf-build disabled
+Running command: C:\msys64\mingw64\bin/python3.EXE -c "
+#!/usr/bin/env python3
+import sys
+features = \" \".join(sorted(sys.argv[1:]))
+sys.stdout.write(features)
+" debug ffmpeg gpl libass libplacebo dos-paths win32 build-date cplugins win32-threads win32-executable win32-desktop glob-win32 glob vector iconv lcms2 libavdevice libbluray luajit zimg zimg-st428 zlib wasapi caca direct3d jpeg shaderc spirv-cross d3d11 gl gl-win32 gl-dxinterop vulkan vk-khr-display dxgi-debug-d3d11 d3d-hwaccel d3d9-hwaccel gl-dxinterop-d3d9 vaapi-win32 vaapi
+--- stdout ---
+build-date caca cplugins d3d-hwaccel d3d11 d3d9-hwaccel debug direct3d dos-paths dxgi-debug-d3d11 ffmpeg gl gl-dxinterop gl-dxinterop-d3d9 gl-win32 glob glob-win32 gpl iconv jpeg lcms2 libass libavdevice libbluray libplacebo luajit shaderc spirv-cross vaapi vaapi-win32 vector vk-khr-display vulkan wasapi win32 win32-desktop win32-executable win32-threads zimg zimg-st428 zlib
+--- stderr ---
+
+
+Configuring config.h using configuration
+Message: List of enabled features: build-date caca cplugins d3d-hwaccel d3d11 d3d9-hwaccel debug direct3d dos-paths dxgi-debug-d3d11 ffmpeg gl gl-dxinterop gl-dxinterop-d3d9 gl-win32 glob glob-win32 gpl iconv jpeg lcms2 libass libavdevice libbluray libplacebo luajit shaderc spirv-cross vaapi vaapi-win32 vector vk-khr-display vulkan wasapi win32 win32-desktop win32-executable win32-threads zimg zimg-st428 zlib
+Windows resource compiler: GNU windres (GNU Binutils) 2.46.1
+Running compile:
+Working directory:  C:/msys64/tmp/tmpt5f7ibfl
+Code:
+
+        #include "mpv/client.h"
+        #ifndef MPV_CLIENT_API_VERSION
+        # define MPV_CLIENT_API_VERSION "MESON_GET_DEFINE_UNDEFINED_SENTINEL"
+        #endif
+        "MESON_GET_DEFINE_DELIMITER_START"
+MPV_CLIENT_API_VERSION
+"MESON_GET_DEFINE_DELIMITER_END"
+-----------
+Command line: `cc -IC:/Users/localadmin/Documents/mpv/./include -IC:/Users/localadmin/Documents/mpv/build/./include C:/msys64/tmp/tmpt5f7ibfl/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -U_FORTIFY_SOURCE -std=c11` -> 0
+stdout:
+#pragma pack(push,_CRT_PACKING)
+  typedef __builtin_va_list __gnuc_va_list;
+  typedef __gnuc_va_list va_list;
+#pragma pack(pop)
+void __attribute__((__cdecl__)) __debugbreak(void);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) void __attribute__((__cdecl__)) __debugbreak(void)
+{
+  __asm__ __volatile__("int {$}3":);
+}
+void __attribute__((__cdecl__)) __attribute__ ((__noreturn__)) __fastfail(unsigned int _Code);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) void __attribute__((__cdecl__)) __attribute__ ((__noreturn__)) __fastfail(unsigned int _Code)
+{
+  __asm__ __volatile__("int {$}0x29"::"c"(_Code));
+  __builtin_unreachable();
+}
+const char *__mingw_get_crt_info (void);
+#pragma pack(push,_CRT_PACKING)
+__extension__ typedef unsigned long long size_t;
+__extension__ typedef long long ssize_t;
+typedef size_t rsize_t;
+__extension__ typedef long long intptr_t;
+__extension__ typedef unsigned long long uintptr_t;
+__extension__ typedef long long ptrdiff_t;
+typedef unsigned short wchar_t;
+typedef unsigned short wint_t;
+typedef unsigned short wctype_t;
+typedef int errno_t;
+typedef long __time32_t;
+__extension__ typedef long long __time64_t;
+typedef __time64_t time_t;
+__attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _invalid_parameter_noinfo(void);
+__attribute__ ((__dllimport__)) __attribute__ ((__noreturn__)) void __attribute__((__cdecl__)) _invalid_parameter_noinfo_noreturn(void);
+__attribute__ ((__dllimport__)) __attribute__ ((__noreturn__)) void __attribute__((__cdecl__)) _invoke_watson(const wchar_t *expression, const wchar_t *function_name, const wchar_t *file_name, unsigned int line_number, long long unsigned int reserved);
+struct threadlocaleinfostruct;
+struct threadmbcinfostruct;
+typedef struct threadlocaleinfostruct *pthreadlocinfo;
+typedef struct threadmbcinfostruct *pthreadmbcinfo;
+struct __lc_time_data;
+typedef struct localeinfo_struct {
+  pthreadlocinfo locinfo;
+  pthreadmbcinfo mbcinfo;
+} _locale_tstruct,*_locale_t;
+typedef struct tagLC_ID {
+  unsigned short wLanguage;
+  unsigned short wCountry;
+  unsigned short wCodePage;
+} LC_ID,*LPLC_ID;
+#pragma pack(pop)
+  __attribute__ ((__dllimport__)) extern int *__attribute__((__cdecl__)) _errno(void);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _set_errno(int _Value);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_errno(int *_Value);
+  __attribute__ ((__dllimport__)) extern unsigned long __attribute__((__cdecl__)) __threadid(void);
+  __attribute__ ((__dllimport__)) extern uintptr_t __attribute__((__cdecl__)) __threadhandle(void);
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+} max_align_t;
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+typedef signed char int8_t;
+typedef unsigned char uint8_t;
+typedef short int16_t;
+typedef unsigned short uint16_t;
+typedef int int32_t;
+typedef unsigned uint32_t;
+__extension__ typedef long long int64_t;
+__extension__ typedef unsigned long long uint64_t;
+typedef signed char int_least8_t;
+typedef unsigned char uint_least8_t;
+typedef short int_least16_t;
+typedef unsigned short uint_least16_t;
+typedef int int_least32_t;
+typedef unsigned uint_least32_t;
+__extension__ typedef long long int_least64_t;
+__extension__ typedef unsigned long long uint_least64_t;
+typedef signed char int_fast8_t;
+typedef unsigned char uint_fast8_t;
+typedef short int_fast16_t;
+typedef unsigned short uint_fast16_t;
+typedef int int_fast32_t;
+typedef unsigned int uint_fast32_t;
+__extension__ typedef long long int_fast64_t;
+__extension__ typedef unsigned long long uint_fast64_t;
+__extension__ typedef long long intmax_t;
+__extension__ typedef unsigned long long uintmax_t;
+#pragma GCC diagnostic pop
+__attribute__((dllexport)) unsigned long mpv_client_api_version(void);
+typedef struct mpv_handle mpv_handle;
+typedef enum mpv_error {
+    MPV_ERROR_SUCCESS = 0,
+    MPV_ERROR_EVENT_QUEUE_FULL = -1,
+    MPV_ERROR_NOMEM = -2,
+    MPV_ERROR_UNINITIALIZED = -3,
+    MPV_ERROR_INVALID_PARAMETER = -4,
+    MPV_ERROR_OPTION_NOT_FOUND = -5,
+    MPV_ERROR_OPTION_FORMAT = -6,
+    MPV_ERROR_OPTION_ERROR = -7,
+    MPV_ERROR_PROPERTY_NOT_FOUND = -8,
+    MPV_ERROR_PROPERTY_FORMAT = -9,
+    MPV_ERROR_PROPERTY_UNAVAILABLE = -10,
+    MPV_ERROR_PROPERTY_ERROR = -11,
+    MPV_ERROR_COMMAND = -12,
+    MPV_ERROR_LOADING_FAILED = -13,
+    MPV_ERROR_AO_INIT_FAILED = -14,
+    MPV_ERROR_VO_INIT_FAILED = -15,
+    MPV_ERROR_NOTHING_TO_PLAY = -16,
+    MPV_ERROR_UNKNOWN_FORMAT = -17,
+    MPV_ERROR_UNSUPPORTED = -18,
+    MPV_ERROR_NOT_IMPLEMENTED = -19,
+    MPV_ERROR_GENERIC = -20
+} mpv_error;
+__attribute__((dllexport)) const char *mpv_error_string(int error);
+__attribute__((dllexport)) void mpv_free(void *data);
+__attribute__((dllexport)) const char *mpv_client_name(mpv_handle *ctx);
+__attribute__((dllexport)) int64_t mpv_client_id(mpv_handle *ctx);
+__attribute__((dllexport)) mpv_handle *mpv_create(void);
+__attribute__((dllexport)) int mpv_initialize(mpv_handle *ctx);
+__attribute__((dllexport)) void mpv_destroy(mpv_handle *ctx);
+__attribute__((dllexport)) void mpv_terminate_destroy(mpv_handle *ctx);
+__attribute__((dllexport)) mpv_handle *mpv_create_client(mpv_handle *ctx, const char *name);
+__attribute__((dllexport)) mpv_handle *mpv_create_weak_client(mpv_handle *ctx, const char *name);
+__attribute__((dllexport)) int mpv_load_config_file(mpv_handle *ctx, const char *filename);
+__attribute__((dllexport)) int64_t mpv_get_time_ns(mpv_handle *ctx);
+__attribute__((dllexport)) int64_t mpv_get_time_us(mpv_handle *ctx);
+typedef enum mpv_format {
+    MPV_FORMAT_NONE = 0,
+    MPV_FORMAT_STRING = 1,
+    MPV_FORMAT_OSD_STRING = 2,
+    MPV_FORMAT_FLAG = 3,
+    MPV_FORMAT_INT64 = 4,
+    MPV_FORMAT_DOUBLE = 5,
+    MPV_FORMAT_NODE = 6,
+    MPV_FORMAT_NODE_ARRAY = 7,
+    MPV_FORMAT_NODE_MAP = 8,
+    MPV_FORMAT_BYTE_ARRAY = 9
+} mpv_format;
+typedef struct mpv_node {
+    union {
+        char *string;
+        int flag;
+        int64_t int64;
+        double double_;
+        struct mpv_node_list *list;
+        struct mpv_byte_array *ba;
+    } u;
+    mpv_format format;
+} mpv_node;
+typedef struct mpv_node_list {
+    int num;
+    mpv_node *values;
+    char **keys;
+} mpv_node_list;
+typedef struct mpv_byte_array {
+    void *data;
+    size_t size;
+} mpv_byte_array;
+__attribute__((dllexport)) void mpv_free_node_contents(mpv_node *node);
+__attribute__((dllexport)) int mpv_set_option(mpv_handle *ctx, const char *name, mpv_format format,
+                              void *data);
+__attribute__((dllexport)) int mpv_set_option_string(mpv_handle *ctx, const char *name, const char *data);
+__attribute__((dllexport)) int mpv_command(mpv_handle *ctx, const char **args);
+__attribute__((dllexport)) int mpv_command_node(mpv_handle *ctx, mpv_node *args, mpv_node *result);
+__attribute__((dllexport)) int mpv_command_ret(mpv_handle *ctx, const char **args, mpv_node *result);
+__attribute__((dllexport)) int mpv_command_string(mpv_handle *ctx, const char *args);
+__attribute__((dllexport)) int mpv_command_async(mpv_handle *ctx, uint64_t reply_userdata,
+                                 const char **args);
+__attribute__((dllexport)) int mpv_command_node_async(mpv_handle *ctx, uint64_t reply_userdata,
+                                      mpv_node *args);
+__attribute__((dllexport)) void mpv_abort_async_command(mpv_handle *ctx, uint64_t reply_userdata);
+__attribute__((dllexport)) int mpv_set_property(mpv_handle *ctx, const char *name, mpv_format format,
+                                void *data);
+__attribute__((dllexport)) int mpv_set_property_string(mpv_handle *ctx, const char *name, const char *data);
+__attribute__((dllexport)) int mpv_del_property(mpv_handle *ctx, const char *name);
+__attribute__((dllexport)) int mpv_set_property_async(mpv_handle *ctx, uint64_t reply_userdata,
+                                      const char *name, mpv_format format, void *data);
+__attribute__((dllexport)) int mpv_get_property(mpv_handle *ctx, const char *name, mpv_format format,
+                                void *data);
+__attribute__((dllexport)) char *mpv_get_property_string(mpv_handle *ctx, const char *name);
+__attribute__((dllexport)) char *mpv_get_property_osd_string(mpv_handle *ctx, const char *name);
+__attribute__((dllexport)) int mpv_get_property_async(mpv_handle *ctx, uint64_t reply_userdata,
+                                      const char *name, mpv_format format);
+__attribute__((dllexport)) int mpv_observe_property(mpv_handle *mpv, uint64_t reply_userdata,
+                                    const char *name, mpv_format format);
+__attribute__((dllexport)) int mpv_unobserve_property(mpv_handle *mpv, uint64_t registered_reply_userdata);
+typedef enum mpv_event_id {
+    MPV_EVENT_NONE = 0,
+    MPV_EVENT_SHUTDOWN = 1,
+    MPV_EVENT_LOG_MESSAGE = 2,
+    MPV_EVENT_GET_PROPERTY_REPLY = 3,
+    MPV_EVENT_SET_PROPERTY_REPLY = 4,
+    MPV_EVENT_COMMAND_REPLY = 5,
+    MPV_EVENT_START_FILE = 6,
+    MPV_EVENT_END_FILE = 7,
+    MPV_EVENT_FILE_LOADED = 8,
+    MPV_EVENT_IDLE = 11,
+    MPV_EVENT_TICK = 14,
+    MPV_EVENT_CLIENT_MESSAGE = 16,
+    MPV_EVENT_VIDEO_RECONFIG = 17,
+    MPV_EVENT_AUDIO_RECONFIG = 18,
+    MPV_EVENT_SEEK = 20,
+    MPV_EVENT_PLAYBACK_RESTART = 21,
+    MPV_EVENT_PROPERTY_CHANGE = 22,
+    MPV_EVENT_QUEUE_OVERFLOW = 24,
+    MPV_EVENT_HOOK = 25,
+} mpv_event_id;
+__attribute__((dllexport)) const char *mpv_event_name(mpv_event_id event);
+typedef struct mpv_event_property {
+    const char *name;
+    mpv_format format;
+    void *data;
+} mpv_event_property;
+typedef enum mpv_log_level {
+    MPV_LOG_LEVEL_NONE = 0,
+    MPV_LOG_LEVEL_FATAL = 10,
+    MPV_LOG_LEVEL_ERROR = 20,
+    MPV_LOG_LEVEL_WARN = 30,
+    MPV_LOG_LEVEL_INFO = 40,
+    MPV_LOG_LEVEL_V = 50,
+    MPV_LOG_LEVEL_DEBUG = 60,
+    MPV_LOG_LEVEL_TRACE = 70,
+} mpv_log_level;
+typedef struct mpv_event_log_message {
+    const char *prefix;
+    const char *level;
+    const char *text;
+    mpv_log_level log_level;
+} mpv_event_log_message;
+typedef enum mpv_end_file_reason {
+    MPV_END_FILE_REASON_EOF = 0,
+    MPV_END_FILE_REASON_STOP = 2,
+    MPV_END_FILE_REASON_QUIT = 3,
+    MPV_END_FILE_REASON_ERROR = 4,
+    MPV_END_FILE_REASON_REDIRECT = 5,
+} mpv_end_file_reason;
+typedef struct mpv_event_start_file {
+    int64_t playlist_entry_id;
+} mpv_event_start_file;
+typedef struct mpv_event_end_file {
+    mpv_end_file_reason reason;
+    int error;
+    int64_t playlist_entry_id;
+    int64_t playlist_insert_id;
+    int playlist_insert_num_entries;
+} mpv_event_end_file;
+typedef struct mpv_event_client_message {
+    int num_args;
+    const char **args;
+} mpv_event_client_message;
+typedef struct mpv_event_hook {
+    const char *name;
+    uint64_t id;
+} mpv_event_hook;
+typedef struct mpv_event_command {
+    mpv_node result;
+} mpv_event_command;
+typedef struct mpv_event {
+    mpv_event_id event_id;
+    int error;
+    uint64_t reply_userdata;
+    void *data;
+} mpv_event;
+__attribute__((dllexport)) int mpv_event_to_node(mpv_node *dst, mpv_event *src);
+__attribute__((dllexport)) int mpv_request_event(mpv_handle *ctx, mpv_event_id event, int enable);
+__attribute__((dllexport)) int mpv_request_log_messages(mpv_handle *ctx, const char *min_level);
+__attribute__((dllexport)) mpv_event *mpv_wait_event(mpv_handle *ctx, double timeout);
+__attribute__((dllexport)) void mpv_wakeup(mpv_handle *ctx);
+__attribute__((dllexport)) void mpv_set_wakeup_callback(mpv_handle *ctx, void (*cb)(void *d), void *d);
+__attribute__((dllexport)) void mpv_wait_async_requests(mpv_handle *ctx);
+__attribute__((dllexport)) int mpv_hook_add(mpv_handle *ctx, uint64_t reply_userdata,
+                            const char *name, int priority);
+__attribute__((dllexport)) int mpv_hook_continue(mpv_handle *ctx, uint64_t id);
+__attribute__((dllexport)) int mpv_get_wakeup_pipe(mpv_handle *ctx);
+        "MESON_GET_DEFINE_DELIMITER_START"
+(((2) << 16) | (5) | 0UL)
+"MESON_GET_DEFINE_DELIMITER_END"
+-----------
+Fetching value of define "MPV_CLIENT_API_VERSION" : (((2) << 16) | (5) | 0UL) 
+Running compile:
+Working directory:  C:/Users/localadmin/Documents/mpv/build/meson-private/tmpwylf00ef
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc C:/Users/localadmin/Documents/mpv/build/meson-private/tmpwylf00ef/testfile.c -o C:/Users/localadmin/Documents/mpv/build/meson-private/tmpwylf00ef/output.exe -D_FILE_OFFSET_BITS=64 -O0 -U_FORTIFY_SOURCE -Wl,--fatal-warnings -Wl,-Bsymbolic` -> 0
+Compiler for C supports link arguments -Wl,-Bsymbolic: YES 
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (C:\msys64\mingw64\bin/pkg-config.EXE) 2.5.1
+Build targets in project: 29
+
+mpv 0.41.0
+
+    cocoa     : NO
+    d3d11     : YES
+    drm       : NO
+    javascript: NO
+    libmpv    : YES
+    lua       : YES
+    opengl    : YES
+    vulkan    : YES
+    wayland   : NO
+    x11       : NO
+
+  User defined options
+    libmpv    : true
+    prefix    : C:/msys64/mingw64
+
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libass` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libass` -> 0
+stdout:
+libdir
+includedir
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libavcodec` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libavcodec` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libavfilter` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libavfilter` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libavformat` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libavformat` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libavutil` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libavutil` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libplacebo` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libplacebo` -> 0
+stdout:
+pl_has_xxhash
+pl_has_vulkan
+pl_has_vk_proc_addr
+pl_has_shaderc
+pl_has_opengl
+pl_has_libdovi
+pl_has_lcms
+pl_has_glslang
+pl_has_gl_proc_addr
+pl_has_dovi
+pl_has_d3d11
+libdir
+includedir
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libswresample` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libswresample` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libswscale` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libswscale` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir lcms2` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables lcms2` -> 0
+stdout:
+libdir
+includedir
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libavdevice` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libavdevice` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libbluray` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libbluray` -> 0
+stdout:
+libdir
+includedir
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir luajit` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables luajit` -> 0
+stdout:
+INSTALL_CMOD
+INSTALL_LMOD
+includedir
+libname
+libdir
+exec_prefix
+multilib
+prefix
+orig_prefix
+abiver
+version
+relver
+minver
+majver
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir zimg` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables zimg` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir zlib` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables zlib` -> 0
+stdout:
+includedir
+sharedlibdir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir caca` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables caca` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libjpeg` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libjpeg` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir shaderc` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables shaderc` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir spirv-cross-c-shared` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables spirv-cross-c-shared` -> 0
+stdout:
+includedir
+sharedlibdir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir vulkan` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables vulkan` -> 0
+stdout:
+includedir
+libdir
+exec_prefix
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libva-win32` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libva-win32` -> 0
+stdout:
+display
+va_api_version
+libva_version
+libdir
+includedir
+prefix
+orig_prefix
+pcfiledir
+-----------
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --variable=bindir libva` -> 0
+env[PKG_CONFIG_PATH]: C:\msys64\mingw64\lib\pkgconfig;C:\msys64\mingw64\share\pkgconfig
+env[PKG_CONFIG_SYSTEM_INCLUDE_PATH]: C:/msys64/mingw64/include
+env[PKG_CONFIG_SYSTEM_LIBRARY_PATH]: C:/msys64/mingw64/lib
+env[PKG_CONFIG]: C:\msys64\mingw64\bin/pkg-config.EXE
+-----------
+Called: `C:\msys64\mingw64\bin/pkg-config.EXE --print-variables libva` -> 0
+stdout:
+driverdir
+va_api_version
+libva_version
+libdir
+includedir
+prefix
+orig_prefix
+pcfiledir
+-----------
+Found ninja-1.13.2 at C:\msys64\mingw64\bin/ninja.EXE
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/mpv.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/encoding-profiles.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/input.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/mplayer-input.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/restore-old-bindings.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/restore-osc-bindings.conf
+Failed to guess install tag for C:/msys64/mingw64/share/bash-completion/completions/mpv
+Failed to guess install tag for C:/msys64/mingw64/share/zsh/site-functions/_mpv
+Failed to guess install tag for C:/msys64/mingw64/share/fish/vendor_completions.d/mpv.fish
+Failed to guess install tag for C:/msys64/mingw64/share/metainfo/mpv.metainfo.xml
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/16x16/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/32x32/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/64x64/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/128x128/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/scalable/apps/mpv.svg
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/symbolic/apps/mpv-symbolic.svg
+Command line for building ['libmpv-2.dll'] is long, using a response file
+Command line for building ['mpv.exe'] is long, using a response file
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/mpv.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/encoding-profiles.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/input.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/mplayer-input.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/restore-old-bindings.conf
+Failed to guess install tag for C:/msys64/mingw64/share/doc/mpv/restore-osc-bindings.conf
+Failed to guess install tag for C:/msys64/mingw64/share/bash-completion/completions/mpv
+Failed to guess install tag for C:/msys64/mingw64/share/zsh/site-functions/_mpv
+Failed to guess install tag for C:/msys64/mingw64/share/fish/vendor_completions.d/mpv.fish
+Failed to guess install tag for C:/msys64/mingw64/share/metainfo/mpv.metainfo.xml
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/16x16/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/32x32/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/64x64/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/128x128/apps/mpv.png
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/scalable/apps/mpv.svg
+Failed to guess install tag for C:/msys64/mingw64/share/icons/hicolor/symbolic/apps/mpv-symbolic.svg
