@@ -50,7 +50,7 @@ sort -u "$rows" | while IFS=$'\t' read -r formula version keg_dir; do
         count=$(printf '%s\n' "$license_files" | sed '/^$/d' | wc -l | tr -d ' ')
       fi
       cp "$keg_dir/INSTALL_RECEIPT.json" "$output_dir/receipts/$formula-$version.json"
-      bottle=$(find "$cache_dir" -type f -name "*--$formula-$version.bottle_manifest.json" -print -quit 2>/dev/null || true)
+      bottle=$(find "$cache_dir" -type f -name "*--$formula-$version*.bottle_manifest.json" -print -quit 2>/dev/null || true)
       if [ -n "$bottle" ]; then
         cp "$bottle" "$output_dir/bottle-manifests/$formula-$version.json"
         bottle_record=$(basename "$bottle")

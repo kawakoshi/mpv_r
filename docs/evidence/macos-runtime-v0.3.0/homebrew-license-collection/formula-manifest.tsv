@@ -14,7 +14,7 @@ libass	0.17.5	/opt/homebrew/Cellar/libass/0.17.5	1	330f0cb3647cf0377a1ceecdb1a52
 libbluray	1.4.1	/opt/homebrew/Cellar/libbluray/1.4.1	1	a8c86f57ce96987aa237d33ca58aed58bd530a117dede1c6015c03908eb390de--libbluray-1.4.1.bottle_manifest.json
 libplacebo	7.360.1	/opt/homebrew/Cellar/libplacebo/7.360.1	1	45af3fc6e51384a53c232f8239e1b6e956f46bb7f4de0b1ae3bc872c51ec8108--libplacebo-7.360.1.bottle_manifest.json
 libpng	1.6.59	/opt/homebrew/Cellar/libpng/1.6.59	1	4a927b335b66f50d42c144f2bbc7c000384414951a542ced9ccf8ab03da5d05d--libpng-1.6.59.bottle_manifest.json
-libsamplerate	0.2.2	/opt/homebrew/Cellar/libsamplerate/0.2.2	2	MISSING
+libsamplerate	0.2.2	/opt/homebrew/Cellar/libsamplerate/0.2.2	2	libsamplerate-0.2.2.json
 libudfread	1.2.0	/opt/homebrew/Cellar/libudfread/1.2.0	1	0e101e8cb6cd3d57390b8ae34720c46dc2f4f1e8f0a00aa7be37a93771109d13--libudfread-1.2.0.bottle_manifest.json
 libunibreak	7.0	/opt/homebrew/Cellar/libunibreak/7.0	MISSING_LOCAL	128332a336fbfd0be82cbaec497bc492f3ac105a05a80422f0161d8d3c120e19--libunibreak-7.0.bottle_manifest.json
 libvmaf	3.2.0	/opt/homebrew/Cellar/libvmaf/3.2.0	1	99b508560b79b4bb68ed0689c5018b527ad7f32f2d41b9f3ccdcd94c24708a52--libvmaf-3.2.0.bottle_manifest.json
@@ -23,7 +23,7 @@ little-cms2	2.19	/opt/homebrew/Cellar/little-cms2/2.19	1	01b7b1d26a7e7e10e8f176a
 luajit	2.1.1782381659	/opt/homebrew/Cellar/luajit/2.1.1782381659	MISSING_LOCAL	277fc9f8ff3f894e69e3e3a3afe3caae0e0dddfde42cacd9cd3c10092d1e71d6--luajit-2.1.1782381659.bottle_manifest.json
 molten-vk	1.4.1	/opt/homebrew/Cellar/molten-vk/1.4.1	1	00a43aa48017e298e5284aa8c2ddcede0acba620d0e2d73cec7cade383c45c42--molten-vk-1.4.1.bottle_manifest.json
 mujs	1.3.9	/opt/homebrew/Cellar/mujs/1.3.9	1	6480617e44a0e63f15839df1374822ffae96aa989a115bf6a2a51bf449ca8ff5--mujs-1.3.9.bottle_manifest.json
-openssl@3	3.6.3	/opt/homebrew/Cellar/openssl@3/3.6.3	1	MISSING
+openssl@3	3.6.3	/opt/homebrew/Cellar/openssl@3/3.6.3	1	openssl@3-3.6.3.json
 opus	1.6.1	/opt/homebrew/Cellar/opus/1.6.1	1	a73eca3a1a061f08f1e92769ee2a6cacf533dda0dad0cea460ebf4c26d298f6b--opus-1.6.1.bottle_manifest.json
 pcre2	10.49	/opt/homebrew/Cellar/pcre2/10.49	2	73869938a79a2a80d894ee957e1fcfe49ec630e4af2840c0710e8f5443c8e027--pcre2-10.49.bottle_manifest.json
 rubberband	4.0.0	/opt/homebrew/Cellar/rubberband/4.0.0	1	bc9f458d122d070584e4df5d712d01aaa5ba968f72342eb12ff5ec4cc8bb97bb--rubberband-4.0.0.bottle_manifest.json

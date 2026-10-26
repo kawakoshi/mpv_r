@@ -1,0 +1,4 @@
+formula	version	formula_revision	declared_license	source_url	sha256	license_text_status
+glib	2.90.1	ba7e6dd971b3a00f9d5cf2951e12a38cec7c379b	LGPL-2.1-or-later	https://download.gnome.org/sources/glib/2.90/glib-2.90.1.tar.xz	93c941aa17d5eb1d53fe838365f29a8b4e539c222a256d974ec8f30fc413e396	COPYING present in source archive; LGPL text is already retained in LICENSES/mpv-LICENSE.LGPL.txt
+libunibreak	7.0	7f7e1cec667db5a41185200b010cfffb47a36657	Zlib	https://github.com/adah1972/libunibreak/releases/download/libunibreak_7_0/libunibreak-7.0.tar.gz	8c9a6e121736cd0d5c890ae3ae96f3f4010a19aa040f1dbded833a62a87717d3	LICENCE present in source archive and retained under licenses/libunibreak-7.0/LICENCE
+luajit	2.1.1782381659	16f6bfbf907c2402e5d5337568b6b63165d45851	MIT	https://github.com/LuaJIT/LuaJIT/archive/9d145d2ca3db58493859c495489a0f08f627834f.tar.gz	eb74e47ae43f924fc2a30a70266de2a4c141eb38af43639cb275fc72070ebc2c	COPYRIGHT present in source archive
