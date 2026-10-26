@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:b6d6401f2a0bd17d120b4ad2b29b6bec765de21b55424785d4b721b80b15f6f0",
+      "size": 2156,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.1.0.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "58cb3abfa77fcdf297a32ba2715a53fd2cd60571ca776632401d6334ac03c0ee",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "1602196",
+        "sh.brew.bottle.installed_size": "3646867",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.1-18-g2dccbdd\",\"changed_files\":[\"lib/pkgconfig/SvtAv1Enc.pc\"],\"source_modified_time\":1774248738,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/SvtAv1EncApp"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:00c78427527d7d0cdc1539bc0a77af3d26297a18a70d48f8bc153a8f2d1c3fd7",
+      "size": 2098,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.1.0.arm64_sequoia",
+        "sh.brew.bottle.digest": "dfd452b9d5f752a679a6f810fcdb3906b6884dbc8a279abe558dc61c9bfc3c8a",
+        "sh.brew.bottle.size": "1321504",
+        "sh.brew.bottle.installed_size": "3143296",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.1-18-g2dccbdd\",\"changed_files\":[\"lib/pkgconfig/SvtAv1Enc.pc\"],\"source_modified_time\":1774248738,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/SvtAv1EncApp"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:ae024c5b04e385b3488a33c46aca0fbf3dd1c86646fecd8c9b4b73a7509e779e",
+      "size": 2095,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.1.0.arm64_sonoma",
+        "sh.brew.bottle.digest": "b3f0cea562b0fcc454889b6aa6f1453be515faf87600021de6a4351c3e6018bf",
+        "sh.brew.bottle.size": "1266667",
+        "sh.brew.bottle.installed_size": "3042112",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.1-18-g2dccbdd\",\"changed_files\":[\"lib/pkgconfig/SvtAv1Enc.pc\"],\"source_modified_time\":1774248738,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/SvtAv1EncApp"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:36de1b2c7c1578ed64d1ecc270fe2cf5899fb175b7604078c5582311ef4f9684",
+      "size": 2092,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26.3"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.1.0.arm64_tahoe",
+        "sh.brew.bottle.digest": "ef9741a91c2155055fa3dd9682776ac0c59014e0757ea92c789c6d0592273b86",
+        "sh.brew.bottle.size": "1321353",
+        "sh.brew.bottle.installed_size": "3126528",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.1-18-g2dccbdd\",\"changed_files\":[\"lib/pkgconfig/SvtAv1Enc.pc\"],\"source_modified_time\":1774248738,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26.3\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/SvtAv1EncApp"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:5b204c4e41e3b006e7afc855643ec0d9bcf6d3d78a84658b0da7d28fdcc321ab",
+      "size": 2079,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.1.0.sonoma",
+        "sh.brew.bottle.digest": "1fcfdbcd821d7267e82e58445931d5b8e6c17d40b4a3a44ff32f715c1b1edcc6",
+        "sh.brew.bottle.size": "2091300",
+        "sh.brew.bottle.installed_size": "5583405",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.1-18-g2dccbdd\",\"changed_files\":[\"lib/pkgconfig/SvtAv1Enc.pc\"],\"source_modified_time\":1774248738,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/SvtAv1EncApp"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:1ffc295fbee0938974d8a8f3977fcd1148b150121c27db83c65772a1cda178c0",
+      "size": 2161,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.1.0.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "4ebe93ba0e92ec1fcfff2bb9b360e09442a90c91aaa7b5dcd2392c74d04a8406",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "2369643",
+        "sh.brew.bottle.installed_size": "5849101",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.1-18-g2dccbdd\",\"changed_files\":[\"lib/pkgconfig/SvtAv1Enc.pc\"],\"source_modified_time\":1774248738,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/SvtAv1EncApp"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-03-23T18:10:30Z",
+    "org.opencontainers.image.description": "AV1 encoder",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/svt-av1",
+    "org.opencontainers.image.licenses": "BSD-3-Clause",
+    "org.opencontainers.image.ref.name": "4.1.0",
+    "org.opencontainers.image.revision": "b0b3875ce172545789ac5b5ec553ae3bf2c61dfe",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/b0b3875ce172545789ac5b5ec553ae3bf2c61dfe/Formula/s/svt-av1.rb",
+    "org.opencontainers.image.title": "svt-av1",
+    "org.opencontainers.image.url": "https://gitlab.com/AOMediaCodec/SVT-AV1",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "4.1.0"
+  }
+}

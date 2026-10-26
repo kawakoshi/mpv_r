@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:517738103bf6ac53d3a4dec377d071efa2fffa0106ba946eee567975d3129bf8",
+      "size": 2149,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.0.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "e1866075bff3a2f672ed91d549c7fe660de2ae3cf1a2e9a4f367c454705cbcb6",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "68985",
+        "sh.brew.bottle.installed_size": "401860",
+        "sh.brew.license": "Zlib",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.5-69-g9e6cb58\",\"changed_files\":[\"lib/pkgconfig/libunibreak.pc\"],\"source_modified_time\":1775806444,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:57059f15e6769a8810f989020d6d33c4bb86b0149f0c45f9acd8f3c9cede4d5e",
+      "size": 2091,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.0.arm64_sequoia",
+        "sh.brew.bottle.digest": "820ed99a285c5ebc04c5124dc44a2d4ce61fdb27f1ed5e3429b9c29e767238ef",
+        "sh.brew.bottle.size": "66984",
+        "sh.brew.bottle.installed_size": "345780",
+        "sh.brew.license": "Zlib",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.5-69-g9e6cb58\",\"changed_files\":[\"lib/pkgconfig/libunibreak.pc\"],\"source_modified_time\":1775806444,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:9d88aba536154cac384924a5fe0b7613d762cead491366059218d2f3e00cf17f",
+      "size": 2088,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.0.arm64_sonoma",
+        "sh.brew.bottle.digest": "447bad02c83e0d39057ba1b350bd0759e0a4f8ba60b5f194f49e80d8cba30ca9",
+        "sh.brew.bottle.size": "66988",
+        "sh.brew.bottle.installed_size": "346092",
+        "sh.brew.license": "Zlib",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.5-69-g9e6cb58\",\"changed_files\":[\"lib/pkgconfig/libunibreak.pc\"],\"source_modified_time\":1775806444,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:4f88ceb285e34482269f535d7f9fab8d2b428e1880cae8650ba9e9868431bef1",
+      "size": 2081,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.0.arm64_tahoe",
+        "sh.brew.bottle.digest": "23a52d6cf9cffb57d86c8a06daf8b47ce0ddcd7688e5a31daf73fbc10d3ca53b",
+        "sh.brew.bottle.size": "66730",
+        "sh.brew.bottle.installed_size": "344312",
+        "sh.brew.license": "Zlib",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.5-69-g9e6cb58\",\"changed_files\":[\"lib/pkgconfig/libunibreak.pc\"],\"source_modified_time\":1775806444,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.4\",\"clt\":\"26.4.0.0.1774242506\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:1fd4645606c572ccd9f9b9b351620a03012003ff6dbcbaf2c520cff8c509834a",
+      "size": 2072,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.0.sonoma",
+        "sh.brew.bottle.digest": "90367ff83d8a676939c1c37d0ec5f119ef7d79150400f8d69e06dfb3455ffc09",
+        "sh.brew.bottle.size": "65148",
+        "sh.brew.bottle.installed_size": "310102",
+        "sh.brew.license": "Zlib",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.5-69-g9e6cb58\",\"changed_files\":[\"lib/pkgconfig/libunibreak.pc\"],\"source_modified_time\":1775806444,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:a0b10ed4ac765e6fed8a5bae9668f942431842ad0d7b5ce4dc88eaaa0d0ebc08",
+      "size": 2154,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.0.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "4fff762dc25ef27872f8d1cd64377a527d12e782248cfa04031e60f2d8aee006",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "68097",
+        "sh.brew.bottle.installed_size": "341598",
+        "sh.brew.license": "Zlib",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.5-69-g9e6cb58\",\"changed_files\":[\"lib/pkgconfig/libunibreak.pc\"],\"source_modified_time\":1775806444,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-04-10T10:40:43Z",
+    "org.opencontainers.image.description": "Implementation of the Unicode line- and word-breaking algorithms",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libunibreak",
+    "org.opencontainers.image.licenses": "Zlib",
+    "org.opencontainers.image.ref.name": "7.0",
+    "org.opencontainers.image.revision": "7f7e1cec667db5a41185200b010cfffb47a36657",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/7f7e1cec667db5a41185200b010cfffb47a36657/Formula/lib/libunibreak.rb",
+    "org.opencontainers.image.title": "libunibreak",
+    "org.opencontainers.image.url": "https://github.com/adah1972/libunibreak",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "7.0"
+  }
+}

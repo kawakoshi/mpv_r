@@ -1,0 +1,123 @@
+{
+  "homebrew_version": "7.0.8-38-g1b0b73c",
+  "used_options": [],
+  "unused_options": [],
+  "built_as_bottle": true,
+  "built_prefix": "/opt/homebrew",
+  "poured_from_bottle": true,
+  "loaded_from_api": true,
+  "loaded_from_internal_api": true,
+  "installed_on_request": false,
+  "changed_files": [
+    "bin/gdbus-codegen",
+    "bin/glib-gettextize",
+    "lib/pkgconfig/gio-2.0.pc",
+    "lib/pkgconfig/gio-unix-2.0.pc",
+    "lib/pkgconfig/girepository-2.0.pc",
+    "lib/pkgconfig/glib-2.0.pc",
+    "lib/pkgconfig/gmodule-2.0.pc",
+    "lib/pkgconfig/gmodule-export-2.0.pc",
+    "lib/pkgconfig/gmodule-no-export-2.0.pc",
+    "lib/pkgconfig/gobject-2.0.pc",
+    "lib/pkgconfig/gthread-2.0.pc",
+    "share/gdb/auto-load/opt/homebrew/Cellar/glib/2.90.1/lib/libglib-2.0.so.0.9000.1-gdb.py",
+    "share/gdb/auto-load/opt/homebrew/Cellar/glib/2.90.1/lib/libgobject-2.0.so.0.9000.1-gdb.py"
+  ],
+  "linkage_files": [
+    "bin/gdbus",
+    "bin/gi-compile-repository",
+    "bin/gi-decompile-typelib",
+    "bin/gi-inspect-typelib",
+    "bin/gio",
+    "bin/gio-querymodules",
+    "bin/glib-compile-resources",
+    "bin/glib-compile-schemas",
+    "bin/gobject-query",
+    "bin/gresource",
+    "bin/gsettings",
+    "bin/gtester",
+    "lib/libgio-2.0.0.dylib",
+    "lib/libgirepository-2.0.0.dylib",
+    "lib/libglib-2.0.0.dylib",
+    "lib/libgmodule-2.0.0.dylib",
+    "lib/libgobject-2.0.0.dylib",
+    "lib/libgthread-2.0.0.dylib"
+  ],
+  "binary_relocation_files": [
+    "bin/gdbus",
+    "bin/gi-compile-repository",
+    "bin/gio",
+    "bin/glib-compile-resources",
+    "bin/glib-compile-schemas",
+    "bin/gresource",
+    "bin/gsettings",
+    "lib/libgio-2.0.0.dylib",
+    "lib/libgio-2.0.a",
+    "lib/libgirepository-2.0.0.dylib",
+    "lib/libgirepository-2.0.a",
+    "lib/libglib-2.0.0.dylib",
+    "lib/libglib-2.0.a"
+  ],
+  "time": 1792321690,
+  "source_modified_time": 1791300164,
+  "compiler": "clang",
+  "aliases": [],
+  "runtime_dependencies": [
+    {
+      "full_name": "pcre2",
+      "version": "10.49",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "10.49",
+      "declared_directly": true,
+      "compatibility_version": 1
+    },
+    {
+      "full_name": "json-c",
+      "version": "0.19",
+      "revision": 0,
+      "bottle_rebuild": 1,
+      "pkg_version": "0.19",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libunistring",
+      "version": "1.5",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "1.5",
+      "declared_directly": false,
+      "compatibility_version": 1
+    },
+    {
+      "full_name": "gettext",
+      "version": "1.0",
+      "revision": 0,
+      "bottle_rebuild": 2,
+      "pkg_version": "1.0",
+      "declared_directly": true,
+      "compatibility_version": 1
+    }
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "2.90.1",
+      "head": null,
+      "version_scheme": 0,
+      "compatibility_version": null
+    },
+    "path": "/Users/mba2026/Library/Caches/Homebrew/api/internal/packages.arm64_tahoe.jws.json",
+    "tap_git_head": null,
+    "tap": "homebrew/core"
+  },
+  "arch": "arm64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 26.6",
+    "cpu_family": "dunno",
+    "xcode": "27.0",
+    "clt": "27.0.0.0.1788430756",
+    "preferred_perl": "5.34"
+  }
+}

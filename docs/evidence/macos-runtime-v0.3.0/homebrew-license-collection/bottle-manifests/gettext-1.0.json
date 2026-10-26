@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:f8eebce9e9346cf1290027c8c786e53a5d76b498ccd325e9e8bc92908fb44159",
+      "size": 3665,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "0d24ef468ab6683610fb866973cbdf899165be653b42c68689b70743be5ce695",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "11716224",
+        "sh.brew.bottle.installed_size": "43212977",
+        "sh.brew.license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.12-36-gb719b47\",\"changed_files\":[\"bin/autopoint\",\"bin/gettextize\",\"libexec/gettext/user-email\",\"share/doc/gettext/examples/installpaths\",\"share/man/man1/gettext.1\",\"share/man/man1/ngettext.1\",\"share/man/man1/printf_gettext.1\",\"share/man/man1/printf_ngettext.1\"],\"source_modified_time\":1769644482,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"libunistring\",\"version\":\"1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.1\",\"declared_directly\":true},{\"full_name\":\"ncurses\",\"version\":\"6.6\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"6.6\",\"declared_directly\":true},{\"full_name\":\"readline\",\"version\":\"8.3.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"8.3.3\",\"declared_directly\":false},{\"full_name\":\"zlib\",\"version\":\"1.3.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.3.1\",\"declared_directly\":false},{\"full_name\":\"libxml2\",\"version\":\"2.15.1\",\"revision\":1,\"bottle_rebuild\":1,\"pkg_version\":\"2.15.1_1\",\"declared_directly\":true},{\"full_name\":\"acl\",\"version\":\"2.3.2\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"2.3.2\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/msgattrib,bin/autopoint,bin/msgexec,bin/gettext.sh,bin/msgpre,bin/msgcomm,bin/msgcmp,bin/msgmerge,bin/po-fetch,bin/spit,bin/msggrep,bin/xgettext,bin/msgfilter,bin/gettext,bin/printf_gettext,bin/printf_ngettext,bin/msgconv,bin/msgunfmt,bin/gettextize,bin/msguniq,bin/envsubst,bin/msgfmt,bin/msginit,bin/msgen,bin/msgcat,bin/ngettext,bin/recode-sr-latin"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:73a1e3d5ad20b0390e28477cfcc008d32ebd1e4d6c3ee24a20818e70a4ff89ee",
+      "size": 2965,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.arm64_sequoia",
+        "sh.brew.bottle.digest": "982f3a3cc24df4f552efc1b6ed6303d2920b2d5b1c1975fe3d9bd7418b8fa532",
+        "sh.brew.bottle.size": "10301852",
+        "sh.brew.bottle.installed_size": "35412810",
+        "sh.brew.license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.12-36-gb719b47\",\"changed_files\":[\"bin/autopoint\",\"bin/gettextize\",\"libexec/gettext/user-email\",\"share/doc/gettext/examples/README\",\"share/doc/gettext/examples/installpaths\",\"share/gettext/po/Makefile.in.in\",\"share/man/man1/gettext.1\",\"share/man/man1/ngettext.1\",\"share/man/man1/printf_gettext.1\",\"share/man/man1/printf_ngettext.1\"],\"source_modified_time\":1769644482,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libunistring\",\"version\":\"1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.1\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/msgconv,bin/msggrep,bin/autopoint,bin/msgpre,bin/msgcomm,bin/msgen,bin/spit,bin/msgmerge,bin/envsubst,bin/msginit,bin/printf_gettext,bin/gettext,bin/printf_ngettext,bin/gettext.sh,bin/msgcmp,bin/msgcat,bin/recode-sr-latin,bin/msgexec,bin/ngettext,bin/msgunfmt,bin/po-fetch,bin/msgfilter,bin/msgfmt,bin/msgattrib,bin/xgettext,bin/gettextize,bin/msguniq"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0a0566fffd711f294cf55fa52bd4fde0805c2f7a8e92f0286f5b85048afbd9fe",
+      "size": 2962,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.arm64_sonoma",
+        "sh.brew.bottle.digest": "f9ea4eed738746ea4150a4f83e8dd11ca21ca3de5bb113995c25eec409bb5749",
+        "sh.brew.bottle.size": "10301236",
+        "sh.brew.bottle.installed_size": "35447658",
+        "sh.brew.license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.12-36-gb719b47\",\"changed_files\":[\"bin/autopoint\",\"bin/gettextize\",\"libexec/gettext/user-email\",\"share/doc/gettext/examples/README\",\"share/doc/gettext/examples/installpaths\",\"share/gettext/po/Makefile.in.in\",\"share/man/man1/gettext.1\",\"share/man/man1/ngettext.1\",\"share/man/man1/printf_gettext.1\",\"share/man/man1/printf_ngettext.1\"],\"source_modified_time\":1769644482,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libunistring\",\"version\":\"1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.1\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/msgconv,bin/msggrep,bin/autopoint,bin/msgpre,bin/msgcomm,bin/msgen,bin/spit,bin/msgmerge,bin/envsubst,bin/msginit,bin/printf_gettext,bin/gettext,bin/printf_ngettext,bin/gettext.sh,bin/msgcmp,bin/msgcat,bin/recode-sr-latin,bin/msgexec,bin/ngettext,bin/msgunfmt,bin/po-fetch,bin/msgfilter,bin/msgfmt,bin/msgattrib,bin/xgettext,bin/gettextize,bin/msguniq"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:349157b5d143b3741db72c2a0b6fa0f599c2fc711da7231aba0ffdc23f4b6ff0",
+      "size": 2957,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.arm64_tahoe",
+        "sh.brew.bottle.digest": "1f98400343132c8e469ed475157f8f4d0f516ea86bd4600552e8b75ab638fcf9",
+        "sh.brew.bottle.size": "10229347",
+        "sh.brew.bottle.installed_size": "35276104",
+        "sh.brew.license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.12-38-g6dd5d79\",\"changed_files\":[\"bin/autopoint\",\"bin/gettextize\",\"libexec/gettext/user-email\",\"share/doc/gettext/examples/README\",\"share/doc/gettext/examples/installpaths\",\"share/gettext/po/Makefile.in.in\",\"share/man/man1/gettext.1\",\"share/man/man1/ngettext.1\",\"share/man/man1/printf_gettext.1\",\"share/man/man1/printf_ngettext.1\"],\"source_modified_time\":1769644482,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libunistring\",\"version\":\"1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.1\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/msgconv,bin/msggrep,bin/autopoint,bin/msgpre,bin/msgcomm,bin/msgen,bin/spit,bin/msgmerge,bin/envsubst,bin/msginit,bin/printf_gettext,bin/gettext,bin/printf_ngettext,bin/gettext.sh,bin/msgcmp,bin/msgcat,bin/recode-sr-latin,bin/msgexec,bin/ngettext,bin/msgunfmt,bin/po-fetch,bin/msgfilter,bin/msgfmt,bin/msgattrib,bin/xgettext,bin/gettextize,bin/msguniq"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:bc2a1a3aa64b0784c10ab41d63de320071ecb2c2a4cbcab342d5d685e232536a",
+      "size": 2872,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.sonoma",
+        "sh.brew.bottle.digest": "2cc112cce103be3beb13cc8ba67f521d4e972c4082fd69868d34920d63120c09",
+        "sh.brew.bottle.size": "10215254",
+        "sh.brew.bottle.installed_size": "33943723",
+        "sh.brew.license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.12-38-g6dd5d79\",\"changed_files\":[\"bin/autopoint\",\"bin/gettextize\",\"libexec/gettext/user-email\",\"share/doc/gettext/examples/installpaths\",\"share/man/man1/gettext.1\",\"share/man/man1/ngettext.1\",\"share/man/man1/printf_gettext.1\",\"share/man/man1/printf_ngettext.1\"],\"source_modified_time\":1769644482,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libunistring\",\"version\":\"1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.1\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/msgconv,bin/msggrep,bin/autopoint,bin/msgpre,bin/msgcomm,bin/msgen,bin/spit,bin/msgmerge,bin/envsubst,bin/msginit,bin/printf_gettext,bin/gettext,bin/printf_ngettext,bin/gettext.sh,bin/msgcmp,bin/msgcat,bin/recode-sr-latin,bin/msgexec,bin/ngettext,bin/msgunfmt,bin/po-fetch,bin/msgfilter,bin/msgfmt,bin/msgattrib,bin/xgettext,bin/gettextize,bin/msguniq"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:acca3c1c97f11c659efd98378f139b3aa4a29e0448db6ba906e7020c5fbbb38f",
+      "size": 3670,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "ed30be09f5f328a974e51e34966a502496e0623c7ecde0faf7559143cbd02255",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "11761959",
+        "sh.brew.bottle.installed_size": "40875627",
+        "sh.brew.license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.12-36-gb719b47\",\"changed_files\":[\"bin/autopoint\",\"bin/gettextize\",\"libexec/gettext/user-email\",\"share/doc/gettext/examples/installpaths\",\"share/man/man1/gettext.1\",\"share/man/man1/ngettext.1\",\"share/man/man1/printf_gettext.1\",\"share/man/man1/printf_ngettext.1\"],\"source_modified_time\":1769644482,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"libunistring\",\"version\":\"1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.1\",\"declared_directly\":true},{\"full_name\":\"ncurses\",\"version\":\"6.6\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"6.6\",\"declared_directly\":true},{\"full_name\":\"readline\",\"version\":\"8.3.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"8.3.3\",\"declared_directly\":false},{\"full_name\":\"zlib\",\"version\":\"1.3.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.3.1\",\"declared_directly\":false},{\"full_name\":\"libxml2\",\"version\":\"2.15.1\",\"revision\":1,\"bottle_rebuild\":1,\"pkg_version\":\"2.15.1_1\",\"declared_directly\":true},{\"full_name\":\"acl\",\"version\":\"2.3.2\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"2.3.2\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/gettext.sh,bin/msginit,bin/msgmerge,bin/spit,bin/msggrep,bin/msgfilter,bin/msgconv,bin/ngettext,bin/po-fetch,bin/msguniq,bin/envsubst,bin/msgpre,bin/autopoint,bin/gettext,bin/msgfmt,bin/msgcmp,bin/xgettext,bin/msgunfmt,bin/gettextize,bin/printf_gettext,bin/msgattrib,bin/msgcat,bin/msgen,bin/msgexec,bin/printf_ngettext,bin/recode-sr-latin,bin/msgcomm"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-01-29T05:35:40Z",
+    "org.opencontainers.image.description": "GNU internationalization (i18n) and localization (l10n) library",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/gettext",
+    "org.opencontainers.image.licenses": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+    "org.opencontainers.image.ref.name": "1.0",
+    "org.opencontainers.image.revision": "6dc39d877cc3ad840e5fb982783974e446e8214f",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/6dc39d877cc3ad840e5fb982783974e446e8214f/Formula/g/gettext.rb",
+    "org.opencontainers.image.title": "gettext",
+    "org.opencontainers.image.url": "https://www.gnu.org/software/gettext/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "homebrew_version": "7.0.7-49-g012f02a",
+  "used_options": [],
+  "unused_options": [],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": true,
+  "loaded_from_internal_api": true,
+  "installed_on_request": false,
+  "changed_files": [
+    "bin/libpng16-config",
+    "lib/pkgconfig/libpng.pc",
+    "lib/pkgconfig/libpng16.pc"
+  ],
+  "linkage_files": [
+    "bin/pngfix",
+    "lib/libpng16.16.dylib"
+  ],
+  "binary_relocation_files": [],
+  "time": 1792321689,
+  "source_modified_time": 1790629090,
+  "compiler": "clang",
+  "aliases": [],
+  "runtime_dependencies": [],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "1.6.59",
+      "head": null,
+      "version_scheme": 0,
+      "compatibility_version": null
+    },
+    "path": "/Users/mba2026/Library/Caches/Homebrew/api/internal/packages.arm64_tahoe.jws.json",
+    "tap_git_head": null,
+    "tap": "homebrew/core"
+  },
+  "arch": "arm64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 26.6",
+    "cpu_family": "dunno",
+    "xcode": "27.0",
+    "clt": "27.0.0.0.1788430756",
+    "preferred_perl": "5.34"
+  }
+}

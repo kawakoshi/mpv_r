@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:aaec5be8b47ae2bc938045ba18a2c6243fb0ad8e4c4f994ecc6f8e2da3ec2df4",
+      "size": 2233,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "c662ffa2b76b0b83f6e154205573a7901b0d8a890d7fc7858e65b7fd62bca77b",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "1359115",
+        "sh.brew.bottle.installed_size": "8850080",
+        "sh.brew.license": "BSD-2-Clause-Patent",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.2-103-g7219f3f\",\"changed_files\":[\"lib/pkgconfig/libvmaf.pc\"],\"source_modified_time\":1781916669,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-13\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.4\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/vmaf"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:7e24b89484dfd350aae738046beacb77df62aba38788ba81ec9b48b2d7e6f9de",
+      "size": 2150,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_sequoia",
+        "sh.brew.bottle.digest": "dbd548d2ba16092e9c88b81cd91d7cbd1ecec84b9bb31e9c196fe3f6658ee6b3",
+        "sh.brew.bottle.size": "1249529",
+        "sh.brew.bottle.installed_size": "8172407",
+        "sh.brew.license": "BSD-2-Clause-Patent",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.2-103-g7219f3f\",\"changed_files\":[\"lib/pkgconfig/libvmaf.pc\"],\"source_modified_time\":1781916669,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/vmaf"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:d5e1b9c11bcafd83b22c7869167f10c8f74c3e49dff273204dc3de46fe6eeba8",
+      "size": 2147,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_sonoma",
+        "sh.brew.bottle.digest": "8fecc50c13e0b33b1e55a321d655d2a5dde3f4f941745de142cba758c41503f9",
+        "sh.brew.bottle.size": "1252405",
+        "sh.brew.bottle.installed_size": "8208975",
+        "sh.brew.license": "BSD-2-Clause-Patent",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.2-103-g7219f3f\",\"changed_files\":[\"lib/pkgconfig/libvmaf.pc\"],\"source_modified_time\":1781916669,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/vmaf"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:3b7627d610edcacfdfd3e0e635810972c685be7bbd70ad2e425c6d512b75ced9",
+      "size": 2140,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_tahoe",
+        "sh.brew.bottle.digest": "bb9f00a9f9ef91d725d1fcd23205642cedf8557e132f1e38bb9d16a22086beaa",
+        "sh.brew.bottle.size": "1247967",
+        "sh.brew.bottle.installed_size": "8182115",
+        "sh.brew.license": "BSD-2-Clause-Patent",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.2-103-g7219f3f\",\"changed_files\":[\"lib/pkgconfig/libvmaf.pc\"],\"source_modified_time\":1781916669,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.4\",\"clt\":\"26.4.0.0.1774242506\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/vmaf"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:fccae76b0d7568db8d0a44d5e6f664a2f86cd3b1a2e6aed6625cf700446df068",
+      "size": 2131,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.sonoma",
+        "sh.brew.bottle.digest": "75b35c1c681e653f7046a485a4e29d214912dfa7d68d3d7668ec1c1943738214",
+        "sh.brew.bottle.size": "1543220",
+        "sh.brew.bottle.installed_size": "8752316",
+        "sh.brew.license": "BSD-2-Clause-Patent",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.2-103-g7219f3f\",\"changed_files\":[\"lib/pkgconfig/libvmaf.pc\"],\"source_modified_time\":1781916669,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/vmaf"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0c69446a1aac474d4ab1a958b038a42e43c76729729d94f83727ef67813cfffa",
+      "size": 2238,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "bc908d0197dc5ae7de81cdbffb4164de779b26e13ed9fe50e583bc6ac194c3d1",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "1717158",
+        "sh.brew.bottle.installed_size": "9398782",
+        "sh.brew.license": "BSD-2-Clause-Patent",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.2-103-g7219f3f\",\"changed_files\":[\"lib/pkgconfig/libvmaf.pc\"],\"source_modified_time\":1781916669,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-13\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.4\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/vmaf"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-06-20T03:17:08Z",
+    "org.opencontainers.image.description": "Perceptual video quality assessment based on multi-method fusion",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libvmaf",
+    "org.opencontainers.image.licenses": "BSD-2-Clause-Patent",
+    "org.opencontainers.image.ref.name": "3.2.0",
+    "org.opencontainers.image.revision": "c36a6f59aa7ab436ad27ce045440975eac6ce222",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/c36a6f59aa7ab436ad27ce045440975eac6ce222/Formula/lib/libvmaf.rb",
+    "org.opencontainers.image.title": "libvmaf",
+    "org.opencontainers.image.url": "https://github.com/Netflix/vmaf",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "3.2.0"
+  }
+}

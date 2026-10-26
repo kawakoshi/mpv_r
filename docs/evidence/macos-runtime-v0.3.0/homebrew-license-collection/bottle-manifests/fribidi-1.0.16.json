@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:81e717add9271cc646d080275821e303bd11f9581a0556d5a0811fa5b5ce764e",
+      "size": 2169,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.arm64_sequoia",
+        "sh.brew.bottle.digest": "4904bb3375c1b1f2539cb657fbf17b0d93c050904febbba51e9dd690f3540e3b",
+        "sh.brew.bottle.size": "98363",
+        "sh.brew.bottle.installed_size": "580169",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.3.24-59-g465a735\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15\",\"cpu_family\":\"dunno\",\"xcode\":\"16.0\",\"clt\":\"16.0.0.0.1.1724870825\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:957bc3cfbe8a88f4240ae1655dd4cfd3f0622216233b63e759c05420bc87b9b0",
+      "size": 2168,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.arm64_sonoma",
+        "sh.brew.bottle.digest": "0b03218a59bba62ca5a27b1a59d8c63f40478e3a957192121e1b2c593fcdb80c",
+        "sh.brew.bottle.size": "98394",
+        "sh.brew.bottle.installed_size": "580171",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.3.24-59-g465a735\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.4\",\"cpu_family\":\"dunno\",\"xcode\":\"15.3\",\"clt\":\"15.3.0.0.1.1708646388\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:4252ef48068c782a28a76a285b3a68501abd9dfa8791317b93562e3dbd06a17b",
+      "size": 2171,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 13.6"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.arm64_ventura",
+        "sh.brew.bottle.digest": "334c412359217397f5e5c5ad082540ac3d5d494ef543d81c01f4e482b36b699b",
+        "sh.brew.bottle.size": "98396",
+        "sh.brew.bottle.installed_size": "580171",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.3.24-59-g465a735\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.6\",\"cpu_family\":\"dunno\",\"xcode\":\"15.2\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:f723da9933c7ae76da7099b2198c667d0f49529ac77c4dce889964cc586f73a2",
+      "size": 2152,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.sonoma",
+        "sh.brew.bottle.digest": "abda3f3925574ac53d9fa5a7629102dda29132a64cf1a9f756eedc3258d1e855",
+        "sh.brew.bottle.size": "95814",
+        "sh.brew.bottle.installed_size": "489528",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.3.24-59-g465a735\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.4\",\"cpu_family\":\"penryn\",\"xcode\":\"15.3\",\"clt\":\"15.3.0.0.1.1708646388\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:5c09217e9981f17029b77bee6424cbe4833efa672c87d7f83987a2921fc7a9e8",
+      "size": 2155,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 13.6"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.ventura",
+        "sh.brew.bottle.digest": "70e46d9ac5dafc34d891f6d4e1fea8416e23383c30a3ef7b52250295a9643643",
+        "sh.brew.bottle.size": "96754",
+        "sh.brew.bottle.installed_size": "542784",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.3.24-59-g465a735\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.6\",\"cpu_family\":\"penryn\",\"xcode\":\"15.2\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:1d611060489616b0a53ed9cc2e95255d484c6d30a9f01e3608fdc6706bcac189",
+      "size": 2236,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "da83ac3be7e395ab2444c0968fb3dce389161f10c2b481ddd4b18a9056bc2d60",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "104677",
+        "sh.brew.bottle.installed_size": "579423",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.3.24-59-g465a735\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:33406cf86dbb1f41528c9ca8697f53c47a9c36f44fc1b3cfad27ec0c9659ffa0",
+      "size": 2232,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "f77859595dfecda802be39353e61b545c1cf1c67e9630f9441be68010f555d00",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "103827",
+        "sh.brew.bottle.installed_size": "665146",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.4.24-276-gfec5b64\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:003a643002a2163303c9549c7485139575bebd9d2c2ac3a8611755ab12bbaac7",
+      "size": 2163,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.0.16.arm64_tahoe",
+        "sh.brew.bottle.digest": "4f6b90cece7f5eb2491a4938689366c84e5cba64e4a99009f20c92aaf341d186",
+        "sh.brew.bottle.size": "98970",
+        "sh.brew.bottle.installed_size": "579725",
+        "sh.brew.license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.10-22-g8ef7a9d\",\"changed_files\":[\"lib/pkgconfig/fribidi.pc\"],\"source_modified_time\":1727287489,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.0\",\"clt\":\"26.0.0.0.1.1756965055\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/fribidi"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2024-09-25T19:26:38Z",
+    "org.opencontainers.image.description": "Implementation of the Unicode BiDi algorithm",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/fribidi",
+    "org.opencontainers.image.licenses": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "org.opencontainers.image.ref.name": "1.0.16",
+    "org.opencontainers.image.revision": "d28f7d4ed9ed47183bfde1c3829ddf04bb6ed7ef",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/d28f7d4ed9ed47183bfde1c3829ddf04bb6ed7ef/Formula/f/fribidi.rb",
+    "org.opencontainers.image.title": "fribidi",
+    "org.opencontainers.image.url": "https://github.com/fribidi/fribidi",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.0.16"
+  }
+}

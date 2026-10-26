@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:ce50d3e2508fe1c37861500bebec89bdec9125b7b7e621adb3ee3b672b61c723",
+      "size": 2215,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.1.1782381659.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "bbf3db8139ab7cf88f665eff3f3c36de804145a223b3514db4dc66f319ac854a",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "1053897",
+        "sh.brew.bottle.installed_size": "2632419",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.4\",\"changed_files\":[\"lib/pkgconfig/luajit.pc\"],\"source_modified_time\":1782381659,\"compiler\":\"gcc-13\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.4\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/luajit-2.1.1782381659,bin/luajit"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:7b7f1fefc9beaa4305138ee609075f4c81814f3a082739157280db2b10d5dad2",
+      "size": 2155,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.1.1782381659.arm64_sequoia",
+        "sh.brew.bottle.digest": "f53601ed0e0c660ccfe31549a66e86b90a7b9027d678121b9d11df05dff22095",
+        "sh.brew.bottle.size": "905872",
+        "sh.brew.bottle.installed_size": "2219343",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.4\",\"changed_files\":[\"lib/pkgconfig/luajit.pc\"],\"source_modified_time\":1782381659,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/luajit-2.1.1782381659,bin/luajit"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:7711ffceb6e1708d23ce914293b1ec47dee44858b3671b823bac5ab1b07476d8",
+      "size": 2152,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.1.1782381659.arm64_sonoma",
+        "sh.brew.bottle.digest": "5f20e6923804c3964feb20daed4c0a49b230edaa27134b8dbdea817e73079702",
+        "sh.brew.bottle.size": "902093",
+        "sh.brew.bottle.installed_size": "2219799",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.4\",\"changed_files\":[\"lib/pkgconfig/luajit.pc\"],\"source_modified_time\":1782381659,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/luajit-2.1.1782381659,bin/luajit"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:8009dae649f7269076b57d2286cf6ef87e1726cbe2fb0db987155c59624e2942",
+      "size": 2145,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.1.1782381659.arm64_tahoe",
+        "sh.brew.bottle.digest": "271d015d2644757de487a2963f58a08bfeb132b96a5f8aa50c178bbc6140b802",
+        "sh.brew.bottle.size": "902919",
+        "sh.brew.bottle.installed_size": "2216435",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.4\",\"changed_files\":[\"lib/pkgconfig/luajit.pc\"],\"source_modified_time\":1782381659,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.4\",\"clt\":\"26.4.0.0.1774242506\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/luajit-2.1.1782381659,bin/luajit"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:6a052af7b0df9f1c231f179302f7b0ae1713cf7e03b8b1c0a6ddd9ab943dc5d3",
+      "size": 2136,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.1.1782381659.sonoma",
+        "sh.brew.bottle.digest": "1da422f00de038cc8d2ab3f10f80287dec32f3a422086dcf5f753511d19e5d4d",
+        "sh.brew.bottle.size": "881044",
+        "sh.brew.bottle.installed_size": "2001918",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.4\",\"changed_files\":[\"lib/pkgconfig/luajit.pc\"],\"source_modified_time\":1782381659,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/luajit-2.1.1782381659,bin/luajit"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:597e7f453898223ab8c7af8743aa0305bc80a0703fccf241b62c40a13dbdd487",
+      "size": 2220,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.1.1782381659.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "3c43340aa2d77faa8bdde1a38e0598080c1f1944a28c763fd5975348f00870ec",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "1057839",
+        "sh.brew.bottle.installed_size": "2484589",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.4\",\"changed_files\":[\"lib/pkgconfig/luajit.pc\"],\"source_modified_time\":1782381659,\"compiler\":\"gcc-13\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.4\",\"cpu_family\":\"zen4\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/luajit-2.1.1782381659,bin/luajit"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-06-25T11:52:33Z",
+    "org.opencontainers.image.description": "Just-In-Time Compiler (JIT) for the Lua programming language",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/luajit",
+    "org.opencontainers.image.licenses": "MIT",
+    "org.opencontainers.image.ref.name": "2.1.1782381659",
+    "org.opencontainers.image.revision": "16f6bfbf907c2402e5d5337568b6b63165d45851",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/16f6bfbf907c2402e5d5337568b6b63165d45851/Formula/l/luajit.rb",
+    "org.opencontainers.image.title": "luajit",
+    "org.opencontainers.image.url": "https://luajit.org/luajit.html",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "2.1.1782381659"
+  }
+}

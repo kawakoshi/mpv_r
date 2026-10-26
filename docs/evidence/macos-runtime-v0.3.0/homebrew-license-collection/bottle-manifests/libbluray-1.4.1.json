@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:28c8b904703b2d82add603f1878ce276a27c3733560379a5ad480c5ae5c593f2",
+      "size": 3674,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "0839ef787f9411f8056674b5f7e1dd7e68d5b5df330a11ed1e845f1635683ef1",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "386322",
+        "sh.brew.bottle.installed_size": "1608211",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.15-44-gb4d16f5\",\"changed_files\":[\"lib/pkgconfig/libbluray.pc\"],\"source_modified_time\":1769459831,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":false},{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":false},{\"full_name\":\"bzip2\",\"version\":\"1.0.8\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"1.0.8\",\"declared_directly\":false},{\"full_name\":\"freetype\",\"version\":\"2.14.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.14.1_2\",\"declared_directly\":true},{\"full_name\":\"expat\",\"version\":\"2.7.4\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.7.4\",\"declared_directly\":false},{\"full_name\":\"fontconfig\",\"version\":\"2.17.1\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"2.17.1\",\"declared_directly\":true},{\"full_name\":\"libudfread\",\"version\":\"1.2.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.2.0\",\"declared_directly\":true},{\"full_name\":\"ncurses\",\"version\":\"6.6\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"6.6\",\"declared_directly\":false},{\"full_name\":\"readline\",\"version\":\"8.3.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"8.3.3\",\"declared_directly\":false},{\"full_name\":\"libxml2\",\"version\":\"2.15.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.15.1_2\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/bd_list_titles,bin/bd_splice,bin/bd_info"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:e91b1d150cfa2710bfde9997448a592b56fe49990ebf0ff4da731d37d18b85eb",
+      "size": 3052,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.arm64_sequoia",
+        "sh.brew.bottle.digest": "f20ad084fb722697dd0658fb7de27d94497f5849fd18fa3aacba1e2ea664fbc6",
+        "sh.brew.bottle.size": "374562",
+        "sh.brew.bottle.installed_size": "1226728",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.15-44-gb4d16f5\",\"changed_files\":[\"lib/pkgconfig/libbluray.pc\"],\"source_modified_time\":1769459831,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":false},{\"full_name\":\"freetype\",\"version\":\"2.14.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.14.1_2\",\"declared_directly\":true},{\"full_name\":\"libunistring\",\"version\":\"1.4.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.2\",\"declared_directly\":false},{\"full_name\":\"gettext\",\"version\":\"1.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.0\",\"declared_directly\":false},{\"full_name\":\"fontconfig\",\"version\":\"2.17.1\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"2.17.1\",\"declared_directly\":true},{\"full_name\":\"libudfread\",\"version\":\"1.2.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.2.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/bd_info,bin/bd_splice,bin/bd_list_titles"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:c5547cba51a1d36abfbb929ebbe2788ab6ac617f0ff92cc98922b396ecf808c2",
+      "size": 3049,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.arm64_sonoma",
+        "sh.brew.bottle.digest": "fa3daea45cc9170bcb15d3d8fd7b238ebdb75ec241afe1488d57dbd7559d9982",
+        "sh.brew.bottle.size": "340815",
+        "sh.brew.bottle.installed_size": "1090376",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.15-44-gb4d16f5\",\"changed_files\":[\"lib/pkgconfig/libbluray.pc\"],\"source_modified_time\":1769459831,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":false},{\"full_name\":\"freetype\",\"version\":\"2.14.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.14.1_2\",\"declared_directly\":true},{\"full_name\":\"libunistring\",\"version\":\"1.4.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.2\",\"declared_directly\":false},{\"full_name\":\"gettext\",\"version\":\"1.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.0\",\"declared_directly\":false},{\"full_name\":\"fontconfig\",\"version\":\"2.17.1\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"2.17.1\",\"declared_directly\":true},{\"full_name\":\"libudfread\",\"version\":\"1.2.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.2.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/bd_info,bin/bd_splice,bin/bd_list_titles"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:ede76b5bb2cbb305428ada8468e052f2e6c9eda22dcb408e8e05661f31ced2d2",
+      "size": 3044,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.arm64_tahoe",
+        "sh.brew.bottle.digest": "3895fef0bbc04ee7271992f3908569416a67d97efba1c492a4ccc053de0a89c3",
+        "sh.brew.bottle.size": "374142",
+        "sh.brew.bottle.installed_size": "1223958",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.15-44-gb4d16f5\",\"changed_files\":[\"lib/pkgconfig/libbluray.pc\"],\"source_modified_time\":1769459831,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":false},{\"full_name\":\"freetype\",\"version\":\"2.14.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.14.1_2\",\"declared_directly\":true},{\"full_name\":\"libunistring\",\"version\":\"1.4.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.2\",\"declared_directly\":false},{\"full_name\":\"gettext\",\"version\":\"1.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.0\",\"declared_directly\":false},{\"full_name\":\"fontconfig\",\"version\":\"2.17.1\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"2.17.1\",\"declared_directly\":true},{\"full_name\":\"libudfread\",\"version\":\"1.2.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.2.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/bd_info,bin/bd_splice,bin/bd_list_titles"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:ca1c4640c0974f5115407d9d93854025f24a4cb7e53f2d3fb21e21ed7c1c91db",
+      "size": 3032,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.sonoma",
+        "sh.brew.bottle.digest": "1aa87a3cf82c6b914c78856a9283e838e1d7426f4d1377537dae81e1041f64b0",
+        "sh.brew.bottle.size": "308493",
+        "sh.brew.bottle.installed_size": "819821",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.15-44-gb4d16f5\",\"changed_files\":[\"lib/pkgconfig/libbluray.pc\"],\"source_modified_time\":1769459831,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":false},{\"full_name\":\"freetype\",\"version\":\"2.14.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.14.1_2\",\"declared_directly\":true},{\"full_name\":\"libunistring\",\"version\":\"1.4.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.2\",\"declared_directly\":false},{\"full_name\":\"gettext\",\"version\":\"1.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.0\",\"declared_directly\":false},{\"full_name\":\"fontconfig\",\"version\":\"2.17.1\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"2.17.1\",\"declared_directly\":true},{\"full_name\":\"libudfread\",\"version\":\"1.2.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.2.0\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/bd_info,bin/bd_splice,bin/bd_list_titles"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:e32401ea8390f98abcd1212c118803ca113e4f1e2d551ab2c4a44204907bec10",
+      "size": 3679,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "153b38bf91479d363e0dcaaef4ddebc96793a7db980baa3993a56f5a0082e477",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "373992",
+        "sh.brew.bottle.installed_size": "1177781",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.15-44-gb4d16f5\",\"changed_files\":[\"lib/pkgconfig/libbluray.pc\"],\"source_modified_time\":1769459831,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":false},{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":false},{\"full_name\":\"bzip2\",\"version\":\"1.0.8\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"1.0.8\",\"declared_directly\":false},{\"full_name\":\"freetype\",\"version\":\"2.14.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.14.1_2\",\"declared_directly\":true},{\"full_name\":\"expat\",\"version\":\"2.7.4\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.7.4\",\"declared_directly\":false},{\"full_name\":\"fontconfig\",\"version\":\"2.17.1\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"2.17.1\",\"declared_directly\":true},{\"full_name\":\"libudfread\",\"version\":\"1.2.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.2.0\",\"declared_directly\":true},{\"full_name\":\"ncurses\",\"version\":\"6.6\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"6.6\",\"declared_directly\":false},{\"full_name\":\"readline\",\"version\":\"8.3.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"8.3.3\",\"declared_directly\":false},{\"full_name\":\"libxml2\",\"version\":\"2.15.1\",\"revision\":2,\"bottle_rebuild\":0,\"pkg_version\":\"2.15.1_2\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/bd_info,bin/bd_list_titles,bin/bd_splice"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-02-26T09:41:33Z",
+    "org.opencontainers.image.description": "Blu-Ray disc playback library for media players like VLC",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libbluray",
+    "org.opencontainers.image.licenses": "LGPL-2.1-or-later",
+    "org.opencontainers.image.ref.name": "1.4.1",
+    "org.opencontainers.image.revision": "d747675caca8698679d71ac939a7565b59920e09",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/d747675caca8698679d71ac939a7565b59920e09/Formula/lib/libbluray.rb",
+    "org.opencontainers.image.title": "libbluray",
+    "org.opencontainers.image.url": "https://www.videolan.org/developers/libbluray.html",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.4.1"
+  }
+}

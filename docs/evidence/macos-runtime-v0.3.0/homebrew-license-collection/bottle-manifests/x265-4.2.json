@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:09bd308f83266fad1c1f99678ed3ab9095a08c47f35a89667bd33f09059f3ee5",
+      "size": 2170,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.2.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "1cd1acdf8fe735cd2ca65e7f480ff487166aa6c73038fc14d9487e0ece0d597e",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "5536049",
+        "sh.brew.bottle.installed_size": "19445993",
+        "sh.brew.license": "GPL-2.0-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.6-103-g3aae056\",\"changed_files\":[\"lib/pkgconfig/x265.pc\"],\"source_modified_time\":1776580157,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/x265"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:1cf4ba42ba094e9a5910a2c6d896c6853d349a1e61754a2466a0f4a22ad65e41",
+      "size": 2087,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.2.arm64_sequoia",
+        "sh.brew.bottle.digest": "29300af7c34c7bc5fd84549b2e0173909026c264060d56bf6d35d79da3808506",
+        "sh.brew.bottle.size": "5430653",
+        "sh.brew.bottle.installed_size": "17141079",
+        "sh.brew.license": "GPL-2.0-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.6-103-g3aae056\",\"changed_files\":[\"lib/pkgconfig/x265.pc\"],\"source_modified_time\":1776580157,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/x265"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:7948f8c9e1f0a096c6031a016b33d54d455a13443b082cf1be3c071dd0c11d22",
+      "size": 2084,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.2.arm64_sonoma",
+        "sh.brew.bottle.digest": "614fd3ece81d8eaf67d18d2a8fb5d8d04f8004982547bbdaa1743bf621b1bc7e",
+        "sh.brew.bottle.size": "5251486",
+        "sh.brew.bottle.installed_size": "16366487",
+        "sh.brew.license": "GPL-2.0-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.6-103-g3aae056\",\"changed_files\":[\"lib/pkgconfig/x265.pc\"],\"source_modified_time\":1776580157,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/x265"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:3a1d320cbf5a029f4d6cef2288ad2b2200fa2999414315df1b3f9780b5f246c1",
+      "size": 2077,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.2.arm64_tahoe",
+        "sh.brew.bottle.digest": "ee3075f8af9807bdb30a890b22c1e948a5930f6001c7123eb57faa87c4d15c85",
+        "sh.brew.bottle.size": "5128628",
+        "sh.brew.bottle.installed_size": "16994491",
+        "sh.brew.license": "GPL-2.0-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.6-103-g3aae056\",\"changed_files\":[\"lib/pkgconfig/x265.pc\"],\"source_modified_time\":1776580157,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.4\",\"clt\":\"26.4.0.0.1774242506\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/x265"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:4b91eb72eaba279480c24aba933f36e4cd409318d627212f5812d91320050df1",
+      "size": 2068,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.2.sonoma",
+        "sh.brew.bottle.digest": "661c9c3a348ce2c6677204fa20bc7751bd5c6e32cffac91b41a01194257ba35d",
+        "sh.brew.bottle.size": "5630376",
+        "sh.brew.bottle.installed_size": "38505700",
+        "sh.brew.license": "GPL-2.0-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.6-103-g3aae056\",\"changed_files\":[\"lib/pkgconfig/x265.pc\"],\"source_modified_time\":1776580157,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/x265"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:72e94d7f26515c8c2a0127a98c2def021c2aa83369f589ce952255743a0a3d42",
+      "size": 2175,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "4.2.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "828f429ad04ef1e539d1539de78b84e3c10c295edee9b512ba64e8d029abf0d1",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "6496968",
+        "sh.brew.bottle.installed_size": "43086745",
+        "sh.brew.license": "GPL-2.0-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.6-103-g3aae056\",\"changed_files\":[\"lib/pkgconfig/x265.pc\"],\"source_modified_time\":1776580157,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/x265"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-04-19T12:27:03Z",
+    "org.opencontainers.image.description": "H.265/HEVC encoder",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/x265",
+    "org.opencontainers.image.licenses": "GPL-2.0-or-later",
+    "org.opencontainers.image.ref.name": "4.2",
+    "org.opencontainers.image.revision": "9f3eb903d08e9b2bf9eb19bc63bfcae6c43920d5",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/9f3eb903d08e9b2bf9eb19bc63bfcae6c43920d5/Formula/x/x265.rb",
+    "org.opencontainers.image.title": "x265",
+    "org.opencontainers.image.url": "https://bitbucket.org/multicoreware/x265_git",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "4.2"
+  }
+}

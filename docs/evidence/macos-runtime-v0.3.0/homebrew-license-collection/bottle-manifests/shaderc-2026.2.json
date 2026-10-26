@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:b047b401ade4428f8bd7bc9b45b34ceb7ad34910b818a3764316bbf7d7f09942",
+      "size": 2302,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2026.2.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "bdc97b4b126ffdc619e1f52023477a2ad76115766941dc96e775f65d7ff45431",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "11854334",
+        "sh.brew.bottle.installed_size": "40319281",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.8-9-gf9f0eb4\",\"changed_files\":[\"lib/pkgconfig/shaderc.pc\",\"lib/pkgconfig/shaderc_combined.pc\",\"lib/pkgconfig/shaderc_static.pc\"],\"source_modified_time\":1777299111,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/glslc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:aa67b45ed18e5cdd5842e6b7f12bf5242de316f07dbcc4f950fd13027c925dba",
+      "size": 2217,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2026.2.arm64_sequoia",
+        "sh.brew.bottle.digest": "fd12de6d9d6737f8dceaa09626a4371dbfcacfc2babde0dfc3ec83ae2c133f88",
+        "sh.brew.bottle.size": "8049509",
+        "sh.brew.bottle.installed_size": "31478099",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.8-9-gf9f0eb4\",\"changed_files\":[\"lib/pkgconfig/shaderc.pc\",\"lib/pkgconfig/shaderc_combined.pc\",\"lib/pkgconfig/shaderc_static.pc\"],\"source_modified_time\":1777299111,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/glslc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:2a18a08201d49cd408a2a72d34e4a67470843f7f18770dba5589bf212e617ae7",
+      "size": 2214,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2026.2.arm64_sonoma",
+        "sh.brew.bottle.digest": "99858aa675ccd198590e2db7049623ee1f5e01c67c78cf8897f682e731030b58",
+        "sh.brew.bottle.size": "8066319",
+        "sh.brew.bottle.installed_size": "31592115",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.8-9-gf9f0eb4\",\"changed_files\":[\"lib/pkgconfig/shaderc.pc\",\"lib/pkgconfig/shaderc_combined.pc\",\"lib/pkgconfig/shaderc_static.pc\"],\"source_modified_time\":1777299111,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/glslc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:72801bb7f1c5faf1de7c767244f0c6cc11ec5fb2b8e384c304b063cb5e27c9bb",
+      "size": 2207,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2026.2.arm64_tahoe",
+        "sh.brew.bottle.digest": "58c46665bd5ca59061486e1a79320a0d2d210be57171717adcc582176ba4078b",
+        "sh.brew.bottle.size": "7864011",
+        "sh.brew.bottle.installed_size": "31113239",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.8-9-gf9f0eb4\",\"changed_files\":[\"lib/pkgconfig/shaderc.pc\",\"lib/pkgconfig/shaderc_combined.pc\",\"lib/pkgconfig/shaderc_static.pc\"],\"source_modified_time\":1777299111,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.4\",\"clt\":\"26.4.0.0.1774242506\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/glslc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:a3841038692fb92d6bf843709017575ac9509557df6b2b36c837107a0a955e37",
+      "size": 2198,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2026.2.sonoma",
+        "sh.brew.bottle.digest": "cee5a5fce9e3a1aa9f437f347ad7199b0b3dc264b98ce88fd090060c4810ff60",
+        "sh.brew.bottle.size": "8545880",
+        "sh.brew.bottle.installed_size": "33227306",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.8-9-gf9f0eb4\",\"changed_files\":[\"lib/pkgconfig/shaderc.pc\",\"lib/pkgconfig/shaderc_combined.pc\",\"lib/pkgconfig/shaderc_static.pc\"],\"source_modified_time\":1777299111,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/glslc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:533d23b6dfb571f2ab84c8ce1d517fdba887a1bf088808a38fefb5f5e3924598",
+      "size": 2307,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2026.2.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "69fb73faf29219169359889183db1a19ed18610d549752c91cb0b5526ee86f6c",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "11946921",
+        "sh.brew.bottle.installed_size": "40427505",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.8-9-gf9f0eb4\",\"changed_files\":[\"lib/pkgconfig/shaderc.pc\",\"lib/pkgconfig/shaderc_combined.pc\",\"lib/pkgconfig/shaderc_static.pc\"],\"source_modified_time\":1777299111,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/glslc"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-04-27T19:04:28Z",
+    "org.opencontainers.image.description": "Collection of tools, libraries, and tests for Vulkan shader compilation",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/shaderc",
+    "org.opencontainers.image.licenses": "Apache-2.0",
+    "org.opencontainers.image.ref.name": "2026.2",
+    "org.opencontainers.image.revision": "e5ec3644f8645f4577f2ce125daba0b6505d9b94",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/e5ec3644f8645f4577f2ce125daba0b6505d9b94/Formula/s/shaderc.rb",
+    "org.opencontainers.image.title": "shaderc",
+    "org.opencontainers.image.url": "https://github.com/google/shaderc",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "2026.2"
+  }
+}

@@ -49,3 +49,19 @@ to all of the following:
 
 This review also applies to codec patent considerations separately from open
 source license compliance.
+
+## Homebrew License Collection
+
+After generating the runtime manifest, collect the license texts and retained
+Homebrew evidence without overwriting an existing collection:
+
+```sh
+packaging/tools/collect-macos-homebrew-licenses.sh \
+  docs/evidence/macos-runtime-vX.Y.Z/runtime-manifest.tsv \
+  docs/evidence/macos-runtime-vX.Y.Z/homebrew-license-collection
+```
+
+The collection copies license/copyright/notice files and installation receipts
+from the exact local Kegs identified in the manifest. It also copies a cached
+Homebrew bottle manifest when available. A missing bottle manifest is evidence
+to resolve, not permission to substitute current Formula metadata.
