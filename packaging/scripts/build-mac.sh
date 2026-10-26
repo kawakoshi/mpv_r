@@ -8,6 +8,8 @@ version="${VERSION:-v0.3.0}"
 source_app="${MAC_SOURCE_APP:-}"
 source_zip="${MAC_SOURCE_ZIP:-$root/../dist/mpv_r-mac-v0.1.0.zip}"
 build_dmg="${BUILD_DMG:-0}"
+license_evidence="${MAC_LICENSE_EVIDENCE:-}"
+require_license_evidence="${REQUIRE_MAC_LICENSE_EVIDENCE:-0}"
 package_name="mpv_r"
 output_dir="$root/dist"
 output_zip="$output_dir/mpv_r-mac-$version.zip"
@@ -22,6 +24,28 @@ dmg_dir="$work_dir/dmg"
 if [ -z "$source_app" ] && [ ! -f "$source_zip" ]; then
   echo "Mac source zip not found: $source_zip" >&2
   exit 1
+fi
+
+if [ "$require_license_evidence" = "1" ] && [ -z "$license_evidence" ]; then
+  echo "MAC_LICENSE_EVIDENCE is required for this Mac release" >&2
+  exit 1
+fi
+if [ -n "$license_evidence" ] && [ ! -d "$license_evidence" ]; then
+  echo "Mac license evidence directory not found: $license_evidence" >&2
+  exit 1
+fi
+if [ -n "$license_evidence" ]; then
+  for evidence_file in runtime-manifest.tsv linkage.txt; do
+    if [ ! -f "$license_evidence/$evidence_file" ]; then
+      echo "Missing Mac license evidence: $license_evidence/$evidence_file" >&2
+      exit 1
+    fi
+  done
+  if [ ! -d "$license_evidence/homebrew-license-collection/licenses" ] || \
+     [ ! -f "$license_evidence/homebrew-license-collection/primary-source-index.tsv" ]; then
+    echo "Mac license evidence needs collected licenses and primary-source-index.tsv" >&2
+    exit 1
+  fi
 fi
 
 mkdir -p "$source_dir"
@@ -66,6 +90,18 @@ cp "$root/config/mac/mpv.conf" "$resources_dir/mpv.conf"
 cp "$root/config/mac/input.conf" "$resources_dir/input.conf"
 copy_common_documents "$root" "$package_dir"
 copy_common_documents "$root" "$resources_dir"
+
+if [ -n "$license_evidence" ]; then
+  for target in "$package_dir" "$resources_dir"; do
+    evidence_target="$target/documents/LICENSES/macos-runtime"
+    mkdir -p "$evidence_target"
+    cp "$license_evidence/runtime-manifest.tsv" "$evidence_target/"
+    cp "$license_evidence/linkage.txt" "$evidence_target/"
+    cp "$license_evidence/homebrew-license-collection/primary-source-index.tsv" "$evidence_target/"
+    cp "$license_evidence/homebrew-license-collection/homebrew-formula-index.tsv" "$evidence_target/"
+    cp -R "$license_evidence/homebrew-license-collection/licenses" "$evidence_target/"
+  done
+fi
 
 codesign --force --deep --sign - "$package_dir/mpv_r.app" >/dev/null
 

@@ -66,6 +66,26 @@ to all of the following:
   build-environment record; and
 - the Homebrew Formula revision and bottle/Keg evidence used at build time.
 
+## Package the Evidence
+
+For a release candidate, pass the finished runtime-evidence directory to the
+packager and make that input mandatory:
+
+```sh
+VERSION=vX.Y.Z \
+BUILD_DMG=1 \
+REQUIRE_MAC_LICENSE_EVIDENCE=1 \
+MAC_LICENSE_EVIDENCE=docs/evidence/macos-runtime-vX.Y.Z \
+MAC_SOURCE_APP=/path/to/mpv.app \
+packaging/scripts/build-mac.sh
+```
+
+The package then includes its runtime manifest, linkage report, Formula/source
+indexes, and collected license texts under
+`mpv_r.app/Contents/Resources/documents/LICENSES/macos-runtime/`. This does not
+replace the source-archive, patch, and build-instruction obligations; it keeps
+the license and source-location record with the distributed app.
+
 This review also applies to codec patent considerations separately from open
 source license compliance.
 
