@@ -17,11 +17,14 @@ mpv_rは、mpvをベースにした動画レビュー用プレイヤー配布版
 3. mpv_r.exeを起動します。
 4. mpv_rから動画ファイルを開くか、動画ファイルをmpv_r.exeへドラッグ&ドロップします。
 
-同梱しているmpv本体はmpvフォルダにあります。
-mpv_rの設定はportable_configフォルダにあります。
+同梱しているmpv本体は`resources/mpv`にあります。
+mpv_rの設定は`resources/config`にあります。
 
 mpv_r.exeだけを別の場所へ移動しないでください。隣にあるmpvフォルダと
-portable_configフォルダが必要です。
+設定ファイルが必要です。
+
+セットアップ、セキュリティ通知、操作、トラブルシューティングは
+`documents/windows-preview-guide.md`を参照してください。
 
 注意
 ----

@@ -65,6 +65,9 @@ cp "$mpv_dir/mpv/fonts.conf" "$package_dir/resources/mpv/mpv/fonts.conf"
 cp "$root/config/windows/mpv.conf" "$package_dir/resources/config/mpv.conf"
 cp "$root/config/windows/input.conf" "$package_dir/resources/config/input.conf"
 copy_common_documents "$root" "$package_dir"
+cp "$root/docs/windows-preview-guide.md" "$package_dir/documents/windows-preview-guide.md"
+cp "$root/translations_ja/windows-preview-guide_jp.md" \
+  "$package_dir/documents/translations_ja/windows-preview-guide_jp.md"
 
 (
   cd "$work_dir"

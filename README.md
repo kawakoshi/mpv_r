@@ -107,6 +107,10 @@ and exported as a DMG. The Windows v0.2 package continues to assemble an
 existing mpv build, mpv_r configuration files, and project documents into a
 portable zip.
 
+Windows v0.2 usage, security notices, and troubleshooting are documented in:
+
+- `docs/windows-preview-guide.md`
+
 ## Roadmap
 
 - v0.1.0: Mac Preview

@@ -11,11 +11,14 @@ How to Use
 3. Start mpv_r.exe.
 4. Open a video file from mpv_r, or drag and drop a video file onto mpv_r.exe.
 
-The bundled mpv player is in the mpv folder.
-The mpv_r settings are in the portable_config folder.
+The bundled mpv player is in `resources/mpv`.
+The mpv_r settings are in `resources/config`.
 
 Do not move mpv_r.exe out of this folder by itself. It needs the bundled mpv
-folder and portable_config folder next to it.
+files and configuration next to it.
+
+For setup, security notices, controls, and troubleshooting, see
+`documents/windows-preview-guide.md`.
 
 Notes
 -----

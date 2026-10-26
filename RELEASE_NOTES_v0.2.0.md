@@ -60,7 +60,7 @@ The Windows package does not bundle mpv's upstream `doc/manual.pdf` or
 Before publishing, run the platform smoke test checklists:
 
 - `docs/smoke-test-mac.md`
-- Windows checklist: to be added
+- `docs/smoke-test-windows.md`
 
 ## Checksum
 

@@ -1,7 +1,7 @@
 # Windows Packaging Notes
 
-v0.1.1 uses a small Go launcher. v0.2 keeps that approach and changes the
-package layout so Mac and Windows look like the same software distribution.
+The current Windows release is v0.2.0. It uses a small Go launcher and a
+portable ZIP package; it is not an installer.
 
 - source: `cmd/mpv-r-launcher/main.go`
 - output: `mpv_r.exe`
@@ -21,6 +21,15 @@ packaging/scripts/build-windows.sh
 ```
 
 `-H windowsgui` prevents a console window from appearing when the launcher is started from Explorer.
+
+## User Documentation
+
+The current Windows user guide is:
+
+- `docs/windows-preview-guide.md`
+
+It covers extraction, normal startup, SmartScreen, keeping the portable package
+together, review controls, screenshots, and recovery of the supplied settings.
 
 ## v0.2 Target Layout
 
@@ -54,5 +63,4 @@ mpv_r/
 ```
 
 The upstream mpv `doc/manual.pdf` and `doc/mpbindings.png` files are not bundled
-in v0.2. mpv documentation should be linked from NOTICE/source information
-instead, while mpv_r usage is documented in this project and note articles.
+in v0.2. mpv documentation is linked from NOTICE/source information instead.
