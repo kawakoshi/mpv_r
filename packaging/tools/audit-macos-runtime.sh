@@ -25,7 +25,7 @@ find -L "$brew_prefix/opt" -path '*/lib/*.dylib' -type f -print 2>/dev/null \
   | while IFS= read -r path; do printf '%s\t%s\n' "$(basename "$path")" "$path"; done \
   | sort -u > "$index"
 
-printf 'bundle_path\tsha256\tformula\tformula_version\tmatched_keg_path\tkeg_sha256\tmatch\n' \
+printf 'bundle_path\tsha256\tformula\tformula_version\tmatched_keg_path\tkeg_sha256\tkeg_content_match\n' \
   > "$output_dir/runtime-manifest.tsv"
 : > "$output_dir/linkage.txt"
 
@@ -37,7 +37,13 @@ while IFS= read -r -d '' runtime; do
   version=UNMAPPED
   candidate_hash=UNMAPPED
   match=UNMAPPED
-  if [ -n "$candidate" ]; then
+  if [ "$base" = mpv ] && [ "${runtime#$app/}" = 'Contents/MacOS/mpv' ]; then
+    formula=mpv-player/mpv
+    version=${MPV_SOURCE_TAG:-UNRECORDED}
+    candidate=SOURCE_BUILD
+    candidate_hash=N/A
+    match=N/A
+  elif [ -n "$candidate" ]; then
     resolved=$(realpath "$candidate")
     candidate_hash=$(shasum -a 256 "$resolved" | awk '{print $1}')
     relative=${resolved#"$brew_prefix/Cellar/"}
