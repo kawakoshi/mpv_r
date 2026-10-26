@@ -145,8 +145,11 @@ for package in "${!packages[@]}"; do
   if [ "$count" -gt 0 ]; then license_status=COLLECTED; else license_status=MISSING_LOCAL_LICENSE; fi
   printf '%s\t%s\t%s\t%s\n' "$package" "$package_version" "$count" "$license_status" \
     >> "$evidence_dir/license-manifest.tsv"
-  printf '%s\t%s\t%s\t%s\tMISSING\tMISSING\tPENDING_MANUAL_SOURCE_VERIFICATION\n' \
-    "$package" "$package_version" "$homepage" "$declared_license" >> "$evidence_dir/source-index.tsv"
+  source_package=${package/mingw-w64-x86_64-/mingw-w64-}
+  source_url="https://repo.msys2.org/mingw/sources/${source_package}-${package_version}.src.tar.zst"
+  printf '%s\t%s\t%s\t%s\t%s\tMISSING\tPENDING_SOURCE_PACKAGE_DOWNLOAD_AND_VERIFICATION\n' \
+    "$package" "$package_version" "$homepage" "$declared_license" "$source_url" \
+    >> "$evidence_dir/source-index.tsv"
 done
 
 printf 'Captured Windows MSYS2 runtime evidence: %s\n' "$evidence_dir"

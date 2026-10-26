@@ -42,10 +42,12 @@ WINDOWS_BUILD_EVIDENCE=docs/evidence/windows-msys2-v0.41.0-release \
 packaging/scripts/build-mpv-windows-msys2.sh
 ```
 
-The generated `source-index.tsv` deliberately starts with MSYS2 dependency
-source fields marked `MISSING`. Fill each row with an exact source archive URL
-and SHA-256, then change its status to `VERIFIED`. Do not replace this with a
-current package page or a moving branch URL.
+For MSYS2 dependencies, the generated `source-index.tsv` prepopulates the
+expected MSYS2 source-package URL. These source packages retain the PKGBUILD
+and any MSYS2 patches in addition to the upstream source inputs. Download each
+exact archive, record its SHA-256, inspect it for the expected package recipe,
+and then change its status to `VERIFIED`. A candidate URL is not verification;
+do not replace it with a current package page or a moving branch URL.
 
 The release verifier refuses a package when a runtime file is unowned, a local
 license text is missing, or any source-index row remains unverified:
