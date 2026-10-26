@@ -27,12 +27,9 @@ https://mpv.io/manual/
 Macパッケージには、mpvインストールページからリンクされている、
 stolendataによる非公式の第三者macOS版mpvビルドを同梱します。
 
-Windowsパッケージには、shinchiroによる非公式の第三者Windows版mpvビルドを
-同梱します。
+公開済みのWindows v0.2.0パッケージには、shinchiroによる非公式の第三者Windows版mpvビルドを同梱しています。Windows v0.3.0候補はMSYS2 MINGW64上でこのプロジェクトがビルドしたmpv v0.41.0を使いますが、ランタイムDLLのNOTICEと対応ソースを準備中のため、まだ公開しません。
 
-これらの同梱mpvビルドはmpv-player公式ビルドではありません。このプロジェクトは
-mpv-player、stolendata、shinchiroとは関係なく、この配布はそれらのプロジェクト
-から承認されたものではありません。
+これらの同梱mpvビルドはmpv-player公式ビルドではありません。このプロジェクトはmpv-player、stolendata、shinchiro、MSYS2とは関係なく、この配布はそれらのプロジェクトから承認されたものではありません。
 
 ライセンス情報
 ----------------

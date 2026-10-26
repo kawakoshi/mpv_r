@@ -38,6 +38,19 @@ Mac v0.3.0同梱mpv:
 - ローカルビルド文書: docs/build-mpv-macos-arm64.md
 - 対象: Apple Silicon / arm64
 
+Windows v0.3.0 自前ビルド候補（未公開）:
+
+- mpv version: 0.41.0
+- source: https://github.com/mpv-player/mpv
+- source tag: v0.41.0
+- source commit: 41f6a645068483470267271e1d09966ca3b9f413
+- ビルド環境: Windows x86_64上のMSYS2 MINGW64
+- ローカルビルド文書: docs/build-mpv-windows-msys2.md
+- パッケージング文書: packaging/scripts/build-windows.sh
+- 公開状態: docs/windows-selfbuild-license-audit.mdにあるDLLごとのNOTICEと対応ソースの要件を満たすまで公開しない
+
+公開済みのWindows v0.2.0パッケージは、別系統の第三者ビルド版です。自前ビルドWindows版として表記しません。
+
 Windows v0.2.0パッケージには、上流mpvのdoc/manual.pdfまたはdoc/mpbindings.pngは
 同梱しません。mpvのドキュメントはNOTICEからリンクします。
 

@@ -23,12 +23,14 @@ Intel Mac is not a v0.3 target. Earlier Mac preview packages used the
 unofficial third-party macOS mpv build by stolendata, as linked from the mpv
 installation page.
 
-Windows packages bundle the unofficial third-party Windows mpv build by
-shinchiro.
+The published Windows v0.2.0 package bundles an unofficial third-party Windows
+mpv build by shinchiro. The project-built Windows v0.3.0 candidate uses an
+MSYS2 MINGW64 build of mpv v0.41.0, but it is not published while its runtime
+DLL notices and corresponding-source materials are being prepared.
 
 These bundled mpv builds are not official mpv-player builds. This project is
-not affiliated with mpv-player, stolendata, or shinchiro, and this distribution
-is not endorsed by those projects.
+not affiliated with mpv-player, stolendata, shinchiro, or MSYS2, and this
+distribution is not endorsed by those projects.
 
 License Information
 -------------------

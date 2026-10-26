@@ -32,6 +32,21 @@ Mac v0.3.0 bundled mpv:
 - local build documentation: docs/build-mpv-macos-arm64.md
 - target: Apple Silicon / arm64
 
+Windows v0.3.0 project-built candidate (not published):
+
+- mpv version: 0.41.0
+- source: https://github.com/mpv-player/mpv
+- source tag: v0.41.0
+- source commit: 41f6a645068483470267271e1d09966ca3b9f413
+- build environment: MSYS2 MINGW64 on Windows x86_64
+- local build documentation: docs/build-mpv-windows-msys2.md
+- packaging documentation: packaging/scripts/build-windows.sh
+- release status: blocked pending the per-DLL notices and corresponding-source
+  requirements in docs/windows-selfbuild-license-audit.md
+
+The published Windows v0.2.0 package remains a separate third-party-build
+release. Do not describe it as a project-built Windows package.
+
 Windows v0.2.0 packages do not bundle mpv's upstream doc/manual.pdf or
 doc/mpbindings.png. mpv documentation is linked from NOTICE instead.
 

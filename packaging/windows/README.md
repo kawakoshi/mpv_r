@@ -19,6 +19,12 @@ current-user PowerShell registration script that exposes `mpv_r` in Windows
 Default apps and supplies its executable icon for selected video types. It
 does not write `UserChoice` or force a default association.
 
+`create-desktop-shortcut.cmd` creates a current-user Desktop shortcut that
+targets the extracted `mpv_r.exe`, uses its icon, and keeps the package folder
+as its working directory. Dragging video files onto this shortcut is the
+recommended portable-package workflow. Moving the extracted package afterwards
+breaks the shortcut until it is created again.
+
 ## Build
 
 ```sh

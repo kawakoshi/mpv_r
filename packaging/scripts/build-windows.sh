@@ -85,6 +85,10 @@ cp "$root/packaging/windows/register-file-associations.ps1" \
   "$package_dir/tools/register-file-associations.ps1"
 cp "$root/packaging/windows/register-file-associations.cmd" \
   "$package_dir/register-file-associations.cmd"
+cp "$root/packaging/windows/create-desktop-shortcut.ps1" \
+  "$package_dir/tools/create-desktop-shortcut.ps1"
+cp "$root/packaging/windows/create-desktop-shortcut.cmd" \
+  "$package_dir/create-desktop-shortcut.cmd"
 
 if command -v zip >/dev/null 2>&1; then
   (

@@ -17,6 +17,8 @@ Run this checklist before rebuilding or replacing a Windows preview package.
   translation are present.
 - Confirm `register-file-associations.cmd` and
   `tools/register-file-associations.ps1` are present.
+- Confirm `create-desktop-shortcut.cmd` and
+  `tools/create-desktop-shortcut.ps1` are present.
 
 ## Launch And Playback
 
@@ -51,6 +53,15 @@ Run this checklist before rebuilding or replacing a Windows preview package.
   icon is the mpv_r icon and double-click opens the video in mpv_r.
 - Confirm that the registration script itself does not alter the existing
   default app before the tester makes a choice in Windows Settings.
+
+## Desktop Shortcut
+
+- Run `create-desktop-shortcut.cmd` from the extracted package.
+- Confirm that an `mpv_r` shortcut appears on the current user's Desktop with
+  the mpv_r icon.
+- Drag a video file onto the shortcut and confirm it opens in mpv_r.
+- Move the extracted package temporarily and confirm that the shortcut no
+  longer works; restore the package and confirm it works again.
 
 ## Release Notes
 

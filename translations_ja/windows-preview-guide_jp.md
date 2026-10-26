@@ -19,6 +19,10 @@
 
 複数のファイルはプレイリストとして読み込まれます。mpv_rは初期状態で一時停止して開きます。
 
+## 推奨: デスクトップのショートカットへ動画をドラッグ&ドロップ
+
+展開したパッケージ内の`create-desktop-shortcut.cmd`をダブルクリックします。現在サインインしているユーザーのDesktopに`mpv_r`ショートカットを作成しますが、Windowsのファイル関連付けは変更しません。動画ファイルをそのショートカットへドラッグ&ドロップすると、mpv_rで開けます。作成後も展開したパッケージ一式は同じ場所に保ってください。
+
 ## mpv_rのアイコンを表示し、既定アプリに選ぶ
 
 ポータブルZIPは、展開しただけではWindowsのファイル関連付けを変更しません。mpv_rを動画用アプリの候補として登録し、選んだ拡張子にmpv_rのアイコンを表示するには、展開したフォルダ内の`register-file-associations.cmd`をダブルクリックします。管理者権限は不要で、現在サインインしているWindowsユーザーだけに登録されます。
@@ -36,8 +40,10 @@ mpv_r/
     mpv/
     config/
   documents/
+  create-desktop-shortcut.cmd
   register-file-associations.cmd
   tools/
+    create-desktop-shortcut.ps1
     register-file-associations.ps1
 ```
 

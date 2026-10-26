@@ -20,6 +20,13 @@ administrator permission is required for normal use.
 
 Multiple files are loaded as a playlist. mpv_r opens paused by default.
 
+## Recommended: Drag Videos onto a Desktop Shortcut
+
+Double-click `create-desktop-shortcut.cmd` in the extracted package. It creates
+an `mpv_r` shortcut on the current user's Desktop without changing any Windows
+file association. Drag one or more video files onto that shortcut to open them
+in mpv_r. Keep the complete extracted package in place after creating it.
+
 ## Show the mpv_r Icon and Choose It as a Default App
 
 The portable ZIP does not change Windows file associations by itself. To add
@@ -46,8 +53,10 @@ mpv_r/
     mpv/
     config/
   documents/
+  create-desktop-shortcut.cmd
   register-file-associations.cmd
   tools/
+    create-desktop-shortcut.ps1
     register-file-associations.ps1
 ```
 

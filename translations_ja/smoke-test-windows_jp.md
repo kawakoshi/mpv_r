@@ -16,6 +16,7 @@ Windows Previewパッケージを再ビルドまたは差し替える前に、�
   `resources/mpv/libmpv-2.dll`、`ldd`から導出したDLL一式があることを確認します。
 - `documents/windows-preview-guide.md`とその日本語参考訳があることを確認します。
 - `register-file-associations.cmd`と`tools/register-file-associations.ps1`があることを確認します。
+- `create-desktop-shortcut.cmd`と`tools/create-desktop-shortcut.ps1`があることを確認します。
 
 ## 起動と再生
 
@@ -44,6 +45,13 @@ Windows Previewパッケージを再ビルドまたは差し替える前に、�
 - **設定 > アプリ > 既定のアプリ** に`mpv_r`が表示されることを確認します。
 - Windowsの設定から`.mp4`を`mpv_r`へ割り当て、ファイルのアイコンがmpv_rのものになり、ダブルクリックでmpv_rに開かれることを確認します。
 - テスターがWindowsの設定で選ぶ前に、この登録スクリプトだけで既存の既定アプリが変更されないことを確認します。
+
+## デスクトップショートカット
+
+- 展開したパッケージ内の`create-desktop-shortcut.cmd`を実行します。
+- 現在のユーザーのDesktopにmpv_rのアイコン付き`mpv_r`ショートカットが作られることを確認します。
+- 動画ファイルをショートカットへドラッグ&ドロップし、mpv_rで開くことを確認します。
+- 展開したパッケージを一時的に移動するとショートカットが動かなくなり、元に戻すと再び動くことを確認します。
 
 ## リリースノート
 
