@@ -18,8 +18,10 @@ https://mpv.io/manual/
 Bundled mpv Builds
 ------------------
 
-Mac packages bundle the unofficial third-party macOS mpv build by stolendata,
-as linked from the mpv installation page.
+Mac v0.3 packages bundle a project-built Apple Silicon mpv v0.41.0 app bundle.
+Intel Mac is not a v0.3 target. Earlier Mac preview packages used the
+unofficial third-party macOS mpv build by stolendata, as linked from the mpv
+installation page.
 
 Windows packages bundle the unofficial third-party Windows mpv build by
 shinchiro.

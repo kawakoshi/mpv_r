@@ -18,8 +18,8 @@ mpvに作者のレビュー向け設定を組み合わせ、動画をフレー�
 
 Mac:
 
-1. zipを展開します。
-2. `mpv_r`フォルダを開きます。
+1. DMGを開きます。
+2. `mpv_r.app`を`Applications`へドラッグします。
 3. `mpv_r.app`を開きます。
 4. 初回起動時にmacOSで止められる場合は、`mpv_r.app`を右クリックして`開く`を選びます。
 
@@ -66,5 +66,6 @@ https://github.com/kawakoshi/mpv_r
 - 英語文書が正式な内容です。
 - `documents/translations_ja`配下の日本語ファイルは参考訳です。
 - ライセンス文書、NOTICE、ソース/ビルド情報は`documents`配下にあります。
+- Mac v0.3では、これらの文書は`mpv_r.app`内に同梱されています。
 - アプリとして使う場合は、GitHubが自動生成する`Source code (zip)`ではなく、
-  GitHub Release assetsに添付されたアプリ配布zipを使ってください。
+  GitHub Release assetsに添付されたアプリ配布物を使ってください。

@@ -1,66 +1,43 @@
 # macOS Packaging Notes
 
-v0.1.0 is packaged manually.
+## v0.3.0 Mac Preview
 
-## Current v0.1.0 State
-
-The published v0.1.0 Mac Preview is usable, but its package layout is older than
-the Windows v0.1.1 package.
-
-Known differences to clean up in v0.2:
-
-- Japanese reference text files are still mixed into the package root.
-- `source-and-build-info_jp.txt` is still under `LICENSES`.
-- The package layout is not yet aligned with the Windows `translations_ja`
-  convention.
-- The packaging procedure is still manual.
-
-## v0.2 Target Layout
-
-v0.2 should align the Mac package with the Windows package convention:
+v0.3.0 is a Mac-only Apple Silicon Preview. It is distributed as a DMG:
 
 ```text
-mpv_r-mac-v0.2.0/
-  mpv_r.app
-  README.txt
-  NOTICE.txt
-  LICENSE.txt
-  LICENSES/
-    mpv-Copyright.txt
-    mpv-LICENSE.GPL.txt
-    mpv-LICENSE.LGPL.txt
-    source-and-build-info.txt
-  translations_ja/
-    README_jp.txt
-    NOTICE_jp.txt
-    LICENSE_jp.txt
-    source-and-build-info_jp.txt
+mpv_r.app
+Applications -> /Applications
 ```
 
-English files remain the authoritative texts. Japanese files are reference
-translations and should be grouped under `translations_ja`.
+The application bundle contains the review configuration and project documents:
 
-## Manual Flow
+```text
+mpv_r.app/Contents/Resources/
+  mpv.conf
+  input.conf
+  documents/
+```
 
-1. Prepare `mpv_r.app`.
-2. Include README, NOTICE, LICENSE, and LICENSES.
-3. Add Japanese reference translations under `translations_ja`.
-4. Create `mpv_r-mac-v0.2.0.zip`.
-5. Run the macOS smoke test checklist.
-6. Upload the zip to GitHub Releases.
+English documents are authoritative. Japanese files under
+`documents/translations_ja` are reference translations.
 
-## macOS Release Notes Checklist
+## Build
 
-Release notes should include:
+Use the documented project-built arm64 `mpv.app` as input:
 
-- target macOS package name
-- short description of what changed
-- package contents
-- ad-hoc signing and notarization status
-- first-launch Gatekeeper note
-- bundled mpv version and build source
-- project affiliation disclaimer
-- smoke test summary
-- SHA256 checksum
+```sh
+VERSION=v0.3.0 \
+BUILD_DMG=1 \
+MAC_SOURCE_APP=/path/to/mpv.app \
+packaging/scripts/build-mac.sh
+```
 
-Automation is planned after the manual flow is confirmed.
+The script ad-hoc signs `mpv_r.app`, creates a DMG, and prints SHA-256 values.
+The output is not notarized. Apple Silicon / arm64 is the only v0.3.0 target.
+
+## Release Checklist
+
+1. Run `docs/smoke-test-mac.md` against the final DMG.
+2. Record the final DMG SHA-256 in `RELEASE_NOTES_v0.3.0.md`.
+3. Publish only `mpv_r-mac-v0.3.0.dmg` for this release; Windows remains at
+   v0.2.0.

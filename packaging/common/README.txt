@@ -12,8 +12,8 @@ Start
 
 Mac:
 
-1. Extract the zip.
-2. Open the `mpv_r` folder.
+1. Open the DMG.
+2. Drag `mpv_r.app` to `Applications`.
 3. Open `mpv_r.app`.
 4. On first launch, right-click `mpv_r.app` and choose `Open` if macOS blocks it.
 
@@ -60,5 +60,6 @@ Notes
 - English documents are authoritative.
 - Japanese files under `documents/translations_ja` are reference translations.
 - License texts, notices, and source/build information are under `documents`.
+- On Mac v0.3, these documents are bundled inside `mpv_r.app`.
 - Do not download GitHub's automatic `Source code (zip)` if you want to run the
-  app. Use the attached app zip under GitHub Release assets.
+  app. Use the attached app package under GitHub Release assets.

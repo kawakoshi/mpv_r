@@ -1,6 +1,6 @@
 mpv_r source and build information
 
-v0.2.0 Package Generation
+v0.3.0 Package Generation
 =========================
 
 Package generation scripts:
@@ -9,17 +9,38 @@ Package generation scripts:
 - packaging/scripts/build-windows.sh
 - packaging/scripts/build-all.sh
 
-v0.2.0 package layout:
+v0.3.0 Mac package layout:
 
-- mpv_r.app or mpv_r.exe at the package root
+- DMG containing mpv_r.app and an Applications shortcut
+- documents bundled inside mpv_r.app/Contents/Resources/documents/
+
+Current Windows v0.2.0 package layout:
+
+- mpv_r.exe at the package root
 - resources/
 - documents/
 
-The scripts assemble existing mpv builds, mpv_r configuration files, and project
-documents into release zip files. They do not build mpv from source.
+Mac v0.3.0 packages are assembled from a project-built Apple Silicon mpv app
+bundle. Windows v0.2.0 packages continue to assemble an existing mpv build,
+mpv_r configuration files, and project documents into a portable zip.
+
+Mac v0.3.0 bundled mpv:
+
+- mpv version: 0.41.0
+- source: https://github.com/mpv-player/mpv
+- source tag: v0.41.0
+- local build documentation: docs/build-mpv-macos-arm64.md
+- target: Apple Silicon / arm64
 
 Windows v0.2.0 packages do not bundle mpv's upstream doc/manual.pdf or
 doc/mpbindings.png. mpv documentation is linked from NOTICE instead.
+
+v0.2.0 Package Generation
+=========================
+
+v0.2.0 packages aligned the Mac and Windows package layout. The scripts
+assembled existing mpv builds, mpv_r configuration files, and project documents
+into release zip files. They did not build mpv from source.
 
 v0.1.0 Mac Preview
 ==================

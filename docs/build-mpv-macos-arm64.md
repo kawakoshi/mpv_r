@@ -27,7 +27,7 @@ The local source checkout used for the first trial was outside the release
 repository:
 
 ```sh
-/Users/mba2026/Documents/codex_hisyo/VideoReviewPlayer/build-src/mpv
+/Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src/mpv
 ```
 
 This keeps upstream mpv source and build output separate from the mpv_r release
@@ -58,10 +58,10 @@ and Vulkan/MoltenVK-related packages.
 ## Source Checkout
 
 ```sh
-mkdir -p /Users/mba2026/Documents/codex_hisyo/VideoReviewPlayer/build-src
+mkdir -p /Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src
 git clone https://github.com/mpv-player/mpv.git \
-  /Users/mba2026/Documents/codex_hisyo/VideoReviewPlayer/build-src/mpv
-cd /Users/mba2026/Documents/codex_hisyo/VideoReviewPlayer/build-src/mpv
+  /Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src/mpv
+cd /Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src/mpv
 git switch --detach v0.41.0
 ```
 
@@ -71,7 +71,7 @@ The first successful build used a local Meson build directory:
 
 ```sh
 meson setup build/mpv-r-arm64-local \
-  -Dprefix=/Users/mba2026/Documents/codex_hisyo/VideoReviewPlayer/build-src/out/mpv-arm64 \
+  -Dprefix=/Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src/out/mpv-arm64 \
   -Dlibmpv=true \
   -Dobjc_args=-Wno-error=deprecated-declarations \
   -Dgl=enabled \
@@ -149,7 +149,7 @@ The Mac packaging script can use a locally built `mpv.app` as its source app:
 
 ```sh
 VERSION=v0.3-arm64-test \
-MAC_SOURCE_APP=/Users/mba2026/Documents/codex_hisyo/VideoReviewPlayer/build-src/mpv/build/mpv-r-arm64-local/mpv.app \
+MAC_SOURCE_APP=/Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src/mpv/build/mpv-r-arm64-local/mpv.app \
 packaging/scripts/build-mac.sh
 ```
 

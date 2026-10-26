@@ -8,7 +8,7 @@
 
 mpv_r ソースおよびビルド情報
 
-v0.2.0 パッケージ生成
+v0.3.0 パッケージ生成
 =====================
 
 パッケージ生成スクリプト:
@@ -17,17 +17,34 @@ v0.2.0 パッケージ生成
 - packaging/scripts/build-windows.sh
 - packaging/scripts/build-all.sh
 
-v0.2.0パッケージ構成:
+v0.3.0 Macパッケージ構成:
 
-- パッケージ直下のmpv_r.appまたはmpv_r.exe
+- mpv_r.appとApplicationsショートカットを含むDMG
+- mpv_r.app/Contents/Resources/documents/内に同梱されたdocuments
+
+現行のWindows v0.2.0パッケージ構成:
+
+- パッケージ直下のmpv_r.exe
 - resources/
 - documents/
 
-これらのスクリプトは、既存のmpvビルド、mpv_r設定ファイル、プロジェクト文書を
-集めてリリースzipを作成します。mpv本体をソースからビルドするものではありません。
+Mac v0.3.0パッケージは、このプロジェクトでビルドしたApple Silicon向けmpvアプリバンドルから作成します。Windows v0.2.0パッケージは、既存のmpvビルド、mpv_r設定ファイル、プロジェクト文書を集めたポータブルzipを継続します。
+
+Mac v0.3.0同梱mpv:
+
+- mpv version: 0.41.0
+- source: https://github.com/mpv-player/mpv
+- source tag: v0.41.0
+- ローカルビルド文書: docs/build-mpv-macos-arm64.md
+- 対象: Apple Silicon / arm64
 
 Windows v0.2.0パッケージには、上流mpvのdoc/manual.pdfまたはdoc/mpbindings.pngは
 同梱しません。mpvのドキュメントはNOTICEからリンクします。
+
+v0.2.0 パッケージ生成
+=====================
+
+v0.2.0パッケージでは、Mac版とWindows版のパッケージ構成を揃えました。既存のmpvビルド、mpv_r設定ファイル、プロジェクト文書を集めてリリースzipを作成し、mpv本体はソースからビルドしていません。
 
 v0.1.0 Mac Preview
 ==================
