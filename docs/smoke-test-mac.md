@@ -19,6 +19,10 @@ Run this checklist before publishing a Mac preview or stable package.
 - Move `mpv_r.app` to `/Applications` if testing the normal user flow.
 - Launch with right-click -> `Open` when Gatekeeper blocks normal launch.
 - Confirm the app launches without requiring additional setup files.
+- With an approved, non-private sample video that has macOS quarantine
+  information, confirm the filename-specific `Privacy & Security` > `Open
+  Anyway` flow is understandable. Do not use private production footage for
+  documentation screenshots.
 
 ## Playback
 

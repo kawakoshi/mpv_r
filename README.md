@@ -77,6 +77,11 @@ Mac v0.3 packages bundle a project-built Apple Silicon mpv v0.41.0 app bundle.
 Intel Mac is not a v0.3 target; Intel Mac users should use an existing mpv build
 or an earlier mpv_r preview package.
 
+The app is ad-hoc signed and not notarized. On first launch, macOS may require
+right-clicking `mpv_r.app` and choosing `Open`. If macOS later blocks a trusted
+downloaded video by filename, use `System Settings` > `Privacy & Security` >
+`Open Anyway` for that specific video and authenticate when prompted.
+
 Windows packages bundle the unofficial third-party Windows mpv build by
 shinchiro.
 

@@ -41,3 +41,6 @@ The output is not notarized. Apple Silicon / arm64 is the only v0.3.0 target.
 2. Record the final DMG SHA-256 in `RELEASE_NOTES_v0.3.0.md`.
 3. Publish only `mpv_r-mac-v0.3.0.dmg` for this release; Windows remains at
    v0.2.0.
+
+If a screenshot is added to explain the filename-specific Gatekeeper flow, use
+an approved sample video with no private production information.

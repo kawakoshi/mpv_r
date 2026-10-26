@@ -16,6 +16,12 @@ Mac:
 2. Drag `mpv_r.app` to `Applications`.
 3. Open `mpv_r.app`.
 4. On first launch, right-click `mpv_r.app` and choose `Open` if macOS blocks it.
+5. If macOS later blocks a video by filename, open `System Settings` >
+   `Privacy & Security`, choose `Open Anyway` for that trusted video, and
+   authenticate when prompted. This can happen for a downloaded video that
+   still has macOS quarantine information.
+
+Only choose `Open Anyway` for videos obtained from a source you trust.
 
 Windows:
 

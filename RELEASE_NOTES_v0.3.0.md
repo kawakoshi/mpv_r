@@ -35,6 +35,9 @@ Mac:
   build or an earlier mpv_r preview package.
 - The Mac app is ad-hoc signed but not notarized.
 - On first launch, right-click `mpv_r.app` and choose `Open` if macOS blocks it.
+- If macOS later blocks a trusted downloaded video by filename, use `System
+  Settings` > `Privacy & Security` > `Open Anyway` for that specific video and
+  authenticate when prompted.
 
 Windows:
 
@@ -79,5 +82,5 @@ Mac DMG:
 SHA256:
 
 ```text
-120e03b2abc960c27974fd725b647f8835cb3777725da34119f64d9d6067b80a  mpv_r-mac-v0.3.0.dmg
+ea459df3693d9ca7791452c6adcec904c6832022520a68dec4e0b818b6cc10c8  mpv_r-mac-v0.3.0.dmg
 ```

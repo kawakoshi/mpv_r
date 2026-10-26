@@ -33,6 +33,9 @@ Mac:
 - Intel Macはv0.3.0の対象外です。Intel Macでは、既存のmpvビルド、または以前のmpv_r Previewパッケージを使ってください。
 - Macアプリはad-hoc署名済みですが、notarizationは行っていません。
 - macOSにブロックされた場合、初回起動時は`mpv_r.app`を右クリックして`開く`を選んでください。
+- その後、macOSが信頼できるダウンロード動画をファイル名でブロックした場合は、
+  `システム設定` > `プライバシーとセキュリティ` > `このまま開く`で、その動画だけを許可し、
+  求められた場合は認証してください。
 
 Windows:
 
@@ -74,5 +77,5 @@ Mac DMG:
 SHA256:
 
 ```text
-120e03b2abc960c27974fd725b647f8835cb3777725da34119f64d9d6067b80a  mpv_r-mac-v0.3.0.dmg
+ea459df3693d9ca7791452c6adcec904c6832022520a68dec4e0b818b6cc10c8  mpv_r-mac-v0.3.0.dmg
 ```
