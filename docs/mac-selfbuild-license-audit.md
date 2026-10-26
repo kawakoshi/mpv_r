@@ -18,6 +18,23 @@ source revisions that produced the published binary.
 
 For every Mac release, run:
 
+1. After `meson setup` and before compilation, capture the exact source state,
+   Meson configuration, and build environment:
+
+```sh
+packaging/tools/capture-macos-build-inputs.sh \
+  /path/to/mpv-source \
+  /path/to/mpv-build-dir \
+  docs/evidence/macos-build-vX.Y.Z
+```
+
+The capture retains uncommitted source changes as a binary patch and lists
+untracked files. Keep the checkout clean for a normal release; if a source
+change is intentional, retain that patch and account for it in the source
+offer.
+
+2. After `macos-bundle` and before repackaging, audit the generated app:
+
 ```sh
 packaging/tools/audit-macos-runtime.sh \
   /path/to/mpv_r.app \
@@ -45,6 +62,8 @@ to all of the following:
 - license and notice texts for the identified upstream packages;
 - exact source archives, source revisions, patches, and build instructions for
   GPL/LGPL-covered components; and
+- the captured mpv source state, Meson build options/dependency report, and
+  build-environment record; and
 - the Homebrew Formula revision and bottle/Keg evidence used at build time.
 
 This review also applies to codec patent considerations separately from open
