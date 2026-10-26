@@ -12,11 +12,14 @@ Windows Previewパッケージを再ビルドまたは差し替える前に、�
 
 - リリースZIPを展開します。
 - `mpv_r.exe`、`resources/mpv`、`resources/config`、`documents`があることを確認します。
+- プロジェクトでビルドしたランタイムでは、`resources/mpv/mpv.exe`、
+  `resources/mpv/libmpv-2.dll`、`ldd`から導出したDLL一式があることを確認します。
 - `documents/windows-preview-guide.md`とその日本語参考訳があることを確認します。
 
 ## 起動と再生
 
 - 展開したフォルダから`mpv_r.exe`を起動します。
+- 同梱された`resources/mpv/mpv.exe --version`が、文書化したプロジェクトビルドのmpvタグと一致することを確認します。
 - 動画ファイルを1つ開きます。
 - 動画ファイルを`mpv_r.exe`へドラッグ&ドロップします。
 - 複数の動画ファイルを開き、プレイリストを移動できることを確認します。
@@ -32,6 +35,7 @@ Windows Previewパッケージを再ビルドまたは差し替える前に、�
 
 - `resources/mpv`が無い場合、ランチャーが理解できるエラーを表示することを確認します。
 - パッケージ一式を復元し、再び正常に起動することを確認します。
+- MSYS2のランタイムディレクトリをPATHへ追加せず、展開したフォルダから再生できることを確認します。
 
 ## リリースノート
 

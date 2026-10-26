@@ -11,12 +11,16 @@ Run this checklist before rebuilding or replacing a Windows preview package.
 - Extract the release ZIP.
 - Confirm `mpv_r.exe`, `resources/mpv`, `resources/config`, and `documents`
   are present.
+- For a project-built runtime, confirm `resources/mpv/mpv.exe`,
+  `resources/mpv/libmpv-2.dll`, and the DLL set derived from `ldd` are present.
 - Confirm `documents/windows-preview-guide.md` and its Japanese reference
   translation are present.
 
 ## Launch And Playback
 
 - Start `mpv_r.exe` from its extracted folder.
+- Confirm the bundled `resources/mpv/mpv.exe --version` matches the documented
+  project-built mpv tag.
 - Open one video file.
 - Drag and drop a video file onto `mpv_r.exe`.
 - Open multiple video files and confirm playlist navigation.
@@ -34,6 +38,8 @@ Run this checklist before rebuilding or replacing a Windows preview package.
 - Confirm the launcher displays an understandable error when `resources/mpv`
   is missing.
 - Restore the complete package and confirm normal launch again.
+- Confirm playback after starting from the extracted folder, with no MSYS2
+  runtime directory added to PATH.
 
 ## Release Notes
 

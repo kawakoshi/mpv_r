@@ -116,6 +116,11 @@ Windows v0.2 usage, security notices, and troubleshooting are documented in:
 
 - `docs/windows-preview-guide.md`
 
+The next Windows portable package is being prepared from a project-built mpv
+v0.41.0 runtime. Its MSYS2 build and DLL collection procedure is documented in:
+
+- `docs/build-mpv-windows-msys2.md`
+
 ## Roadmap
 
 - v0.1.0: Mac Preview

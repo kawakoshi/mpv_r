@@ -22,6 +22,16 @@ packaging/scripts/build-windows.sh
 
 `-H windowsgui` prevents a console window from appearing when the launcher is started from Explorer.
 
+For the next project-built mpv runtime, first run:
+
+```sh
+MPV_TAG=v0.41.0 packaging/scripts/build-mpv-windows-msys2.sh
+```
+
+Then provide its portable output through `WINDOWS_MPV_DIR` when running
+`build-windows.sh`. The package script copies every `.exe` and `.dll` in that
+runtime folder, rather than relying on a fixed third-party mpv file list.
+
 ## User Documentation
 
 The current Windows user guide is:
@@ -40,9 +50,10 @@ mpv_r/
     mpv/
       mpv.exe
       mpv.com
-      d3dcompiler_43.dll
+      libmpv-2.dll
+      *.dll (runtime dependencies derived from `ldd`)
       mpv/
-        fonts.conf
+        fonts.conf (only when provided by the runtime source)
     config/
       mpv.conf
       input.conf

@@ -27,6 +27,14 @@ packaging/scripts/build-windows.sh
 
 `-H windowsgui`は、Explorerからランチャーを起動したときにコンソールウィンドウを出さないための指定です。
 
+次のプロジェクトでビルドするmpvランタイムでは、まず以下を実行します。
+
+```sh
+MPV_TAG=v0.41.0 packaging/scripts/build-mpv-windows-msys2.sh
+```
+
+その後、`build-windows.sh`を実行するときにポータブル出力を`WINDOWS_MPV_DIR`へ渡します。パッケージスクリプトは固定の第三者mpvファイル一覧に依存せず、そのランタイムフォルダ内のすべての`.exe`と`.dll`をコピーします。
+
 ## ユーザー向け文書
 
 現在のWindows向けガイドは以下です。
@@ -44,9 +52,10 @@ mpv_r/
     mpv/
       mpv.exe
       mpv.com
-      d3dcompiler_43.dll
+      libmpv-2.dll
+      *.dll（`ldd`から導出したランタイム依存関係）
       mpv/
-        fonts.conf
+        fonts.conf（ランタイム入力に含まれる場合のみ）
     config/
       mpv.conf
       input.conf

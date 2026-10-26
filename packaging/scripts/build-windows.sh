@@ -9,6 +9,7 @@ mpv_dir="${WINDOWS_MPV_DIR:-$root/../windows-research/extracted-20260519}"
 package_name="mpv_r"
 output_dir="$root/dist"
 output_zip="$output_dir/mpv_r-windows-$version.zip"
+mkdir -p "$root/build"
 work_dir=$(mktemp -d "$root/build/package-windows.XXXXXX")
 package_dir="$work_dir/$package_name"
 launcher_path="$work_dir/mpv_r.exe"
@@ -31,14 +32,14 @@ cleanup() {
 
 trap cleanup EXIT HUP INT TERM
 
-for required in "$mpv_dir/mpv.exe" "$mpv_dir/mpv.com" "$mpv_dir/d3dcompiler_43.dll" "$mpv_dir/mpv/fonts.conf"; do
+for required in "$mpv_dir/mpv.exe"; do
   if [ ! -f "$required" ]; then
     echo "Windows mpv file not found: $required" >&2
     exit 1
   fi
 done
 
-mkdir -p "$package_dir/resources/mpv/mpv"
+mkdir -p "$package_dir/resources/mpv"
 mkdir -p "$package_dir/resources/config"
 mkdir -p "$output_dir"
 
@@ -58,10 +59,21 @@ GOCACHE="$root/build/go-cache" GOOS=windows GOARCH=amd64 go build \
   "$root/cmd/mpv-r-launcher"
 
 cp "$launcher_path" "$package_dir/mpv_r.exe"
-cp "$mpv_dir/mpv.exe" "$package_dir/resources/mpv/mpv.exe"
-cp "$mpv_dir/mpv.com" "$package_dir/resources/mpv/mpv.com"
-cp "$mpv_dir/d3dcompiler_43.dll" "$package_dir/resources/mpv/d3dcompiler_43.dll"
-cp "$mpv_dir/mpv/fonts.conf" "$package_dir/resources/mpv/mpv/fonts.conf"
+runtime_count=0
+for runtime_file in "$mpv_dir"/*.exe "$mpv_dir"/*.dll; do
+  if [ -f "$runtime_file" ]; then
+    cp "$runtime_file" "$package_dir/resources/mpv/"
+    runtime_count=$((runtime_count + 1))
+  fi
+done
+if [ "$runtime_count" -lt 2 ]; then
+  echo "Windows runtime must contain mpv.exe and at least one DLL: $mpv_dir" >&2
+  exit 1
+fi
+if [ -f "$mpv_dir/mpv/fonts.conf" ]; then
+  mkdir -p "$package_dir/resources/mpv/mpv"
+  cp "$mpv_dir/mpv/fonts.conf" "$package_dir/resources/mpv/mpv/fonts.conf"
+fi
 cp "$root/config/windows/mpv.conf" "$package_dir/resources/config/mpv.conf"
 cp "$root/config/windows/input.conf" "$package_dir/resources/config/input.conf"
 copy_common_documents "$root" "$package_dir"
@@ -69,10 +81,21 @@ cp "$root/docs/windows-preview-guide.md" "$package_dir/documents/windows-preview
 cp "$root/translations_ja/windows-preview-guide_jp.md" \
   "$package_dir/documents/translations_ja/windows-preview-guide_jp.md"
 
-(
-  cd "$work_dir"
-  zip -r -X "$output_zip" "$package_name" >/dev/null
-)
+if command -v zip >/dev/null 2>&1; then
+  (
+    cd "$work_dir"
+    zip -r -X "$output_zip" "$package_name" >/dev/null
+  )
+elif command -v powershell.exe >/dev/null 2>&1; then
+  package_dir_win=$(cygpath -w "$package_dir")
+  output_zip_win=$(cygpath -w "$output_zip")
+  powershell.exe -NoProfile -Command \
+    "Compress-Archive -LiteralPath '$package_dir_win' -DestinationPath '$output_zip_win' -Force" \
+    >/dev/null
+else
+  echo "Neither zip nor powershell.exe is available to create the package." >&2
+  exit 1
+fi
 
 shasum -a 256 "$output_zip"
 echo "Created: $output_zip"
