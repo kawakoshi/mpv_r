@@ -17,6 +17,8 @@ complete third-party license or corresponding-source package.
   SHA-256, and a Homebrew Keg/Formula candidate found during the audit.
 - `linkage.txt` records `otool -L` output for every shipped executable or
   dylib.
+- `build-reconstruction.md` fixes the upstream mpv source revision and records
+  which v0.3.0 build facts were, and were not, retained.
 
 ## Interpretation
 

@@ -35,6 +35,7 @@ Mac v0.3.0同梱mpv:
 - mpv version: 0.41.0
 - source: https://github.com/mpv-player/mpv
 - source tag: v0.41.0
+- source commit: 41f6a645068483470267271e1d09966ca3b9f413
 - ローカルビルド文書: docs/build-mpv-macos-arm64.md
 - 対象: Apple Silicon / arm64
 
