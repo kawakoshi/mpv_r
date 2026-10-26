@@ -22,6 +22,10 @@ for mpv_r.
 - `portable-test-files.txt`: file listing of the portable test folder
 - `mpv-version.txt`: `mpv v0.41.0-dirty` runtime version output
 - `msys2-installer-note.txt`: incidental MSYS2 installer log; kept only as context
+- `msys2-source-package-verification.tsv`: verified MSYS2 source-package
+  archives for selected runtime dependencies. This is an incremental audit
+  record; it does not clear the Windows release gate until every runtime
+  package and license text is accounted for.
 
 ## Notes
 
