@@ -65,3 +65,24 @@ The collection copies license/copyright/notice files and installation receipts
 from the exact local Kegs identified in the manifest. It also copies a cached
 Homebrew bottle manifest when available. A missing bottle manifest is evidence
 to resolve, not permission to substitute current Formula metadata.
+
+Generate a Formula-revision index from the retained bottle manifests:
+
+```sh
+packaging/tools/generate-macos-homebrew-formula-index.sh \
+  docs/evidence/macos-runtime-vX.Y.Z/homebrew-license-collection \
+  docs/evidence/macos-runtime-vX.Y.Z/homebrew-license-collection/homebrew-formula-index.tsv
+```
+
+The resulting Formula URL and commit identify the exact Homebrew recipe. The
+upstream source archive URL and checksum still need to be extracted from that
+revision before a release can claim corresponding-source readiness.
+
+`macos-runtime-v0.3.0/homebrew-license-collection/primary-source-index.tsv`
+records the primary upstream archive and SHA-256 now identified for each
+Formula in the published v0.3.0 runtime. It is audit evidence, not a release
+clearance: the build's patches, auxiliary resources, configure flags, and the
+exact build environment must still be retained and checked for the next DMG.
+Rows whose retained bottle did not expose an immutable Formula revision say so
+explicitly; their upstream archive is verified but cannot prove the original
+Homebrew recipe on its own.
