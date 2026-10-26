@@ -4,12 +4,16 @@ set -euo pipefail
 # Run from an MSYS2 MINGW64 shell on Windows. This script deliberately keeps
 # mpv source, the Meson build directory, and the portable runtime folder apart.
 
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+root=$(CDPATH= cd -- "$script_dir/../.." && pwd)
+
 tag="${MPV_TAG:-v0.41.0}"
 source_dir="${MPV_SOURCE_DIR:-/c/work/codex/repos/mpv-r-upstream-${tag}}"
 build_dir="${MPV_BUILD_DIR:-${source_dir}/build-mpv-r-${tag}}"
 portable_dir="${MPV_PORTABLE_DIR:-/c/work/codex/builds/mpv_r-${tag}-portable}"
 test_file="${MPV_TEST_FILE:-}"
 mingw_prefix="${MINGW_PREFIX:-/mingw64}"
+evidence_dir="${WINDOWS_BUILD_EVIDENCE:-}"
 
 if [ "${MSYSTEM:-}" != "MINGW64" ]; then
   echo "Run this script from an MSYS2 MINGW64 shell." >&2
@@ -83,3 +87,10 @@ printf 'Portable runtime: %s\n' "$portable_dir"
 printf 'Executable/DLL file count: '
 find "$portable_dir" -maxdepth 1 -type f \( -iname '*.exe' -o -iname '*.dll' \) | wc -l
 sha256sum "$portable_dir/mpv.exe" "$portable_dir/mpv.com" "$portable_dir/libmpv-2.dll"
+
+if [ -n "$evidence_dir" ]; then
+  MPV_SOURCE_ARCHIVE_URL="${MPV_SOURCE_ARCHIVE_URL:-}" \
+  MPV_SOURCE_ARCHIVE_SHA256="${MPV_SOURCE_ARCHIVE_SHA256:-}" \
+  "$root/packaging/tools/capture-windows-msys2-runtime-evidence.sh" \
+    "$source_dir" "$build_dir" "$portable_dir" "$evidence_dir"
+fi

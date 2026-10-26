@@ -28,6 +28,33 @@ release assets:
 5. Exact package archive names, versions, repository URLs, and SHA-256 values.
 6. A manifest of every executable and DLL in the final ZIP, including SHA-256.
 
+## Capture and Verify the Evidence
+
+After `build-mpv-windows-msys2.sh` has assembled its portable runtime, capture
+the source state, Meson configuration, MSYS2 package ownership, local license
+texts, `ldd` reports, and runtime hashes in one new evidence directory:
+
+```sh
+MPV_TAG=v0.41.0 \
+MPV_TEST_FILE=/c/path/to/approved-test.mp4 \
+MPV_SOURCE_ARCHIVE_SHA256=<verified-mpv-source-sha256> \
+WINDOWS_BUILD_EVIDENCE=docs/evidence/windows-msys2-v0.41.0-release \
+packaging/scripts/build-mpv-windows-msys2.sh
+```
+
+The generated `source-index.tsv` deliberately starts with MSYS2 dependency
+source fields marked `MISSING`. Fill each row with an exact source archive URL
+and SHA-256, then change its status to `VERIFIED`. Do not replace this with a
+current package page or a moving branch URL.
+
+The release verifier refuses a package when a runtime file is unowned, a local
+license text is missing, or any source-index row remains unverified:
+
+```sh
+packaging/tools/verify-windows-selfbuild-evidence.sh \
+  docs/evidence/windows-msys2-v0.41.0-release
+```
+
 ## License and Source Deliverables
 
 Before publishing, create a `documents/LICENSES/windows-selfbuild/` directory
@@ -63,6 +90,22 @@ the following:
   the project-built Windows runtime rather than a third-party build; and
 - the final ZIP's SHA-256 and the manifest's SHA-256 values match the uploaded
   asset.
+
+For a project-built Windows release, pass the verified evidence to the
+packager and make it mandatory:
+
+```sh
+VERSION=v0.3.0 \
+WINDOWS_MPV_DIR=/c/work/codex/builds/mpv_r-v0.41.0-portable \
+REQUIRE_WINDOWS_LICENSE_EVIDENCE=1 \
+WINDOWS_LICENSE_EVIDENCE=docs/evidence/windows-msys2-v0.41.0-release \
+packaging/scripts/build-windows.sh
+```
+
+The ZIP then includes the runtime and license manifests, source index, local
+license texts, MSYS2 package metadata, linkage reports, source/build records,
+build scripts, and a hash manifest for every final packaged `.exe`/`.dll` under
+`documents/LICENSES/windows-selfbuild/`.
 
 ## References
 

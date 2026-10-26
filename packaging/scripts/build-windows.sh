@@ -6,6 +6,8 @@ root=$(CDPATH= cd -- "$script_dir/../.." && pwd)
 
 version="${VERSION:-v0.2.0}"
 mpv_dir="${WINDOWS_MPV_DIR:-$root/../windows-research/extracted-20260519}"
+license_evidence="${WINDOWS_LICENSE_EVIDENCE:-}"
+require_license_evidence="${REQUIRE_WINDOWS_LICENSE_EVIDENCE:-0}"
 package_name="mpv_r"
 output_dir="$root/dist"
 output_zip="$output_dir/mpv_r-windows-$version.zip"
@@ -38,6 +40,18 @@ for required in "$mpv_dir/mpv.exe"; do
     exit 1
   fi
 done
+
+if [ "$require_license_evidence" = "1" ] && [ -z "$license_evidence" ]; then
+  echo "WINDOWS_LICENSE_EVIDENCE is required for this Windows release" >&2
+  exit 1
+fi
+if [ -n "$license_evidence" ]; then
+  if [ ! -d "$license_evidence" ]; then
+    echo "Windows license evidence directory not found: $license_evidence" >&2
+    exit 1
+  fi
+  "$root/packaging/tools/verify-windows-selfbuild-evidence.sh" "$license_evidence"
+fi
 
 mkdir -p "$package_dir/resources/mpv"
 mkdir -p "$package_dir/resources/config"
@@ -80,6 +94,26 @@ copy_common_documents "$root" "$package_dir"
 cp "$root/docs/windows-preview-guide.md" "$package_dir/documents/windows-preview-guide.md"
 cp "$root/translations_ja/windows-preview-guide_jp.md" \
   "$package_dir/documents/translations_ja/windows-preview-guide_jp.md"
+if [ -n "$license_evidence" ]; then
+  evidence_target="$package_dir/documents/LICENSES/windows-selfbuild"
+  mkdir -p "$evidence_target"
+  cp "$license_evidence/runtime-manifest.tsv" "$evidence_target/"
+  cp "$license_evidence/license-manifest.tsv" "$evidence_target/"
+  cp "$license_evidence/source-index.tsv" "$evidence_target/"
+  cp "$license_evidence/mpv-source.txt" "$evidence_target/"
+  cp "$license_evidence/mpv-source.patch" "$evidence_target/"
+  cp "$license_evidence/build-environment.txt" "$evidence_target/"
+  cp "$license_evidence/meson-buildoptions.json" "$evidence_target/"
+  cp "$license_evidence/meson-dependencies.json" "$evidence_target/"
+  cp -R "$license_evidence/licenses" "$evidence_target/"
+  cp -R "$license_evidence/package-metadata" "$evidence_target/"
+  cp -R "$license_evidence/ldd" "$evidence_target/"
+  mkdir -p "$evidence_target/build-scripts"
+  cp "$root/packaging/scripts/build-mpv-windows-msys2.sh" "$evidence_target/build-scripts/"
+  cp "$root/packaging/scripts/build-windows.sh" "$evidence_target/build-scripts/"
+  cp "$root/packaging/tools/capture-windows-msys2-runtime-evidence.sh" "$evidence_target/build-scripts/"
+  cp "$root/packaging/tools/verify-windows-selfbuild-evidence.sh" "$evidence_target/build-scripts/"
+fi
 mkdir -p "$package_dir/tools"
 cp "$root/packaging/windows/register-file-associations.ps1" \
   "$package_dir/tools/register-file-associations.ps1"
@@ -89,6 +123,18 @@ cp "$root/packaging/windows/create-desktop-shortcut.ps1" \
   "$package_dir/tools/create-desktop-shortcut.ps1"
 cp "$root/packaging/windows/create-desktop-shortcut.cmd" \
   "$package_dir/create-desktop-shortcut.cmd"
+
+if [ -n "$license_evidence" ]; then
+  final_manifest="$package_dir/documents/LICENSES/windows-selfbuild/final-package-runtime-manifest.tsv"
+  printf 'package_path\tsha256\tbytes\n' > "$final_manifest"
+  find "$package_dir" -type f \( -iname '*.exe' -o -iname '*.dll' \) -print | sort | \
+    while IFS= read -r runtime_file; do
+      relative=${runtime_file#"$package_dir/"}
+      sha=$(shasum -a 256 "$runtime_file" | awk '{print $1}')
+      bytes=$(wc -c < "$runtime_file" | tr -d ' ')
+      printf '%s\t%s\t%s\n' "$relative" "$sha" "$bytes" >> "$final_manifest"
+    done
+fi
 
 if command -v zip >/dev/null 2>&1; then
   (

@@ -49,6 +49,8 @@ From the `mpv_r` repository in an MSYS2 MINGW64 shell:
 ```sh
 MPV_TAG=v0.41.0 \
 MPV_TEST_FILE=/c/path/to/approved-test.mp4 \
+MPV_SOURCE_ARCHIVE_SHA256=<verified-mpv-source-sha256> \
+WINDOWS_BUILD_EVIDENCE=docs/evidence/windows-msys2-v0.41.0-release \
 packaging/scripts/build-mpv-windows-msys2.sh
 ```
 
@@ -66,6 +68,10 @@ recorded build from accidental mixing with a previous test.
 The output folder contains `mpv.exe`, `mpv.com`, `libmpv-2.dll`, every DLL
 reported under `/mingw64` by `ldd`, and `FILELIST.txt`. System DLLs under
 `C:\Windows` are intentionally not copied.
+
+When `WINDOWS_BUILD_EVIDENCE` is set, the script also creates a new audit
+directory. Complete and verify its `source-index.tsv` before packaging a
+release; see `docs/windows-selfbuild-license-audit.md`.
 
 ## Validation
 
@@ -85,3 +91,9 @@ packaging/scripts/build-windows.sh
 
 The package script copies executable and DLL runtime files from that folder.
 It does not use the old third-party mpv binary layout.
+
+For a public project-built release, also set
+`REQUIRE_WINDOWS_LICENSE_EVIDENCE=1` and `WINDOWS_LICENSE_EVIDENCE` as shown
+in the Windows self-build license audit. This causes the package to include
+the verified runtime-license evidence and prevents accidental publication with
+an incomplete source index.
