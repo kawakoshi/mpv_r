@@ -29,7 +29,9 @@ done
 
 if [ ! -d "$source_dir/.git" ]; then
   mkdir -p "$(dirname "$source_dir")"
-  git clone --branch "$tag" --depth 1 https://github.com/mpv-player/mpv.git "$source_dir"
+  git -c core.autocrlf=false clone --branch "$tag" --depth 1 \
+    https://github.com/mpv-player/mpv.git "$source_dir"
+  git -C "$source_dir" config core.autocrlf false
 fi
 
 cd "$source_dir"

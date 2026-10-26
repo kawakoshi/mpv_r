@@ -65,6 +65,11 @@ The script refuses to use a source checkout with uncommitted changes and
 refuses to overwrite an existing portable output directory. This protects the
 recorded build from accidental mixing with a previous test.
 
+For a new clone, the script fixes `core.autocrlf=false` in the mpv checkout.
+This prevents Git for Windows from turning every upstream line into a local
+line-ending change. Do not use a checkout whose `git describe` ends in
+`-dirty` for a release build; create a new clean checkout instead.
+
 The output folder contains `mpv.exe`, `mpv.com`, `libmpv-2.dll`, every DLL
 reported under `/mingw64` by `ldd`, and `FILELIST.txt`. System DLLs under
 `C:\Windows` are intentionally not copied.

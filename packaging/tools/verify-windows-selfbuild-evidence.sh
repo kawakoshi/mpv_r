@@ -16,6 +16,11 @@ for required in runtime-manifest.tsv license-manifest.tsv source-index.tsv \
   fi
 done
 
+if grep -q '^describe=.*-dirty$' "$evidence_dir/mpv-source.txt"; then
+  echo "A dirty mpv source checkout blocks release; rebuild from a clean committed source." >&2
+  exit 1
+fi
+
 if awk -F '\t' 'NR > 1 && $9 != "SOURCE_BUILD" && $9 != "MSYS2_PACKAGE_IDENTIFIED" {print; bad=1} END {exit bad}' \
   "$evidence_dir/runtime-manifest.tsv"; then :; else
   echo "Unidentified runtime files block release." >&2
