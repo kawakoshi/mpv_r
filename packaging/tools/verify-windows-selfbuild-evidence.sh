@@ -16,7 +16,7 @@ for required in runtime-manifest.tsv license-manifest.tsv source-index.tsv \
   fi
 done
 
-if awk -F '\t' 'NR > 1 && $8 != "SOURCE_BUILD" && $8 != "MSYS2_PACKAGE_IDENTIFIED" {print; bad=1} END {exit bad}' \
+if awk -F '\t' 'NR > 1 && $9 != "SOURCE_BUILD" && $9 != "MSYS2_PACKAGE_IDENTIFIED" {print; bad=1} END {exit bad}' \
   "$evidence_dir/runtime-manifest.tsv"; then :; else
   echo "Unidentified runtime files block release." >&2
   exit 1

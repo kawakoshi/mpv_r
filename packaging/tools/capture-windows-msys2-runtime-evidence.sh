@@ -76,7 +76,7 @@ for executable in mpv.exe mpv.com libmpv-2.dll; do
   ldd "$runtime_dir/$executable" > "$evidence_dir/ldd/$executable.txt"
 done
 
-printf 'runtime_file\tsha256\tbytes\towner_package\tpackage_version\tdeclared_license\tpackage_homepage\tstatus\n' \
+printf 'runtime_file\tsha256\tbytes\torigin_path\towner_package\tpackage_version\tdeclared_license\tpackage_homepage\tstatus\n' \
   > "$evidence_dir/runtime-manifest.tsv"
 declare -A packages=()
 while IFS= read -r runtime_file; do
@@ -85,14 +85,19 @@ while IFS= read -r runtime_file; do
   bytes=$(wc -c < "$runtime_file" | tr -d ' ')
   case "$name" in
     mpv.exe|mpv.com|libmpv-2.dll)
-      printf '%s\t%s\t%s\tPROJECT_BUILD\t%s\tGPL-2.0-or-later\thttps://github.com/mpv-player/mpv\tSOURCE_BUILD\n' \
+      printf '%s\t%s\t%s\tSOURCE_BUILD\tPROJECT_BUILD\t%s\tGPL-2.0-or-later\thttps://github.com/mpv-player/mpv\tSOURCE_BUILD\n' \
         "$name" "$sha" "$bytes" "$(git -C "$source_dir" rev-parse HEAD)" \
         >> "$evidence_dir/runtime-manifest.tsv"
       ;;
     *)
-      package=$(LC_ALL=C pacman -Qqo "$runtime_file" 2>/dev/null || true)
+      origin_path=$runtime_file
+      package=$(LC_ALL=C pacman -Qqo "$origin_path" 2>/dev/null || true)
+      if [ -z "$package" ] && [ -f "$mingw_prefix/bin/$name" ]; then
+        origin_path="$mingw_prefix/bin/$name"
+        package=$(LC_ALL=C pacman -Qqo "$origin_path" 2>/dev/null || true)
+      fi
       if [ -z "$package" ]; then
-        printf '%s\t%s\t%s\tMISSING\tMISSING\tMISSING\tMISSING\tUNOWNED_RUNTIME_FILE\n' \
+        printf '%s\t%s\t%s\tMISSING\tMISSING\tMISSING\tMISSING\tMISSING\tUNOWNED_RUNTIME_FILE\n' \
           "$name" "$sha" "$bytes" >> "$evidence_dir/runtime-manifest.tsv"
         continue
       fi
@@ -103,8 +108,8 @@ while IFS= read -r runtime_file; do
       homepage=$(printf '%s\n' "$package_info" | sed -n 's/^URL[[:space:]]*: //p' | head -n 1)
       [ -n "$declared_license" ] || declared_license=MISSING
       [ -n "$homepage" ] || homepage=MISSING
-      printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\tMSYS2_PACKAGE_IDENTIFIED\n' \
-        "$name" "$sha" "$bytes" "$package" "$package_version" "$declared_license" "$homepage" \
+      printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\tMSYS2_PACKAGE_IDENTIFIED\n' \
+        "$name" "$sha" "$bytes" "$origin_path" "$package" "$package_version" "$declared_license" "$homepage" \
         >> "$evidence_dir/runtime-manifest.tsv"
       ;;
   esac
