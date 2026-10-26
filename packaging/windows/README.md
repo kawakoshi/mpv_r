@@ -14,6 +14,11 @@ The launcher starts the bundled `resources/mpv/mpv.exe` with:
 
 and passes through all file arguments.
 
+The portable package also includes `register-file-associations.cmd`. It runs a
+current-user PowerShell registration script that exposes `mpv_r` in Windows
+Default apps and supplies its executable icon for selected video types. It
+does not write `UserChoice` or force a default association.
+
 ## Build
 
 ```sh

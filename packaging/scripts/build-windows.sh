@@ -80,6 +80,11 @@ copy_common_documents "$root" "$package_dir"
 cp "$root/docs/windows-preview-guide.md" "$package_dir/documents/windows-preview-guide.md"
 cp "$root/translations_ja/windows-preview-guide_jp.md" \
   "$package_dir/documents/translations_ja/windows-preview-guide_jp.md"
+mkdir -p "$package_dir/tools"
+cp "$root/packaging/windows/register-file-associations.ps1" \
+  "$package_dir/tools/register-file-associations.ps1"
+cp "$root/packaging/windows/register-file-associations.cmd" \
+  "$package_dir/register-file-associations.cmd"
 
 if command -v zip >/dev/null 2>&1; then
   (

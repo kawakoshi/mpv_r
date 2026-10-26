@@ -20,6 +20,19 @@ administrator permission is required for normal use.
 
 Multiple files are loaded as a playlist. mpv_r opens paused by default.
 
+## Show the mpv_r Icon and Choose It as a Default App
+
+The portable ZIP does not change Windows file associations by itself. To add
+mpv_r as a selectable video app (and give its selected file types the mpv_r
+icon), double-click `register-file-associations.cmd` in the extracted package.
+It needs no administrator permission and registers only for the current Windows
+user.
+
+Then open **Settings > Apps > Default apps**, choose **mpv_r**, and assign the
+file types you want, such as `.mp4`. This script never changes the current
+default app on its own. Keep the complete extracted `mpv_r` folder in place;
+moving only `mpv_r.exe` later will break the registered command and icon.
+
 ## Keep the Package Together
 
 `mpv_r.exe` starts the bundled player at `resources/mpv/mpv.exe` and loads
@@ -33,6 +46,9 @@ mpv_r/
     mpv/
     config/
   documents/
+  register-file-associations.cmd
+  tools/
+    register-file-associations.ps1
 ```
 
 ## Review Controls
