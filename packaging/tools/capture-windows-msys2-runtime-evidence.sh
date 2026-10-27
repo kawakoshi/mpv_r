@@ -146,6 +146,11 @@ for package in "${!packages[@]}"; do
   printf '%s\t%s\t%s\t%s\n' "$package" "$package_version" "$count" "$license_status" \
     >> "$evidence_dir/license-manifest.tsv"
   source_package=${package/mingw-w64-x86_64-/mingw-w64-}
+  # MSYS2's binary package is libx264, while its source package omits "lib".
+  # Keep this explicit instead of silently accepting a 404 candidate URL.
+  case "$package" in
+    mingw-w64-x86_64-libx264) source_package=mingw-w64-x264 ;;
+  esac
   source_url="https://repo.msys2.org/mingw/sources/${source_package}-${package_version}.src.tar.zst"
   printf '%s\t%s\t%s\t%s\t%s\tMISSING\tPENDING_SOURCE_PACKAGE_DOWNLOAD_AND_VERIFICATION\n' \
     "$package" "$package_version" "$homepage" "$declared_license" "$source_url" \
