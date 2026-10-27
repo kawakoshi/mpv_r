@@ -113,7 +113,7 @@ while IFS= read -r runtime_file; do
         >> "$evidence_dir/runtime-manifest.tsv"
       ;;
   esac
-done < <(find "$runtime_dir" -maxdepth 1 -type f \( -iname '*.exe' -o -iname '*.dll' \) -print | sort)
+done < <(find "$runtime_dir" -maxdepth 1 -type f \( -iname '*.exe' -o -iname '*.com' -o -iname '*.dll' \) -print | sort)
 
 printf 'package\tversion\tlicense_file_count\tstatus\n' > "$evidence_dir/license-manifest.tsv"
 printf 'package\tversion\tpackage_homepage\tdeclared_license\tsource_url\tsource_sha256\tstatus\n' \

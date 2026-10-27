@@ -127,7 +127,7 @@ cp "$root/packaging/windows/create-desktop-shortcut.cmd" \
 if [ -n "$license_evidence" ]; then
   final_manifest="$package_dir/documents/LICENSES/windows-selfbuild/final-package-runtime-manifest.tsv"
   printf 'package_path\tsha256\tbytes\n' > "$final_manifest"
-  find "$package_dir" -type f \( -iname '*.exe' -o -iname '*.dll' \) -print | sort | \
+  find "$package_dir" -type f \( -iname '*.exe' -o -iname '*.com' -o -iname '*.dll' \) -print | sort | \
     while IFS= read -r runtime_file; do
       relative=${runtime_file#"$package_dir/"}
       sha=$(shasum -a 256 "$runtime_file" | awk '{print $1}')

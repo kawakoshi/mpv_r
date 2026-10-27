@@ -49,6 +49,19 @@ exact archive, record its SHA-256, inspect it for the expected package recipe,
 and then change its status to `VERIFIED`. A candidate URL is not verification;
 do not replace it with a current package page or a moving branch URL.
 
+To download a selected set without changing its review status, run this from
+the MSYS2 MINGW64 shell:
+
+```sh
+packaging/tools/collect-windows-msys2-source-packages.sh \
+  /c/path/to/evidence \
+  mingw-w64-x86_64-xvidcore mingw-w64-x86_64-x265
+```
+
+It writes immutable `.src.tar.zst` archives below `source-packages/` and their
+hashes in `msys2-source-package-downloads.tsv`. Its status deliberately stays
+`DOWNLOADED_NEEDS_REVIEW`; it is not release clearance.
+
 The release verifier refuses a package when a runtime file is unowned, a local
 license text is missing, or any source-index row remains unverified:
 
