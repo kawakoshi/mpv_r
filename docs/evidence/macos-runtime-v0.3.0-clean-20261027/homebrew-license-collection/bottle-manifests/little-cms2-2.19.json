@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:04a403b4e4344bdc472e4d1727a2815c52af2ba9f6dd4927c6108a8d1d7ab60b",
+      "size": 3194,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.19.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "6db1e7a93012fc49569cedc5772f9a2cab3ed4411c7f1015652b3b5d132740b5",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "548290",
+        "sh.brew.bottle.installed_size": "2142051",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.7-90-g567ca49\",\"changed_files\":[\"lib/pkgconfig/lcms2.pc\"],\"source_modified_time\":1777022260,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.4.1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"xz\",\"version\":\"5.8.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.3\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/jpgicc,bin/linkicc,bin/psicc,bin/tificc,bin/transicc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:2ad488b5be3af5b96f9a88d279a503c17eb9c829c7c55298d14d3e3ed668cf54",
+      "size": 2959,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.19.arm64_sequoia",
+        "sh.brew.bottle.digest": "be9135a585a60f84ec283d97e7a89bec9338e525679b637b171092338c5c28a0",
+        "sh.brew.bottle.size": "437855",
+        "sh.brew.bottle.installed_size": "1499701",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.7-90-g567ca49\",\"changed_files\":[\"lib/pkgconfig/lcms2.pc\"],\"source_modified_time\":1777022260,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.4.1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"xz\",\"version\":\"5.8.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.3\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/tificc,bin/linkicc,bin/transicc,bin/psicc,bin/jpgicc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:e0f968eee3cafa2c73a835b0abed6e32166fdca2533097b5734bb19ac1f9e62a",
+      "size": 2956,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.19.arm64_sonoma",
+        "sh.brew.bottle.digest": "27689360239a2d3e1b69f14d2f981852c7cacc3bbd1fbdfba499a059cf69b551",
+        "sh.brew.bottle.size": "437172",
+        "sh.brew.bottle.installed_size": "1498877",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.7-90-g567ca49\",\"changed_files\":[\"lib/pkgconfig/lcms2.pc\"],\"source_modified_time\":1777022260,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.4.1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"xz\",\"version\":\"5.8.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.3\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/tificc,bin/linkicc,bin/transicc,bin/psicc,bin/jpgicc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:b3e4d80d691522a36d3450de0536dfdf22bfd02dcd127d809a1d82cdb5c0ecff",
+      "size": 2949,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.19.arm64_tahoe",
+        "sh.brew.bottle.digest": "09a863e549255993de3f73d705328b1202417dff324edd30c703b77fcee09b01",
+        "sh.brew.bottle.size": "433668",
+        "sh.brew.bottle.installed_size": "1473625",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.7-90-g567ca49\",\"changed_files\":[\"lib/pkgconfig/lcms2.pc\"],\"source_modified_time\":1777022260,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.4.1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"xz\",\"version\":\"5.8.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.3\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.4\",\"clt\":\"26.4.0.0.1774242506\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/tificc,bin/linkicc,bin/transicc,bin/psicc,bin/jpgicc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0e6f50c9091ce322b5d74ccc5e9b4efcd2559cf6ea6fbcdd4ca828dc85cb4dfa",
+      "size": 2940,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.19.sonoma",
+        "sh.brew.bottle.digest": "213896d19f9b7a0baad9c5a0b5daebe4f3d901a93c85de24f299c01ab1dadede",
+        "sh.brew.bottle.size": "429147",
+        "sh.brew.bottle.installed_size": "1221639",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.7-90-g567ca49\",\"changed_files\":[\"lib/pkgconfig/lcms2.pc\"],\"source_modified_time\":1777022260,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.4.1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"xz\",\"version\":\"5.8.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.3\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/tificc,bin/linkicc,bin/transicc,bin/psicc,bin/jpgicc"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:532cd7b4bc41a88913b9e0d2859b71575bfbc113faa4161d1e7630e7badcb580",
+      "size": 3199,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.19.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "8df57239d5b52a119832c5b042c5a9fda56caf1692ac1377d517cb6bfc578ed8",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "538443",
+        "sh.brew.bottle.installed_size": "1666469",
+        "sh.brew.license": "MIT",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.7-90-g567ca49\",\"changed_files\":[\"lib/pkgconfig/lcms2.pc\"],\"source_modified_time\":1777022260,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.4.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.4.1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"xz\",\"version\":\"5.8.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.3\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false,\"compatibility_version\":1},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/tificc,bin/transicc,bin/psicc,bin/linkicc,bin/jpgicc"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-04-24T19:07:16Z",
+    "org.opencontainers.image.description": "Color management engine supporting ICC profiles",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/little-cms2",
+    "org.opencontainers.image.licenses": "MIT",
+    "org.opencontainers.image.ref.name": "2.19",
+    "org.opencontainers.image.revision": "cebfa7a7098510caf6d1c8df1a0fea97bfde9db5",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/cebfa7a7098510caf6d1c8df1a0fea97bfde9db5/Formula/l/little-cms2.rb",
+    "org.opencontainers.image.title": "little-cms2",
+    "org.opencontainers.image.url": "https://www.littlecms.com/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "2.19"
+  }
+}

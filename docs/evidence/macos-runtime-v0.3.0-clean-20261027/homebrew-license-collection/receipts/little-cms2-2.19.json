@@ -1,0 +1,82 @@
+{
+  "homebrew_version": "5.1.7-90-g567ca49",
+  "used_options": [],
+  "unused_options": [],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": true,
+  "loaded_from_internal_api": true,
+  "installed_on_request": false,
+  "changed_files": [
+    "lib/pkgconfig/lcms2.pc"
+  ],
+  "time": 1781765989,
+  "source_modified_time": 1777022260,
+  "compiler": "clang",
+  "aliases": [
+    "lcms2"
+  ],
+  "runtime_dependencies": [
+    {
+      "full_name": "jpeg-turbo",
+      "version": "3.1.4.1",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "3.1.4.1",
+      "declared_directly": true
+    },
+    {
+      "full_name": "xz",
+      "version": "5.8.3",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "5.8.3",
+      "declared_directly": false
+    },
+    {
+      "full_name": "lz4",
+      "version": "1.10.0",
+      "revision": 0,
+      "bottle_rebuild": 1,
+      "pkg_version": "1.10.0",
+      "declared_directly": false
+    },
+    {
+      "full_name": "zstd",
+      "version": "1.5.7",
+      "revision": 1,
+      "bottle_rebuild": 0,
+      "pkg_version": "1.5.7_1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libtiff",
+      "version": "4.7.1",
+      "revision": 1,
+      "bottle_rebuild": 0,
+      "pkg_version": "4.7.1_1",
+      "declared_directly": true
+    }
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "2.19",
+      "head": null,
+      "version_scheme": 1,
+      "compatibility_version": null
+    },
+    "path": "/Users/mba2026/Library/Caches/Homebrew/api/internal/packages.arm64_tahoe.jws.json",
+    "tap_git_head": null,
+    "tap": "homebrew/core"
+  },
+  "arch": "arm64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 26",
+    "cpu_family": "dunno",
+    "xcode": "26.4",
+    "clt": "26.4.0.0.1774242506",
+    "preferred_perl": "5.34"
+  }
+}

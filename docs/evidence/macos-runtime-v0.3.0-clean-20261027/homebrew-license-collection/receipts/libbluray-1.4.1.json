@@ -1,0 +1,88 @@
+{
+  "homebrew_version": "5.0.15-44-gb4d16f5",
+  "used_options": [],
+  "unused_options": [],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": true,
+  "loaded_from_internal_api": true,
+  "installed_on_request": false,
+  "changed_files": [
+    "lib/pkgconfig/libbluray.pc"
+  ],
+  "time": 1782519732,
+  "source_modified_time": 1769459831,
+  "compiler": "clang",
+  "aliases": [],
+  "runtime_dependencies": [
+    {
+      "full_name": "libpng",
+      "version": "1.6.58",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "1.6.58",
+      "declared_directly": false
+    },
+    {
+      "full_name": "freetype",
+      "version": "2.14.3",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "2.14.3",
+      "declared_directly": true
+    },
+    {
+      "full_name": "libunistring",
+      "version": "1.4.2",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "1.4.2",
+      "declared_directly": false
+    },
+    {
+      "full_name": "gettext",
+      "version": "1.0",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "1.0",
+      "declared_directly": false
+    },
+    {
+      "full_name": "fontconfig",
+      "version": "2.18.1",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "2.18.1",
+      "declared_directly": true
+    },
+    {
+      "full_name": "libudfread",
+      "version": "1.2.0",
+      "revision": 0,
+      "bottle_rebuild": 0,
+      "pkg_version": "1.2.0",
+      "declared_directly": true
+    }
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "1.4.1",
+      "head": null,
+      "version_scheme": 0,
+      "compatibility_version": null
+    },
+    "path": "/Users/mba2026/Library/Caches/Homebrew/api/internal/packages.arm64_tahoe.jws.json",
+    "tap_git_head": null,
+    "tap": "homebrew/core"
+  },
+  "arch": "arm64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 26",
+    "cpu_family": "dunno",
+    "xcode": "26.2",
+    "clt": "26.2.0.0.1.1764812424",
+    "preferred_perl": "5.34"
+  }
+}

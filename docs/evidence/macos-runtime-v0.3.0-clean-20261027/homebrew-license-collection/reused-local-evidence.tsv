@@ -1,0 +1,4 @@
+formula	version	artifact	sha256	reused_from	status
+glib	2.90.1	licenses/glib-2.90.1/COPYING	fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb	macos-runtime-v0.3.0/homebrew-license-collection	REUSED_IDENTICAL_VERSION_EVIDENCE
+libunibreak	7.0	licenses/libunibreak-7.0/LICENCE	0c57e2ec42ece17791a75d2f9b2f8e0663181be008667a507f765b3ef22522db	macos-runtime-v0.3.0/homebrew-license-collection	REUSED_IDENTICAL_VERSION_EVIDENCE
+luajit	2.1.1782381659	licenses/luajit-2.1.1782381659/COPYRIGHT	6cda3076a8c09b31bb1f90da614ea89e7ee194589626eeac613e522849604e47	macos-runtime-v0.3.0/homebrew-license-collection	REUSED_IDENTICAL_VERSION_EVIDENCE

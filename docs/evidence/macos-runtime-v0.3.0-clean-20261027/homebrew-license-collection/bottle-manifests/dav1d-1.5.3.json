@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:e4587b08f057f42aef31b60845e1cab862d4839035c5ecbf2978d9480447690b",
+      "size": 2166,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.5.3.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "89f1cacc3d5d6de20cd85b098e0abed0eaf552dbda07cb3715cf06decf5c1fcc",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "399386",
+        "sh.brew.bottle.installed_size": "1085442",
+        "sh.brew.license": "BSD-2-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.8-15-g7543440\",\"changed_files\":[\"lib/pkgconfig/dav1d.pc\"],\"source_modified_time\":1767192645,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/dav1d"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:873c3d9e5eee1cb7c4ba5ef14cc0c8542a08a023ccbc5a4b4d6225f71f0173ea",
+      "size": 2107,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.5.3.arm64_sequoia",
+        "sh.brew.bottle.digest": "9502a86f722756284734b724206d21783a0863406462abf8d43fe52d5232bad5",
+        "sh.brew.bottle.size": "364958",
+        "sh.brew.bottle.installed_size": "943586",
+        "sh.brew.license": "BSD-2-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.8-15-g7543440\",\"changed_files\":[\"lib/pkgconfig/dav1d.pc\"],\"source_modified_time\":1767192645,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/dav1d"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:42575eb0778d8d390c04166f38a6a3b573ce02b8b51f6f5e7cbe32ad3a89800b",
+      "size": 2104,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.5.3.arm64_sonoma",
+        "sh.brew.bottle.digest": "fe0db93877e6734a127c1cb8dd98293d2016b830fd2ec36fb8985e36e92d7611",
+        "sh.brew.bottle.size": "360540",
+        "sh.brew.bottle.installed_size": "943554",
+        "sh.brew.license": "BSD-2-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.8-15-g7543440\",\"changed_files\":[\"lib/pkgconfig/dav1d.pc\"],\"source_modified_time\":1767192645,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/dav1d"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:935b21e5f18ca82dfd0e3f617cc28479c7c4ee693ac03eea3d13d46ceebe7eeb",
+      "size": 2099,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.5.3.arm64_tahoe",
+        "sh.brew.bottle.digest": "cda8a6b7d3184cb2a083b8629ae5f9b00f8e04b36da71d8f56f149cbdeebfdbf",
+        "sh.brew.bottle.size": "364641",
+        "sh.brew.bottle.installed_size": "938720",
+        "sh.brew.license": "BSD-2-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.8-15-g7543440\",\"changed_files\":[\"lib/pkgconfig/dav1d.pc\"],\"source_modified_time\":1767192645,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/dav1d"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:6a8fea545a16365825dea98ac9e255e051112807ae5a6e8060a1d7229f851f15",
+      "size": 2089,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.5.3.sonoma",
+        "sh.brew.bottle.digest": "8697d509b54358c4ad2b8a370841ee5244431d2d85c2883bb7624f60c59ec7b6",
+        "sh.brew.bottle.size": "781330",
+        "sh.brew.bottle.installed_size": "2396311",
+        "sh.brew.license": "BSD-2-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.8-15-g7543440\",\"changed_files\":[\"lib/pkgconfig/dav1d.pc\"],\"source_modified_time\":1767192645,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/dav1d"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:51c910d5b9204642654f750e7276997b72f2fd749c5edb88a43164a51acefefc",
+      "size": 2171,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.5.3.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "b8dae4c806758642d9e2dc6d064b0f62dd7b692c951c2bba171394ac94e69a8d",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "825275",
+        "sh.brew.bottle.installed_size": "2625572",
+        "sh.brew.license": "BSD-2-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.8-15-g7543440\",\"changed_files\":[\"lib/pkgconfig/dav1d.pc\"],\"source_modified_time\":1767192645,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/dav1d"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2025-12-31T17:05:04Z",
+    "org.opencontainers.image.description": "AV1 decoder targeted to be small and fast",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/dav1d",
+    "org.opencontainers.image.licenses": "BSD-2-Clause",
+    "org.opencontainers.image.ref.name": "1.5.3",
+    "org.opencontainers.image.revision": "1e8f6ac49826089d4213467cad75cfa2061a680d",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/1e8f6ac49826089d4213467cad75cfa2061a680d/Formula/d/dav1d.rb",
+    "org.opencontainers.image.title": "dav1d",
+    "org.opencontainers.image.url": "https://code.videolan.org/videolan/dav1d",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.5.3"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:c6d32cc60374d2827a62a0018842c154c3ad56e8ee3f7f14423e4b9d86418b05",
+      "size": 5208,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.360.1.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "b87acf6094dc3a89d9a942259ae453fec22a770aa3fab05dba2e3c2c71702558",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "616692",
+        "sh.brew.bottle.installed_size": "1784275",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-14-g30f9c6f\",\"changed_files\":[\"lib/pkgconfig/libplacebo.pc\"],\"source_modified_time\":1773430467,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.3\",\"declared_directly\":false},{\"full_name\":\"xz\",\"version\":\"5.8.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.2\",\"declared_directly\":false},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":false},{\"full_name\":\"little-cms2\",\"version\":\"2.18\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.18\",\"declared_directly\":true},{\"full_name\":\"shaderc\",\"version\":\"2026.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2026.1\",\"declared_directly\":true},{\"full_name\":\"vulkan-headers\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true},{\"full_name\":\"xorgproto\",\"version\":\"2025.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2025.1\",\"declared_directly\":false},{\"full_name\":\"libxau\",\"version\":\"1.0.12\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.0.12\",\"declared_directly\":false},{\"full_name\":\"libxdmcp\",\"version\":\"1.1.5\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.1.5\",\"declared_directly\":false},{\"full_name\":\"libxcb\",\"version\":\"1.17.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.17.0\",\"declared_directly\":false},{\"full_name\":\"libx11\",\"version\":\"1.8.13\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.8.13\",\"declared_directly\":false},{\"full_name\":\"expat\",\"version\":\"2.7.4\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.7.4\",\"declared_directly\":false},{\"full_name\":\"libffi\",\"version\":\"3.5.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.5.2\",\"declared_directly\":false},{\"full_name\":\"ncurses\",\"version\":\"6.6\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"6.6\",\"declared_directly\":false},{\"full_name\":\"readline\",\"version\":\"8.3.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"8.3.3\",\"declared_directly\":false},{\"full_name\":\"libxml2\",\"version\":\"2.15.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.15.2\",\"declared_directly\":false},{\"full_name\":\"wayland\",\"version\":\"1.24.0\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.24.0_1\",\"declared_directly\":false},{\"full_name\":\"vulkan-loader\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0c0b7f99c40dce2ade45bb98ec34e19f8bcad3011e26e94842890de30cb63136",
+      "size": 3428,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.360.1.arm64_sequoia",
+        "sh.brew.bottle.digest": "1fd6531a9de50d0121d1ff4ec67163dfb1dcb8c682d96c6587b960f04be0fe34",
+        "sh.brew.bottle.size": "552415",
+        "sh.brew.bottle.installed_size": "1548229",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-14-g30f9c6f\",\"changed_files\":[\"lib/pkgconfig/libplacebo.pc\"],\"source_modified_time\":1773430467,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.3\",\"declared_directly\":false},{\"full_name\":\"xz\",\"version\":\"5.8.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.2\",\"declared_directly\":false},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":false},{\"full_name\":\"little-cms2\",\"version\":\"2.18\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.18\",\"declared_directly\":true},{\"full_name\":\"shaderc\",\"version\":\"2026.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2026.1\",\"declared_directly\":true},{\"full_name\":\"vulkan-headers\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true},{\"full_name\":\"vulkan-loader\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:9b38c9a0ee56a899cbe1ef34f885f876076c47bc4bd3e2d2003661a3e651f03a",
+      "size": 3425,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.360.1.arm64_sonoma",
+        "sh.brew.bottle.digest": "8b89e9ee2c276bded52d69bbfc3b645625c975e9edc3ba93873c18d661ef241c",
+        "sh.brew.bottle.size": "553555",
+        "sh.brew.bottle.installed_size": "1548885",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-14-g30f9c6f\",\"changed_files\":[\"lib/pkgconfig/libplacebo.pc\"],\"source_modified_time\":1773430467,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.3\",\"declared_directly\":false},{\"full_name\":\"xz\",\"version\":\"5.8.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.2\",\"declared_directly\":false},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":false},{\"full_name\":\"little-cms2\",\"version\":\"2.18\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.18\",\"declared_directly\":true},{\"full_name\":\"shaderc\",\"version\":\"2026.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2026.1\",\"declared_directly\":true},{\"full_name\":\"vulkan-headers\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true},{\"full_name\":\"vulkan-loader\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:f1a22d2334bc9439b3109d1831230b862294f2280c1e6bba967ebe7ccfe09747",
+      "size": 3422,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26.3"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.360.1.arm64_tahoe",
+        "sh.brew.bottle.digest": "6575f7e22f75c946f5c831d2ff130b89aa275a2cdd4dbe7a0204590513b87b25",
+        "sh.brew.bottle.size": "533454",
+        "sh.brew.bottle.installed_size": "1507509",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-14-g30f9c6f\",\"changed_files\":[\"lib/pkgconfig/libplacebo.pc\"],\"source_modified_time\":1773430467,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.3\",\"declared_directly\":false},{\"full_name\":\"xz\",\"version\":\"5.8.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.2\",\"declared_directly\":false},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":false},{\"full_name\":\"little-cms2\",\"version\":\"2.18\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.18\",\"declared_directly\":true},{\"full_name\":\"shaderc\",\"version\":\"2026.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2026.1\",\"declared_directly\":true},{\"full_name\":\"vulkan-headers\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true},{\"full_name\":\"vulkan-loader\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26.3\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:711d5c16e299f21a005dc1dff9c127a87c4f184b5ae0fe48829efea5cf6b8355",
+      "size": 3409,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.360.1.sonoma",
+        "sh.brew.bottle.digest": "a6a5f1fefe34a81d3fde35cdab8481899afc47b90efff12b912b0b1675f90861",
+        "sh.brew.bottle.size": "566342",
+        "sh.brew.bottle.installed_size": "1555274",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-14-g30f9c6f\",\"changed_files\":[\"lib/pkgconfig/libplacebo.pc\"],\"source_modified_time\":1773430467,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.3\",\"declared_directly\":false},{\"full_name\":\"xz\",\"version\":\"5.8.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.2\",\"declared_directly\":false},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":false},{\"full_name\":\"little-cms2\",\"version\":\"2.18\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.18\",\"declared_directly\":true},{\"full_name\":\"shaderc\",\"version\":\"2026.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2026.1\",\"declared_directly\":true},{\"full_name\":\"vulkan-headers\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true},{\"full_name\":\"vulkan-loader\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:9f074c5a6d7a39f28713d3d69559b52f7270c414091a9fc3a588dcff86a059ab",
+      "size": 5213,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "7.360.1.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "145b3ac56e39a1a925671872f5ec1176c568d518c643cf689ae66f33494d43b7",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "631362",
+        "sh.brew.bottle.installed_size": "1808965",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-14-g30f9c6f\",\"changed_files\":[\"lib/pkgconfig/libplacebo.pc\"],\"source_modified_time\":1773430467,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"jpeg-turbo\",\"version\":\"3.1.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.1.3\",\"declared_directly\":false},{\"full_name\":\"xz\",\"version\":\"5.8.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"5.8.2\",\"declared_directly\":false},{\"full_name\":\"lz4\",\"version\":\"1.10.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.10.0\",\"declared_directly\":false},{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":false},{\"full_name\":\"zstd\",\"version\":\"1.5.7\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.5.7_1\",\"declared_directly\":false},{\"full_name\":\"libtiff\",\"version\":\"4.7.1\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"4.7.1_1\",\"declared_directly\":false},{\"full_name\":\"little-cms2\",\"version\":\"2.18\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.18\",\"declared_directly\":true},{\"full_name\":\"shaderc\",\"version\":\"2026.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2026.1\",\"declared_directly\":true},{\"full_name\":\"vulkan-headers\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true},{\"full_name\":\"xorgproto\",\"version\":\"2025.1\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2025.1\",\"declared_directly\":false},{\"full_name\":\"libxau\",\"version\":\"1.0.12\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.0.12\",\"declared_directly\":false},{\"full_name\":\"libxdmcp\",\"version\":\"1.1.5\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.1.5\",\"declared_directly\":false},{\"full_name\":\"libxcb\",\"version\":\"1.17.0\",\"revision\":0,\"bottle_rebuild\":1,\"pkg_version\":\"1.17.0\",\"declared_directly\":false},{\"full_name\":\"libx11\",\"version\":\"1.8.13\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.8.13\",\"declared_directly\":false},{\"full_name\":\"expat\",\"version\":\"2.7.4\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.7.4\",\"declared_directly\":false},{\"full_name\":\"libffi\",\"version\":\"3.5.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"3.5.2\",\"declared_directly\":false},{\"full_name\":\"ncurses\",\"version\":\"6.6\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"6.6\",\"declared_directly\":false},{\"full_name\":\"readline\",\"version\":\"8.3.3\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"8.3.3\",\"declared_directly\":false},{\"full_name\":\"libxml2\",\"version\":\"2.15.2\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"2.15.2\",\"declared_directly\":false},{\"full_name\":\"wayland\",\"version\":\"1.24.0\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"1.24.0_1\",\"declared_directly\":false},{\"full_name\":\"vulkan-loader\",\"version\":\"1.4.341.0\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.4.341.0\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-03-13T20:33:57Z",
+    "org.opencontainers.image.description": "Reusable library for GPU-accelerated image/video processing primitives",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libplacebo",
+    "org.opencontainers.image.licenses": "LGPL-2.1-or-later",
+    "org.opencontainers.image.ref.name": "7.360.1",
+    "org.opencontainers.image.revision": "c06a4c22aaa67a36128aed851847bcd27705169f",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/c06a4c22aaa67a36128aed851847bcd27705169f/Formula/lib/libplacebo.rb",
+    "org.opencontainers.image.title": "libplacebo",
+    "org.opencontainers.image.url": "https://code.videolan.org/videolan/libplacebo",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "7.360.1"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:147876cbacf2820f8be57cc3db4f7b7303d51edffd9abccdbcdca542b9a9936b",
+      "size": 2146,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.arm64_sequoia",
+        "sh.brew.bottle.digest": "c37a023bd090ca66e5cec2e0b24f7fcd6a57078ca7cc2a1d661301d01975ee27",
+        "sh.brew.bottle.size": "18047783",
+        "sh.brew.bottle.installed_size": "82231811",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.16-37-g01cfc40\",\"changed_files\":[],\"source_modified_time\":1764077852,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/MoltenVKShaderConverter"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:a15702e374608e17ffa25592b81aae5d98c50f68071df6f9a1c8a916f5e287d7",
+      "size": 2143,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.arm64_sonoma",
+        "sh.brew.bottle.digest": "0260e56d985f283c9f81af474469285855ce88f48ac5dc31c7a9fb7c2c846aa6",
+        "sh.brew.bottle.size": "18326521",
+        "sh.brew.bottle.installed_size": "83254867",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.16-37-g01cfc40\",\"changed_files\":[],\"source_modified_time\":1764077852,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/MoltenVKShaderConverter"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:a1fe928a3d7f92c9cca9795ce24c02a76b92c7bd86fe6c7dacd3e56738a1f11b",
+      "size": 2138,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.arm64_tahoe",
+        "sh.brew.bottle.digest": "c0b1bda916255edc08d5a884eec4826e2649a890283b03e6f62e4aa9984cc9b8",
+        "sh.brew.bottle.size": "17997793",
+        "sh.brew.bottle.installed_size": "82182593",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.16-37-g01cfc40\",\"changed_files\":[],\"source_modified_time\":1764077852,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/MoltenVKShaderConverter"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:6facac52c2f0f948cf185cf97f5f941c4d2f55a75e5e19d7e259e807597afd94",
+      "size": 2127,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.4.1.sonoma",
+        "sh.brew.bottle.digest": "9bb2d88ee0ed7cd035f982a59a2e9c5878237c9f4df88117172ccdbc5127f6d9",
+        "sh.brew.bottle.size": "18998715",
+        "sh.brew.bottle.installed_size": "87711207",
+        "sh.brew.license": "Apache-2.0",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.16-37-g01cfc40\",\"changed_files\":[],\"source_modified_time\":1764077852,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/MoltenVKShaderConverter"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-03-03T12:20:23Z",
+    "org.opencontainers.image.description": "Implementation of the Vulkan graphics and compute API on top of Metal",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/molten-vk",
+    "org.opencontainers.image.licenses": "Apache-2.0",
+    "org.opencontainers.image.ref.name": "1.4.1",
+    "org.opencontainers.image.revision": "27d133de3c02b7d9d28c4854820accde31a26f74",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/27d133de3c02b7d9d28c4854820accde31a26f74/Formula/m/molten-vk.rb",
+    "org.opencontainers.image.title": "molten-vk",
+    "org.opencontainers.image.url": "https://github.com/KhronosGroup/MoltenVK",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.4.1"
+  }
+}

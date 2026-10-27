@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:25db8373310490e96e476811ea97b6c2395bdc591af8fa0fd281b2c542a54336",
+      "size": 2135,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "ca819fe840f4ca92cf5fd514a1617215da500f76051a5c26f14c261329989e64",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "452801",
+        "sh.brew.bottle.installed_size": "1752279",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.3-104-gc493fc6\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:2c1f894ef3ff0cbd8c07ff7253f3fb0b0d18aaf69d47d5499809158069705966",
+      "size": 2052,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.arm64_sequoia",
+        "sh.brew.bottle.digest": "ee8314ce01c48102e3f977540d6095a444ceb8bce71f1868199c47cad4ce12e4",
+        "sh.brew.bottle.size": "353631",
+        "sh.brew.bottle.installed_size": "1194235",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.3-104-gc493fc6\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.4\",\"cpu_family\":\"dunno\",\"xcode\":\"16.3\",\"clt\":\"16.3.0.0.1.1742442376\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:94627eecd93da3c31766a392425c3d3b3c827eee73f6129ee67634379def6186",
+      "size": 2049,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.arm64_sonoma",
+        "sh.brew.bottle.digest": "57899a223aa26a32842ddf3a76c4b2c3a8473ddb3537fec7ee07db54812d0425",
+        "sh.brew.bottle.size": "355738",
+        "sh.brew.bottle.installed_size": "1196915",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.3-104-gc493fc6\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.7\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:707f92dd04395db8e93381b7bd38eb1ff138191c25d651500fb6dcd9aa10a835",
+      "size": 2052,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 13.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.arm64_ventura",
+        "sh.brew.bottle.digest": "95caade5b153801f19564ba0ea9fbf093b0881ee44a6c68c87b834ea9b3e341b",
+        "sh.brew.bottle.size": "345696",
+        "sh.brew.bottle.installed_size": "1179075",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.3-104-gc493fc6\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.7\",\"cpu_family\":\"dunno\",\"xcode\":\"15.2\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:59fef995b5220730de91eb1c095bc4e40a0f99123607ee3094a629afbbcd2f09",
+      "size": 2033,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.sonoma",
+        "sh.brew.bottle.digest": "354ba1f7b397e045e605cec5fc47abee64523b66b93e1cf7bab14e7aa92886f2",
+        "sh.brew.bottle.size": "721888",
+        "sh.brew.bottle.installed_size": "2431176",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.3-104-gc493fc6\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.7\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:2c6a1cd6ec6fa8427759bb7356a018b5b3dc2f219ba348eb73c2dfaef8590ad8",
+      "size": 2036,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 13.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.ventura",
+        "sh.brew.bottle.digest": "3dcc05ade0f1a0269b03a6d8725ba8e7bf94d2366727ac270fb84d40160ea1eb",
+        "sh.brew.bottle.size": "726387",
+        "sh.brew.bottle.installed_size": "2429112",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.3-104-gc493fc6\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.7\",\"cpu_family\":\"penryn\",\"xcode\":\"15.2\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:aa825b2d2ee49a1ca52e0231b19adb6b6bc7df293e92a26755313ef96c70d82c",
+      "size": 2140,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "1586618acff0317dbdcc0e93f56a1a3cc8fc64ab9f59d1f4f4afbfaf4ba9581e",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "810141",
+        "sh.brew.bottle.installed_size": "3071857",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.3-104-gc493fc6\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:da6021ac6c9d6198b431b12919619bd6f6ede73fd07e28a10d0d3f77b4e02118",
+      "size": 2044,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.0.6.arm64_tahoe",
+        "sh.brew.bottle.digest": "2beb74e61904dd631d9dfc8e43ae710572041e93058d759b77c37b20c6a9a431",
+        "sh.brew.bottle.size": "353120",
+        "sh.brew.bottle.installed_size": "1192265",
+        "sh.brew.license": "WTFPL",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.10-33-g34be148\",\"changed_files\":[\"lib/pkgconfig/zimg.pc\"],\"source_modified_time\":1755234187,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.0\",\"clt\":\"26.0.0.0.1.1756965055\",\"preferred_perl\":\"5.34\"}}"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2025-08-15T17:12:11Z",
+    "org.opencontainers.image.description": "Scaling, colorspace conversion, and dithering library",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/zimg",
+    "org.opencontainers.image.licenses": "WTFPL",
+    "org.opencontainers.image.ref.name": "3.0.6",
+    "org.opencontainers.image.revision": "3b79ac331ebef97d840c67c5592d9fd1f99e620e",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/3b79ac331ebef97d840c67c5592d9fd1f99e620e/Formula/z/zimg.rb",
+    "org.opencontainers.image.title": "zimg",
+    "org.opencontainers.image.url": "https://github.com/sekrit-twc/zimg",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "3.0.6"
+  }
+}

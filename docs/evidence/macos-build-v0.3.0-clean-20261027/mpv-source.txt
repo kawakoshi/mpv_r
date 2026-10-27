@@ -1,0 +1,9 @@
+captured_at_utc=2026-10-27T12:49:08Z
+source_checkout=/Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src/mpv-v0.41.0-release-audit
+meson_build_dir=/Users/mba2026/Documents/codex_hisyo/開発/アプリ/VideoReviewPlayer/build-src/builds/mpv-r-arm64-release-audit
+head_commit=41f6a645068483470267271e1d09966ca3b9f413
+describe=v0.41.0
+
+[git status --porcelain=v1]
+
+[untracked files]

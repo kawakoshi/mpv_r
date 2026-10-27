@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:615c8029f985571295a934967c6dfabc7c20eacebcb055a76040c9907bb74f75",
+      "size": 3698,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 27"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "10.49.arm64_golden_gate",
+        "sh.brew.bottle.digest": "5cac44323243138490ca74a2499fd347fa836df6b5fffa789944be12110e91ff",
+        "sh.brew.bottle.size": "2465105",
+        "sh.brew.bottle.installed_size": "7293315",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"7.0.7-9-gcc9ff03\",\"changed_files\":[\"bin/pcre2-config\",\"lib/pkgconfig/libpcre2-16.pc\",\"lib/pkgconfig/libpcre2-32.pc\",\"lib/pkgconfig/libpcre2-8.pc\",\"lib/pkgconfig/libpcre2-posix.pc\"],\"linkage_files\":[\"bin/pcre2grep\",\"bin/pcre2test\",\"lib/libpcre2-16.0.dylib\",\"lib/libpcre2-32.0.dylib\",\"lib/libpcre2-8.0.dylib\",\"lib/libpcre2-posix.3.dylib\"],\"binary_relocation_files\":[],\"source_modified_time\":1790596947,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 27\",\"cpu_family\":\"dunno\",\"xcode\":\"27.0\",\"clt\":\"27.0.0.0.1788430756\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-pcre2\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"clang\",\"versionInfo\":\"27.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-pcre2\",\"name\":\"pcre2\",\"versionInfo\":\"10.49\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-28T14:57:52Z\",\"licenseConcluded\":\"BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:5cac44323243138490ca74a2499fd347fa836df6b5fffa789944be12110e91ff\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/pcre2@10.49\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"5cac44323243138490ca74a2499fd347fa836df6b5fffa789944be12110e91ff\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-pcre2-src\"}]}",
+        "sh.brew.path_exec_files": "bin/pcre2grep,bin/pcre2test,bin/pcre2-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:32190ca8efdb95ed54bd1cdcf08cd5170382ea8befddbdc0024274ab50f80eea",
+      "size": 5796,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "10.49.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "5bab1f9eb587d9f538e0a18589768c71b741dcebd9fd3863d7b5dd35f10ccd1a",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "2664617",
+        "sh.brew.bottle.installed_size": "7960624",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"7.0.7-9-gcc9ff03\",\"changed_files\":[\"bin/pcre2-config\",\"lib/pkgconfig/libpcre2-16.pc\",\"lib/pkgconfig/libpcre2-32.pc\",\"lib/pkgconfig/libpcre2-8.pc\",\"lib/pkgconfig/libpcre2-posix.pc\"],\"linkage_files\":[\"bin/pcre2grep\",\"bin/pcre2test\",\"lib/libpcre2-16.so.0.16.1\",\"lib/libpcre2-32.so.0.16.1\",\"lib/libpcre2-8.so.0.16.1\",\"lib/libpcre2-posix.so.3.0.9\"],\"binary_relocation_files\":[],\"source_modified_time\":1790596947,\"compiler\":\"gcc-13\",\"runtime_dependencies\":[{\"full_name\":\"bzip2\",\"version\":\"1.0.8\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"1.0.8\",\"declared_directly\":true},{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":1,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Package-SPDXRef-bzip2-1.0.8\",\"SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1\",\"SPDXRef-Compiler\",\"SPDXRef-Bottle-pcre2\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Package-SPDXRef-bzip2-1.0.8\",\"name\":\"bzip2\",\"versionInfo\":\"1.0.8\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"bzip2-1.0.6\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/bzip2/blobs/sha256:3a85918b5e50c5e958e9a322630a2acab61aa4ac8857ab70c7967eeedded42e1\",\"copyrightText\":\"NOASSERTION\",\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"3a85918b5e50c5e958e9a322630a2acab61aa4ac8857ab70c7967eeedded42e1\"}],\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/bzip2@1.0.8\",\"referenceType\":\"purl\"}]},{\"SPDXID\":\"SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1\",\"name\":\"zlib-ng-compat\",\"versionInfo\":\"2.3.3_1\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"Zlib\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/zlib-ng-compat/blobs/sha256:e5fb75f8592d741139b0490622f5d2b232cfefeb79397b3158aba630258da6a4\",\"copyrightText\":\"NOASSERTION\",\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"e5fb75f8592d741139b0490622f5d2b232cfefeb79397b3158aba630258da6a4\"}],\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/zlib-ng-compat@2.3.3_1\",\"referenceType\":\"purl\"}]},{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"gcc-13\",\"versionInfo\":\"NOASSERTION\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-pcre2\",\"name\":\"pcre2\",\"versionInfo\":\"10.49\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-28T14:57:52Z\",\"licenseConcluded\":\"BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:5bab1f9eb587d9f538e0a18589768c71b741dcebd9fd3863d7b5dd35f10ccd1a\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/pcre2@10.49\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"5bab1f9eb587d9f538e0a18589768c71b741dcebd9fd3863d7b5dd35f10ccd1a\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Package-SPDXRef-bzip2-1.0.8\",\"relationshipType\":\"RUNTIME_DEPENDENCY_OF\",\"relatedSpdxElement\":\"SPDXRef-Bottle-pcre2\"},{\"spdxElementId\":\"SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1\",\"relationshipType\":\"RUNTIME_DEPENDENCY_OF\",\"relatedSpdxElement\":\"SPDXRef-Bottle-pcre2\"},{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-pcre2-src\"}]}",
+        "sh.brew.path_exec_files": "bin/pcre2test,bin/pcre2grep,bin/pcre2-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:835b53f0dc34b4510e0d59f9695cacc6055a93976ca0bdac7b41b4e43090ad95",
+      "size": 3688,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "10.49.arm64_sequoia",
+        "sh.brew.bottle.digest": "0ec47d18c50f5770db2b3f07b5b85644284cc6ee8e07e23b11d2727e95932b77",
+        "sh.brew.bottle.size": "2465167",
+        "sh.brew.bottle.installed_size": "7292965",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"7.0.7-9-gcc9ff03\",\"changed_files\":[\"bin/pcre2-config\",\"lib/pkgconfig/libpcre2-16.pc\",\"lib/pkgconfig/libpcre2-32.pc\",\"lib/pkgconfig/libpcre2-8.pc\",\"lib/pkgconfig/libpcre2-posix.pc\"],\"linkage_files\":[\"bin/pcre2grep\",\"bin/pcre2test\",\"lib/libpcre2-16.0.dylib\",\"lib/libpcre2-32.0.dylib\",\"lib/libpcre2-8.0.dylib\",\"lib/libpcre2-posix.3.dylib\"],\"binary_relocation_files\":[],\"source_modified_time\":1790596947,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-pcre2\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"clang\",\"versionInfo\":\"26.3\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-pcre2\",\"name\":\"pcre2\",\"versionInfo\":\"10.49\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-28T14:57:52Z\",\"licenseConcluded\":\"BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:0ec47d18c50f5770db2b3f07b5b85644284cc6ee8e07e23b11d2727e95932b77\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/pcre2@10.49\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"0ec47d18c50f5770db2b3f07b5b85644284cc6ee8e07e23b11d2727e95932b77\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-pcre2-src\"}]}",
+        "sh.brew.path_exec_files": "bin/pcre2grep,bin/pcre2test,bin/pcre2-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0e05c1a35b4a577c5b024f9daf5b501e9ae412e9394940b9a151ca57f6d95652",
+      "size": 3682,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26.6"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "10.49.arm64_tahoe",
+        "sh.brew.bottle.digest": "475d36ffae1f472554eac1fd96ca3ead3840c3d8fd2d34b257d2d7c4c1e5a17f",
+        "sh.brew.bottle.size": "2465144",
+        "sh.brew.bottle.installed_size": "7293317",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"7.0.7-9-gcc9ff03\",\"changed_files\":[\"bin/pcre2-config\",\"lib/pkgconfig/libpcre2-16.pc\",\"lib/pkgconfig/libpcre2-32.pc\",\"lib/pkgconfig/libpcre2-8.pc\",\"lib/pkgconfig/libpcre2-posix.pc\"],\"linkage_files\":[\"bin/pcre2grep\",\"bin/pcre2test\",\"lib/libpcre2-16.0.dylib\",\"lib/libpcre2-32.0.dylib\",\"lib/libpcre2-8.0.dylib\",\"lib/libpcre2-posix.3.dylib\"],\"binary_relocation_files\":[],\"source_modified_time\":1790596947,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26.6\",\"cpu_family\":\"dunno\",\"xcode\":\"27.0\",\"clt\":\"27.0.0.0.1788430756\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-pcre2\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"clang\",\"versionInfo\":\"27.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-pcre2\",\"name\":\"pcre2\",\"versionInfo\":\"10.49\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-28T14:57:52Z\",\"licenseConcluded\":\"BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:475d36ffae1f472554eac1fd96ca3ead3840c3d8fd2d34b257d2d7c4c1e5a17f\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/pcre2@10.49\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"475d36ffae1f472554eac1fd96ca3ead3840c3d8fd2d34b257d2d7c4c1e5a17f\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-pcre2-src\"}]}",
+        "sh.brew.path_exec_files": "bin/pcre2grep,bin/pcre2test,bin/pcre2-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:b717a2facee37527049b4c017b5464da5b47bd91896b734f94ff340da86ded31",
+      "size": 5801,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "10.49.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "372ff34217dfe1185894c7ee06dc5c865eea331192c13ed5e62df0babe1b0520",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "2828016",
+        "sh.brew.bottle.installed_size": "8387106",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"7.0.7-9-gcc9ff03\",\"changed_files\":[\"bin/pcre2-config\",\"lib/pkgconfig/libpcre2-16.pc\",\"lib/pkgconfig/libpcre2-32.pc\",\"lib/pkgconfig/libpcre2-8.pc\",\"lib/pkgconfig/libpcre2-posix.pc\"],\"linkage_files\":[\"bin/pcre2grep\",\"bin/pcre2test\",\"lib/libpcre2-16.so.0.16.1\",\"lib/libpcre2-32.so.0.16.1\",\"lib/libpcre2-8.so.0.16.1\",\"lib/libpcre2-posix.so.3.0.9\"],\"binary_relocation_files\":[],\"source_modified_time\":1790596947,\"compiler\":\"gcc-13\",\"runtime_dependencies\":[{\"full_name\":\"bzip2\",\"version\":\"1.0.8\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"1.0.8\",\"declared_directly\":true},{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":1,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Package-SPDXRef-bzip2-1.0.8\",\"SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1\",\"SPDXRef-Compiler\",\"SPDXRef-Bottle-pcre2\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Package-SPDXRef-bzip2-1.0.8\",\"name\":\"bzip2\",\"versionInfo\":\"1.0.8\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"bzip2-1.0.6\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/bzip2/blobs/sha256:a731afa70daaafec28359b4f10f1c68455c1955ae66cdbb6b6d52eee277bbd3e\",\"copyrightText\":\"NOASSERTION\",\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"a731afa70daaafec28359b4f10f1c68455c1955ae66cdbb6b6d52eee277bbd3e\"}],\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/bzip2@1.0.8\",\"referenceType\":\"purl\"}]},{\"SPDXID\":\"SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1\",\"name\":\"zlib-ng-compat\",\"versionInfo\":\"2.3.3_1\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"Zlib\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/zlib-ng-compat/blobs/sha256:b8d7e8802092be9ecc516a0a43f35da61f3a83c73ba2e65b55419195a7ce7718\",\"copyrightText\":\"NOASSERTION\",\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"b8d7e8802092be9ecc516a0a43f35da61f3a83c73ba2e65b55419195a7ce7718\"}],\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/zlib-ng-compat@2.3.3_1\",\"referenceType\":\"purl\"}]},{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"gcc-13\",\"versionInfo\":\"NOASSERTION\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-pcre2\",\"name\":\"pcre2\",\"versionInfo\":\"10.49\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-28T14:57:52Z\",\"licenseConcluded\":\"BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:372ff34217dfe1185894c7ee06dc5c865eea331192c13ed5e62df0babe1b0520\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/pcre2@10.49\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"372ff34217dfe1185894c7ee06dc5c865eea331192c13ed5e62df0babe1b0520\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Package-SPDXRef-bzip2-1.0.8\",\"relationshipType\":\"RUNTIME_DEPENDENCY_OF\",\"relatedSpdxElement\":\"SPDXRef-Bottle-pcre2\"},{\"spdxElementId\":\"SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1\",\"relationshipType\":\"RUNTIME_DEPENDENCY_OF\",\"relatedSpdxElement\":\"SPDXRef-Bottle-pcre2\"},{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-pcre2-src\"}]}",
+        "sh.brew.path_exec_files": "bin/pcre2test,bin/pcre2grep,bin/pcre2-config"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-09-28T14:57:52Z",
+    "org.opencontainers.image.description": "Perl compatible regular expressions library with a new API",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/pcre2",
+    "org.opencontainers.image.licenses": "BSD-3-Clause",
+    "org.opencontainers.image.ref.name": "10.49",
+    "org.opencontainers.image.revision": "b32bb132ea7188645a674a2d044011373416843f",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/b32bb132ea7188645a674a2d044011373416843f/Formula/p/pcre2.rb",
+    "org.opencontainers.image.title": "pcre2",
+    "org.opencontainers.image.url": "https://www.pcre.org/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "10.49"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:681db364565802cb45aee5d90d7e78d78f34fab8d268c6708f5bddd9b938d976",
+      "size": 2104,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.16.0.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "ecd53d77a7fa7af9ae5878f5f52483be94eb6ea08264059fcc59707909c41dcb",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "2264771",
+        "sh.brew.bottle.installed_size": "5274615",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.14-19-gea0351c\",\"changed_files\":[\"lib/pkgconfig/vpx.pc\"],\"source_modified_time\":1767888100,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:ba57c1bd5b9ee4d18f5d77192cabbe0257745b26e47a3088a2110745a55ecdf2",
+      "size": 2046,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.16.0.arm64_sequoia",
+        "sh.brew.bottle.digest": "4f72f10109e23239ba65d4e7c1eb9086a4b2cd2875f784c8f9d79d713106675d",
+        "sh.brew.bottle.size": "1903352",
+        "sh.brew.bottle.installed_size": "4388162",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.14-19-gea0351c\",\"changed_files\":[\"lib/pkgconfig/vpx.pc\"],\"source_modified_time\":1767888100,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0eae433a663f15068859cee7f4c91fca8b71ce2dffa99f70baf273be09072df2",
+      "size": 2043,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.16.0.arm64_sonoma",
+        "sh.brew.bottle.digest": "dbc1b002c52c40ae7d892801b81be82cc1666cd7952273037efc8027a5126eba",
+        "sh.brew.bottle.size": "1883028",
+        "sh.brew.bottle.installed_size": "4322946",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.14-19-gea0351c\",\"changed_files\":[\"lib/pkgconfig/vpx.pc\"],\"source_modified_time\":1767888100,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:63cfcbd8fe877262d86a9102eddfd538c31dbbed5b100ed40b7aaca7727fa9ea",
+      "size": 2038,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.16.0.arm64_tahoe",
+        "sh.brew.bottle.digest": "38d28c66d270e2d9b1826f16ec4721b6532a1c59c9ace22811cca3aac43b06ab",
+        "sh.brew.bottle.size": "1903266",
+        "sh.brew.bottle.installed_size": "4377984",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.14-19-gea0351c\",\"changed_files\":[\"lib/pkgconfig/vpx.pc\"],\"source_modified_time\":1767888100,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.2\",\"clt\":\"26.2.0.0.1.1764812424\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:d854318f04e16042ae32f7a0bea54e75de1bce89fc9a14cedef540bd88de44b3",
+      "size": 2027,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.16.0.sonoma",
+        "sh.brew.bottle.digest": "198eadc026da61065d4f3c626c89bdc770c9109311e0b59db4f5ab0487345dea",
+        "sh.brew.bottle.size": "1983642",
+        "sh.brew.bottle.installed_size": "5770047",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.14-19-gea0351c\",\"changed_files\":[\"lib/pkgconfig/vpx.pc\"],\"source_modified_time\":1767888100,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:8df079e17897ea6369eb7a5a0a12f520f8f2bfde602622f94209f1ee17d2487f",
+      "size": 2109,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.16.0.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "980eac19f80348cc5e5f27f06410a3d724b86727ec6f128355c7ee1dd4b3b09d",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "2374769",
+        "sh.brew.bottle.installed_size": "6868151",
+        "sh.brew.license": "BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.0.14-19-gea0351c\",\"changed_files\":[\"lib/pkgconfig/vpx.pc\"],\"source_modified_time\":1767888100,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen4\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-02-10T06:43:10Z",
+    "org.opencontainers.image.description": "VP8/VP9 video codec",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libvpx",
+    "org.opencontainers.image.licenses": "BSD-3-Clause",
+    "org.opencontainers.image.ref.name": "1.16.0",
+    "org.opencontainers.image.revision": "58e344013ea7601e1bdebe8d545e711e12368162",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/58e344013ea7601e1bdebe8d545e711e12368162/Formula/lib/libvpx.rb",
+    "org.opencontainers.image.title": "libvpx",
+    "org.opencontainers.image.url": "https://www.webmproject.org/code/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.16.0"
+  }
+}

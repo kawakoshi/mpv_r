@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:bb4ba113f1ae195863a96dceae2aa14b47bf0e237468c45c5b4c7c43d11b305a",
+      "size": 1953,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 11"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.arm64_big_sur",
+        "sh.brew.bottle.digest": "96c2ca2cfaef487e62d7286fe76df3f50fba67fe22b21bffb8478cbed2eb3e0a",
+        "sh.brew.tab": "{\"homebrew_version\":\"3.6.14-65-gb93a90f\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 11\",\"cpu_family\":\"arm_firestorm_icestorm\",\"xcode\":\"13.2.1\",\"clt\":\"13.2.0.0.1.1638488800\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:e25507df69322af439551f2e6fe9a3ce417b42380d89c98bbb9be122930f5fe8",
+      "size": 1934,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 13"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.arm64_ventura",
+        "sh.brew.bottle.digest": "a85a41114a32e8a455a0940c5d1f9b475a2dcb15b0041966cde44f632c5f8caf",
+        "sh.brew.tab": "{\"homebrew_version\":\"3.6.14-65-gb93a90f\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13\",\"cpu_family\":\"dunno\",\"xcode\":\"14.1\",\"clt\":\"14.1.0.0.1.1665256668\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:926d2948be13b11328ea857aece8ffbc08d4201353a117b59cfe65c8132b63f7",
+      "size": 1976,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "5.15.0-1024-azure"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "6392159b044059cbf22acfbe579343e119a8639dcea266e93a49b5e1a0bf08df",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.tab": "{\"homebrew_version\":\"3.6.14-65-gb93a90f\",\"changed_files\":[\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"5.15.0-1024-azure\",\"cpu_family\":\"icelake\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:890ad979724fa392f19ace7ae1dab628a1c588612bebd118411fb333975e6e59",
+      "size": 1922,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 11.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.big_sur",
+        "sh.brew.bottle.digest": "8da0b45a3f4d87647b96aea829a3db161ef364eb131529b6393b718f5478006a",
+        "sh.brew.tab": "{\"homebrew_version\":\"3.6.14-65-gb93a90f\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 11.7\",\"cpu_family\":\"penryn\",\"xcode\":\"13.2.1\",\"clt\":\"13.2.0.0.1.1638488800\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:5979256da913af933c55423c25eb79172c1ce85d69622f8472a5c72e5a3b517d",
+      "size": 1923,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 12.6"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.monterey",
+        "sh.brew.bottle.digest": "52b6ebd4f6db0057634f195332a98b18d0f1dff5e7911e550291cb91c86b54cb",
+        "sh.brew.tab": "{\"homebrew_version\":\"3.6.14-65-gb93a90f\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 12.6\",\"cpu_family\":\"penryn\",\"xcode\":\"14.1\",\"clt\":\"14.1.0.0.1.1666437224\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:2a4035dd661fe550310a899d80d5c9ddbff0652f7f02f453202d4a5014453c20",
+      "size": 1954,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 12"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.arm64_monterey",
+        "sh.brew.bottle.digest": "b8da933deae20869dfec3d4d04688424230adc652863dc7015b73ed8ffbdc028",
+        "sh.brew.tab": "{\"homebrew_version\":\"3.6.14-65-gb93a90f\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 12\",\"cpu_family\":\"arm_firestorm_icestorm\",\"xcode\":\"14.1\",\"clt\":\"14.1.0.0.1.1665256668\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:7b61b528f3e319d588fbd5583d825273e14a6e23b6157592d0df53db5777b46f",
+      "size": 1920,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 13.0"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.ventura",
+        "sh.brew.bottle.digest": "a553c6d711641482107e7604e8d81e00a615932f1a79cdb2cdfca9cd22a3d6db",
+        "sh.brew.tab": "{\"homebrew_version\":\"3.6.14-65-gb93a90f\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.0\",\"cpu_family\":\"penryn\",\"xcode\":\"14.1\",\"clt\":\"14.1.0.0.1.1666437224\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:cdf13abad511f3d15a3cf131a1450313cea55308d5bc41aef353a90507e93083",
+      "size": 1968,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.arm64_sonoma",
+        "sh.brew.bottle.digest": "70b2c779c315b71c067c8f4a743a90688dfa329c9d5e1c174345d0071fdf09d8",
+        "sh.brew.bottle.size": "205263",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.1.11-25-gc953076\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14\",\"cpu_family\":\"dunno\",\"xcode\":\"15.0\",\"clt\":\"15.0.0.0.1.1694021235\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:e8ce1183992a43c19ea280c4bd4d2420e7568548c2d6c812b6fe4b982ce13d5b",
+      "size": 1952,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.sonoma",
+        "sh.brew.bottle.digest": "724236eec957527714222c9a831ffd648cdf0a371dea3d80dd1cd91fbd245aab",
+        "sh.brew.bottle.size": "199773",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.1.11-25-gc953076\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14\",\"cpu_family\":\"penryn\",\"xcode\":\"15.0\",\"clt\":\"15.0.0.0.1.1694021235\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0d8fb020c36349da49465eb7fd1afdbf7a8ad50a3d23f3dce912ff167a0f045e",
+      "size": 2150,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.arm64_sequoia",
+        "sh.brew.bottle.digest": "171e31b14ade23db98fd45f32cebdd1c278ce5b5d629d4e3be7c81a56bee03a7",
+        "sh.brew.bottle.size": "205634",
+        "sh.brew.bottle.installed_size": "671547",
+        "sh.brew.license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.3.20-36-gf0be97f\",\"changed_files\":[\"lib/cmake/uchardet/uchardet-targets-release.cmake\",\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15\",\"cpu_family\":\"dunno\",\"xcode\":\"16.0\",\"clt\":\"16.0.0.0.1.1724870825\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/uchardet"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:07c19985daf10207e09f0e4b3fdcbd21ec56036c8416a38be7d1918e3259c81c",
+      "size": 2182,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "9fbe4342fd9a7bfd00ec092ca4cf8931d8dba18b79a7158496e60755790b18d9",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "232566",
+        "sh.brew.bottle.installed_size": "949072",
+        "sh.brew.license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.4.24-289-gfd0c3c0\",\"changed_files\":[\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/uchardet"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:596f2cc480e07eb68af5d3624f29f6ef4ae778ab0c2eb2b3160b03913ffb8112",
+      "size": 2090,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "0.0.8.arm64_tahoe",
+        "sh.brew.bottle.digest": "9c7726503e9063cc35716cd81cd22ebb8dbe34aec0922bd02d90b5a435940476",
+        "sh.brew.bottle.size": "205531",
+        "sh.brew.bottle.installed_size": "652223",
+        "sh.brew.license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.10-22-g8ef7a9d\",\"changed_files\":[\"lib/pkgconfig/uchardet.pc\"],\"source_modified_time\":1670532745,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.0\",\"clt\":\"26.0.0.0.1.1756965055\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/uchardet"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2022-12-09",
+    "org.opencontainers.image.description": "Encoding detector library",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/uchardet",
+    "org.opencontainers.image.ref.name": "0.0.8",
+    "org.opencontainers.image.revision": "d9d0b501d87189544e3b42fbc64edcb615ad3f03",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/d9d0b501d87189544e3b42fbc64edcb615ad3f03/Formula/uchardet.rb",
+    "org.opencontainers.image.title": "uchardet",
+    "org.opencontainers.image.url": "https://www.freedesktop.org/wiki/Software/uchardet/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "0.0.8"
+  }
+}

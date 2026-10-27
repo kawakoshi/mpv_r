@@ -1,0 +1,43 @@
+[sw_vers]
+ProductName:		macOS
+ProductVersion:		26.6.2
+BuildVersion:		25G83
+
+[uname -a]
+Darwin TakahiroKawakoshiMacBook-Air.local 25.6.0 Darwin Kernel Version 25.6.0: Fri Jul 31 19:16:20 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T8142 arm64
+
+[xcodebuild -version]
+Xcode 27.1
+Build version 27A9275
+
+[brew --version]
+Homebrew 7.0.10-90-g7c5b605
+
+[brew config]
+HOMEBREW_VERSION: 7.0.10-90-g7c5b605
+ORIGIN: https://github.com/Homebrew/brew
+HEAD: 7c5b6053d5bacfc32cac99e56cb210831db26681
+Last commit: 3 days ago
+Branch: main
+Core tap: N/A
+Core cask tap: N/A
+HOMEBREW_PREFIX: /opt/homebrew
+Homebrew Ruby: 4.0.9 => /opt/homebrew/Library/Homebrew/vendor/portable-ruby/4.0.9/bin/ruby
+CPU: deca-core 64-bit arm_hidra
+Clang: 21.0.0 build 2100
+Git: 2.54.0 => /Applications/Xcode.app/Contents/Developer/usr/bin/git
+Curl: 8.7.1 => /usr/bin/curl
+macOS: 26.6.2-arm64
+CLT: 27.0.0.0.1788430756
+Xcode: 27.1
+Metal Toolchain: N/A
+Rosetta 2: false
+
+[meson --version]
+1.11.1
+
+[ninja --version]
+1.13.2
+
+[pkgconf --version]
+2.5.1

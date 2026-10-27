@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:2a4ef00004ef98cd8a1971f163b528d9333eab4306c199388e02cc0c6baf1ba1",
+      "size": 2661,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.14.3.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "65a5b757dc5949a7d0bcbd86f3ecfc9571b2baca626846d73d214932d0240083",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "1156129",
+        "sh.brew.bottle.installed_size": "3266155",
+        "sh.brew.license": "FTL",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-149-g71bb136\",\"changed_files\":[\"bin/freetype-config\",\"lib/pkgconfig/freetype2.pc\"],\"source_modified_time\":1774192254,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"bzip2\",\"version\":\"1.0.8\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"1.0.8\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/freetype-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:77bac906d562be0e0969655c1aac32b0d1c384f49c593f41a4d0ef210aa1fdda",
+      "size": 2288,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.14.3.arm64_sequoia",
+        "sh.brew.bottle.digest": "905d44c655367754329e9fcc67630c71c03c527f5ee0d9c89794b21e9708b172",
+        "sh.brew.bottle.size": "996581",
+        "sh.brew.bottle.installed_size": "2725335",
+        "sh.brew.license": "FTL",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-149-g71bb136\",\"changed_files\":[\"bin/freetype-config\",\"lib/pkgconfig/freetype2.pc\"],\"source_modified_time\":1774192254,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/freetype-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:db6444b9d887af17d635e7c2031d46161c61ef8e57baecb1f79b4ab2ac3ad9fe",
+      "size": 2285,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.14.3.arm64_sonoma",
+        "sh.brew.bottle.digest": "4aeceab2c37d3685dd0de24b737f07c33a1098eaf757eb24d8d8bbe6ed68d02d",
+        "sh.brew.bottle.size": "999997",
+        "sh.brew.bottle.installed_size": "2728711",
+        "sh.brew.license": "FTL",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-149-g71bb136\",\"changed_files\":[\"bin/freetype-config\",\"lib/pkgconfig/freetype2.pc\"],\"source_modified_time\":1774192254,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/freetype-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:b063dd5f5b6cef1120533939983550c4bb178756af00955203b1e3c4d338d3e2",
+      "size": 2282,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26.3"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.14.3.arm64_tahoe",
+        "sh.brew.bottle.digest": "449e22351da81ba5c8c398f87c295decac6b396bd6fab54becbb3d18800b62d1",
+        "sh.brew.bottle.size": "996395",
+        "sh.brew.bottle.installed_size": "2721687",
+        "sh.brew.license": "FTL",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-149-g71bb136\",\"changed_files\":[\"bin/freetype-config\",\"lib/pkgconfig/freetype2.pc\"],\"source_modified_time\":1774192254,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26.3\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/freetype-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:d08b134de7d270c5464c36e436b905cfa3d0ffefff144c0dde175d2ac823aa50",
+      "size": 2271,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.14.3.sonoma",
+        "sh.brew.bottle.digest": "c266877a4676016b189131c87355f3e9be0d5e0edbe3a464b5b6ef039945f199",
+        "sh.brew.bottle.size": "1034565",
+        "sh.brew.bottle.installed_size": "2780377",
+        "sh.brew.license": "FTL",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-149-g71bb136\",\"changed_files\":[\"bin/freetype-config\",\"lib/pkgconfig/freetype2.pc\"],\"source_modified_time\":1774192254,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":true,\"compatibility_version\":1}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/freetype-config"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:6a448c39062f4c02ffa072c675ddfa184e3e190ac4ca616dc3834e373435eb0f",
+      "size": 2666,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "2.14.3.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "4dfd17e1b578e43e2200b48b3b6745e18280df3ce9c9504f365f1bcc8fe8869e",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "1160031",
+        "sh.brew.bottle.installed_size": "3258741",
+        "sh.brew.license": "FTL",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.0-149-g71bb136\",\"changed_files\":[\"bin/freetype-config\",\"lib/pkgconfig/freetype2.pc\"],\"source_modified_time\":1774192254,\"compiler\":\"gcc-12\",\"runtime_dependencies\":[{\"full_name\":\"zlib-ng-compat\",\"version\":\"2.3.3\",\"revision\":1,\"bottle_rebuild\":0,\"pkg_version\":\"2.3.3_1\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"libpng\",\"version\":\"1.6.55\",\"revision\":0,\"bottle_rebuild\":0,\"pkg_version\":\"1.6.55\",\"declared_directly\":true,\"compatibility_version\":1},{\"full_name\":\"bzip2\",\"version\":\"1.0.8\",\"revision\":0,\"bottle_rebuild\":2,\"pkg_version\":\"1.0.8\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/freetype-config"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-03-23T01:35:06Z",
+    "org.opencontainers.image.description": "Software library to render fonts",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/freetype",
+    "org.opencontainers.image.licenses": "FTL",
+    "org.opencontainers.image.ref.name": "2.14.3",
+    "org.opencontainers.image.revision": "4f6817c22608530f3578dfa4534ad453f17223b8",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/4f6817c22608530f3578dfa4534ad453f17223b8/Formula/f/freetype.rb",
+    "org.opencontainers.image.title": "freetype",
+    "org.opencontainers.image.url": "https://www.freetype.org/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "2.14.3"
+  }
+}

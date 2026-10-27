@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:9182604a3968464d717271c0ad374b1ac8a6d3e6d9afeb98dd54cb62c12c3109",
+      "size": 2072,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.arm64_sequoia",
+        "sh.brew.bottle.digest": "a563689c17ca21d204a228773ec9380b5b0880bd3b0ab322170f8596be7f844a",
+        "sh.brew.bottle.size": "43443",
+        "sh.brew.bottle.installed_size": "155704",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.4-96-gae76de7\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.4\",\"cpu_family\":\"dunno\",\"xcode\":\"16.3\",\"clt\":\"16.3.0.0.1.1742442376\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:478bc351699a67cf2e43b3f25048106d6165b7817b037599e63faae97b998dc3",
+      "size": 2069,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.arm64_sonoma",
+        "sh.brew.bottle.digest": "a5818ef3abbd4de631f60ba8abfd0450585c789c57fd5ffa4129a6d2aa446e37",
+        "sh.brew.bottle.size": "43741",
+        "sh.brew.bottle.installed_size": "156280",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.4-96-gae76de7\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.7\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:bc4976320b3b679813f1ceac45e484d485166d13bbe185c2d638ca25a4f7e544",
+      "size": 2072,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 13.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.arm64_ventura",
+        "sh.brew.bottle.digest": "d5f039fc1b4b415f554391bd3500cd47c3f7129baa8729d302f9f31d9bb2c939",
+        "sh.brew.bottle.size": "43894",
+        "sh.brew.bottle.installed_size": "156400",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.4-96-gae76de7\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.7\",\"cpu_family\":\"dunno\",\"xcode\":\"15.2\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:c9050018711b650aeed0ed405702fce0838f5c710fa5c62bacd5337ac1a51310",
+      "size": 2053,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.sonoma",
+        "sh.brew.bottle.digest": "f48224450840a89fd3c0941f0fdfcca6e25900174a2dc0529b5b741794ebdc1a",
+        "sh.brew.bottle.size": "38372",
+        "sh.brew.bottle.installed_size": "109885",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.4-96-gae76de7\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.7\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:fa8581f0aeb542f0c00a4aa807df6f6cb2e9c3f25f89031e3220d546006db6a8",
+      "size": 2056,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 13.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.ventura",
+        "sh.brew.bottle.digest": "dcfc7c2ae1e18c03814140a7fe31507166ad7174c105b99d1a6db3afdec9f51c",
+        "sh.brew.bottle.size": "39896",
+        "sh.brew.bottle.installed_size": "130381",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.4-96-gae76de7\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.7\",\"cpu_family\":\"penryn\",\"xcode\":\"15.2\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:9953aeadca8b1fcf1df0d35f076ec60655048c2b124297329310dd2d4df3dc04",
+      "size": 2135,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "9d739ff8b7b3989919e494baae8ae502b249e61afe81587064d675ab7271744f",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "47551",
+        "sh.brew.bottle.installed_size": "176049",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.4-96-gae76de7\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:203c55857bee4fdf444e83c8b04d996f552c1277f3ead5eb07b6778d36bf9c60",
+      "size": 2130,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "977b8b3c0c96cbb74267ddd08cbef36a51ffa97475b350cd95712fcccd759f63",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "50183",
+        "sh.brew.bottle.installed_size": "202415",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.4-96-gae76de7\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"gcc-11\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:f00c69f7ec70475fea5b680669615023f4fded4623c1be3257b165a1cc5a9a07",
+      "size": 2065,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.2.0.arm64_tahoe",
+        "sh.brew.bottle.digest": "c30a3d1c34e209bd79301f3626e0e617ed841979ae1e33b0acc066c9643f9dea",
+        "sh.brew.bottle.size": "43352",
+        "sh.brew.bottle.installed_size": "155441",
+        "sh.brew.license": "LGPL-2.1-or-later",
+        "sh.brew.tab": "{\"homebrew_version\":\"4.6.10-33-g34be148\",\"changed_files\":[\"lib/pkgconfig/libudfread.pc\"],\"source_modified_time\":1754943473,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.0\",\"clt\":\"26.0.0.0.1.1756965055\",\"preferred_perl\":\"5.34\"}}"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2025-08-21T07:20:18Z",
+    "org.opencontainers.image.description": "UDF reader",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libudfread",
+    "org.opencontainers.image.licenses": "LGPL-2.1-or-later",
+    "org.opencontainers.image.ref.name": "1.2.0",
+    "org.opencontainers.image.revision": "8be88fdb856f4d3079d4804e9dfa49b607fb2563",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/8be88fdb856f4d3079d4804e9dfa49b607fb2563/Formula/lib/libudfread.rb",
+    "org.opencontainers.image.title": "libudfread",
+    "org.opencontainers.image.url": "https://code.videolan.org/videolan/libudfread",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.2.0"
+  }
+}

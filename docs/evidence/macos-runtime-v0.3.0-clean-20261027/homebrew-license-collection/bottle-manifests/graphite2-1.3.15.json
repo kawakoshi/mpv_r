@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:c1cecd868a975635c52ae49b806c1171b9ce4606b1c96e696474683ea267b672",
+      "size": 2281,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.3.15.arm64_linux",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "abc633c3193fb03e9817c52fa24ff387e09655471c80864ae6023b9a39354f20",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "114511",
+        "sh.brew.bottle.installed_size": "460790",
+        "sh.brew.license": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.14-157-g061a673\",\"changed_files\":[\"lib/pkgconfig/graphite2.pc\"],\"source_modified_time\":1780261406,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.path_exec_files": "bin/gr2fonttest"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:2329889b4066e1da8528d1c6f1e0f6b2d5a0918c495d26c3ed9927dcd78026e0",
+      "size": 2196,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.3.15.arm64_sequoia",
+        "sh.brew.bottle.digest": "bcbf8282acc59c6ed6a0c9a7cf076935735c21de1495bb4e22c3d6bf32f31ee0",
+        "sh.brew.bottle.size": "92947",
+        "sh.brew.bottle.installed_size": "275052",
+        "sh.brew.license": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.14-157-g061a673\",\"changed_files\":[\"lib/pkgconfig/graphite2.pc\"],\"source_modified_time\":1780261406,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/gr2fonttest"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:4f87be5bf0fde703846d35b4415909352490f166a71688b8259bb3d97a805632",
+      "size": 2193,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.3.15.arm64_sonoma",
+        "sh.brew.bottle.digest": "f6915c1287d4f867e5ee04d94ae09fef671dcb326b4f19989b85535e34ca87b8",
+        "sh.brew.bottle.size": "92776",
+        "sh.brew.bottle.installed_size": "275068",
+        "sh.brew.license": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.14-157-g061a673\",\"changed_files\":[\"lib/pkgconfig/graphite2.pc\"],\"source_modified_time\":1780261406,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/gr2fonttest"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:0b020fba38b9d7c032032f45e88c269c8e9783b203ca79831b842338d6428050",
+      "size": 2186,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.3.15.arm64_tahoe",
+        "sh.brew.bottle.digest": "c05e664c8872f3a9e08ada587a33d71b841673126840fe0cd301300c1f59acea",
+        "sh.brew.bottle.size": "92385",
+        "sh.brew.bottle.installed_size": "274392",
+        "sh.brew.license": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.14-157-g061a673\",\"changed_files\":[\"lib/pkgconfig/graphite2.pc\"],\"source_modified_time\":1780261406,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.4\",\"clt\":\"26.4.0.0.1774242506\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/gr2fonttest"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:c4050b4414d7237d72d108a07b6bd8861729620954d5d286256bfacf6e5b9552",
+      "size": 2177,
+      "platform": {
+        "architecture": "amd64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.3.15.sonoma",
+        "sh.brew.bottle.digest": "fd55694135675287cd54778988e7ea785246ac5bc0ad49a4434b0fcf25e64e4d",
+        "sh.brew.bottle.size": "95290",
+        "sh.brew.bottle.installed_size": "238966",
+        "sh.brew.license": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.14-157-g061a673\",\"changed_files\":[\"lib/pkgconfig/graphite2.pc\"],\"source_modified_time\":1780261406,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"penryn\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.path_exec_files": "bin/gr2fonttest"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:ce93422fa2e75ebcb67fc78449e2106e11e33c06342503c1ca7d2bffa153f567",
+      "size": 2286,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 22.04.5"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "1.3.15.x86_64_linux",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "2c2803a27eb8365e8c02726d2c2e967496044a9af06e59348b52fef23e8360fd",
+        "sh.brew.bottle.glibc.version": "2.35",
+        "sh.brew.bottle.size": "115849",
+        "sh.brew.bottle.installed_size": "333808",
+        "sh.brew.license": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+        "sh.brew.tab": "{\"homebrew_version\":\"5.1.14-157-g061a673\",\"changed_files\":[\"lib/pkgconfig/graphite2.pc\"],\"source_modified_time\":1780261406,\"stdlib\":\"libstdcxx\",\"compiler\":\"gcc-12\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 22.04.5\",\"cpu_family\":\"zen4\",\"glibc_version\":\"2.35\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.path_exec_files": "bin/gr2fonttest"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-06-01T11:25:18Z",
+    "org.opencontainers.image.description": "Smart font renderer for non-Roman scripts",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/graphite2",
+    "org.opencontainers.image.licenses": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1+",
+    "org.opencontainers.image.ref.name": "1.3.15",
+    "org.opencontainers.image.revision": "4953bd6d6bfe1a448bbb833d71933d0630125b68",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/4953bd6d6bfe1a448bbb833d71933d0630125b68/Formula/g/graphite2.rb",
+    "org.opencontainers.image.title": "graphite2",
+    "org.opencontainers.image.url": "https://graphite.sil.org/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.3.15"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "manifests": [
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:a24b3fe9efd6dc99e278b9a9aea29e757160a2329b3c1268c32437c5201d3e05",
+      "size": 3806,
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_linux.1",
+        "sh.brew.bottle.cpu.variant": "armv8",
+        "sh.brew.bottle.digest": "17e9fc799ed71fa8453d35fae0bdec249b015d2ba61d3258c8a4ba2bd47faf86",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "1771800",
+        "sh.brew.bottle.installed_size": "5704189",
+        "sh.brew.license": "IJG AND Zlib AND BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.21-28-gfd18738\",\"changed_files\":[\"lib/pkgconfig/libjpeg.pc\",\"lib/pkgconfig/libturbojpeg.pc\"],\"linkage_files\":[\"bin/cjpeg\",\"bin/djpeg\",\"bin/jpegtran\",\"bin/rdjpgcom\",\"bin/tjbench\",\"bin/wrjpgcom\",\"lib/libjpeg.so.8.3.2\",\"lib/libturbojpeg.so.0.5.0\"],\"binary_relocation_files\":[],\"source_modified_time\":1782840343,\"compiler\":\"gcc-13\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.4\",\"cpu_family\":\"arm\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"armv8\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-jpeg-turbo\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"gcc-13\",\"versionInfo\":\"NOASSERTION\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-jpeg-turbo\",\"name\":\"jpeg-turbo\",\"versionInfo\":\"3.2.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-02T13:05:51Z\",\"licenseConcluded\":\"IJG AND Zlib AND BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:17e9fc799ed71fa8453d35fae0bdec249b015d2ba61d3258c8a4ba2bd47faf86\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/jpeg-turbo@3.2.0\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"17e9fc799ed71fa8453d35fae0bdec249b015d2ba61d3258c8a4ba2bd47faf86\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-jpeg-turbo-src\"}]}",
+        "sh.brew.path_exec_files": "bin/tjbench,bin/cjpeg,bin/djpeg,bin/wrjpgcom,bin/rdjpgcom,bin/jpegtran"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:6689f1276d402437cb8d1f2fa7e6b33828d5eb24e97f59eb07ad0e43bc046c7b",
+      "size": 3651,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 15.7"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_sequoia.1",
+        "sh.brew.bottle.digest": "6dc55edcd33c693e474299ed2bba3c472ac1331cbe300066ec8ef99b88fab17c",
+        "sh.brew.bottle.size": "1362541",
+        "sh.brew.bottle.installed_size": "4161745",
+        "sh.brew.license": "IJG AND Zlib AND BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.21-28-gfd18738\",\"changed_files\":[\"lib/pkgconfig/libjpeg.pc\",\"lib/pkgconfig/libturbojpeg.pc\"],\"linkage_files\":[\"lib/libjpeg.8.3.2.dylib\",\"lib/libturbojpeg.0.5.0.dylib\"],\"binary_relocation_files\":[],\"source_modified_time\":1782840343,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 15.7\",\"cpu_family\":\"dunno\",\"xcode\":\"26.3\",\"clt\":\"26.3.0.0.1.1771626560\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-jpeg-turbo\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"clang\",\"versionInfo\":\"26.3\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-jpeg-turbo\",\"name\":\"jpeg-turbo\",\"versionInfo\":\"3.2.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-02T13:05:51Z\",\"licenseConcluded\":\"IJG AND Zlib AND BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:6dc55edcd33c693e474299ed2bba3c472ac1331cbe300066ec8ef99b88fab17c\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/jpeg-turbo@3.2.0\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"6dc55edcd33c693e474299ed2bba3c472ac1331cbe300066ec8ef99b88fab17c\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-jpeg-turbo-src\"}]}",
+        "sh.brew.path_exec_files": "bin/cjpeg,bin/jpegtran,bin/djpeg,bin/wrjpgcom,bin/tjbench,bin/rdjpgcom"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:67aad5945c13595b325f88fa7bd6b1e672e00c5405aa3cdfc6ba0d718cedeb1d",
+      "size": 3648,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 14.8"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_sonoma.1",
+        "sh.brew.bottle.digest": "3ff48858f9042df4ce6ca4bf4006bae5e46f919037cba077f0c81a1f6e0a288a",
+        "sh.brew.bottle.size": "1342178",
+        "sh.brew.bottle.installed_size": "4107465",
+        "sh.brew.license": "IJG AND Zlib AND BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.21-28-gfd18738\",\"changed_files\":[\"lib/pkgconfig/libjpeg.pc\",\"lib/pkgconfig/libturbojpeg.pc\"],\"linkage_files\":[\"lib/libjpeg.8.3.2.dylib\",\"lib/libturbojpeg.0.5.0.dylib\"],\"binary_relocation_files\":[],\"source_modified_time\":1782840343,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 14.8\",\"cpu_family\":\"dunno\",\"xcode\":\"16.2\",\"clt\":\"16.2.0.0.1.1733547573\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-jpeg-turbo\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"clang\",\"versionInfo\":\"16.2\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-jpeg-turbo\",\"name\":\"jpeg-turbo\",\"versionInfo\":\"3.2.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-02T13:05:51Z\",\"licenseConcluded\":\"IJG AND Zlib AND BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:3ff48858f9042df4ce6ca4bf4006bae5e46f919037cba077f0c81a1f6e0a288a\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/jpeg-turbo@3.2.0\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"3ff48858f9042df4ce6ca4bf4006bae5e46f919037cba077f0c81a1f6e0a288a\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-jpeg-turbo-src\"}]}",
+        "sh.brew.path_exec_files": "bin/cjpeg,bin/jpegtran,bin/djpeg,bin/wrjpgcom,bin/tjbench,bin/rdjpgcom"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:ae2cd32c61e6af2907f3d9044a04747361198a5d730edebc939d687cea288010",
+      "size": 3641,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 26"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_tahoe.1",
+        "sh.brew.bottle.digest": "02539b0736cfacdc6c4bb6a7d274d0c5c8b6e1faf9b5bab1e155168961d288aa",
+        "sh.brew.bottle.size": "1340422",
+        "sh.brew.bottle.installed_size": "4127429",
+        "sh.brew.license": "IJG AND Zlib AND BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.21-28-gfd18738\",\"changed_files\":[\"lib/pkgconfig/libjpeg.pc\",\"lib/pkgconfig/libturbojpeg.pc\"],\"linkage_files\":[\"lib/libjpeg.8.3.2.dylib\",\"lib/libturbojpeg.0.5.0.dylib\"],\"binary_relocation_files\":[],\"source_modified_time\":1782840343,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 26\",\"cpu_family\":\"dunno\",\"xcode\":\"26.6\",\"clt\":\"26.6.0.0.1781586589\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-jpeg-turbo\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"clang\",\"versionInfo\":\"26.6\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-jpeg-turbo\",\"name\":\"jpeg-turbo\",\"versionInfo\":\"3.2.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-02T13:05:51Z\",\"licenseConcluded\":\"IJG AND Zlib AND BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:02539b0736cfacdc6c4bb6a7d274d0c5c8b6e1faf9b5bab1e155168961d288aa\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/jpeg-turbo@3.2.0\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"02539b0736cfacdc6c4bb6a7d274d0c5c8b6e1faf9b5bab1e155168961d288aa\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-jpeg-turbo-src\"}]}",
+        "sh.brew.path_exec_files": "bin/cjpeg,bin/jpegtran,bin/djpeg,bin/wrjpgcom,bin/tjbench,bin/rdjpgcom"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:594d06c4f48505e8d75f7793f10b7f56a9b7c878654b1648c6464daad6a7edc7",
+      "size": 3811,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux",
+        "os.version": "Ubuntu 24.04.4"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.x86_64_linux.1",
+        "sh.brew.bottle.cpu.variant": "core2",
+        "sh.brew.bottle.digest": "85713cddd87d363f7e772f9ab0db5d4192d6f4ef8793393458601ffdba8a1e07",
+        "sh.brew.bottle.glibc.version": "2.39",
+        "sh.brew.bottle.size": "1723777",
+        "sh.brew.bottle.installed_size": "5922561",
+        "sh.brew.license": "IJG AND Zlib AND BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.21-28-gfd18738\",\"changed_files\":[\"lib/pkgconfig/libjpeg.pc\",\"lib/pkgconfig/libturbojpeg.pc\"],\"linkage_files\":[\"bin/cjpeg\",\"bin/djpeg\",\"bin/jpegtran\",\"bin/rdjpgcom\",\"bin/tjbench\",\"bin/wrjpgcom\",\"lib/libjpeg.so.8.3.2\",\"lib/libturbojpeg.so.0.5.0\"],\"binary_relocation_files\":[],\"source_modified_time\":1782840343,\"compiler\":\"gcc-13\",\"runtime_dependencies\":[],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Linux\",\"os_version\":\"Ubuntu 24.04.4\",\"cpu_family\":\"zen3\",\"glibc_version\":\"2.39\",\"oldest_cpu_family\":\"core2\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-jpeg-turbo\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"gcc-13\",\"versionInfo\":\"NOASSERTION\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-jpeg-turbo\",\"name\":\"jpeg-turbo\",\"versionInfo\":\"3.2.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-02T13:05:51Z\",\"licenseConcluded\":\"IJG AND Zlib AND BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:85713cddd87d363f7e772f9ab0db5d4192d6f4ef8793393458601ffdba8a1e07\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/jpeg-turbo@3.2.0\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"85713cddd87d363f7e772f9ab0db5d4192d6f4ef8793393458601ffdba8a1e07\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-jpeg-turbo-src\"}]}",
+        "sh.brew.path_exec_files": "bin/rdjpgcom,bin/cjpeg,bin/djpeg,bin/jpegtran,bin/wrjpgcom,bin/tjbench"
+      }
+    },
+    {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:664c912b01ae22a578a9c7da7d95f6dc8dc5bb27dec2ce69fb7365ad5a129fc4",
+      "size": 3660,
+      "platform": {
+        "architecture": "arm64",
+        "os": "darwin",
+        "os.version": "macOS 27"
+      },
+      "annotations": {
+        "org.opencontainers.image.ref.name": "3.2.0.arm64_golden_gate.1",
+        "sh.brew.bottle.digest": "7bc0f7c007a73c68da8c11055e836de66c2814c1b0ca0302da9a6317199fd37a",
+        "sh.brew.bottle.size": "1342462",
+        "sh.brew.bottle.installed_size": "4128238",
+        "sh.brew.license": "IJG AND Zlib AND BSD-3-Clause",
+        "sh.brew.tab": "{\"homebrew_version\":\"6.0.22-263-g983dcdc\",\"changed_files\":[\"lib/pkgconfig/libjpeg.pc\",\"lib/pkgconfig/libturbojpeg.pc\"],\"linkage_files\":[\"lib/libjpeg.8.3.2.dylib\",\"lib/libturbojpeg.0.5.0.dylib\"],\"binary_relocation_files\":[],\"source_modified_time\":1782840343,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 27\",\"cpu_family\":\"dunno\",\"xcode\":\"27.0\",\"clt\":\"27.0.0.0.1788430756\",\"preferred_perl\":\"5.34\"}}",
+        "sh.brew.sbom.supplement": "{\"documentDescribes\":[\"SPDXRef-Compiler\",\"SPDXRef-Bottle-jpeg-turbo\"],\"packages\":[{\"SPDXID\":\"SPDXRef-Compiler\",\"name\":\"clang\",\"versionInfo\":\"27.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"licenseConcluded\":\"NOASSERTION\",\"copyrightText\":\"NOASSERTION\",\"downloadLocation\":\"NOASSERTION\",\"checksums\":[],\"externalRefs\":[]},{\"SPDXID\":\"SPDXRef-Bottle-jpeg-turbo\",\"name\":\"jpeg-turbo\",\"versionInfo\":\"3.2.0\",\"filesAnalyzed\":false,\"licenseDeclared\":\"NOASSERTION\",\"builtDate\":\"2026-09-10T06:51:03Z\",\"licenseConcluded\":\"IJG AND Zlib AND BSD-3-Clause\",\"downloadLocation\":\"https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:7bc0f7c007a73c68da8c11055e836de66c2814c1b0ca0302da9a6317199fd37a\",\"copyrightText\":\"NOASSERTION\",\"externalRefs\":[{\"referenceCategory\":\"PACKAGE-MANAGER\",\"referenceLocator\":\"pkg:brew/jpeg-turbo@3.2.0\",\"referenceType\":\"purl\"}],\"checksums\":[{\"algorithm\":\"SHA256\",\"checksumValue\":\"7bc0f7c007a73c68da8c11055e836de66c2814c1b0ca0302da9a6317199fd37a\"}]}],\"relationships\":[{\"spdxElementId\":\"SPDXRef-Compiler\",\"relationshipType\":\"BUILD_TOOL_OF\",\"relatedSpdxElement\":\"SPDXRef-Archive-jpeg-turbo-src\"}]}",
+        "sh.brew.path_exec_files": "bin/cjpeg,bin/jpegtran,bin/djpeg,bin/wrjpgcom,bin/tjbench,bin/rdjpgcom"
+      }
+    }
+  ],
+  "annotations": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2026-09-02T13:05:51Z",
+    "org.opencontainers.image.description": "JPEG image codec that aids compression and decompression",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/jpeg-turbo",
+    "org.opencontainers.image.licenses": "IJG AND Zlib AND BSD-3-Clause",
+    "org.opencontainers.image.ref.name": "3.2.0-1",
+    "org.opencontainers.image.revision": "574d416272c4c1d7b9bb52626b59f437288f1af8",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/574d416272c4c1d7b9bb52626b59f437288f1af8/Formula/j/jpeg-turbo.rb",
+    "org.opencontainers.image.title": "jpeg-turbo",
+    "org.opencontainers.image.url": "https://www.libjpeg-turbo.org/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "3.2.0"
+  }
+}
