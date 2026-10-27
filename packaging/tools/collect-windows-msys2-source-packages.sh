@@ -76,11 +76,13 @@ while IFS=$'\t' read -r package version homepage license source_url source_sha s
 done < "$source_index"
 
 if [ "$#" -gt 0 ]; then
-  found=$(awk -F '\t' 'NR > 1 {print $1}' "$report" | wc -l | tr -d ' ')
-  if [ "$found" -ne "$#" ]; then
-    echo "Not every requested package was found in $source_index" >&2
-    exit 1
-  fi
+  for requested_package in "$@"; do
+    if ! awk -F '\t' -v package="$requested_package" \
+      'NR > 1 && $1 == package {found=1} END {exit !found}' "$report"; then
+      echo "Requested package was not found in $source_index: $requested_package" >&2
+      exit 1
+    fi
+  done
 fi
 
 echo "Wrote: $report"
