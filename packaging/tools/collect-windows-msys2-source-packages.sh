@@ -26,13 +26,17 @@ if [ ! -f "$source_index" ]; then
   echo "Missing source index: $source_index" >&2
   exit 2
 fi
-if [ -e "$report" ]; then
-  echo "Refusing to overwrite existing report: $report" >&2
-  exit 2
-fi
-
 mkdir -p "$output_dir"
-printf 'package\tversion\tmsys2_source_package_url\tsha256\tstatus\tnotes\n' > "$report"
+if [ -e "$report" ]; then
+  expected_header=$'package\tversion\tmsys2_source_package_url\tsha256\tstatus\tnotes'
+  actual_header=$(head -n 1 "$report")
+  if [ "$actual_header" != "$expected_header" ]; then
+    echo "Unexpected existing report header: $report" >&2
+    exit 2
+  fi
+else
+  printf 'package\tversion\tmsys2_source_package_url\tsha256\tstatus\tnotes\n' > "$report"
+fi
 
 requested=" $* "
 while IFS=$'\t' read -r package version homepage license source_url source_sha source_status; do
@@ -42,6 +46,12 @@ while IFS=$'\t' read -r package version homepage license source_url source_sha s
     *) continue ;;
   esac
   if [ "$#" -gt 0 ] && [[ "$requested" != *" $package "* ]]; then
+    continue
+  fi
+
+  if awk -F '\t' -v package="$package" -v version="$version" \
+    'NR > 1 && $1 == package && $2 == version {found=1} END {exit !found}' "$report"; then
+    echo "Already recorded; leaving unchanged: $package $version"
     continue
   fi
 
