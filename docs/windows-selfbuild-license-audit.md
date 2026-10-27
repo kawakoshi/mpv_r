@@ -62,6 +62,18 @@ It writes immutable `.src.tar.zst` archives below `source-packages/` and their
 hashes in `msys2-source-package-downloads.tsv`. Its status deliberately stays
 `DOWNLOADED_NEEDS_REVIEW`; it is not release clearance.
 
+Before detailed review, make a reproducible inventory of the downloaded
+packages and save each PKGBUILD plus its archive file list:
+
+```sh
+packaging/tools/inspect-windows-msys2-source-packages.sh /c/path/to/evidence
+```
+
+The resulting `msys2-source-package-inspection.tsv` identifies declared
+licenses, patch counts, nested upstream archives, and outer license candidates.
+Every row remains `MECHANICAL_INSPECTION_NEEDS_LICENSE_REVIEW` until its
+PKGBUILD, patches, source checksums, and actual license texts have been read.
+
 The release verifier refuses a package when a runtime file is unowned, a local
 license text is missing, or any source-index row remains unverified:
 
