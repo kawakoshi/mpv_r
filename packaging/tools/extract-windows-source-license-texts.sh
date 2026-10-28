@@ -13,8 +13,15 @@ fi
 evidence_dir=$1
 verification=$2
 packages_dir="$evidence_dir/source-packages"
-output_dir="$evidence_dir/licenses-from-verified-sources"
-report="$evidence_dir/source-license-extraction.tsv"
+suffix=${SOURCE_LICENSE_EXTRACTION_SUFFIX:-}
+if [ -n "$suffix" ]; then
+  case "$suffix" in *[!A-Za-z0-9._-]*) echo "Invalid output suffix: $suffix" >&2; exit 2 ;; esac
+  output_dir="$evidence_dir/licenses-from-verified-sources-$suffix"
+  report="$evidence_dir/source-license-extraction-$suffix.tsv"
+else
+  output_dir="$evidence_dir/licenses-from-verified-sources"
+  report="$evidence_dir/source-license-extraction.tsv"
+fi
 
 for command in awk find git mktemp sha256sum tar; do
   command -v "$command" >/dev/null 2>&1 || { echo "Required command not found: $command" >&2; exit 2; }
