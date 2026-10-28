@@ -10,8 +10,15 @@ if [ "$#" -ne 1 ]; then
 fi
 evidence_dir=$1
 packages_dir="$evidence_dir/source-packages"
-output_dir="$evidence_dir/licenses-from-verified-git-sources"
-report="$evidence_dir/source-license-git-extraction.tsv"
+suffix=${GIT_SOURCE_LICENSE_EXTRACTION_SUFFIX:-}
+if [ -n "$suffix" ]; then
+  case "$suffix" in *[!A-Za-z0-9._-]*) echo "Invalid output suffix: $suffix" >&2; exit 2 ;; esac
+  output_dir="$evidence_dir/licenses-from-verified-git-sources-$suffix"
+  report="$evidence_dir/source-license-git-extraction-$suffix.tsv"
+else
+  output_dir="$evidence_dir/licenses-from-verified-git-sources"
+  report="$evidence_dir/source-license-git-extraction.tsv"
+fi
 [ -d "$packages_dir" ] || { echo "Missing source-package directory" >&2; exit 2; }
 if [ -e "$output_dir" ] || [ -e "$report" ]; then
   echo "Refusing to overwrite existing Git extraction evidence" >&2; exit 2
@@ -32,6 +39,7 @@ extract() {
   tar -xf "$archive_path" -C "$package_work"
   repo="$package_work/$repo_rel"
   git --git-dir="$repo" cat-file -e "$commit:$member"
+  mkdir -p "$output_dir/$package"
   destination="$output_dir/$package/${member//\//_}"
   git --git-dir="$repo" show "$commit:$member" > "$destination"
   text_sha=$(sha256sum "$destination" | awk '{print $1}')
