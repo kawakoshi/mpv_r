@@ -19,7 +19,7 @@ report="$evidence_dir/source-license-extraction.tsv"
 for command in awk find git mktemp sha256sum tar; do
   command -v "$command" >/dev/null 2>&1 || { echo "Required command not found: $command" >&2; exit 2; }
 done
-for file in "$evidence_dir/source-index.tsv" "$verification"; do
+for file in "$evidence_dir/source-index.tsv" "$evidence_dir/license-manifest.tsv" "$verification"; do
   [ -f "$file" ] || { echo "Missing required file: $file" >&2; exit 2; }
 done
 [ -d "$packages_dir" ] || { echo "Missing source-package directory: $packages_dir" >&2; exit 2; }
@@ -39,6 +39,12 @@ while IFS=$'\t' read -r package version source_url source_sha upstream_url upstr
   [ "$status" = MSYS2_SOURCE_PACKAGE_VERIFIED ] || continue
   if ! awk -F '\t' -v p="$package" -v v="$version" \
     'NR > 1 && $1 == p && $2 == v {found=1} END {exit !found}' "$evidence_dir/source-index.tsv"; then
+    continue
+  fi
+  # Packages whose installed license text was already collected need no source
+  # fallback.  The verifier's MISSING_LOCAL_LICENSE rows are the only scope.
+  if ! awk -F '\t' -v p="$package" -v v="$version" \
+    'NR > 1 && $1 == p && $2 == v && $4 == "MISSING_LOCAL_LICENSE" {found=1} END {exit !found}' "$evidence_dir/license-manifest.tsv"; then
     continue
   fi
   archive="$packages_dir/${package}-${version}.src.tar.zst"
