@@ -16,7 +16,7 @@ release and is not covered by this checklist.
 
 As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 31 verified MSYS2 rows and 55 rows still
+recalculated. The source index has 32 verified MSYS2 rows and 54 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,7 +32,7 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 55 source
+build-feature, patch, and license-content review before promoting the remaining 54 source
 index rows or assembling the release license collection. In particular,
 `gcc-libs`, `gettext-runtime`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
@@ -73,13 +73,17 @@ under `packaging/tools/` retain pre-promotion source-index backups and write
 `simple-six-source-verification-v1.tsv` and
 `reviewed-four-source-verification-v1.tsv` in the Windows evidence directory.
 
-`libpng` remains pending. Its MSYS2 package applies an APNG code patch. The
-package recipe points to Mozilla's APNG patch, but the exact MSYS2 patch
+`libpng` was promoted after a separate APNG patch review. Its MSYS2 patch
 (SHA-256 `a9c117324291cda7558ab36bec4ba28a34013d76e1ceaf9953749791a9e154a8`)
-differs in code from both Mozilla's current patch and the 1.6.58 patch
-distributed by the APNG project. The three patch files and their hashes are
-retained under `libpng-apng-patch-provenance-v1/`. Trace the exact patch
-revision and its license before promoting this row.
+is byte-identical to `media/libpng/apng.patch` at Mozilla Firefox commit
+`d014e15257f7cebaad4e4d45ffbd25b5959e6ecc`. The same revision's
+`moz.yaml` declares the libpng license and points to its `LICENSE` file;
+the MSYS2 libpng source `LICENSE` is exactly staged. The three nested license
+candidates are for separately built contrib programs; the candidate runtime
+ships only `libpng16-16.dll`. The patch and license records, SHA-256 table,
+source-index backup, and `libpng-source-verification-v1.tsv` are retained in
+the Windows evidence directory. Mozilla's current APNG patch and the APNG
+project's 1.6.58 patch differ from this exact historical patch.
 
 The release verifier also checks that every MSYS2 source-index package has one
 matching license-manifest row and that its recorded text count equals the
