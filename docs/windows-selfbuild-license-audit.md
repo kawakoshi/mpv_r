@@ -47,6 +47,19 @@ texts. Do not copy them automatically or treat a byte difference as proof of
 noncompliance; resolve each against the actual DLL and package build. The
 comparison is recorded in `remaining-root-license-staging-v2.tsv`.
 
+The nested-source build triage (`remaining-nested-license-build-triage-v4.tsv`)
+now separates the 140 nested texts into 30 sample/test texts, 12 texts from
+other gettext split packages, 27 other source components, six identified
+runtime-component texts, and 65 texts still requiring build-component review.
+All six identified runtime-component texts are present in the staged license
+collection with exact SHA-256 matches
+(`remaining-nested-runtime-staging-v2.tsv`). This includes the SLJIT text used
+by PCRE2's enabled JIT; it was added with a backed-up manifest update. The
+larger byte comparison (`remaining-nested-license-staging-v2.tsv`) finds 11 of
+140 nested texts already staged. The other 129 must be judged against the
+triage and build, rather than copied or excluded solely by filename. No source
+index status was promoted by this triage.
+
 ## Evidence To Freeze For a Release
 
 For the exact build machine and build date, retain in the release repository or
