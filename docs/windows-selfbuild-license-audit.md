@@ -37,6 +37,16 @@ index rows or assembling the release license collection. In particular,
 `gcc-libs`, `gettext-runtime`, `libwinpthread`, `libvpl`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
 
+An exact-text comparison found that 73 of the 80 source-root texts are now in
+the staged license collection. Lerc's source `NOTICE`, which includes a patent
+notice, was added with its original SHA-256 and a backed-up manifest update.
+The seven remaining nonmatches are `zstd`, `freetype`, `libgme`, `glib2`,
+`gcc-libs`, `libwinpthread`, and `gettext-runtime`. Several are generic or empty
+source-root texts while the staged package has more specific runtime license
+texts. Do not copy them automatically or treat a byte difference as proof of
+noncompliance; resolve each against the actual DLL and package build. The
+comparison is recorded in `remaining-root-license-staging-v2.tsv`.
+
 ## Evidence To Freeze For a Release
 
 For the exact build machine and build date, retain in the release repository or

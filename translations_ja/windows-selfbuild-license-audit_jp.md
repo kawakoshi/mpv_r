@@ -10,6 +10,8 @@
 
 Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る65件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`gettext-runtime`、`libwinpthread`、`libvpl`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
 
+ソース直下の文書80件と配布用ライセンス集を本文のSHAで比較した結果、73件が一致しています。特許表示を含む`lerc`の`NOTICE`は原文のハッシュを確認して追加し、件数表はバックアップを残して更新しました。残る7件（`zstd`、`freetype`、`libgme`、`glib2`、`gcc-libs`、`libwinpthread`、`gettext-runtime`）は一致しません。ソース全体の汎用文書や空ファイルと、DLLに対応する文書が異なる例もあるため、機械的に追加せず実際のビルド対象と照合します。比較結果は`remaining-root-license-staging-v2.tsv`です。
+
 公開中のWindows v0.2.0 ZIPは第三者ビルドを使う別のリリースであり、このチェックリストの対象外です。
 
 ## リリースごとに確定保存する証跡
