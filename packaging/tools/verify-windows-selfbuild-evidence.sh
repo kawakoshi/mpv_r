@@ -36,5 +36,12 @@ if awk -F '\t' 'NR > 1 && ($5 == "MISSING" || $6 == "MISSING" || $7 != "VERIFIED
   echo "Unverified corresponding-source records block release." >&2
   exit 1
 fi
+if awk -F '\t' 'NR > 1 && $1 ~ /^mingw-w64-/ && \
+  ($5 !~ /^https:\/\/repo\.msys2\.org\/mingw\/sources\/.*\.src\.tar\.zst$/ || \
+   length($6) != 64 || $6 !~ /^[0-9a-f]+$/) {print; bad=1} END {exit bad}' \
+  "$evidence_dir/source-index.tsv"; then :; else
+  echo "MSYS2 dependencies must reference the patched MSYS2 source package and its SHA-256." >&2
+  exit 1
+fi
 
 echo "Windows self-build evidence is complete: $evidence_dir"
