@@ -44,4 +44,24 @@ if awk -F '\t' 'NR > 1 && $1 ~ /^mingw-w64-/ && \
   exit 1
 fi
 
+if [ ! -d "$evidence_dir/source-packages" ]; then
+  echo "Missing MSYS2 source-package archives: $evidence_dir/source-packages" >&2
+  exit 1
+fi
+while IFS=$'\t' read -r package version homepage license source_url expected_sha status; do
+  [ "$package" = package ] && continue
+  case "$package" in mingw-w64-*) ;; *) continue ;; esac
+  archive="$evidence_dir/source-packages/${package}-${version}.src.tar.zst"
+  if [ ! -f "$archive" ]; then
+    echo "Missing MSYS2 source-package archive: $archive" >&2
+    exit 1
+  fi
+  actual_sha=$(sha256sum "$archive")
+  actual_sha=${actual_sha%% *}
+  if [ "$actual_sha" != "$expected_sha" ]; then
+    echo "MSYS2 source-package SHA-256 mismatch: $package $version" >&2
+    exit 1
+  fi
+done < "$evidence_dir/source-index.tsv"
+
 echo "Windows self-build evidence is complete: $evidence_dir"
