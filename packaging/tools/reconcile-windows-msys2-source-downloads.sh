@@ -12,7 +12,13 @@ fi
 evidence_dir=$1
 packages_dir="$evidence_dir/source-packages"
 source_index="$evidence_dir/source-index.tsv"
-output="$evidence_dir/msys2-source-package-downloads-reconciled.tsv"
+suffix=${MSYS2_RECONCILIATION_SUFFIX:-}
+if [ -n "$suffix" ]; then
+  case "$suffix" in *[!A-Za-z0-9._-]*) echo "Invalid output suffix: $suffix" >&2; exit 2 ;; esac
+  output="$evidence_dir/msys2-source-package-downloads-reconciled-$suffix.tsv"
+else
+  output="$evidence_dir/msys2-source-package-downloads-reconciled.tsv"
+fi
 
 for command in awk sha256sum; do
   command -v "$command" >/dev/null 2>&1 || { echo "Required command not found: $command" >&2; exit 2; }
