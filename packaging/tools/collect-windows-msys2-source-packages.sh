@@ -65,6 +65,9 @@ while IFS=$'\t' read -r package version homepage license source_url source_sha s
     mingw-w64-x86_64-gettext-runtime)
       source_url="https://repo.msys2.org/mingw/sources/mingw-w64-gettext-${version}.src.tar.zst"
       ;;
+    mingw-w64-x86_64-libwinpthread)
+      source_url="https://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-${version}.src.tar.zst"
+      ;;
   esac
   curl --fail --location --retry 3 --output "$archive" "$source_url"
   sha=$(sha256sum "$archive" | awk '{print $1}')
