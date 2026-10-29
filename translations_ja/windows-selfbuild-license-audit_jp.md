@@ -30,7 +30,9 @@ Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`rem
 
 `xz`も確認済みにしました。ソース直下の5件のライセンス文書はすべて配布用の原文と一致します。上流の`COPYING`では、候補ランタイムに入る唯一のXZ由来DLLであるliblzmaを0BSDとしています。パッケージ内にパッチはなく、PKGBUILDが`COPYING*`をすべて配置すること、DLLのハッシュとインポートも確認しました。変更前の索引と`xz-source-verification-v1.tsv`はWindows側に保存しています。
 
-`ggml`も確認済みにしました。固定GitコミットがMSYS2ソースアーカイブ内にあり、MITの`LICENSE`は配布用原文と一致します。候補ランタイム内のggml DLL 2本もインストール済みパッケージと一致しました。ただし、動作上の別の不足が見つかりました。パッケージは`GGML_BACKEND_DL=ON`と`GGML_CPU_ALL_VARIANTS=ON`でビルドされ、実行ファイルと同じ場所から`ggml-cpu-*.dll`を探しますが、`ldd`による収集ではCPUバックエンド14本がすべて漏れていました。名前とハッシュは`ggml-runtime-backend-gap-v1.tsv`に保存しました。ビルドスクリプトはCPUバックエンドを明示的にコピーするよう修正し、公開前チェックでは最低限の`ggml-cpu-x64.dll`がなければ停止します。公開前にWindowsランタイムの再ビルドと証跡の再収集が必要です。
+`ggml`も確認済みにしました。固定GitコミットがMSYS2ソースアーカイブ内にあり、MITの`LICENSE`は配布用原文と一致します。最初の候補ランタイムでは、パッケージが`GGML_BACKEND_DL=ON`と`GGML_CPU_ALL_VARIANTS=ON`でビルドされているにもかかわらず、`ldd`による収集からCPUバックエンド14本がすべて漏れていました。この発見は`ggml-runtime-backend-gap-v1.tsv`に保存しています。
+
+修正後の再ビルドでは`ggml-cpu-*.dll` 14本をすべて収録しました。旧候補からの削除は0件、追加はこの14本だけで、ほかに変化したのは再ビルド対象の`mpv.exe`、`mpv.com`、`libmpv-2.dll`だけです。実ロード試験では登録バックエンドが0件から1件へ増え、`CPU`が登録され、この検査機では`ggml-cpu-icelake.dll`が選択されました。公開前チェックでは最低限の`ggml-cpu-x64.dll`を要求します。旧監査証跡を修正版へ統合するときは、ソースと実行時パッケージの名前・版、mpvコミット、ランタイム差分を検査する`merge-windows-ggml-fixed-evidence.sh`を使います。
 
 公開前チェックには、各MSYS2パッケージに対応するライセンス件数表が1行あることと、その件数が実際に配布用へ置いたファイル数と一致することも加えました。今後の文書追加時に件数の更新漏れを検出します。
 
