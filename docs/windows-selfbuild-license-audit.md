@@ -14,6 +14,29 @@ corresponding source bundle/index.
 The already published Windows v0.2.0 ZIP is a separate, third-party-build
 release and is not covered by this checklist.
 
+As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
+packages used by the runtime. Their archive SHA-256 values have been
+recalculated. The source index has 21 verified MSYS2 rows and 65 rows still
+pending license review. For those 65, the matching MSYS2 source archives and
+their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
+revisions, and three archives using other formats. One extra libxml2 test
+archive was also hash-checked. The 65 packages yielded 220 hash-checked license
+text candidates: 80 at source-package roots and 140 in nested source areas.
+These counts establish provenance and text availability, not which nested
+components were compiled into the shipped DLLs or which notices must ship.
+The release gate remains closed.
+
+The reproducible reports in the local Windows evidence directory are
+`msys2-source-package-downloads-reconciled-v3.tsv`,
+`remaining-source-audit-summary-v1.tsv`,
+`remaining-license-candidate-review-v1.tsv`, and
+`remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
+two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
+build-feature, patch, and license-content review before promoting the 65 source
+index rows or assembling the release license collection. In particular,
+`gcc-libs`, `gettext-runtime`, `libwinpthread`, `libvpl`, `librsvg`, and `aom`
+have multiple nested texts requiring component-level review.
+
 ## Evidence To Freeze For a Release
 
 For the exact build machine and build date, retain in the release repository or
