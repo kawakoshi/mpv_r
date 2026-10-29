@@ -31,6 +31,10 @@ if awk -F '\t' 'NR > 1 && $4 != "COLLECTED" {print; bad=1} END {exit bad}' \
   echo "Missing installed license texts block release." >&2
   exit 1
 fi
+if awk -F '\t' 'NR > 1 && $1 == "libshaderc_shared.dll" && $5 == "mingw-w64-x86_64-shaderc" {found=1} END {exit !found}' \
+  "$evidence_dir/runtime-manifest.tsv"; then
+  bash "$(dirname "$0")/check-windows-shaderc-static-deps.sh" "$evidence_dir"
+fi
 if awk -F '\t' 'NR > 1 && ($5 == "MISSING" || $6 == "MISSING" || $7 != "VERIFIED") {print; bad=1} END {exit bad}' \
   "$evidence_dir/source-index.tsv"; then :; else
   echo "Unverified corresponding-source records block release." >&2

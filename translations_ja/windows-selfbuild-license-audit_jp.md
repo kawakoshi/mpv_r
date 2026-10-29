@@ -16,6 +16,8 @@ Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`rem
 
 公開前チェックには、各MSYS2パッケージに対応するライセンス件数表が1行あることと、その件数が実際に配布用へ置いたファイル数と一致することも加えました。今後の文書追加時に件数の更新漏れを検出します。
 
+`libshaderc_shared.dll`はMSYS2の`shaderc 2026.2-1`バイナリパッケージ内のDLLとSHA-256が一致します。そのパッケージの`.BUILDINFO`には、ビルド時の依存として`glslang 16.2.0-3`、`spirv-tools 3~1.4.350.0-1`、`spirv-headers 2~1.4.350.0-1`が記録されています。現在Windowsに入っているglslangとSPIRV-Toolsは後の版なので、このDLLの根拠には使いません。当時の3件のMSYS2ソース・バイナリアーカイブ、SHA-256、`.SRCINFO`に記載された上流ソースのハッシュ、ライセンス原文をWindows側の`shaderc-static-build-dependencies-v1/`と`shaderc-static-dependency-verification-v1/`に保存しました。3件のライセンス原文はshadercの配布用文書へ追加済みです。公開前チェックで版とハッシュを検査し、ZIPには照合表とshadercの`.BUILDINFO`を含めます。このDLLはglslangやSPIRV-ToolsのDLLをインポートせず、内部にglslang 16.2.0の文字列があります。ビルド処理と合わせ、これらのコードがshaderc DLLに取り込まれている根拠として扱います。
+
 公開中のWindows v0.2.0 ZIPは第三者ビルドを使う別のリリースであり、このチェックリストの対象外です。
 
 ## リリースごとに確定保存する証跡

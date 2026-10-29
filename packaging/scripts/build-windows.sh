@@ -100,6 +100,13 @@ if [ -n "$license_evidence" ]; then
   cp "$license_evidence/runtime-manifest.tsv" "$evidence_target/"
   cp "$license_evidence/license-manifest.tsv" "$evidence_target/"
   cp "$license_evidence/source-index.tsv" "$evidence_target/"
+  if [ -f "$license_evidence/shaderc-static-dependency-verification-v1/verification.tsv" ]; then
+    mkdir -p "$evidence_target/shaderc-static-dependencies"
+    cp "$license_evidence/shaderc-static-dependency-verification-v1/verification.tsv" \
+      "$evidence_target/shaderc-static-dependencies/"
+    cp "$license_evidence/shaderc-static-build-dependencies-v1/shaderc.BUILDINFO" \
+      "$evidence_target/shaderc-static-dependencies/"
+  fi
   cp "$license_evidence/mpv-source.txt" "$evidence_target/"
   cp "$license_evidence/mpv-source.patch" "$evidence_target/"
   cp "$license_evidence/build-environment.txt" "$evidence_target/"
@@ -113,6 +120,7 @@ if [ -n "$license_evidence" ]; then
   cp "$root/packaging/scripts/build-windows.sh" "$evidence_target/build-scripts/"
   cp "$root/packaging/tools/capture-windows-msys2-runtime-evidence.sh" "$evidence_target/build-scripts/"
   cp "$root/packaging/tools/verify-windows-selfbuild-evidence.sh" "$evidence_target/build-scripts/"
+  cp "$root/packaging/tools/check-windows-shaderc-static-deps.sh" "$evidence_target/build-scripts/"
 fi
 mkdir -p "$package_dir/tools"
 cp "$root/packaging/windows/register-file-associations.ps1" \

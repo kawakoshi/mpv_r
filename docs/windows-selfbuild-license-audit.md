@@ -65,6 +65,22 @@ matching license-manifest row and that its recorded text count equals the
 number of staged files. This catches omissions when source-component notices
 are added later.
 
+The shipped `libshaderc_shared.dll` has the same SHA-256 as the DLL in the
+MSYS2 `shaderc 2026.2-1` binary package. That package's `.BUILDINFO` pins
+`glslang 16.2.0-3`, `spirv-tools 3~1.4.350.0-1`, and
+`spirv-headers 2~1.4.350.0-1`. The currently installed glslang and
+SPIRV-Tools packages are newer, so their files are not used as evidence for
+this DLL. The exact historical MSYS2 source and binary archives, their
+SHA-256 values, the upstream source hashes from `.SRCINFO`, and their original
+license texts are retained under `shaderc-static-build-dependencies-v1/` and
+`shaderc-static-dependency-verification-v1/` in the Windows evidence folder.
+The three exact-version license texts were staged under shaderc's license
+collection. The verifier checks those records and the ZIP includes the
+verification table and shaderc `.BUILDINFO`. The DLL has no glslang or
+SPIRV-Tools DLL imports and contains glslang 16.2.0 version strings; together
+with the build recipe, this is evidence of code incorporated into shaderc's
+DLL. Do not substitute current dependency versions when reviewing its source.
+
 ## Evidence To Freeze For a Release
 
 For the exact build machine and build date, retain in the release repository or
