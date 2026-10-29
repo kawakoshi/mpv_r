@@ -16,7 +16,7 @@ release and is not covered by this checklist.
 
 As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 41 verified MSYS2 rows and 45 rows still
+recalculated. The source index has 42 verified MSYS2 rows and 44 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,7 +32,7 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 45 source
+build-feature, patch, and license-content review before promoting the remaining 44 source
 index rows or assembling the release license collection. In particular,
 `gcc-libs`, `gettext-runtime`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
@@ -129,6 +129,14 @@ the runtime manifest, while its exact GPL-3.0 text is already staged. Source
 build definitions, DLL hashes and imports, nested-text decisions, index
 backups, and `lcms2-source-verification-v1.tsv` are retained in the Windows
 evidence directory.
+
+`xz` was promoted after all five source-root licensing files were matched
+byte-for-byte to their staged copies. Upstream's `COPYING` identifies liblzma,
+the only XZ DLL in the candidate runtime, as 0BSD. The package has no patches,
+its recipe installs all `COPYING*` files, and the shipped DLL hash and import
+table were checked. The pre-promotion index and
+`xz-source-verification-v1.tsv` are retained in the Windows evidence
+directory.
 
 The release verifier also checks that every MSYS2 source-index package has one
 matching license-manifest row and that its recorded text count equals the
