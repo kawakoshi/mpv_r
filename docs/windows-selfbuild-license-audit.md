@@ -16,7 +16,7 @@ release and is not covered by this checklist.
 
 As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 40 verified MSYS2 rows and 46 rows still
+recalculated. The source index has 41 verified MSYS2 rows and 45 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,7 +32,7 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 46 source
+build-feature, patch, and license-content review before promoting the remaining 45 source
 index rows or assembling the release license collection. In particular,
 `gcc-libs`, `gettext-runtime`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
@@ -119,6 +119,16 @@ source `COPYING` is byte-identical to the staged BSD text. The exact source
 files used for this decision, DLL hash, pre-promotion index, and
 `speex-source-verification-v1.tsv` are retained in the Windows evidence
 directory.
+
+`lcms2` was promoted after separating the shipped core DLL from its GPL-3.0
+plugins. The package builds `liblcms2-2.dll` from the MIT-licensed core and
+builds the enabled fast-float plugin as the separate
+`liblcms2_fast_float-2.dll`; the threaded plugin remains disabled. The
+candidate runtime contains only the core DLL. The plugin DLL is absent from
+the runtime manifest, while its exact GPL-3.0 text is already staged. Source
+build definitions, DLL hashes and imports, nested-text decisions, index
+backups, and `lcms2-source-verification-v1.tsv` are retained in the Windows
+evidence directory.
 
 The release verifier also checks that every MSYS2 source-index package has one
 matching license-manifest row and that its recorded text count equals the

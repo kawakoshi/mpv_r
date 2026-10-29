@@ -6,9 +6,9 @@
 
 **自前ビルドのWindows ZIPは、まだ公開しません。** テスト用ランタイムにはmpvと、MSYS2のMINGW64ランタイムから集めた100本以上のDLLが入ります。候補ZIPにはmpvのGPL/LGPL文書はありますが、DLLごとの完全なNOTICE・ライセンス一式、および対応ソースの配布場所がまだ揃っていません。
 
-2026-10-30時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。ソース索引では40件を確認済み、残り46件をライセンス確認待ちとしています。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。階層下の文書が配布DLLに関係するか、同梱すべき表示は何か、引き続きビルド内容と本文を確認します。この段階では公開条件を満たしません。
+2026-10-30時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。ソース索引では41件を確認済み、残り45件をライセンス確認待ちとしています。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。階層下の文書が配布DLLに関係するか、同梱すべき表示は何か、引き続きビルド内容と本文を確認します。この段階では公開条件を満たしません。
 
-Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る46件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`gettext-runtime`、`libwinpthread`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
+Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る45件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`gettext-runtime`、`libwinpthread`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
 
 ソース直下の文書80件と配布用ライセンス集を本文のSHAで比較した結果、73件が一致しています。特許表示を含む`lerc`の`NOTICE`は原文のハッシュを確認して追加し、件数表はバックアップを残して更新しました。残る7件（`zstd`、`freetype`、`libgme`、`glib2`、`gcc-libs`、`libwinpthread`、`gettext-runtime`）は一致しません。ソース全体の汎用文書や空ファイルと、DLLに対応する文書が異なる例もあるため、機械的に追加せず実際のビルド対象と照合します。比較結果は`remaining-root-license-staging-v2.tsv`です。
 
@@ -25,6 +25,8 @@ Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`rem
 続いて`libtasn1`と`libunistring`も確認済みにしました。各パッケージの直下にある2件のライセンス本文が、それぞれ配布用文書と一致します。PKGBUILDが両方を配置すること、配布DLLのハッシュとインポートを照合しました。変更前の索引と`two-gnu-libraries-verification-v1.tsv`はWindows側に保存しています。
 
 `speex`も確認済みにしました。別の著作権表示を持つVorbis心理音響・FFTのソースは、`BUILD_VORBIS_PSY`を有効にした場合だけlibspeexへ入りますが、今回のPKGBUILDは有効にしていません。libspeexのリンク対象は数学ライブラリの設定だけで、配布DLLにはlibogg・speexdspのインポートも該当するシンボル名もありません。ソースの`COPYING`は配布用BSD文書と一致します。判定に使ったソースファイルのハッシュ、DLLのハッシュ、変更前の索引、`speex-source-verification-v1.tsv`をWindows側に保存しました。
+
+`lcms2`も確認済みにしました。MITの本体は`liblcms2-2.dll`、有効なGPL-3.0のfast-floatプラグインは別の`liblcms2_fast_float-2.dll`としてビルドされ、threadedプラグインは無効です。候補ランタイムに入るのは本体DLLだけで、fast-float DLLはランタイム一覧にありません。一方、プラグインのGPL-3.0原文は配布用ライセンス集に収録済みです。ビルド定義、DLLのハッシュとインポート、階層下文書の判定、索引のバックアップ、`lcms2-source-verification-v1.tsv`をWindows側に保存しました。
 
 公開前チェックには、各MSYS2パッケージに対応するライセンス件数表が1行あることと、その件数が実際に配布用へ置いたファイル数と一致することも加えました。今後の文書追加時に件数の更新漏れを検出します。
 
