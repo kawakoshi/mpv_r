@@ -10,7 +10,13 @@ if [ "$#" -ne 1 ]; then
 fi
 
 evidence_dir=$1
-downloads="$evidence_dir/msys2-source-package-downloads.tsv"
+suffix=${MSYS2_INSPECTION_INPUT_SUFFIX:-}
+if [ -n "$suffix" ]; then
+  case "$suffix" in *[!A-Za-z0-9._-]*) echo "Invalid input suffix: $suffix" >&2; exit 2 ;; esac
+  downloads="$evidence_dir/msys2-source-package-downloads-reconciled-$suffix.tsv"
+else
+  downloads="$evidence_dir/msys2-source-package-downloads.tsv"
+fi
 packages_dir="$evidence_dir/source-packages"
 recipes_dir="$evidence_dir/source-package-recipes"
 report="$evidence_dir/msys2-source-package-inspection.tsv"
