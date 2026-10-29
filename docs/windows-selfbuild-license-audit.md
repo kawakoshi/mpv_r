@@ -60,6 +60,11 @@ larger byte comparison (`remaining-nested-license-staging-v2.tsv`) finds 11 of
 triage and build, rather than copied or excluded solely by filename. No source
 index status was promoted by this triage.
 
+The release verifier also checks that every MSYS2 source-index package has one
+matching license-manifest row and that its recorded text count equals the
+number of staged files. This catches omissions when source-component notices
+are added later.
+
 ## Evidence To Freeze For a Release
 
 For the exact build machine and build date, retain in the release repository or

@@ -51,6 +51,18 @@ fi
 while IFS=$'\t' read -r package version homepage license source_url expected_sha status; do
   [ "$package" = package ] && continue
   case "$package" in mingw-w64-*) ;; *) continue ;; esac
+  recorded_license_count=$(awk -F '\t' -v p="$package" -v v="$version" '
+    NR > 1 && $1 == p && $2 == v && $4 == "COLLECTED" {print $3; count++}
+    END {if (count != 1) exit 1}
+  ' "$evidence_dir/license-manifest.tsv") || {
+    echo "Missing or duplicate license manifest entry: $package $version" >&2
+    exit 1
+  }
+  actual_license_count=$(find "$evidence_dir/licenses/$package" -type f | wc -l | tr -d '[:space:]')
+  if [ "$actual_license_count" != "$recorded_license_count" ]; then
+    echo "Staged license count mismatch: $package $version" >&2
+    exit 1
+  fi
   archive="$evidence_dir/source-packages/${package}-${version}.src.tar.zst"
   if [ ! -f "$archive" ]; then
     echo "Missing MSYS2 source-package archive: $archive" >&2
