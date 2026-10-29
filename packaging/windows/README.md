@@ -62,7 +62,7 @@ mpv_r/
       mpv.exe
       mpv.com
       libmpv-2.dll
-      *.dll (runtime dependencies derived from `ldd`)
+      *.dll (runtime dependencies from `ldd`, plus dynamically loaded ggml CPU backends)
       mpv/
         fonts.conf (only when provided by the runtime source)
     config/

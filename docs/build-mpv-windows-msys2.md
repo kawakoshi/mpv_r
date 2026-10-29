@@ -27,8 +27,12 @@ The first clean, portable build was verified on 2026-10-26:
 - portable validation: `mpv.exe --no-config --no-audio --vo=null` decoded a
   local H.264 test video to end while `PATH` excluded `/mingw64/bin`
 
-The runtime file count is expected to change when MSYS2 packages change. Do not
-maintain a hand-written DLL list; derive it from `ldd` for each build.
+The preserved first candidate above was later found to omit ggml's dynamically
+loaded CPU backend DLLs. It is audit evidence, not a releasable runtime. The
+build script now supplements the `ldd` closure with every
+`ggml-cpu-*.dll` supplied by the installed ggml package. The runtime file count
+is expected to change when MSYS2 packages change; the release verifier requires
+the portable `ggml-cpu-x64.dll` fallback whenever `ggml.dll` is present.
 
 ## Prerequisites
 

@@ -53,7 +53,7 @@ mpv_r/
       mpv.exe
       mpv.com
       libmpv-2.dll
-      *.dll（`ldd`から導出したランタイム依存関係）
+      *.dll（`ldd`から導出した依存関係と、実行時に読み込むggml CPUバックエンド）
       mpv/
         fonts.conf（ランタイム入力に含まれる場合のみ）
     config/

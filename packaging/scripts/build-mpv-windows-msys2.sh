@@ -77,6 +77,22 @@ while IFS= read -r dll; do
   cp "$dll" "$portable_dir/"
 done < <(ldd "$build_dir/mpv.exe" | awk '/=> \/mingw64\// {print $3}' | sort -u)
 
+# ggml loads CPU backends by scanning for ggml-cpu-*.dll at runtime, so ldd
+# cannot discover them. Copy every CPU variant supplied by the exact installed
+# ggml package; the loader scores them and chooses the best supported variant.
+if [ -f "$portable_dir/ggml.dll" ]; then
+  ggml_cpu_count=0
+  for dll in "$mingw_prefix"/bin/ggml-cpu-*.dll; do
+    [ -f "$dll" ] || continue
+    cp "$dll" "$portable_dir/"
+    ggml_cpu_count=$((ggml_cpu_count + 1))
+  done
+  if [ "$ggml_cpu_count" -eq 0 ]; then
+    echo "ggml.dll is present but no ggml CPU backend DLLs were found." >&2
+    exit 1
+  fi
+fi
+
 find "$portable_dir" -maxdepth 1 -type f -printf '%f\n' | sort > "$portable_dir/FILELIST.txt"
 PATH="$portable_dir:/c/Windows/System32" "$portable_dir/mpv.exe" --version
 

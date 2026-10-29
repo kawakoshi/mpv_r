@@ -16,7 +16,7 @@ release and is not covered by this checklist.
 
 As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 42 verified MSYS2 rows and 44 rows still
+recalculated. The source index has 43 verified MSYS2 rows and 43 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,7 +32,7 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 44 source
+build-feature, patch, and license-content review before promoting the remaining 43 source
 index rows or assembling the release license collection. In particular,
 `gcc-libs`, `gettext-runtime`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
@@ -137,6 +137,18 @@ its recipe installs all `COPYING*` files, and the shipped DLL hash and import
 table were checked. The pre-promotion index and
 `xz-source-verification-v1.tsv` are retained in the Windows evidence
 directory.
+
+`ggml` was promoted after its pinned Git commit was found in the MSYS2 source
+archive and its MIT `LICENSE` was matched exactly to the staged text. The two
+ggml DLLs currently in the candidate runtime match the installed package.
+This review also found a separate runtime defect: the package was built with
+`GGML_BACKEND_DL=ON` and `GGML_CPU_ALL_VARIANTS=ON`, so ggml scans the
+executable directory for `ggml-cpu-*.dll`, but the ldd-based collector omitted
+all 14 CPU backend DLLs. `ggml-runtime-backend-gap-v1.tsv` records their names
+and installed hashes. The build script now copies those dynamically loaded CPU
+backends explicitly, and the release verifier requires at least the portable
+`ggml-cpu-x64.dll` fallback. Rebuild and recapture the Windows runtime before
+release; source-license verification does not clear this runtime defect.
 
 The release verifier also checks that every MSYS2 source-index package has one
 matching license-manifest row and that its recorded text count equals the

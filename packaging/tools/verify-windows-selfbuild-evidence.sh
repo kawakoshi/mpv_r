@@ -35,6 +35,14 @@ if awk -F '\t' 'NR > 1 && $1 == "libshaderc_shared.dll" && $5 == "mingw-w64-x86_
   "$evidence_dir/runtime-manifest.tsv"; then
   bash "$(dirname "$0")/check-windows-shaderc-static-deps.sh" "$evidence_dir"
 fi
+if awk -F '\t' 'NR > 1 && $1 == "ggml.dll" && $5 == "mingw-w64-x86_64-ggml" {found=1} END {exit !found}' \
+  "$evidence_dir/runtime-manifest.tsv"; then
+  if ! awk -F '\t' 'NR > 1 && $1 == "ggml-cpu-x64.dll" && $5 == "mingw-w64-x86_64-ggml" {found=1} END {exit !found}' \
+    "$evidence_dir/runtime-manifest.tsv"; then
+    echo "ggml.dll requires a dynamically loaded CPU backend; ggml-cpu-x64.dll is missing." >&2
+    exit 1
+  fi
+fi
 if awk -F '\t' 'NR > 1 && ($5 == "MISSING" || $6 == "MISSING" || $7 != "VERIFIED") {print; bad=1} END {exit bad}' \
   "$evidence_dir/source-index.tsv"; then :; else
   echo "Unverified corresponding-source records block release." >&2
