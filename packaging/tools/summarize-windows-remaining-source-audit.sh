@@ -22,7 +22,7 @@ done
 tmp=$(mktemp)
 trap 'rm -f "$tmp"' EXIT
 awk -F '\t' -v OFS='\t' \
-  -v index="$index" -v reconciled="$reconciled" -v standard="$standard" \
+  -v source_index="$index" -v reconciled="$reconciled" -v standard="$standard" \
   -v git="$git" -v special="$special" '
   FNR == 1 {next}
   FILENAME == reconciled {
@@ -61,7 +61,7 @@ awk -F '\t' -v OFS='\t' \
     } else {print "Unknown source role: " $8 > "/dev/stderr"; bad=1}
     next
   }
-  FILENAME == index {
+  FILENAME == source_index {
     key=$1 SUBSEP $2
     if ($1 !~ /^mingw-w64-/) next
     if (!(key in archive_sha) || archive_status[key] != "RECONCILED_FROM_ARCHIVE" || archive_url[key] != $5) {
