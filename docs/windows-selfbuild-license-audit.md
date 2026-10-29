@@ -16,7 +16,7 @@ release and is not covered by this checklist.
 
 As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 37 verified MSYS2 rows and 49 rows still
+recalculated. The source index has 39 verified MSYS2 rows and 47 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,7 +32,7 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 49 source
+build-feature, patch, and license-content review before promoting the remaining 47 source
 index rows or assembling the release license collection. In particular,
 `gcc-libs`, `gettext-runtime`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
@@ -100,6 +100,13 @@ to its root text. `highway`'s `debian/copyright` restates Apache-2.0; its staged
 root `LICENSE` also includes the project's BSD-3-Clause option and CC0-1.0
 exception. The nested-text decisions and pre-promotion indexes are retained
 with `three-reviewed-libraries-verification-v1.tsv` in the Windows evidence
+directory.
+
+`libtasn1` and `libunistring` were promoted after both source-root license
+texts for each package were matched byte-for-byte to the staged copies. Their
+PKGBUILDs install both texts, and the shipped DLL hashes and import tables were
+checked. The pre-promotion source index and
+`two-gnu-libraries-verification-v1.tsv` are retained in the Windows evidence
 directory.
 
 The release verifier also checks that every MSYS2 source-index package has one
