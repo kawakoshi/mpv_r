@@ -6,9 +6,9 @@
 
 **自前ビルドのWindows ZIPは、まだ公開しません。** テスト用ランタイムにはmpvと、MSYS2のMINGW64ランタイムから集めた100本以上のDLLが入ります。候補ZIPにはmpvのGPL/LGPL文書はありますが、DLLごとの完全なNOTICE・ライセンス一式、および対応ソースの配布場所がまだ揃っていません。
 
-2026-10-30時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。ソース索引では34件を確認済み、残り52件をライセンス確認待ちとしています。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。階層下の文書が配布DLLに関係するか、同梱すべき表示は何か、引き続きビルド内容と本文を確認します。この段階では公開条件を満たしません。
+2026-10-30時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。ソース索引では37件を確認済み、残り49件をライセンス確認待ちとしています。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。階層下の文書が配布DLLに関係するか、同梱すべき表示は何か、引き続きビルド内容と本文を確認します。この段階では公開条件を満たしません。
 
-Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る52件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`gettext-runtime`、`libwinpthread`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
+Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る49件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`gettext-runtime`、`libwinpthread`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
 
 ソース直下の文書80件と配布用ライセンス集を本文のSHAで比較した結果、73件が一致しています。特許表示を含む`lerc`の`NOTICE`は原文のハッシュを確認して追加し、件数表はバックアップを残して更新しました。残る7件（`zstd`、`freetype`、`libgme`、`glib2`、`gcc-libs`、`libwinpthread`、`gettext-runtime`）は一致しません。ソース全体の汎用文書や空ファイルと、DLLに対応する文書が異なる例もあるため、機械的に追加せず実際のビルド対象と照合します。比較結果は`remaining-root-license-staging-v2.tsv`です。
 
@@ -19,6 +19,8 @@ Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`rem
 `libpng`もAPNGパッチの出典を調べた後に確認済みにしました。MSYS2収録パッチ（SHA-256 `a9c117324291cda7558ab36bec4ba28a34013d76e1ceaf9953749791a9e154a8`）は、Mozilla Firefoxのコミット`d014e15257f7cebaad4e4d45ffbd25b5959e6ecc`にある`media/libpng/apng.patch`と完全一致します。同じ版の`moz.yaml`はlibpngライセンスと`LICENSE`ファイルを指定し、MSYS2のlibpngソースの`LICENSE`は配布用の原文と一致します。階層下の3件は別にビルドされるcontribプログラムの文書であり、候補ランタイムに入るのは`libpng16-16.dll`だけです。パッチとライセンスの記録、SHA-256表、索引のバックアップ、`libpng-source-verification-v1.tsv`をWindows側の監査フォルダに保存しました。現在のMozilla版やAPNGプロジェクトの1.6.58版パッチは、この履歴上の版と異なります。
 
 続いて`libdatrie`と`fribidi`も確認済みにしました。両方ともパッケージのパッチと階層下のライセンス候補がなく、ソースの`COPYING`は配布用文書と本文のSHAが一致します。PKGBUILDの文書配置、配布DLLのハッシュとインポートを照合しました。変更前の索引と`datrie-fribidi-source-verification-v1.tsv`はWindows側に保存しています。
+
+さらに`SPIRV-Cross`、`liblc3`、`highway`を確認済みにしました。3件ともパッケージ内にパッチがなく、ビルド設定、配布用文書、DLLのハッシュとインポートを照合しています。`liblc3`の階層下にあるPython用LICENSEは直下のLICENSEと本文が一致します。`highway`の`debian/copyright`はApache-2.0を記載した配布メタデータで、配布用の直下LICENSEにはBSD-3-Clauseの選択肢とCC0-1.0の例外も含まれています。階層下文書の判定、変更前の索引、`three-reviewed-libraries-verification-v1.tsv`をWindows側に保存しました。
 
 公開前チェックには、各MSYS2パッケージに対応するライセンス件数表が1行あることと、その件数が実際に配布用へ置いたファイル数と一致することも加えました。今後の文書追加時に件数の更新漏れを検出します。
 
