@@ -16,7 +16,7 @@ release and is not covered by this checklist.
 
 As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 39 verified MSYS2 rows and 47 rows still
+recalculated. The source index has 40 verified MSYS2 rows and 46 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,7 +32,7 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 47 source
+build-feature, patch, and license-content review before promoting the remaining 46 source
 index rows or assembling the release license collection. In particular,
 `gcc-libs`, `gettext-runtime`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
@@ -107,6 +107,17 @@ texts for each package were matched byte-for-byte to the staged copies. Their
 PKGBUILDs install both texts, and the shipped DLL hashes and import tables were
 checked. The pre-promotion source index and
 `two-gnu-libraries-verification-v1.tsv` are retained in the Windows evidence
+directory.
+
+`speex` was promoted after reviewing the conditional source lists in
+`libspeex/Makefile.am` and their configure controls. The separately attributed
+Vorbis psychoacoustic and FFT sources are compiled into libspeex only when
+`BUILD_VORBIS_PSY` is enabled; the package recipe does not enable it. The
+libspeex target links only its math-library setting, and the shipped DLL has no
+libogg or speexdsp import and no matching exported/global symbol names. Its
+source `COPYING` is byte-identical to the staged BSD text. The exact source
+files used for this decision, DLL hash, pre-promotion index, and
+`speex-source-verification-v1.tsv` are retained in the Windows evidence
 directory.
 
 The release verifier also checks that every MSYS2 source-index package has one
