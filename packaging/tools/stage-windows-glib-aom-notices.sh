@@ -14,10 +14,12 @@ cp "$manifest" "$scratch/manifest.tsv"
 printf 'package\tversion\tsource_member\tsha256\tdestination\treason\tstatus\n' > "$scratch/report.tsv"
 
 stage_candidate(){
-  local package=$1 version=$2 member=$3 sha=$4 old_count=$5 new_count=$6 destination=$7 reason=$8 extracted actual
+  local package=$1 version=$2 member=$3 sha=$4 old_count=$5 new_count=$6 destination=$7 reason=$8 extracted actual staged_count
   extracted=$(awk -F '\t' -v p="$package" -v v="$version" -v m="$member" -v h="$sha" 'NR>1&&$1==p&&$2==v&&$4==m{if($6!=h||$7!="NESTED_SOURCE_TEXT"||$8!="NEEDS_CONTENT_AND_BUILD_REVIEW")exit 1;print $5;n++}END{if(n!=1)exit 1}' "$e/remaining-license-candidate-review-v1.tsv")
   awk -F '\t' -v p="$package" -v v="$version" -v m="$member" -v h="$sha" 'NR>1&&$1==p&&$2==v&&$3==m{if($4!=h||$5!="BUILD_COMPONENT_REVIEW_PENDING")exit 1;n++}END{if(n!=1)exit 1}' "$e/remaining-nested-license-build-triage-v4.tsv"
-  check_sha "$e/$extracted" "$sha"; actual=$(find "$e/licenses/$package" -type f | wc -l | tr -d '[:space:]'); [ "$actual" = "$old_count" ]
+  check_sha "$e/$extracted" "$sha"; actual=$(find "$e/licenses/$package" -type f | wc -l | tr -d '[:space:]'); staged_count=0
+  if [ -d "$scratch/staged/$package" ]; then staged_count=$(find "$scratch/staged/$package" -type f | wc -l | tr -d '[:space:]'); fi
+  [ "$((actual + staged_count))" = "$old_count" ]
   mkdir -p "$scratch/staged/$package/$(dirname "$destination")"; cp "$e/$extracted" "$scratch/staged/$package/$destination"; check_sha "$scratch/staged/$package/$destination" "$sha"
   awk -F '\t' -v OFS='\t' -v p="$package" -v v="$version" -v o="$old_count" -v n="$new_count" '$1==p&&$2==v{if($3!=o||$4!="COLLECTED")exit 1;$3=n;c++}{print}END{if(c!=1)exit 1}' "$scratch/manifest.tsv" > "$scratch/next"; mv "$scratch/next" "$scratch/manifest.tsv"
   printf '%s\t%s\t%s\t%s\t%s\t%s\tSTAGED\n' "$package" "$version" "$member" "$sha" "$destination" "$reason" >> "$scratch/report.tsv"
