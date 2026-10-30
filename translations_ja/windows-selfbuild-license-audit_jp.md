@@ -4,11 +4,11 @@
 
 ## 現在の状態
 
-**自前ビルドのWindows ZIPは、まだ公開しません。** テスト用ランタイムにはmpvと、MSYS2のMINGW64ランタイムから集めた100本以上のDLLが入ります。候補ZIPにはmpvのGPL/LGPL文書はありますが、DLLごとの完全なNOTICE・ライセンス一式、および対応ソースの配布場所がまだ揃っていません。
+**ソースとライセンスの監査は完了しましたが、古い候補ZIPは公開しません。** 監査したランタイムにはmpvと、MSYS2のMINGW64ランタイムから集めた100本以上のDLLが入ります。確認済み証跡からZIPを作り直し、公開先の対応ソースへ実際にアクセスできることと、最終assetのハッシュを検証してから公開します。
 
-2026-10-31時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。ソース索引では78件を確認済み、残り8件をライセンス確認待ちとしています。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。階層下の文書が配布DLLに関係するか、同梱すべき表示は何か、引き続きビルド内容と本文を確認します。この段階では公開条件を満たしません。
+2026-10-31時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。MSYS2の86件はすべて確認済みで、mpvを加えたソース索引87行がすべて`VERIFIED`です。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。その後の部品単位の確認も完了し、統合証跡に対する総合verifierは成功しました。残る公開条件は最終ZIPの生成と公開物の検証であり、未確認のソースパッケージではありません。
 
-Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る8件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`libwinpthread`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
+Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。全行についてPKGBUILD、パッチ、ビルド設定、DLLハッシュ、ライセンス本文の照合を完了しました。途中の報告TSVには当時の確認待ち表示が残りますが、最終状態の正本は`source-index.tsv`、各昇格記録、`verify-windows-selfbuild-evidence.sh`の成功結果です。
 
 ソース直下の文書80件と配布用ライセンス集を本文のSHAで比較した結果、73件が一致しています。特許表示を含む`lerc`の`NOTICE`は原文のハッシュを確認して追加し、件数表はバックアップを残して更新しました。この比較時点の不一致7件は`zstd`、`freetype`、`libgme`、`glib2`、`gcc-libs`、`libwinpthread`、`gettext-runtime`でした。ソース全体の汎用文書や空ファイルと、DLLに対応する文書が異なる例もあるため、機械的に追加せず実際のビルド対象と照合します。比較結果は`remaining-root-license-staging-v2.tsv`です。
 
@@ -39,6 +39,10 @@ Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`rem
 続く9件では、階層下の未判定文書を1件ずつビルド内容と照合しました。libgmeのemu2413、rav1eの既定ivf機能、HarfBuzzのMicrosoft USEデータに対応する3文書は配布用ライセンス集へ原文SHAのまま追加し、件数表をバックアップ付きで更新しました。ほかは直下文書との重複、無効化されたテスト、未収録のデモまたは別分割パッケージ、空文書です。判断は`three-runtime-component-license-staging-v1.tsv`と`single-nested-nine-verification-v1.tsv`に保存しています。
 
 次の7件では、階層下の未判定文書を2件ずつ確認しました。libblurayへ静的に入るlibudfread、SVT-AV1本体が使うfastfeatの文書を追加しました。さらにOpenSSLへコピーされるMSYS2のpathtoolsソースを手作業で確認し、独立LICENSEがなく候補抽出から漏れていたCC0表示を両ソース共通の原文コメントからNOTICEとして追加しました。残りは無効化・ビルド時のみ・de-vendor済み・文書・デモ・別分割パッケージの部品です。`libbluray-svt-openssl-notice-staging-v1.tsv`と`two-nested-seven-verification-v1.tsv`に保存しています。
+
+続く高複雑度5件では、GLibのGVDBと、AOMのfastfeat・vector・x86incの文書を追加しました。これらのソースは配布DLLへ組み込まれます。libjxlのDebianメタデータ・HEVC設定・静的extras、OpenJPEGのviewer・formatter・フォールバックライブラリ、Cairoの無効な性能計測コードと未収録utilityライブラリは、ポータブル版の配布対象から除外しました。GLibのライセンスリンクがWindowsで空ファイルとして抽出されていた件は、固定上流アーカイブからリンク先を読み直し、配布済みLGPL本文との一致を記録しました。`glib-symlink-license-correction-v1.tsv`、`glib-aom-notice-staging-v1.tsv`、`high-complexity-five-verification-v1.tsv`に保存しています。
+
+最後の3件も解決しました。librsvgの空候補7件はアーカイブ内のシンボリックリンクで、5件は配布済みLGPL本文、2件はランタイム依存ではないMITのrebind workspace crateを指すことを確認しました。MinGW-w64 runtime本文は、runtimeの一部を静的リンクしたバイナリパッケージへ通知を収録するよう記載しているため追加しました。libwinpthread自身のMIT/BSD本文は既に完全一致しています。GCCは、配布済みのGPLv3、LGPL、GCC Runtime Library Exception一式が、収録するlibgcc・libgomp・libstdc++ DLLをカバーします。残る候補はコンパイラ、ヘッダー、文書、テスト、未収録ライブラリのものです。`librsvg-symlink-license-correction-v1.tsv`、`final-runtime-notice-staging-v1.tsv`、`final-three-verification-v1.tsv`に保存しています。ソース索引87行はすべて確認済みとなり、総合verifierも成功しました。
 
 公開前チェックには、各MSYS2パッケージに対応するライセンス件数表が1行あることと、その件数が実際に配布用へ置いたファイル数と一致することも加えました。今後の文書追加時に件数の更新漏れを検出します。
 

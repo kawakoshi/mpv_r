@@ -5,37 +5,38 @@ release gate, not a claim that the candidate ZIP is ready to publish.
 
 ## Current Status
 
-**Do not publish the project-built Windows ZIP yet.** The test runtime contains
-mpv and more than one hundred DLLs collected from the MSYS2 MINGW64 runtime.
-The current candidate package contains mpv's GPL/LGPL texts, but does not yet
-contain a complete per-package notice and license set for those DLLs or the
-corresponding source bundle/index.
+**The source and license audit is complete, but do not publish an old candidate
+ZIP.** The audited runtime contains mpv and more than one hundred DLLs collected
+from the MSYS2 MINGW64 runtime. Regenerate the ZIP from the verified evidence,
+test access to the published corresponding sources, and verify the final asset
+hashes before release.
 
 The already published Windows v0.2.0 ZIP is a separate, third-party-build
 release and is not covered by this checklist.
 
 As of 2026-10-31, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 78 verified MSYS2 rows and eight rows still
-pending license review. For the original batch of 65, the matching MSYS2 source archives and
+recalculated. All 86 MSYS2 rows are verified; together with mpv, all 87 rows in
+the source index are `VERIFIED`. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
 archive was also hash-checked. The 65 packages yielded 220 hash-checked license
 text candidates: 80 at source-package roots and 140 in nested source areas.
-These counts establish provenance and text availability, not which nested
-components were compiled into the shipped DLLs or which notices must ship.
-The release gate remains closed.
+These counts establish the inputs to the later component-level review. The
+final verifier now completes successfully against the consolidated evidence.
+The remaining release gate is final packaging and publication verification,
+not an unresolved source-package row.
 
 The reproducible reports in the local Windows evidence directory are
 `msys2-source-package-downloads-reconciled-v3.tsv`,
 `remaining-source-audit-summary-v1.tsv`,
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
-two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining eight source
-index rows or assembling the release license collection. In particular,
-`gcc-libs`, `libwinpthread`, `librsvg`, and `aom`
-have multiple nested texts requiring component-level review.
+two reports are under `packaging/tools/`. The exact PKGBUILD, build-feature,
+patch, runtime hash, and license-content reviews have now been completed for
+every source-index row. Historical reports retain their earlier pending labels;
+the authoritative final state is `source-index.tsv` plus the promotion reports
+and a successful run of `verify-windows-selfbuild-evidence.sh`.
 
 An exact-text comparison found that 73 of the 80 source-root texts are now in
 the staged license collection. Lerc's source `NOTICE`, which includes a patent
@@ -118,6 +119,32 @@ The remaining texts belong to disabled, build-time, de-vendored, documentation,
 demo, or separately packaged components. The evidence is retained in
 `libbluray-svt-openssl-notice-staging-v1.tsv` and
 `two-nested-seven-verification-v1.tsv`.
+
+Five high-complexity packages were reviewed next. GLib's GVDB text and AOM's
+fastfeat, vector, and x86inc texts were staged because their sources are
+compiled into shipped DLLs. libjxl's Debian metadata, HEVC configuration and
+static extras, OpenJPEG's viewer/formatter/fallback libraries, and Cairo's
+disabled performance code and unshipped utility libraries were excluded from
+the portable runtime notice set. The earlier Windows extractor represented
+GLib's license symlinks as empty files; their targets were re-read from the
+fixed upstream archive and matched to the staged LGPL text. The correction and
+promotion records are `glib-symlink-license-correction-v1.tsv`,
+`glib-aom-notice-staging-v1.tsv`, and
+`high-complexity-five-verification-v1.tsv`.
+
+The final three packages were then resolved. Seven empty librsvg candidates
+were confirmed as archive symlinks: five point to the already staged LGPL text,
+while two point to an MIT-licensed rebind workspace crate which is not a
+runtime dependency. The MinGW-w64 runtime notice was added because its own text
+requires notices for binary packages containing statically linked MinGW runtime
+parts. libwinpthread's own MIT/BSD text was already exact. GCC's staged GPLv3,
+LGPL, and GCC Runtime Library Exception set covers the shipped libgcc, libgomp,
+and libstdc++ DLLs; the remaining candidates belong to the compiler, headers,
+documentation, tests, or unshipped libraries. Records are retained in
+`librsvg-symlink-license-correction-v1.tsv`,
+`final-runtime-notice-staging-v1.tsv`, and
+`final-three-verification-v1.tsv`. All 87 source-index rows are now verified,
+and the complete evidence verifier returns success.
 
 `libtasn1` and `libunistring` were promoted after both source-root license
 texts for each package were matched byte-for-byte to the staged copies. Their
