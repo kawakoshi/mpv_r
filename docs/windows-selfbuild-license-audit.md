@@ -14,9 +14,9 @@ corresponding source bundle/index.
 The already published Windows v0.2.0 ZIP is a separate, third-party-build
 release and is not covered by this checklist.
 
-As of 2026-10-30, the local audit evidence contains all 86 MSYS2 source
+As of 2026-10-31, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 43 verified MSYS2 rows and 43 rows still
+recalculated. The source index has 62 verified MSYS2 rows and 24 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,15 +32,15 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 43 source
+build-feature, patch, and license-content review before promoting the remaining 24 source
 index rows or assembling the release license collection. In particular,
-`gcc-libs`, `gettext-runtime`, `libwinpthread`, `librsvg`, and `aom`
+`gcc-libs`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
 
 An exact-text comparison found that 73 of the 80 source-root texts are now in
 the staged license collection. Lerc's source `NOTICE`, which includes a patent
 notice, was added with its original SHA-256 and a backed-up manifest update.
-The seven remaining nonmatches are `zstd`, `freetype`, `libgme`, `glib2`,
+The seven nonmatches at that comparison stage were `zstd`, `freetype`, `libgme`, `glib2`,
 `gcc-libs`, `libwinpthread`, and `gettext-runtime`. Several are generic or empty
 source-root texts while the staged package has more specific runtime license
 texts. Do not copy them automatically or treat a byte difference as proof of
@@ -155,6 +155,18 @@ least the portable `ggml-cpu-x64.dll` fallback. The
 `merge-windows-ggml-fixed-evidence.sh` tool checks the source and runtime
 package/version sets, mpv commit, and runtime delta before combining the prior
 audit work with a fresh corrected runtime capture.
+
+Nineteen more rows were promoted after the corrected evidence merge. The first
+nine have one low-complexity Windows or build-system patch each. The next eight
+were checked using a hash of each complete patch set; FreeType's root guide was
+resolved to the exact staged FTL and GPLv2 texts. The final two are special
+archives: libxml2's extra notices are test-only, while gettext-runtime has four
+exactly staged runtime texts and twelve texts belonging to its separately built
+tools/libtextstyle packages. The pre-promotion indexes and
+`low-complexity-patched-nine-verification-v1.tsv`,
+`reviewed-patched-eight-verification-v1.tsv`, and
+`special-runtime-two-verification-v1.tsv` are retained in the Windows evidence
+directory.
 
 The release verifier also checks that every MSYS2 source-index package has one
 matching license-manifest row and that its recorded text count equals the

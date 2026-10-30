@@ -6,11 +6,11 @@
 
 **自前ビルドのWindows ZIPは、まだ公開しません。** テスト用ランタイムにはmpvと、MSYS2のMINGW64ランタイムから集めた100本以上のDLLが入ります。候補ZIPにはmpvのGPL/LGPL文書はありますが、DLLごとの完全なNOTICE・ライセンス一式、および対応ソースの配布場所がまだ揃っていません。
 
-2026-10-30時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。ソース索引では43件を確認済み、残り43件をライセンス確認待ちとしています。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。階層下の文書が配布DLLに関係するか、同梱すべき表示は何か、引き続きビルド内容と本文を確認します。この段階では公開条件を満たしません。
+2026-10-31時点で、使用したMSYS2ソースパッケージ86件のアーカイブを取得し、SHA-256を再計算しました。ソース索引では62件を確認済み、残り24件をライセンス確認待ちとしています。当初の確認待ち65件についてはMSYS2アーカイブと上流ソースの対応を照合済みです（通常のアーカイブ56件、コミットを固定したGitソース6件、その他の形式3件）。追加のlibxml2テスト用アーカイブ1件もハッシュを確認しました。65件から抽出したライセンス文書候補220件はすべてハッシュが一致し、内訳はソース直下80件、階層下140件です。階層下の文書が配布DLLに関係するか、同梱すべき表示は何か、引き続きビルド内容と本文を確認します。この段階では公開条件を満たしません。
 
-Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る43件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`gettext-runtime`、`libwinpthread`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
+Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`remaining-license-candidate-review-v1.tsv`、`remaining-license-candidate-coverage-v1.tsv`を保存しています。残る24件をソース索引の確認済みに変更する前に、PKGBUILD、パッチ、ビルド設定、ライセンス本文を照合します。特に`gcc-libs`、`libwinpthread`、`librsvg`、`aom`は階層下の文書が複数あり、部品ごとの確認が必要です。
 
-ソース直下の文書80件と配布用ライセンス集を本文のSHAで比較した結果、73件が一致しています。特許表示を含む`lerc`の`NOTICE`は原文のハッシュを確認して追加し、件数表はバックアップを残して更新しました。残る7件（`zstd`、`freetype`、`libgme`、`glib2`、`gcc-libs`、`libwinpthread`、`gettext-runtime`）は一致しません。ソース全体の汎用文書や空ファイルと、DLLに対応する文書が異なる例もあるため、機械的に追加せず実際のビルド対象と照合します。比較結果は`remaining-root-license-staging-v2.tsv`です。
+ソース直下の文書80件と配布用ライセンス集を本文のSHAで比較した結果、73件が一致しています。特許表示を含む`lerc`の`NOTICE`は原文のハッシュを確認して追加し、件数表はバックアップを残して更新しました。この比較時点の不一致7件は`zstd`、`freetype`、`libgme`、`glib2`、`gcc-libs`、`libwinpthread`、`gettext-runtime`でした。ソース全体の汎用文書や空ファイルと、DLLに対応する文書が異なる例もあるため、機械的に追加せず実際のビルド対象と照合します。比較結果は`remaining-root-license-staging-v2.tsv`です。
 
 階層下140件のビルド照合では、サンプル・テスト30件、別のgettext分割パッケージ12件、別のソース部品27件、ランタイム部品の文書6件、引き続きビルド対象との照合が必要な65件に分けました（`remaining-nested-license-build-triage-v4.tsv`）。ランタイム部品の6件はすべて配布用文書とSHAが一致します。PCRE2のJITで使うSLJITの文書が不足していたため、原文を追加し件数表をバックアップ付きで更新しました。階層下全体では140件中11件が配布用文書と一致します。残る129件はパスだけで追加・除外を決めません。この一次判定だけではソース索引を変更していません。
 
@@ -33,6 +33,8 @@ Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`rem
 `ggml`も確認済みにしました。固定GitコミットがMSYS2ソースアーカイブ内にあり、MITの`LICENSE`は配布用原文と一致します。最初の候補ランタイムでは、パッケージが`GGML_BACKEND_DL=ON`と`GGML_CPU_ALL_VARIANTS=ON`でビルドされているにもかかわらず、`ldd`による収集からCPUバックエンド14本がすべて漏れていました。この発見は`ggml-runtime-backend-gap-v1.tsv`に保存しています。
 
 修正後の再ビルドでは`ggml-cpu-*.dll` 14本をすべて収録しました。旧候補からの削除は0件、追加はこの14本だけで、ほかに変化したのは再ビルド対象の`mpv.exe`、`mpv.com`、`libmpv-2.dll`だけです。実ロード試験では登録バックエンドが0件から1件へ増え、`CPU`が登録され、この検査機では`ggml-cpu-icelake.dll`が選択されました。公開前チェックでは最低限の`ggml-cpu-x64.dll`を要求します。旧監査証跡を修正版へ統合するときは、ソースと実行時パッケージの名前・版、mpvコミット、ランタイム差分を検査する`merge-windows-ggml-fixed-evidence.sh`を使います。
+
+修正版証跡への統合後、さらに19件を確認済みにしました。最初の9件はWindows互換やビルド設定を調整する低複雑度パッチ各1件、次の8件はパッチ集合全体の固定ハッシュまで照合しました。FreeTypeは直下の案内文が参照するFTLとGPLv2の本文2件が配布用文書と完全一致します。最後の特殊アーカイブ2件では、libxml2の追加NOTICE 2件がテスト専用であること、gettext-runtimeのランタイム用4文書が完全一致し、残る12文書が別ビルドのtools/libtextstyle分割パッケージに属することを確認しました。変更前の索引と`low-complexity-patched-nine-verification-v1.tsv`、`reviewed-patched-eight-verification-v1.tsv`、`special-runtime-two-verification-v1.tsv`はWindows側に保存しています。
 
 公開前チェックには、各MSYS2パッケージに対応するライセンス件数表が1行あることと、その件数が実際に配布用へ置いたファイル数と一致することも加えました。今後の文書追加時に件数の更新漏れを検出します。
 
