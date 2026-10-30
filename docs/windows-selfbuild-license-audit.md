@@ -16,7 +16,7 @@ release and is not covered by this checklist.
 
 As of 2026-10-31, the local audit evidence contains all 86 MSYS2 source
 packages used by the runtime. Their archive SHA-256 values have been
-recalculated. The source index has 62 verified MSYS2 rows and 24 rows still
+recalculated. The source index has 71 verified MSYS2 rows and 15 rows still
 pending license review. For the original batch of 65, the matching MSYS2 source archives and
 their upstream inputs were checked: 56 ordinary nested archives, six pinned Git
 revisions, and three archives using other formats. One extra libxml2 test
@@ -32,7 +32,7 @@ The reproducible reports in the local Windows evidence directory are
 `remaining-license-candidate-review-v1.tsv`, and
 `remaining-license-candidate-coverage-v1.tsv`. The scripts that create the last
 two reports are under `packaging/tools/`. Continue with the exact PKGBUILD,
-build-feature, patch, and license-content review before promoting the remaining 24 source
+build-feature, patch, and license-content review before promoting the remaining 15 source
 index rows or assembling the release license collection. In particular,
 `gcc-libs`, `libwinpthread`, `librsvg`, and `aom`
 have multiple nested texts requiring component-level review.
@@ -101,6 +101,14 @@ root `LICENSE` also includes the project's BSD-3-Clause option and CC0-1.0
 exception. The nested-text decisions and pre-promotion indexes are retained
 with `three-reviewed-libraries-verification-v1.tsv` in the Windows evidence
 directory.
+
+Nine additional packages with one unresolved nested text each were then
+reviewed. The texts for libgme's compiled emu2413 code, rav1e's default ivf
+feature, and HarfBuzz's Microsoft USE data were added to the staged collection
+with exact hashes and backed-up manifest counts. The other nested texts were
+duplicates, disabled tests, unshipped demo or split-package material, or an
+empty file. `three-runtime-component-license-staging-v1.tsv` and
+`single-nested-nine-verification-v1.tsv` retain these decisions.
 
 `libtasn1` and `libunistring` were promoted after both source-root license
 texts for each package were matched byte-for-byte to the staged copies. Their
