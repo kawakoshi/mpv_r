@@ -74,14 +74,14 @@ GOCACHE="$root/build/go-cache" GOOS=windows GOARCH=amd64 go build \
 
 cp "$launcher_path" "$package_dir/mpv_r.exe"
 runtime_count=0
-for runtime_file in "$mpv_dir"/*.exe "$mpv_dir"/*.dll; do
+for runtime_file in "$mpv_dir"/*.exe "$mpv_dir"/*.com "$mpv_dir"/*.dll; do
   if [ -f "$runtime_file" ]; then
     cp "$runtime_file" "$package_dir/resources/mpv/"
     runtime_count=$((runtime_count + 1))
   fi
 done
-if [ "$runtime_count" -lt 2 ]; then
-  echo "Windows runtime must contain mpv.exe and at least one DLL: $mpv_dir" >&2
+if [ "$runtime_count" -lt 3 ] || [ ! -f "$mpv_dir/mpv.com" ]; then
+  echo "Windows runtime must contain mpv.exe, mpv.com, and at least one DLL: $mpv_dir" >&2
   exit 1
 fi
 if [ -f "$mpv_dir/mpv/fonts.conf" ]; then
@@ -120,6 +120,7 @@ if [ -n "$license_evidence" ]; then
   cp "$root/packaging/scripts/build-windows.sh" "$evidence_target/build-scripts/"
   cp "$root/packaging/tools/capture-windows-msys2-runtime-evidence.sh" "$evidence_target/build-scripts/"
   cp "$root/packaging/tools/verify-windows-selfbuild-evidence.sh" "$evidence_target/build-scripts/"
+  cp "$root/packaging/tools/verify-windows-package.sh" "$evidence_target/build-scripts/"
   cp "$root/packaging/tools/check-windows-shaderc-static-deps.sh" "$evidence_target/build-scripts/"
 fi
 mkdir -p "$package_dir/tools"
@@ -161,5 +162,8 @@ else
 fi
 
 shasum -a 256 "$output_zip"
+if [ -n "$license_evidence" ]; then
+  "$root/packaging/tools/verify-windows-package.sh" "$output_zip" "$license_evidence"
+fi
 echo "Created: $output_zip"
 echo "Work dir: $work_dir"

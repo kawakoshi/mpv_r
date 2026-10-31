@@ -33,7 +33,7 @@ packaging/scripts/build-windows.sh
 MPV_TAG=v0.41.0 packaging/scripts/build-mpv-windows-msys2.sh
 ```
 
-その後、`build-windows.sh`を実行するときにポータブル出力を`WINDOWS_MPV_DIR`へ渡します。パッケージスクリプトは固定の第三者mpvファイル一覧に依存せず、そのランタイムフォルダ内のすべての`.exe`と`.dll`をコピーします。
+その後、`build-windows.sh`を実行するときにポータブル出力を`WINDOWS_MPV_DIR`へ渡します。パッケージスクリプトは固定の第三者mpvファイル一覧に依存せず、そのランタイムフォルダ内のすべての`.exe`と`.dll`に加えて`mpv.com`をコピーします。確認済みライセンス証跡を指定した場合は、完成ZIPを展開し、取得時のランタイムマニフェストと最終パッケージマニフェストの両方に対して照合してから成功とします。
 
 ## ユーザー向け文書
 

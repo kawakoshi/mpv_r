@@ -41,7 +41,10 @@ MPV_TAG=v0.41.0 packaging/scripts/build-mpv-windows-msys2.sh
 
 Then provide its portable output through `WINDOWS_MPV_DIR` when running
 `build-windows.sh`. The package script copies every `.exe` and `.dll` in that
-runtime folder, rather than relying on a fixed third-party mpv file list.
+runtime folder, plus `mpv.com`, rather than relying on a fixed third-party mpv
+file list. When verified license evidence is supplied, the completed ZIP is
+also extracted and checked against both the captured runtime manifest and the
+final package manifest before the build is reported as successful.
 
 ## User Documentation
 
