@@ -74,6 +74,13 @@ packaging/tools/build-windows-corresponding-source.sh \
 
 このスクリプトは証跡検証を再実行し、mpv tarballのSHA-256、ソース索引87行、MSYS2ソースパッケージ86件を確認します。さらに現在のmpv_rプロジェクトソースと全収録ファイルのSHA-256を加え、既存assetを上書きせずに最終`tar.zst`を作成します。
 
+アップロード前と、Releaseから再ダウンロードした後に、assetを全展開して検証します。
+
+```sh
+packaging/tools/verify-windows-corresponding-source.sh \
+  /c/path/to/mpv_r-windows-v0.3.0-corresponding-source.tar.zst
+```
+
 ## ZIPに入れるライセンス・ソース情報
 
 公開前に、ZIPの`documents/LICENSES/windows-selfbuild/`へ次を作成します。

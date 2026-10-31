@@ -316,6 +316,14 @@ all 87 source-index rows and exactly 86 MSYS2 source packages, adds the current
 mpv_r project source, writes per-file SHA-256 values, and creates the final
 `tar.zst` without overwriting an existing asset.
 
+Fully extract and verify the completed asset before upload and again after
+downloading it from the release:
+
+```sh
+packaging/tools/verify-windows-corresponding-source.sh \
+  /c/path/to/mpv_r-windows-v0.3.0-corresponding-source.tar.zst
+```
+
 ## License and Source Deliverables
 
 Before publishing, create a `documents/LICENSES/windows-selfbuild/` directory
