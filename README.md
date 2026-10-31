@@ -9,9 +9,9 @@
 アプリとして使うときは、GitHubが自動生成する`Source code (zip)`ではなく、Releasesの**Assets**にある配布ファイルを使ってください。
 
 - Mac：`mpv_r-mac-v0.3.0.dmg`（公開中）
-- Windows：`mpv_r-windows-v0.2.0.zip`（公開中）
+- Windows：`mpv_r-windows-v0.3.0.zip`（公開中）
 
-Windowsの自前ビルド版v0.3.0は、DLL・ライセンス・対応ソースの監査、最終ZIP検証、実機操作確認を完了し、公開可能な状態です。公開後はWindowsも`mpv_r-windows-v0.3.0.zip`へ揃えます。
+Windows v0.3.0の対応ソースは、同じReleaseの`mpv_r-windows-v0.3.0-corresponding-source.tar.zst`で公開しています。ハッシュは`SHA256SUMS_v0.3.0.txt`で確認できます。
 
 ## 使い方
 
@@ -40,8 +40,8 @@ mpv_r/
 ## 同梱するmpvと公開状況
 
 - Mac v0.3.0：このプロジェクトでビルドしたApple Silicon向けmpv v0.41.0を同梱しています。
-- Windows v0.2.0：shinchiroによる第三者ビルドを同梱した、従来の公開版です。
-- Windows v0.3.0：MSYS2上でこのプロジェクトがビルドしたmpv v0.41.0を使います。DLL・ライセンス・対応ソースの監査、最終ZIP検証、実機操作確認は完了しています。
+- Windows v0.2.0：shinchiroによる第三者ビルドを同梱した、以前の公開版です。
+- Windows v0.3.0：MSYS2上でこのプロジェクトがビルドしたmpv v0.41.0を使います。DLL・ライセンス・対応ソースの監査、最終ZIP検証、実機操作確認を完了して公開しています。
 
 mpv-player、stolendata、shinchiroとの関係やライセンス情報は[NOTICE.md](NOTICE.md)と[LICENSES/](LICENSES/)を参照してください。
 
@@ -56,8 +56,7 @@ mpv-player、stolendata、shinchiroとの関係やライセンス情報は[NOTIC
 ## ロードマップ
 
 - v0.3.0：Mac Apple Silicon DMG／Windows 64-bitポータブルZIP
-- 次：Windows v0.3.0と対応ソースの公開
-- その次：Windowsインストーラーと、Mac／Windows v0.4.0の整備
+- 次：Windowsインストーラーと、Mac／Windows v0.4.0の整備
 - v0.4.0メモ：Windowsの再生ウィンドウは同梱`mpv.exe`側のアイコンを表示するため、ショートカット／関連付け／再生ウィンドウのアイコン統一を検討します。mpvバイナリへ変更を加える場合は、ランタイム監査とハッシュ検証をやり直します。
 
 ---
@@ -73,12 +72,11 @@ mpv-player、stolendata、shinchiroとの関係やライセンス情報は[NOTIC
 Use an app package under GitHub Releases **Assets**, not GitHub's automatic `Source code (zip)` archive.
 
 - macOS: `mpv_r-mac-v0.3.0.dmg` (published)
-- Windows: `mpv_r-windows-v0.2.0.zip` (published)
+- Windows: `mpv_r-windows-v0.3.0.zip` (published)
 
-The project-built Windows v0.3.0 runtime has completed its DLL, license,
-corresponding-source, final-ZIP, and manual smoke-test checks. Its assets are
-ready to publish; after publication, Windows will use
-`mpv_r-windows-v0.3.0.zip`.
+The matching Windows source is published in the same release as
+`mpv_r-windows-v0.3.0-corresponding-source.tar.zst`. Verify the assets with
+`SHA256SUMS_v0.3.0.txt`.
 
 ## Usage
 
@@ -90,8 +88,8 @@ Multiple files open as a playlist. See [docs/shortcuts.md](docs/shortcuts.md) fo
 ## Build and Release Status
 
 - macOS v0.3.0 bundles a project-built Apple Silicon mpv v0.41.0 app bundle.
-- The published Windows v0.2.0 package uses a third-party mpv build by shinchiro.
-- Windows v0.3.0 uses a project-built MSYS2 runtime. Its license, package, corresponding-source, and manual smoke-test checks are complete.
+- The earlier Windows v0.2.0 package uses a third-party mpv build by shinchiro.
+- Windows v0.3.0 publishes a project-built MSYS2 runtime after completing its license, package, corresponding-source, and manual smoke-test checks.
 
 For v0.4.0, investigate using one mpv_r icon consistently for the Windows
 shortcut, file associations, and playback window. The playback window currently
