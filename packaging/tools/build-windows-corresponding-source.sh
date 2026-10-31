@@ -58,8 +58,11 @@ cp -a "$evidence_dir" "$bundle/windows-build-evidence"
 cp "$mpv_archive" "$bundle/mpv-source/mpv-$mpv_commit.tar.gz"
 
 project_commit=$(git -C "$root" rev-parse HEAD)
-if ! git -C "$root" diff --quiet || ! git -C "$root" diff --cached --quiet; then
-  echo "Refusing to archive a dirty mpv_r checkout." >&2
+origin_main_commit=$(git -C "$root" rev-parse refs/remotes/origin/main)
+if [ "$project_commit" != "$origin_main_commit" ]; then
+  echo "Refusing to archive a revision other than origin/main." >&2
+  echo "HEAD:        $project_commit" >&2
+  echo "origin/main: $origin_main_commit" >&2
   exit 1
 fi
 git -C "$root" archive --format=tar.gz \
