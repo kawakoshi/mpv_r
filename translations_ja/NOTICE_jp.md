@@ -43,7 +43,7 @@ stolendataによる非公式の第三者macOS版mpvビルドを同梱します�
 
 - https://laboratory.stolendata.net/~djinn/mpv_osx/
 
-公開済みのWindows v0.2.0パッケージには、shinchiroによる非公式の第三者Windows版mpvビルドを同梱しています。Windows v0.3.0候補はMSYS2 MINGW64上でこのプロジェクトがビルドしたmpv v0.41.0を使いますが、ランタイムDLLのNOTICEと対応ソースを準備中のため、まだ公開しません。
+Windows v0.3.0には、このプロジェクトがMSYS2 MINGW64上でビルドしたmpv v0.41.0を同梱します。ランタイムDLL一覧、ライセンス本文、ソース索引、ビルド記録はZIPに収録し、対応ソースは同じReleaseで公開します。以前のWindows v0.2.0ではshinchiroによる非公式の第三者Windows版mpvビルドを使用しました。
 
 ビルド配布元:
 
@@ -75,7 +75,7 @@ stolendataによる非公式の第三者macOS版mpvビルドを同梱します�
 - `packaging/scripts/build-windows.sh`
 - `packaging/scripts/build-all.sh`
 
-Mac v0.3.0はApple Silicon向けに自前ビルドしたmpvアプリバンドルからDMGを作成します。Windows v0.2.0は第三者ビルドを使った公開版です。Windows v0.3.0候補は自前ビルドのランタイムを使いますが、`docs/windows-selfbuild-license-audit.md`の公開前要件を満たすまで配布しません。
+Mac v0.3.0はApple Silicon向けに自前ビルドしたmpvアプリバンドルからDMGを作成します。Windows v0.3.0は検証済みの自前ビルドランタイム、設定、文書、ライセンス証跡をポータブルZIPへ収録します。公開前要件と検証記録は`docs/windows-selfbuild-license-audit.md`にあります。
 
 ## 今後の方向性
 

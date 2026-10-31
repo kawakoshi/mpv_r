@@ -1,6 +1,6 @@
 # Windows Packaging Notes
 
-The current Windows release is v0.2.0. It uses a small Go launcher and a
+Windows v0.3.0 uses a small Go launcher and a
 portable ZIP package; it is not an installer.
 
 - source: `cmd/mpv-r-launcher/main.go`
@@ -55,7 +55,7 @@ The current Windows user guide is:
 It covers extraction, normal startup, SmartScreen, keeping the portable package
 together, review controls, screenshots, and recovery of the supplied settings.
 
-## v0.2 Target Layout
+## v0.3 Layout
 
 ```text
 mpv_r/
@@ -88,4 +88,4 @@ mpv_r/
 ```
 
 The upstream mpv `doc/manual.pdf` and `doc/mpbindings.png` files are not bundled
-in v0.2. mpv documentation is linked from NOTICE/source information instead.
+in v0.3. mpv documentation is linked from NOTICE/source information instead.

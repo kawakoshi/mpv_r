@@ -14,15 +14,16 @@ v0.3.0 Mac package layout:
 - DMG containing mpv_r.app and an Applications shortcut
 - documents bundled inside mpv_r.app/Contents/Resources/documents/
 
-Current Windows v0.2.0 package layout:
+Windows v0.3.0 package layout:
 
 - mpv_r.exe at the package root
 - resources/
 - documents/
 
 Mac v0.3.0 packages are assembled from a project-built Apple Silicon mpv app
-bundle. Windows v0.2.0 packages continue to assemble an existing mpv build,
-mpv_r configuration files, and project documents into a portable zip.
+bundle. Windows v0.3.0 packages assemble the verified project-built mpv
+runtime, mpv_r configuration files, project documents, license evidence, and
+runtime/source manifests into a portable ZIP.
 
 Mac v0.3.0 bundled mpv:
 
@@ -33,7 +34,7 @@ Mac v0.3.0 bundled mpv:
 - local build documentation: docs/build-mpv-macos-arm64.md
 - target: Apple Silicon / arm64
 
-Windows v0.3.0 project-built candidate (not published):
+Windows v0.3.0 project-built runtime:
 
 - mpv version: 0.41.0
 - source: https://github.com/mpv-player/mpv
@@ -42,13 +43,16 @@ Windows v0.3.0 project-built candidate (not published):
 - build environment: MSYS2 MINGW64 on Windows x86_64
 - local build documentation: docs/build-mpv-windows-msys2.md
 - packaging documentation: packaging/scripts/build-windows.sh
-- release status: blocked pending the per-DLL notices and corresponding-source
-  requirements in docs/windows-selfbuild-license-audit.md
+- license evidence: documents/LICENSES/windows-selfbuild/
+- corresponding source: the `mpv_r-windows-v0.3.0-corresponding-source` asset
+  published with the Windows ZIP
+- verification: all 87 source-index rows verified; final package manifest
+  verified against 130 runtime files and the mpv_r launcher
 
 The published Windows v0.2.0 package remains a separate third-party-build
 release. Do not describe it as a project-built Windows package.
 
-Windows v0.2.0 packages do not bundle mpv's upstream doc/manual.pdf or
+Windows packages do not bundle mpv's upstream doc/manual.pdf or
 doc/mpbindings.png. mpv documentation is linked from NOTICE instead.
 
 v0.2.0 Package Generation

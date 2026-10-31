@@ -33,8 +33,8 @@ Windows:
 
 1. zipを展開します。
 2. `mpv_r`フォルダを開きます。
-3. `mpv_r.exe`を開きます。
-4. Windows SmartScreenが表示された場合は、このダウンロード元を信頼できる場合のみ続行してください。
+3. `create-desktop-shortcut.cmd`を実行し、新しいショートカットへ動画をドラッグ&ドロップします。または`mpv_r.exe`へ直接ドラッグ&ドロップします。
+4. Windows SmartScreenが表示された場合は、このプロジェクトのRelease assetsから取得し、公開SHA-256と一致するファイルだけを続行してください。
 
 動画を開く
 ----------

@@ -11,12 +11,12 @@
 - Mac：`mpv_r-mac-v0.3.0.dmg`（公開中）
 - Windows：`mpv_r-windows-v0.2.0.zip`（公開中）
 
-Windowsの自前ビルド版v0.3.0は、DLLごとのライセンスと対応ソースを整理・確認中です。確認が終わるまで公開しません。
+Windowsの自前ビルド版v0.3.0は、DLL・ライセンス・対応ソースの監査と最終ZIP検証を完了し、公開準備中です。公開後はWindowsも`mpv_r-windows-v0.3.0.zip`へ揃えます。
 
 ## 使い方
 
 - Mac：`mpv_r.app`へ動画をドラッグ&ドロップするか、アプリから動画を開きます。
-- Windows：展開した`mpv_r`フォルダをそのまま保ち、`mpv_r.exe`へ動画をドラッグ&ドロップします。次のポータブル版ではデスクトップショートカットを作り、そのショートカットへのドラッグ&ドロップを基本の使い方にします。
+- Windows：展開した`mpv_r`フォルダをそのまま保ち、同梱cmdで作成したデスクトップショートカットへ動画をドラッグ&ドロップします。`mpv_r.exe`へ直接ドラッグ&ドロップしても開けます。
 
 複数ファイルを渡すと、プレイリストとして読み込みます。
 
@@ -41,7 +41,7 @@ mpv_r/
 
 - Mac v0.3.0：このプロジェクトでビルドしたApple Silicon向けmpv v0.41.0を同梱しています。
 - Windows v0.2.0：shinchiroによる第三者ビルドを同梱した、従来の公開版です。
-- Windows v0.3.0候補：MSYS2上でこのプロジェクトがビルドしたmpv v0.41.0を使います。ただしライセンス監査と対応ソースの公開準備が終わるまで、Releaseには追加しません。
+- Windows v0.3.0：MSYS2上でこのプロジェクトがビルドしたmpv v0.41.0を使います。DLL・ライセンス・対応ソースの監査と最終ZIP検証は完了し、Release assetと対応ソースの公開準備中です。
 
 mpv-player、stolendata、shinchiroとの関係やライセンス情報は[NOTICE.md](NOTICE.md)と[LICENSES/](LICENSES/)を参照してください。
 
@@ -55,9 +55,9 @@ mpv-player、stolendata、shinchiroとの関係やライセンス情報は[NOTIC
 
 ## ロードマップ
 
-- v0.3.0：Mac Apple Silicon DMG Preview（公開中）
-- 次のWindows版：自前ビルド版のライセンス対応とポータブル配布の整備
-- その次：Windowsインストーラーと、明示的な関連付け登録の導入
+- v0.3.0：Mac Apple Silicon DMG／Windows 64-bitポータブルZIP
+- 次：Windows v0.3.0と対応ソースの公開
+- その次：Windowsインストーラーと、Mac／Windows v0.4.0の整備
 
 ---
 
@@ -74,12 +74,14 @@ Use an app package under GitHub Releases **Assets**, not GitHub's automatic `Sou
 - macOS: `mpv_r-mac-v0.3.0.dmg` (published)
 - Windows: `mpv_r-windows-v0.2.0.zip` (published)
 
-The project-built Windows v0.3.0 candidate is not published yet. Its DLL licenses and corresponding-source publication are being audited first.
+The project-built Windows v0.3.0 runtime has completed its DLL, license,
+corresponding-source, and final-ZIP audits. Its release assets are being
+prepared; after publication, Windows will use `mpv_r-windows-v0.3.0.zip`.
 
 ## Usage
 
 - macOS: Drag one or more videos onto `mpv_r.app`, or open a video from the app.
-- Windows: Keep the extracted `mpv_r` folder together and drag video files onto `mpv_r.exe`. The next portable package will provide a Desktop shortcut for this drag-and-drop workflow.
+- Windows: Keep the extracted `mpv_r` folder together and drag video files onto the Desktop shortcut created by the supplied command, or directly onto `mpv_r.exe`.
 
 Multiple files open as a playlist. See [docs/shortcuts.md](docs/shortcuts.md) for keyboard controls and [docs/windows-preview-guide.md](docs/windows-preview-guide.md) for the Windows package guide.
 
@@ -87,6 +89,6 @@ Multiple files open as a playlist. See [docs/shortcuts.md](docs/shortcuts.md) fo
 
 - macOS v0.3.0 bundles a project-built Apple Silicon mpv v0.41.0 app bundle.
 - The published Windows v0.2.0 package uses a third-party mpv build by shinchiro.
-- The Windows v0.3.0 candidate uses a project-built MSYS2 runtime, but will not be released until its license audit and corresponding-source publication are complete.
+- Windows v0.3.0 uses a project-built MSYS2 runtime. Its license and package audits are complete; the ZIP and corresponding-source release assets are being prepared.
 
 See [NOTICE.md](NOTICE.md), [LICENSES/](LICENSES/), [docs/build-mpv-windows-msys2.md](docs/build-mpv-windows-msys2.md), and [docs/windows-selfbuild-license-audit.md](docs/windows-selfbuild-license-audit.md).

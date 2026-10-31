@@ -1,8 +1,9 @@
 # macOS Packaging Notes
 
-## v0.3.0 Mac Preview
+## v0.3.0 Mac Package
 
-v0.3.0 is a Mac-only Apple Silicon Preview. It is distributed as a DMG:
+The Mac artifact for the cross-platform v0.3.0 Preview targets Apple Silicon
+and is distributed as a DMG:
 
 ```text
 mpv_r.app
@@ -39,8 +40,8 @@ The output is not notarized. Apple Silicon / arm64 is the only v0.3.0 target.
 
 1. Run `docs/smoke-test-mac.md` against the final DMG.
 2. Record the final DMG SHA-256 in `RELEASE_NOTES_v0.3.0.md`.
-3. Publish only `mpv_r-mac-v0.3.0.dmg` for this release; Windows remains at
-   v0.2.0.
+3. Publish `mpv_r-mac-v0.3.0.dmg` together with the separately verified
+   Windows v0.3.0 assets.
 
 If a screenshot is added to explain the filename-specific Gatekeeper flow, use
 an approved sample video with no private production information.

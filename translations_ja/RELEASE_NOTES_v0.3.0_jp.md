@@ -1,4 +1,4 @@
-# mpv_r v0.3.0 - Mac Apple Silicon DMG Preview 日本語参考訳
+# mpv_r v0.3.0 - Mac／Windows自前ビルドPreview 日本語参考訳
 
 注意:
 この文書は、公開前の確認を助けるために機械翻訳をもとに作成した日本語参考訳です。
@@ -6,13 +6,15 @@
 正式な内容は英語原文を優先してください。
 また、世界中の翻訳者の知識、労力、文化をつなぐ仕事に深い敬意を表します。
 
-v0.3.0では、Mac PreviewパッケージをApple Silicon向けに自前ビルドしたmpvバンドルへ更新し、MacらしいDMG形式のインストール手順を導入します。
+v0.3.0では、Apple Silicon Macと64-bit Windowsの両方で、自前ビルドしたmpv v0.41.0ランタイムを使います。MacはDMG、WindowsはポータブルZIPです。
 
 ## ダウンロード
 
 ダウンロード:
 
 - `mpv_r-mac-v0.3.0.dmg`
+- `mpv_r-windows-v0.3.0.zip`
+- `mpv_r-windows-v0.3.0-corresponding-source.tar.zst`
 
 アプリとして使う場合は、Release assetsに添付されたアプリ用パッケージを使ってください。GitHubが自動生成する`Source code (zip)`はアプリ本体ではありません。
 
@@ -23,7 +25,10 @@ v0.3.0では、Mac PreviewパッケージをApple Silicon向けに自前ビル�
 - Mac版のドキュメント、NOTICE、ライセンス文書、日本語参考訳は`mpv_r.app`の中に同梱します。
 - Mac Previewは、このプロジェクトでビルドしたApple Silicon向けmpv v0.41.0バンドルを使います。
 - Macアプリには、v0.2作業中に追加したmpv_r仮アイコンを引き続き使います。
-- Windows版は、別途公開済みのv0.2.0ポータブルzipパッケージを継続します。
+- Windows版は、このプロジェクトでビルドしたMSYS2 MINGW64版mpv v0.41.0ランタイムへ更新します。
+- Windows ZIPには、デスクトップショートカット作成cmdと、現在のユーザー向け関連付け登録cmdを収録します。
+- Windows ZIPには、ランタイム・ソース・ライセンスの一覧と163件のライセンス文書を収録します。
+- Windows版に使用した86件のMSYS2ソース、mpvソース、パッチ、ビルド記録は、対応ソースassetとして別に公開します。
 
 ## プラットフォームごとの注意
 
@@ -39,9 +44,11 @@ Mac:
 
 Windows:
 
-- このMac専用リリースでは、Windows v0.3.0パッケージを公開しません。
-- 現在公開されているWindowsパッケージはv0.2.0です。
-- Windows向けの文書とパッケージ改善は、別途準備します。
+- v0.3.0はWindows 64-bitを対象にします。
+- ポータブルZIPを一式のまま展開して使います。インストーラーではありません。
+- 同梱cmdでデスクトップショートカットを作り、動画をそこへドラッグ&ドロップする使い方を推奨します。
+- ランチャーと同梱mpvにはコード署名がないため、SmartScreenまたはSmart App Controlが警告・ブロックする場合があります。
+- このプロジェクトのRelease assetsから取得し、公開SHA-256と一致するファイルだけを使用してください。
 
 ## ドキュメント
 
@@ -67,6 +74,14 @@ Mac DMG:
 - `mpv_r.app`内の`documents`
 - `mpv_r.app`内の更新した`mpv_r`設定ファイル
 
+Windows ZIP:
+
+- `mpv_r.exe`ランチャー
+- 自前ビルドしたmpv v0.41.0ランタイムとDLL
+- デスクトップショートカット作成cmdと関連付け登録cmd
+- 英語文書と日本語参考訳
+- ランタイム、ソース、ライセンス、最終パッケージの検証記録
+
 ## 注意
 
 - これはプレビューリリースです。
@@ -79,3 +94,5 @@ SHA256:
 ```text
 ea459df3693d9ca7791452c6adcec904c6832022520a68dec4e0b818b6cc10c8  mpv_r-mac-v0.3.0.dmg
 ```
+
+Windows ZIPと対応ソースのチェックサムは、最終リリース用ビルドを固定した後に追加します。

@@ -1,7 +1,7 @@
-# mpv_r v0.3.0 - Mac Apple Silicon DMG Preview
+# mpv_r v0.3.0 - Project-Built Mac and Windows Preview
 
-v0.3.0 updates the Mac Preview package to a self-built Apple Silicon mpv bundle
-and introduces a DMG-style Mac installation flow.
+v0.3.0 provides project-built mpv v0.41.0 runtimes for Apple Silicon Mac and
+64-bit Windows. Mac uses a DMG; Windows uses a portable ZIP.
 
 Japanese reference translation:
 
@@ -12,6 +12,8 @@ Japanese reference translation:
 Download:
 
 - `mpv_r-mac-v0.3.0.dmg`
+- `mpv_r-windows-v0.3.0.zip`
+- `mpv_r-windows-v0.3.0-corresponding-source.tar.zst`
 
 Use the attached app package under Release assets. Do not download GitHub's
 automatic `Source code (zip)` if you want to run the app.
@@ -24,7 +26,10 @@ automatic `Source code (zip)` if you want to run the app.
   included inside `mpv_r.app`.
 - Mac Preview now uses a project-built Apple Silicon mpv v0.41.0 bundle.
 - The Mac app keeps the provisional mpv_r icon introduced during v0.2 work.
-- Windows remains on the separately released v0.2.0 portable zip package.
+- Windows now uses a project-built MSYS2 MINGW64 mpv v0.41.0 runtime.
+- The Windows ZIP includes Desktop-shortcut and current-user file-association commands.
+- The Windows ZIP includes runtime/source/license manifests and 163 staged license files.
+- A separate corresponding-source asset preserves the exact 86 MSYS2 source packages, mpv source, patches, and build records used for the Windows runtime.
 
 ## Platform Notes
 
@@ -41,9 +46,11 @@ Mac:
 
 Windows:
 
-- No Windows v0.3.0 package is released with this Mac-only release.
-- The currently published Windows package remains v0.2.0.
-- Windows documentation and packaging improvements will be prepared separately.
+- Windows 64-bit is the target for v0.3.0.
+- Extract the portable ZIP as a complete folder; it is not an installer.
+- Use the supplied command to create a Desktop shortcut, then drag videos onto it.
+- The launcher and bundled mpv are not code-signed, so SmartScreen or Smart App Control may warn or block them.
+- Continue only for files downloaded from this project's Release assets after checking the published SHA-256.
 
 ## Documents
 
@@ -71,6 +78,14 @@ Mac DMG:
 - bundled `documents` inside `mpv_r.app`
 - renewed `mpv_r` configuration files inside `mpv_r.app`
 
+Windows ZIP:
+
+- `mpv_r.exe` launcher
+- project-built mpv v0.41.0 runtime and DLLs
+- Desktop-shortcut and file-association commands
+- bundled English documents and Japanese reference translations
+- runtime, source, license, and final-package verification records
+
 ## Notes
 
 - This is a preview release.
@@ -84,3 +99,6 @@ SHA256:
 ```text
 ea459df3693d9ca7791452c6adcec904c6832022520a68dec4e0b818b6cc10c8  mpv_r-mac-v0.3.0.dmg
 ```
+
+The Windows ZIP and corresponding-source checksums are added after their final
+release builds are frozen.

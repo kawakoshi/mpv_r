@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.3.0 - Project-Built Mac and Windows Runtimes
+
+- Adds the Apple Silicon Mac DMG with a project-built mpv v0.41.0 bundle.
+- Adds the Windows 64-bit portable ZIP with a project-built MSYS2 mpv v0.41.0 runtime.
+- Adds Desktop-shortcut creation and current-user file-association registration for Windows.
+- Includes runtime, source, license, and final-package manifests in the Windows ZIP.
+- Verifies all 87 source-index rows, 130 Windows runtime files, 131 final binaries, and 163 staged license files.
+- Provides matching corresponding-source archives as a separate Release asset.
+- Keeps the Mac app ad-hoc signed but not notarized, and the Windows binaries
+  unsigned; operating-system security prompts may appear.
+
 ## v0.1.1 - Windows Preview
 
 Initial public preview for Windows 64-bit.

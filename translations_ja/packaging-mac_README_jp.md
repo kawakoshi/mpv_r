@@ -1,71 +1,42 @@
 # macOSパッケージングメモ 日本語参考訳
 
-注意:
-この文書は、公開前の確認を助けるために機械翻訳をもとに作成した日本語参考訳です。
-翻訳の正確性、完全性、法的解釈について、本プロジェクトは一切の責任を負いません。
-正式な内容は英語原文を優先してください。
-また、世界中の翻訳者の知識、労力、文化をつなぐ仕事に深い敬意を表します。
+注意：この文書は日本語での確認を助ける参考訳です。正式な内容は`packaging/mac/README.md`を優先してください。
 
-v0.1.0は手動でパッケージングしました。
+## v0.3.0 Macパッケージ
 
-## 現在のv0.1.0の状態
-
-公開済みのv0.1.0 Mac Previewは使用できますが、パッケージ構成はWindows
-v0.1.1より古い状態です。
-
-v0.2で整理する差分:
-
-- 日本語参考訳ファイルがパッケージ直下に混在している。
-- `source-and-build-info_jp.txt`がまだ`LICENSES`配下にある。
-- Windows版の`translations_ja`方針とまだ揃っていない。
-- パッケージング手順がまだ手動。
-
-## v0.2の目標構成
-
-v0.2では、MacパッケージもWindows版と同じ方針に揃えます。
+Mac／Windows共通のv0.3.0 Previewのうち、Mac版はApple Siliconを対象とし、DMGで配布します。
 
 ```text
-mpv_r-mac-v0.2.0/
-  mpv_r.app
-  README.txt
-  NOTICE.txt
-  LICENSE.txt
-  LICENSES/
-    mpv-Copyright.txt
-    mpv-LICENSE.GPL.txt
-    mpv-LICENSE.LGPL.txt
-    source-and-build-info.txt
-  translations_ja/
-    README_jp.txt
-    NOTICE_jp.txt
-    LICENSE_jp.txt
-    source-and-build-info_jp.txt
+mpv_r.app
+Applications -> /Applications
 ```
 
-英語ファイルを正式な文書とし、日本語ファイルは参考訳として
-`translations_ja`配下にまとめます。
+レビュー用設定とプロジェクト文書は、次の場所へ収録します。
 
-## 手動フロー
+```text
+mpv_r.app/Contents/Resources/
+  mpv.conf
+  input.conf
+  documents/
+```
 
-1. `mpv_r.app`を用意する。
-2. README、NOTICE、LICENSE、LICENSESを同梱する。
-3. 日本語参考訳を`translations_ja`配下に追加する。
-4. `mpv_r-mac-v0.2.0.zip`を作る。
-5. macOS用の簡易テストチェックリストを実行する。
-6. GitHub Releasesへzipをアップロードする。
+## ビルド
 
-## macOSリリースノートのチェック項目
+文書化された手順で自前ビルドしたarm64版`mpv.app`を入力に使います。
 
-リリースノートには以下を含めます。
+```sh
+VERSION=v0.3.0 \
+BUILD_DMG=1 \
+MAC_SOURCE_APP=/path/to/mpv.app \
+packaging/scripts/build-mac.sh
+```
 
-- 対象のmacOSパッケージ名
-- 変更内容の短い説明
-- 同梱内容
-- ad-hoc署名とnotarizationの状態
-- 初回起動時のGatekeeper注意
-- 同梱mpvのバージョンとビルド元
-- プロジェクトがmpv-playerやビルド配布元と無関係であること
-- 簡易テスト結果
-- SHA256チェックサム
+スクリプトは`mpv_r.app`をad-hoc署名し、DMGを作成してSHA-256を表示します。notarizeは行いません。v0.3.0のMac対象はApple Silicon／arm64だけです。
 
-手動フローを確認したあと、自動化を検討します。
+## 公開前チェック
+
+1. 最終DMGに対して`docs/smoke-test-mac.md`を実行します。
+2. 最終DMGのSHA-256を`RELEASE_NOTES_v0.3.0.md`へ記録します。
+3. `mpv_r-mac-v0.3.0.dmg`を、別途検証したWindows v0.3.0 assetsと同じReleaseで公開します。
+
+ファイル名固有のGatekeeper手順を説明するスクリーンショットには、制作情報を含まない承認済みサンプル動画を使います。

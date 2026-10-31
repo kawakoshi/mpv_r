@@ -22,13 +22,13 @@ v0.3.0 Macパッケージ構成:
 - mpv_r.appとApplicationsショートカットを含むDMG
 - mpv_r.app/Contents/Resources/documents/内に同梱されたdocuments
 
-現行のWindows v0.2.0パッケージ構成:
+Windows v0.3.0パッケージ構成:
 
 - パッケージ直下のmpv_r.exe
 - resources/
 - documents/
 
-Mac v0.3.0パッケージは、このプロジェクトでビルドしたApple Silicon向けmpvアプリバンドルから作成します。Windows v0.2.0パッケージは、既存のmpvビルド、mpv_r設定ファイル、プロジェクト文書を集めたポータブルzipを継続します。
+Mac v0.3.0パッケージは、このプロジェクトでビルドしたApple Silicon向けmpvアプリバンドルから作成します。Windows v0.3.0パッケージは、検証済みの自前ビルドmpvランタイム、mpv_r設定、プロジェクト文書、ライセンス証跡、ランタイム／ソース一覧をポータブルZIPへ収録します。
 
 Mac v0.3.0同梱mpv:
 
@@ -39,7 +39,7 @@ Mac v0.3.0同梱mpv:
 - ローカルビルド文書: docs/build-mpv-macos-arm64.md
 - 対象: Apple Silicon / arm64
 
-Windows v0.3.0 自前ビルド候補（未公開）:
+Windows v0.3.0 自前ビルドランタイム:
 
 - mpv version: 0.41.0
 - source: https://github.com/mpv-player/mpv
@@ -48,11 +48,13 @@ Windows v0.3.0 自前ビルド候補（未公開）:
 - ビルド環境: Windows x86_64上のMSYS2 MINGW64
 - ローカルビルド文書: docs/build-mpv-windows-msys2.md
 - パッケージング文書: packaging/scripts/build-windows.sh
-- 公開状態: docs/windows-selfbuild-license-audit.mdにあるDLLごとのNOTICEと対応ソースの要件を満たすまで公開しない
+- ライセンス証跡: documents/LICENSES/windows-selfbuild/
+- 対応ソース: Windows ZIPと同じReleaseで公開する`mpv_r-windows-v0.3.0-corresponding-source` asset
+- 検証状態: ソース索引87行、ランタイム130本、mpv_rランチャーを加えた最終バイナリを検証済み
 
 公開済みのWindows v0.2.0パッケージは、別系統の第三者ビルド版です。自前ビルドWindows版として表記しません。
 
-Windows v0.2.0パッケージには、上流mpvのdoc/manual.pdfまたはdoc/mpbindings.pngは
+Windowsパッケージには、上流mpvのdoc/manual.pdfまたはdoc/mpbindings.pngは
 同梱しません。mpvのドキュメントはNOTICEからリンクします。
 
 v0.2.0 パッケージ生成

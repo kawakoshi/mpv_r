@@ -27,8 +27,10 @@ Windows:
 
 1. Extract the zip.
 2. Open the `mpv_r` folder.
-3. Open `mpv_r.exe`.
-4. If Windows SmartScreen appears, continue only if you trust this download.
+3. Run `create-desktop-shortcut.cmd` and drag videos onto the new shortcut, or
+   drag videos directly onto `mpv_r.exe`.
+4. If Windows SmartScreen appears, continue only if the ZIP came from the
+   project Release assets and its published SHA-256 matches.
 
 Open Videos
 -----------

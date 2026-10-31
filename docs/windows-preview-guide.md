@@ -6,13 +6,13 @@ Japanese reference translation:
 
 ## Scope
 
-The current Windows release is `v0.2.0`. It is a portable 64-bit ZIP package,
+The Windows v0.3.0 release is a portable 64-bit ZIP package,
 not an installer. Keep the extracted folder together; no setup program or
 administrator permission is required for normal use.
 
 ## Start
 
-1. Download `mpv_r-windows-v0.2.0.zip` from GitHub Releases. Do not use
+1. Download `mpv_r-windows-v0.3.0.zip` from GitHub Releases. Do not use
    GitHub's automatic `Source code (zip)` archive.
 2. Extract the ZIP to a writable folder such as `Documents` or `Downloads`.
 3. Open the extracted `mpv_r` folder.
