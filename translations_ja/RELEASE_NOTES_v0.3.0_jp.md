@@ -93,6 +93,6 @@ SHA256:
 
 ```text
 ea459df3693d9ca7791452c6adcec904c6832022520a68dec4e0b818b6cc10c8  mpv_r-mac-v0.3.0.dmg
+23c75c83d05e4b52707b0fda2962b6b9189b755a9917004a31ceb2d01b9845a0  mpv_r-windows-v0.3.0.zip
+ea4c4df1c3f62e9401b96cb22ef4208de64e13ed3f428d3a588d3961c85c8010  mpv_r-windows-v0.3.0-corresponding-source.tar.zst
 ```
-
-Windows ZIPと対応ソースのチェックサムは、最終リリース用ビルドを固定した後に追加します。

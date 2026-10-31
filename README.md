@@ -11,7 +11,7 @@
 - Mac：`mpv_r-mac-v0.3.0.dmg`（公開中）
 - Windows：`mpv_r-windows-v0.2.0.zip`（公開中）
 
-Windowsの自前ビルド版v0.3.0は、DLL・ライセンス・対応ソースの監査と最終ZIP検証を完了し、公開準備中です。公開後はWindowsも`mpv_r-windows-v0.3.0.zip`へ揃えます。
+Windowsの自前ビルド版v0.3.0は、DLL・ライセンス・対応ソースの監査、最終ZIP検証、実機操作確認を完了し、公開可能な状態です。公開後はWindowsも`mpv_r-windows-v0.3.0.zip`へ揃えます。
 
 ## 使い方
 
@@ -41,7 +41,7 @@ mpv_r/
 
 - Mac v0.3.0：このプロジェクトでビルドしたApple Silicon向けmpv v0.41.0を同梱しています。
 - Windows v0.2.0：shinchiroによる第三者ビルドを同梱した、従来の公開版です。
-- Windows v0.3.0：MSYS2上でこのプロジェクトがビルドしたmpv v0.41.0を使います。DLL・ライセンス・対応ソースの監査と最終ZIP検証は完了し、Release assetと対応ソースの公開準備中です。
+- Windows v0.3.0：MSYS2上でこのプロジェクトがビルドしたmpv v0.41.0を使います。DLL・ライセンス・対応ソースの監査、最終ZIP検証、実機操作確認は完了しています。
 
 mpv-player、stolendata、shinchiroとの関係やライセンス情報は[NOTICE.md](NOTICE.md)と[LICENSES/](LICENSES/)を参照してください。
 
@@ -58,6 +58,7 @@ mpv-player、stolendata、shinchiroとの関係やライセンス情報は[NOTIC
 - v0.3.0：Mac Apple Silicon DMG／Windows 64-bitポータブルZIP
 - 次：Windows v0.3.0と対応ソースの公開
 - その次：Windowsインストーラーと、Mac／Windows v0.4.0の整備
+- v0.4.0メモ：Windowsの再生ウィンドウは同梱`mpv.exe`側のアイコンを表示するため、ショートカット／関連付け／再生ウィンドウのアイコン統一を検討します。mpvバイナリへ変更を加える場合は、ランタイム監査とハッシュ検証をやり直します。
 
 ---
 
@@ -75,8 +76,9 @@ Use an app package under GitHub Releases **Assets**, not GitHub's automatic `Sou
 - Windows: `mpv_r-windows-v0.2.0.zip` (published)
 
 The project-built Windows v0.3.0 runtime has completed its DLL, license,
-corresponding-source, and final-ZIP audits. Its release assets are being
-prepared; after publication, Windows will use `mpv_r-windows-v0.3.0.zip`.
+corresponding-source, final-ZIP, and manual smoke-test checks. Its assets are
+ready to publish; after publication, Windows will use
+`mpv_r-windows-v0.3.0.zip`.
 
 ## Usage
 
@@ -89,6 +91,11 @@ Multiple files open as a playlist. See [docs/shortcuts.md](docs/shortcuts.md) fo
 
 - macOS v0.3.0 bundles a project-built Apple Silicon mpv v0.41.0 app bundle.
 - The published Windows v0.2.0 package uses a third-party mpv build by shinchiro.
-- Windows v0.3.0 uses a project-built MSYS2 runtime. Its license and package audits are complete; the ZIP and corresponding-source release assets are being prepared.
+- Windows v0.3.0 uses a project-built MSYS2 runtime. Its license, package, corresponding-source, and manual smoke-test checks are complete.
+
+For v0.4.0, investigate using one mpv_r icon consistently for the Windows
+shortcut, file associations, and playback window. The playback window currently
+uses the icon from the bundled `mpv.exe`; any binary resource change requires
+rerunning the runtime audit and hash verification.
 
 See [NOTICE.md](NOTICE.md), [LICENSES/](LICENSES/), [docs/build-mpv-windows-msys2.md](docs/build-mpv-windows-msys2.md), and [docs/windows-selfbuild-license-audit.md](docs/windows-selfbuild-license-audit.md).
