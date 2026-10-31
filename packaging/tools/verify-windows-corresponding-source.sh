@@ -63,6 +63,11 @@ if [ "$failed_checks" != 0 ] || \
    [ "$info_verified_rows" != "$verified_rows" ] || \
    [ "$info_source_package_count" != "$source_package_count" ]; then
   echo "Corresponding-source inventory verification failed." >&2
+  echo "checked_files=$checked_files" >&2
+  echo "failed_checks=$failed_checks" >&2
+  echo "source_index_rows=$source_rows (asset-info=$info_source_rows expected=87)" >&2
+  echo "verified_source_index_rows=$verified_rows (asset-info=$info_verified_rows expected=87)" >&2
+  echo "msys2_source_package_count=$source_package_count (asset-info=$info_source_package_count expected=86)" >&2
   exit 1
 fi
 
