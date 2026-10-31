@@ -57,13 +57,15 @@ for required in \
 done
 
 embedded="$package/documents/LICENSES/windows-selfbuild"
-for manifest in runtime-manifest.tsv license-manifest.tsv source-index.tsv; do
-  cmp "$evidence/$manifest" "$embedded/$manifest" >/dev/null || { echo "Embedded $manifest differs from evidence" >&2; exit 1; }
-done
-
 hash_file() {
   if command -v sha256sum >/dev/null 2>&1; then sha256sum "$1" | awk '{print $1}'; else shasum -a 256 "$1" | awk '{print $1}'; fi
 }
+same_file() {
+  [ "$(hash_file "$1")" = "$(hash_file "$2")" ]
+}
+for manifest in runtime-manifest.tsv license-manifest.tsv source-index.tsv; do
+  same_file "$evidence/$manifest" "$embedded/$manifest" || { echo "Embedded $manifest differs from evidence" >&2; exit 1; }
+done
 
 expected_runtime="$work/expected-runtime.tsv"
 actual_runtime="$work/actual-runtime.tsv"
@@ -81,7 +83,7 @@ sort -o "$actual_runtime" "$actual_runtime"
 find "$package/resources/mpv" -maxdepth 1 -type f \( -iname '*.exe' -o -iname '*.com' -o -iname '*.dll' \) -print | \
   while IFS= read -r file; do basename "$file"; done | sort > "$work/runtime-files"
 cut -f1 "$expected_runtime" > "$work/runtime-expected-names"
-cmp "$work/runtime-expected-names" "$work/runtime-files" >/dev/null || { echo "ZIP runtime file set differs from runtime manifest" >&2; exit 1; }
+same_file "$work/runtime-expected-names" "$work/runtime-files" || { echo "ZIP runtime file set differs from runtime manifest" >&2; exit 1; }
 
 final_manifest="$embedded/final-package-runtime-manifest.tsv"
 awk -F '\t' 'NR>1 {print $1 "\t" $2 "\t" $3}' "$final_manifest" | sort > "$work/final-expected"
@@ -98,7 +100,7 @@ sort -o "$work/final-actual" "$work/final-actual"
 find "$package" -type f \( -iname '*.exe' -o -iname '*.com' -o -iname '*.dll' \) -print | \
   sed "s#^$package/##" | sort > "$work/final-files"
 cut -f1 "$work/final-expected" > "$work/final-expected-names"
-cmp "$work/final-expected-names" "$work/final-files" >/dev/null || { echo "ZIP binary set differs from final package manifest" >&2; exit 1; }
+same_file "$work/final-expected-names" "$work/final-files" || { echo "ZIP binary set differs from final package manifest" >&2; exit 1; }
 
 awk -F '\t' 'NR>1 && $7!="VERIFIED" {bad=1} END {exit bad}' "$embedded/source-index.tsv" || { echo "Embedded source index has unverified rows" >&2; exit 1; }
 while IFS="$(printf '\t')" read -r owner version count status; do
