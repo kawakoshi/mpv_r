@@ -150,6 +150,11 @@ if command -v zip >/dev/null 2>&1; then
     cd "$work_dir"
     zip -r -X "$output_zip" "$package_name" >/dev/null
   )
+elif command -v bsdtar >/dev/null 2>&1; then
+  (
+    cd "$work_dir"
+    bsdtar -a -cf "$output_zip" "$package_name"
+  )
 elif command -v powershell.exe >/dev/null 2>&1; then
   package_dir_win=$(cygpath -w "$package_dir")
   output_zip_win=$(cygpath -w "$output_zip")
