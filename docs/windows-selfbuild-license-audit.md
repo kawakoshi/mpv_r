@@ -301,6 +301,21 @@ packaging/tools/verify-windows-selfbuild-evidence.sh \
   docs/evidence/windows-msys2-v0.41.0-release
 ```
 
+After downloading the exact mpv archive named in the first source-index row,
+build the separate corresponding-source asset with:
+
+```sh
+packaging/tools/build-windows-corresponding-source.sh \
+  /c/path/to/windows-release-evidence \
+  /c/path/to/41f6a645068483470267271e1d09966ca3b9f413.tar.gz \
+  /c/path/to/mpv_r-windows-v0.3.0-corresponding-source.tar.zst
+```
+
+The script reruns the evidence verifier, checks the mpv archive hash, requires
+all 87 source-index rows and exactly 86 MSYS2 source packages, adds the current
+mpv_r project source, writes per-file SHA-256 values, and creates the final
+`tar.zst` without overwriting an existing asset.
+
 ## License and Source Deliverables
 
 Before publishing, create a `documents/LICENSES/windows-selfbuild/` directory

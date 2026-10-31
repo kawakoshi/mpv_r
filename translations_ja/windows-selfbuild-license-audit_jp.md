@@ -61,6 +61,19 @@ Windows側の監査フォルダに`remaining-source-audit-summary-v1.tsv`、`rem
 5. パッケージアーカイブ名、バージョン、配布元URL、SHA-256。
 6. 最終ZIP内の全`.exe`／`.dll`とSHA-256のマニフェスト。
 
+## 対応ソースassetの作成
+
+ソース索引1行目に記録したmpvの固定コミットtarballを取得した後、次のスクリプトで別assetを作ります。
+
+```sh
+packaging/tools/build-windows-corresponding-source.sh \
+  /c/path/to/windows-release-evidence \
+  /c/path/to/41f6a645068483470267271e1d09966ca3b9f413.tar.gz \
+  /c/path/to/mpv_r-windows-v0.3.0-corresponding-source.tar.zst
+```
+
+このスクリプトは証跡検証を再実行し、mpv tarballのSHA-256、ソース索引87行、MSYS2ソースパッケージ86件を確認します。さらに現在のmpv_rプロジェクトソースと全収録ファイルのSHA-256を加え、既存assetを上書きせずに最終`tar.zst`を作成します。
+
 ## ZIPに入れるライセンス・ソース情報
 
 公開前に、ZIPの`documents/LICENSES/windows-selfbuild/`へ次を作成します。
