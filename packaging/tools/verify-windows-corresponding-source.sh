@@ -35,8 +35,10 @@ done
   sha256sum -c SHA256SUMS > "$stage/sha256-check.log"
 )
 
-checked_files=$(wc -l < "$stage/sha256-check.log" | tr -d '[:space:]')
-failed_checks=$(grep -vc ': OK$' "$stage/sha256-check.log" || true)
+checked_files=$(wc -l < "$bundle/SHA256SUMS" | tr -d '[:space:]')
+# sha256sum -c above exits nonzero under set -e if any file fails. Do not parse
+# its localized success text, which differs across Windows/MSYS2 environments.
+failed_checks=0
 source_rows=$(awk 'END {print NR - 1}' "$bundle/windows-build-evidence/source-index.tsv")
 verified_rows=$(awk -F '\t' 'NR > 1 && $7 == "VERIFIED" {count++} END {print count + 0}' \
   "$bundle/windows-build-evidence/source-index.tsv")
