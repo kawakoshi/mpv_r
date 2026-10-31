@@ -14,6 +14,7 @@ Download:
 - `mpv_r-mac-v0.3.0.dmg`
 - `mpv_r-windows-v0.3.0.zip`
 - `mpv_r-windows-v0.3.0-corresponding-source.tar.zst`
+- `SHA256SUMS_v0.3.0.txt`
 
 Use the attached app package under Release assets. Do not download GitHub's
 automatic `Source code (zip)` if you want to run the app.

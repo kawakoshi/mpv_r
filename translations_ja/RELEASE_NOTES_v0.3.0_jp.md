@@ -15,6 +15,7 @@ v0.3.0では、Apple Silicon Macと64-bit Windowsの両方で、自前ビルド�
 - `mpv_r-mac-v0.3.0.dmg`
 - `mpv_r-windows-v0.3.0.zip`
 - `mpv_r-windows-v0.3.0-corresponding-source.tar.zst`
+- `SHA256SUMS_v0.3.0.txt`
 
 アプリとして使う場合は、Release assetsに添付されたアプリ用パッケージを使ってください。GitHubが自動生成する`Source code (zip)`はアプリ本体ではありません。
 
